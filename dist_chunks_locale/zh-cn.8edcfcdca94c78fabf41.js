@@ -106,7 +106,1546 @@
       })(o('../node_modules/moment/moment.js'));
     },
     '../src/sentry/locale/zh_CN/LC_MESSAGES/django.po': e => {
-      e.exports = {
+      var translatedOnly = {
+        300: ['300'],
+        '%s thinks Sentry can help monitor your mobile app': [
+          '%s认为 Sentry 可以帮助监控你的移动端 App',
+        ],
+        Light: ['亮'],
+        Dark: ['暗'],
+        'Default to system': ['系统默认'],
+        'Value must be valid JSON.': ['当前值必须是有效的JSON'],
+        'Enter a valid email address.': ['请输入有效电子邮件地址'],
+        Enroll: ['加入'],
+        'Recovery Codes': ['恢复代码'],
+        'Recovery codes are the only way to access your account if you lose your device and cannot receive two factor authentication codes.':
+          ['`恢复代码` 用于您丢失了设备并无法使用二步验证时进行访问'],
+        Activate: ['激活'],
+        'View Codes': ['显示代码'],
+        'Text Message': ['文本消息'],
+        "This authenticator sends you text messages for verification.  It's useful as a backup method or when you do not have a phone that supports an authenticator application.":
+          [
+            '验证器已经给你发送了文本验证信息。当你没有支持验证器的手机时，这将是一个有用的后备方式。',
+          ],
+        'A confirmation code was sent to %(phone_mask)s. It is valid for %(ttl)d seconds.':
+          ['确认码已发送至%(phone_mask)s。%(ttl)d秒内有效。'],
+        'Error: we failed to send a text message to you. You can try again later or sign in with a different method.':
+          ['错误：给你发送文本信息时失败了。你可以再次尝试或使用其它方法登录。'],
+        '%(code)s is your Sentry two-factor enrollment code. You are about to set up text message based two-factor authentication.':
+          [
+            '%(code)s 是您的 Sentry 双因子认证注册码。您即将建立基于文本消息的双因素身份验证。',
+          ],
+        '%(code)s is your Sentry authentication code.': [
+          '%(code)s 是你的 Sentry 授权码。',
+        ],
+        'Authenticator App': ['验证器应用'],
+        'An authenticator application that supports TOTP (like Google Authenticator or 1Password) can be used to access your account securely using a token and secret key. A new token is generated every 30 seconds.':
+          [
+            '支持TOTP的认证器应用程序（如谷歌认证器或1Password）可用于使用令牌和 键 安全地访问您的账户。每30秒就会生成一个新的令牌。',
+          ],
+        'Your account is currently linked to an authenticator application. To link to a new device or application, or to update your secret key, click "Confirm" below. By clicking "Confirm", your existing secret key will be replaced and will no longer work to access your account.':
+          [
+            '你的帐号已经设置了多步认证。如需链接到新设备，或需更新密钥，请点击 "确认" 按钮。如果点击确认，您现有的密钥将被重置，且不能访问当前帐号。',
+          ],
+        'U2F (Universal 2nd Factor)': ['U2F (Universal 2nd Factor)'],
+        "Authenticate with a U2F hardware device. This is a device like a Yubikey or something similar which supports FIDO's U2F specification. This also requires a browser which supports this system (like Google Chrome).":
+          [
+            '使用 U2F 硬件设备授权。这是一个类似 Yubikey 或其它支持 FIDO 的 U2F 本协议的设备。这还需要一个支持本系统的浏览器 (比如 Google Chrome)。',
+          ],
+        'You have successfully linked your account to your SSO provider.': [
+          '您已成功将您的账户链接至 SSO 提供程序。',
+        ],
+        'SSO has been configured for your organization and any existing members have been sent an email to link their accounts.':
+          ['您的组织已配置好SSO，我们已向所有成员发送邮件来链接他们的账户。'],
+        'There was an error encountered during authentication.': ['身份验证出错。'],
+        'You must be authenticated to link accounts.': [
+          '如要链接账户，您必须先通过身份验证。',
+        ],
+        'The provider did not return a valid user identity.': [
+          '身份验证提供程序未返回合法的用户信息。',
+        ],
+        'This password is too long. It must contain no more than %(max_length)d characters.':
+          ['您的密码太长，最多只能包含%(max_length)d个字符。'],
+        'Your password must contain no more than %(max_length)d characters.': [
+          '您的密码只能包含%(max_length)d个字符。',
+        ],
+        'Register Auth0': ['注册 Auth0'],
+        'The IdPs unique ID attribute key for the user. This is what Sentry will used to identify the users identity from the identity provider.':
+          ['用户的 IdP 唯一 ID 属性键。 Sentry 将用它来从身份提供者识别用户身份。'],
+        'The IdPs email address attribute key for the user. Upon initial linking this will be used to identify the user in Sentry.':
+          [
+            '用户的 IdP 电子邮件地址属性键。 在初始链接时，这将用于识别 Sentry 中的用户。',
+          ],
+        'Service Provider Metadata': ['服务提供商元数据'],
+        'SAML2 Setup': ['配置 SAML2'],
+        'Save Attributes': ['保存属性'],
+        'Get metadata': ['获取元数据'],
+        'Parse Metadata': ['解析元数据'],
+        'Save Metadata': ['保存元数据'],
+        'Register Okta': ['注册 Okta'],
+        'Register OneLogin': ['注册 OneLogin'],
+        'The organization does not exist or does not have SAML SSO enabled.': [
+          '该组织不存在或没有启用单点登录"SAML SSO"',
+        ],
+        'SAML SSO failed, {reason}': ['单点登录SAML SSO失败，{reason}'],
+        'Failed to map SAML attributes. Assertion returned the following attribute keys: {error_msg_keys}':
+          ['映射 SAML 属性失败。请确保 SAML 服务返回了以下属性键：{error_msg_keys}'],
+        'Register Rippling': ['注册 Rippling'],
+        'Complete Setup': ['完成安装'],
+        Afrikaans: ['南非荷兰语'],
+        Arabic: ['阿拉伯语'],
+        Azerbaijani: ['阿塞拜疆语'],
+        Bulgarian: ['保加利亚语'],
+        Belarusian: ['白俄罗斯语'],
+        Bengali: ['孟加拉语'],
+        Breton: ['布列塔尼语'],
+        Bosnian: ['波斯尼亚语'],
+        Catalan: ['加泰罗尼亚语'],
+        Czech: ['捷克语'],
+        Welsh: ['威尔士语'],
+        Danish: ['丹麦语'],
+        German: ['德语'],
+        Greek: ['希腊语'],
+        English: ['英语'],
+        Esperanto: ['世界语'],
+        Spanish: ['西班牙语'],
+        Estonian: ['爱沙尼亚语'],
+        Basque: ['巴斯克语'],
+        Persian: ['波斯语'],
+        Finnish: ['芬兰语'],
+        French: ['法语'],
+        Irish: ['爱尔兰语'],
+        Galician: ['加利西亚语'],
+        Hebrew: ['希伯来语'],
+        Hindi: ['印地语'],
+        Croatian: ['克罗地亚语'],
+        Hungarian: ['匈牙利语'],
+        Interlingua: ['国际语'],
+        Indonesian: ['印尼语'],
+        Icelandic: ['冰岛语'],
+        Italian: ['意大利语'],
+        Japanese: ['日语'],
+        Georgian: ['格鲁吉亚语'],
+        Kazakh: ['哈萨克语'],
+        Khmer: ['高棉语'],
+        Kannada: ['卡纳达语'],
+        Korean: ['韩语'],
+        Luxembourgish: ['卢森堡语'],
+        Lithuanian: ['立陶宛语'],
+        Latvian: ['拉脱维亚语'],
+        Macedonian: ['马其顿语'],
+        Malayalam: ['马拉雅拉姆语'],
+        Mongolian: ['蒙古语'],
+        Burmese: ['缅甸语'],
+        'Norwegian Bokmal': ['巴克摩挪威语'],
+        Nepali: ['尼泊尔语'],
+        Dutch: ['荷兰语'],
+        'Norwegian Nynorsk': ['耐诺斯克挪威语'],
+        Ossetic: ['奥塞梯语'],
+        Punjabi: ['旁遮普语'],
+        Polish: ['波兰语'],
+        Portuguese: ['葡萄牙语'],
+        'Brazilian Portuguese': ['巴西葡萄牙语'],
+        Romanian: ['罗马尼亚语'],
+        Russian: ['俄语'],
+        Slovak: ['斯洛伐克语'],
+        Slovenian: ['斯洛文尼亚语'],
+        Albanian: ['阿尔巴尼亚语'],
+        Serbian: ['塞尔维亚语'],
+        Swedish: ['瑞典语'],
+        Swahili: ['斯瓦希里语'],
+        Tamil: ['泰米尔语'],
+        Telugu: ['泰卢固语'],
+        Thai: ['泰语'],
+        Turkish: ['土耳其语'],
+        Tatar: ['鞑靼语'],
+        Udmurt: ['乌德穆尔特语'],
+        Ukrainian: ['乌克兰语'],
+        Urdu: ['乌尔都语'],
+        Vietnamese: ['越南语'],
+        'Simplified Chinese': ['简体中文'],
+        'Traditional Chinese': ['正体中文'],
+        'The {name} integration has been enabled.': ['{name}集成已启用。'],
+        'The {name} integration has been disabled.': ['{name}集成已禁用。'],
+        'Configuration for the {name} integration has been saved.': [
+          '对{name}集成的配置已保存。',
+        ],
+        'Big Integer': ['大整数'],
+        "'%s' is not a valid JSON string.": ["'%s' 不是有效JSON字符串"],
+        'Your {identity_provider} account has been associated with your Sentry account': [
+          '你的 {identity_provider} 账户已关联至 Sentry 账户',
+        ],
+        'Path may not contain spaces or quotations': ['路径不能包含空格或引号'],
+        Installation: ['安装'],
+        'Please validate the Cloudformation stack was created successfully': [
+          '请确认 Cloudformation 中 stack 已成功创建',
+        ],
+        'Unknown error': ['未知错误'],
+        'Bitbucket URL': ['Bitbucket 地址'],
+        'The base URL for your Bitbucket Server instance, including the host and protocol.':
+          ['你的Bitbucket服务器的实例地址, 包括域名和协议.'],
+        'Verify SSL': ['验证SSL'],
+        'By default, we verify SSL certificates when making requests to your Bitbucket instance.':
+          ['默认情况下，向 Bitbucket 实例发起请求时我们会验证 SSL 证书。'],
+        'Bitbucket Consumer Key': ['Bitbucket用户密钥'],
+        'Bitbucket Consumer Private Key': ['Bitbucket用户私钥'],
+        'It seems that your GitHub account has been installed on another Sentry organization. Please uninstall and try again.':
+          ['您的 GitHub 帐户似乎已安装在另一个Sentry组织上。请卸载并重试。'],
+        'It seems that your Sentry organization has an installation pending deletion. Please wait ~15min for the uninstall to complete and try again.':
+          ['看来您的 Sentry 组织有一个待删除的安装。请等待 ~15分钟，待卸载完成后再试。'],
+        'The "base URL" for your GitHub enterprise instance, includes the host and protocol.':
+          ['你的GitLab Enterprise实例地址，包括域名和协议。'],
+        'The App ID of your Sentry app. This can be found on your apps configuration page.':
+          ['您Sentry应用的ID，可以在您项目配置也找到。'],
+        'The GitHub App name of your Sentry app. This can be found on the apps configuration page.':
+          ['您Sentry应用的GitHub应用名称，可以在应用配置页面找到。'],
+        'By default, we verify SSL certificates when delivering payloads to your GitHub Enterprise instance':
+          ['默认情况下，向 Github Enterprise 实例发起请求时我们会验证 SSL 证书。'],
+        'We require a webhook secret to be configured. This can be generated as any random string value of your choice and should match your GitHub app configuration.':
+          [
+            '我们需要配置一个 webhook 密码。 可以是您选择生成的任何随机字符串值，并且应该与您的 GitHub 应用程序配置相匹配。',
+          ],
+        'The Private Key generated for your Sentry GitHub App.': [
+          '为您Sentry Github应该生成的私钥。',
+        ],
+        'GitLab URL': ['GitLab地址'],
+        'GitLab Group Path': ['GitLab组路径'],
+        'my-group/my-subgroup': ['我的组/我的子组'],
+        'Include Subgroups': ['包含子组'],
+        'By default, we verify SSL certificates when delivering payloads to your GitLab instance, and request GitLab to verify SSL when it delivers webhooks to Sentry.':
+          [
+            '默认情况下，我们在向您的 GitLab 实例发送数据时会验证其 SSL 证书，并要求GitLab在通过Webhook 请求Sentry时验证 SSL证书。',
+          ],
+        'GitLab Application ID': ['GitLab应用ID'],
+        '5832fc6e14300a0d962240a8144466eef4ee93ef0d218477e55f11cf12fc3737': [
+          '5832fc6e14300a0d962240a8144466eef4ee93ef0d218477e55f11cf12fc3737',
+        ],
+        'GitLab Application Secret': ['GitLab应用秘钥'],
+        'Jira integration is a required field.': ['Jira 集成是必填字段。'],
+        'Jira Marketplace': ['Jira Marketplace'],
+        Instance: ['实例'],
+        'Sync Sentry Status to Jira': ['同步Sentry状态到Jira'],
+        'When a Sentry issue changes status, change the status of the linked ticket in Jira.':
+          ['当一个 Sentry 事件 改变了状态，同时 Jira 相应票据 链接 中的状态'],
+        'Add Jira Project': ['添加 Jira 项目'],
+        'All projects configured': ['所有项目已配置'],
+        'Could not find Jira project': ['没有找到 Jira 项目'],
+        'Select a status': ['选择一个状态'],
+        'When resolved': ['当被解决'],
+        'When unresolved': ['当被标注未解决'],
+        'Jira Project': ['Jira 项目'],
+        'Sync Sentry Assignment to Jira': ['同步 Sentry 任务至 Jira'],
+        'When an issue is assigned in Sentry, assign its linked Jira ticket to the same user.':
+          ['当一个 事件 在Sentry中被分派。在 Jira相应票据 链接 中分派给同一个用户。'],
+        'Sync Sentry Comments to Jira': ['同步Sentry评论到Jira'],
+        'Post comments from Sentry issues to linked Jira tickets': [
+          '从Sentry发布评论到关联的Jira条目',
+        ],
+        'Sync Jira Status to Sentry': ['同步Jira状态到Sentry'],
+        'When a Jira ticket is marked done, resolve its linked issue in Sentry. When a Jira ticket is removed from being done, unresolve its linked Sentry issue.':
+          [
+            '当Jira中票据被标记完成，标记对应Sentry事件为解决。当Jira中票据移除已完成状态，标记对应Sentry事件为未解决。',
+          ],
+        'Sync Jira Assignment to Sentry': ['同步 Jira 任务至 Sentry'],
+        'When a ticket is assigned in Jira, assign its linked Sentry issue to the same user.':
+          ['当一个工单在 Jira 中被指派时，指派其在 Sentry 中关联的问题给同一用户。'],
+        'Unable to communicate with the Jira instance. You may need to reinstall the addon.':
+          ['无法与现有 Jira 实例通讯，你可能需要重装 Jira 插件。'],
+        'Your organization does not have access to this feature': [
+          '您的组织没有权限访问这个特性',
+        ],
+        'Jira URL': ['Jira地址'],
+        'The base URL for your Jira Server instance, including the host and protocol.': [
+          '您的Jira 服务实例地址，需要包含域名和协议。',
+        ],
+        'By default, we verify SSL certificates when making requests to your Jira instance.':
+          ['默认情况下，在向Jira实例发起请求的时候我们会验证 SSL证书。'],
+        'Jira Consumer Key': ['Jira Consumer Key'],
+        'Jira Consumer Private Key': ['Jira用户私钥（Jira Consumer Private Key）'],
+        'The channel or user "%(channel)s" could not be found in the %(team)s Team.': [
+          '在 %(team)s 团队中找不到频道或用户“%(channel)s”。',
+        ],
+        'Teams Marketplace': ['团队市场'],
+        'Invalid {field}': ['无效的 {field}'],
+        'The service "%(service)s" has not been granted access in the %(account)s Pagerduty account.':
+          ['服务%(service)s不存在，或在%(account)s Pageduty 账号中未被允许访问'],
+        'The provided %(proper_name)s account is linked to a different Sentry user. To continue linking the current Sentry user, please use a different %(proper_name)s account.':
+          [
+            '提供的%(proper_name)s账户已关联了另一个 Sentry 用户。 要继续关联当前 Sentry 用户，请使用其他%(proper_name)s帐户。',
+          ],
+        Workspace: ['工作区'],
+        '\nVercel is an all-in-one platform with Global CDN supporting static & JAMstack deployment and Serverless Functions.\n':
+          [
+            '\nVercel 是一个多合一平台，提供有依托于全球 CDN 的静态和 JAMstack 部署，以及 Serverless 函数服务。\n',
+          ],
+        "Visit the Vercel Marketplace to install this integration. After installing the Sentry integration, you'll be redirected back to Sentry to finish syncing Vercel and Sentry projects.":
+          [
+            '访问 Vercel 市场以安装此集成。安装 Sentry 集成后，您将被重定向回 Sentry 以完成 Vercel 和 Sentry 项目的同步。',
+          ],
+        'Vercel Marketplace': ['Vercel 市场'],
+        'Connect Your Projects': ['连接你的项目'],
+        'Install a [source code integration]({}) and configure your repositories.': [
+          '安装 [代码集成]({}) 并配置您的存储库。',
+        ],
+        'Vercel project...': ['Vercel 项目...'],
+        'Link your Sentry projects to complete your installation on Vercel': [
+          '连接你的Sentry项目以完成Vercel的安装',
+        ],
+        'Complete on Vercel': ['Vercel完成'],
+        'Sync Sentry Status to Azure DevOps': ['同步Sentry状态到Azure DevOps'],
+        'When a Sentry issue changes status, change the status of the linked work item in Azure DevOps.':
+          ['当Sentry的问题状态变化时同步到Azure Devops的工作项中。'],
+        'Add Azure DevOps Project': ['添加 Azure DevOps 项目'],
+        'Could not find Azure DevOps project': ['没有找到 Azure DevOps 项目'],
+        'Azure DevOps Project': ['Azure DevOps 项目'],
+        'Sync Sentry Assignment to Azure DevOps': ['同步 Sentry 任务至 Azure DevOps'],
+        'When an issue is assigned in Sentry, assign its linked Azure DevOps work item to the same user.':
+          ['在 Sentry中分配问题时，将其链接的 Azure DevOps 工作项分配给同一用户。'],
+        'Sync Sentry Comments to Azure DevOps': ['同步Sentry评论到Azure DevOps'],
+        'Post comments from Sentry issues to linked Azure DevOps work items': [
+          '将 Sentry 问题的评论发布到关联的 Azure DevOps 工作项中',
+        ],
+        'Sync Azure DevOps Status to Sentry': ['同步 Azure DevOps 状态至 Sentry'],
+        'When a Azure DevOps work item is marked done, resolve its linked issue in Sentry. When a Azure DevOps work item is removed from being done, unresolve its linked Sentry issue.':
+          [
+            '当 Azure DevOps 工作项被标记为完成时，将 Sentry 中关联的问题标记为已解决； 当 Azure DevOps 工作项被从已完成中删除时，将 Sentry 中关联的问题标记为未解决。',
+          ],
+        'Sync Azure DevOps Assignment to Sentry': ['同步 Azure DevOps 任务至 Sentry'],
+        'When a work item is assigned in Azure DevOps, assign its linked Sentry issue to the same user.':
+          ['在 Azure DevOps 中分配工作项时，将其关联的 Sentry 问题分配给同一用户。'],
+        MyProject: ['我的项目'],
+        'Work Item Type': ['工作项类型'],
+        Bug: ['Bug'],
+        Request: ['请求'],
+        'Stacktrace (most recent call first):': ['Stacktrace (最近的调用最先显示)'],
+        'Stacktrace (most recent call last):': ['Stacktrace (最近的调用最后显示)'],
+        Inactive: ['无效的'],
+        Forever: ['永远'],
+        'grouped messages': ['已分组消息'],
+        'grouped message': ['已分组消息'],
+        'Locked (Migration in Progress)': ['锁定（Migration中）'],
+        'Automatically Resolved': ['自动解决'],
+        Unignored: ['忽略'],
+        Regressed: ['回归'],
+        Assigned: ['已分配'],
+        Unassigned: ['未分配'],
+        Deleted: ['删除'],
+        'Deleted and Discarded': ['删除并丢弃'],
+        Reviewed: ['已审核'],
+        'Resolved in Release': ['在正式版中解决'],
+        'Resolved in Commit': ['在提交中解决'],
+        'Resolved in Pull Request': ['在拉取请求中解决'],
+        Commit: ['提交'],
+        'Pull Request': ['拉取请求'],
+        'Tracker Issue': ['问题'],
+        Resolves: ['解决'],
+        Linked: ['链接'],
+        Pending: ['待处理'],
+        Approved: ['同意'],
+        'Organization member requested to invite user': ['组织成员请求邀请用户'],
+        'User requested to join organization': ['用户请求加入组织'],
+        'Pending Deletion': ['等待删除'],
+        'Deletion in Progress': ['删除进行中'],
+        Open: ['打开'],
+        Archived: ['归档'],
+        'Date Added': ['被添加的日期'],
+        Transaction: ['事务'],
+        'Your settings were saved successfully.': ['您的设置已被成功保存'],
+        'Callback URLs': ['回调 URL'],
+        'Enter callback URLs to POST new events to (one per line).': [
+          '输入新事件将要 POST 的回调 URL（每行一个）。',
+        ],
+        'CSRF Verification Failed': ['CSRF 验证失败'],
+        'A required security token was not found or was invalid.': [
+          '安全令牌不存在或无效',
+        ],
+        "If you're continually seeing this issue, try the following:": [
+          '如果您不断看到此问题，可尝试以下步骤：',
+        ],
+        "Clear cookies (at least for Sentry's domain).": [
+          '清除 cookies（至少是 Sentry 域名下的 cookies）。',
+        ],
+        "Reload the page you're trying to submit (don't re-submit data).": [
+          '重新载入您试图提交的页面（不要重新提交数据）。',
+        ],
+        'Re-enter the information, and submit the form again.': [
+          '重新输入信息，然后再次提交表格。',
+        ],
+        'Return to the dashboard': ['返回仪表盘'],
+        'Internal Server Error': ['服务器内部错误'],
+        'Recover Account': ['找回账户'],
+        'You have confirmed your email, and may now update your password below.': [
+          '您的邮件地址已经确认，现在可以修改您的密码了。',
+        ],
+        'Change Password': ['修改密码'],
+        'Password Expired': ['密码已过期'],
+        'The password on your account expired.': ['您的帐户的密码已过期'],
+        'We have sent an email to the address registered with this account containing further instructions to reset your password.':
+          ['已经向该账户的邮箱发送一封带有指引的密码重置邮件。'],
+        'We were unable to confirm your identity. Either the link you followed is invalid, or it has expired. You can always <a href="%(link)s">try again</a>.':
+          [
+            '我们无法确认你的身份。你使用的邀请链接无效，或已过期。你可以<a href="%(link)s">再次尝试</a>。',
+          ],
+        'We will send a confirmation email to this address:': [
+          '我们将向该地址发送确认电子邮件：',
+        ],
+        'Send Email': ['发送Email'],
+        'Set Password': ['设置密码'],
+        'Set your account password below.': ['在下方设置你的账户密码'],
+        'This password link has expired. Request a new password recovery code to set\n\tyour account password':
+          ['这个密码重置链接已经失效，请申请一个新的密码恢复码来重置你的账户密码'],
+        'Confirm your Identity': ['确认你的身份'],
+        'Your password was not valid.': ['您的密码是无效的。'],
+        'Confirm Account': ['确认帐号'],
+        'Confirm Identity': ['验证身份'],
+        'Sign In': ['登陆'],
+        'Link Identity': ['连接身份'],
+        'Unlink Identity': ['取消身份连接'],
+        'Fancy seeing you here. In your own inbox. In this email, we’ve addressed specifically to you.':
+          ['很高兴认识你'],
+        '\n  %(requester_name)s told us you’d be interested in Sentry App Monitoring for Mobile.\n  ':
+          ['\n%(requester_name)s 请告诉我们您对Sentry的移动应用监控感兴趣'],
+        "\n  Why? Well, because Sentry for Mobile shows a holistic overview of your application's health in real-time. So you can correlate errors with releases, tags, and devices to solve problems quickly, decrease churn, and improve user retention.\n  ":
+          [
+            '\n  为什么？好吧，因为移动端的 Sentry 实时显示你的应用程序运行状况的整体概览。所以你可以将错误与发行版本、标签和设备关联起来以快速解决问题，减少客户流失，并提高客户留存。\n  ',
+          ],
+        '\n    <strong>See</strong> session data, version adoption, and user impact by every release.\n    ':
+          [
+            '\n    <strong>查看</strong>每个版本的会话数据、版本使用情况和对用户的影响。\n    ',
+          ],
+        '\n    <strong>Solve</strong> issues quickly with full context: contextualized stack traces, events that lead to the error, client, hardware information and the very commit that introduced the error.\n    ':
+          [
+            '\n    带着完整的上下文快速的<strong>解决</strong> 问题：上下文化的堆栈跟踪信息，导致了错误的那些事件，客户端，硬件信息和引入错误的具体 commit。\n    ',
+          ],
+        '\n    <strong>Learn</strong> and analyze event data to reduce regressions and ultimately improve user adoption and engagement.\n    ':
+          [
+            '\n    <strong>学习</strong>并分析事件数据以减少问题的回归，并最终改善用户接受度和参与度。\n    ',
+          ],
+        '\n    And guess what? Set up takes less than five minutes.\n    ': [
+          '\n    而且您猜怎么着？搭起来还不用五分钟。\n    ',
+        ],
+        '\n    Sorry, but you won’t be able to use “debugging” as an excuse to get out of your second cousin’s Zoom birthday dinner.\n    ':
+          ['\n    抱歉，但你没法儿用 “在查bug” 作为早退你二表弟生日聚会的借口。\n    '],
+        'Get Started': ['快速开始'],
+        'Mobile up,': ['向上移动，'],
+        'The Sentry Team': ['Sentry开发团队'],
+        "These channels were found to be missing or unauthorized in your legacy Slack integration. If they were private channels, you'll have make sure to add the Sentry bot to these channels. Otherwise you may want update your alert rules accordingly.":
+          [
+            '在您的旧版 Slack 集成中发现这些渠道丢失或未经授权。 如果它们是您的私人频道，您必须确保将 Sentry 机器人添加到这些频道。 否则，您可能需要更新相应的报警规则。',
+          ],
+        'Crash reports powered by <a href=\\': ['崩溃报告生成由 <a href=\\'],
+        'Bitbucket-Server Setup': ['Bitbucket 服务安装'],
+        'Connect Sentry with your App': ['连接Sentry到您的应用'],
+        'Add your Bitbucket Server App credentials to Sentry.': [
+          '添加你的 Bitbucket 服务应用证书到 Sentry。',
+        ],
+        'Integration Setup Complete': ['集成安装完成'],
+        'You can safely close this window now.': ['您现在可以安全的关闭这个窗口了。'],
+        'GitHub Enterprise Setup': ['Github企业设置'],
+        'GitHub Integration Setup Failed': ['GitHub 集成设置失败'],
+        'GitLab Setup': ['GitLab安装'],
+        'Step 2: Connect Sentry with your App': ['步骤2：连接Sentry到你的应用'],
+        'Add your GitLab App credentials to Sentry.': [
+          '添加你的GitLab应用证书到Sentry。',
+        ],
+        'Back to instructions': ['返回说明'],
+        'Step 1: Create a Sentry App in GitLab': ['步骤1：在GitLab中创建一个Sentry应用'],
+        'To configure GitLab with Sentry, you will need to create a Sentry app in your GitLab instance.':
+          [
+            '为了能够将Sentry配置到Gitlab , 您需要创建一个Sentry 应用到您的Gitlab 实例中.',
+          ],
+        "You'll also need to be a maintainer or owner in GitLab. Projects owned by users are not supported.":
+          ['您还需要是 GitLab 的维护者或所有者。 不支持普通用户拥有的项目。'],
+        'Navigate to the User Settings section of your GitLab instance.': [
+          '导航至你的GitLab实例的用户设置区域。',
+        ],
+        'In the resulting form, enter the following information:': [
+          '在结果表单中，输入以下信息：',
+        ],
+        'Click Save Application.': ['点击保存应用'],
+        "In the resulting page, you'll see the Application ID and Secret. You'll need those for the next phase of setup.":
+          [
+            '在结果页面中，您将看到应用程序 ID 和密钥（Application ID & Secret）。 您将需要这些用于下一阶段的设置。',
+          ],
+        'You must complete the above steps in GitLab to connect GitLab with Sentry.': [
+          '你必须在GitLab完成上述步骤，才能完成Sentry与GitLab的连接。',
+        ],
+        'This page has expired, please refresh to view the Sentry issue': [
+          '此页面已过期，请刷新以查看Sentry问题',
+        ],
+        'This Sentry issue is not linked to a Jira issue': [
+          '这个 Sentry 问题没有链接到一个 Jira 问题',
+        ],
+        'Date:': ['日期：'],
+        'Release:': ['释放：'],
+        'Jira-Server Setup': ['Jira-服务安装'],
+        'Add your Jira Server App credentials to Sentry.': [
+          '添加你的Jira Server应用证书到Sentry。',
+        ],
+        'Microsoft Teams Expired Link': ['微软团队过期链接'],
+        'Microsoft Teams Linked': ['微软团队链接'],
+        'Your Microsoft Teams identity has been associated with your Sentry account. You may now take actions through Microsoft Teams.':
+          [
+            '您的 Microsoft Teams 身份已经关联你的 Sentry 帐户。现在你可以通过 Microsoft Teams 进行操作。',
+          ],
+        'Microsoft Teams No Identities': ['微软团队 无身份'],
+        'Your Microsoft Teams identity is not associated with this Sentry account.': [
+          '您的 Microsoft 团队身份不与此Sentry帐户关联。',
+        ],
+        "Confirm that you'd like to unlink your Microsoft Teams identity from your Sentry account.":
+          ['确认你想要取消你的 Microsoft 团队身份与你的Sentry帐户的链接。'],
+        'Unlink with Microsoft Teams': ['取消与微软团队的链接'],
+        'Microsoft Teams Unlinked': ['微软团队未链接'],
+        'Your Microsoft Teams identity has been unassociated with your Sentry account.': [
+          '您的 Microsoft 团队身份已与您的Sentry帐户取消关联。',
+        ],
+        'Slack Expired Link': ['Slack失效链接'],
+        'Link Team': ['关联团队'],
+        'Slack Linked': ['Slack已关联'],
+        'Your Slack identity has been associated with your Sentry account. You may now take actions through Slack!':
+          ['你的Slack身份已经关联至你的Sentry账户，现在你可以通过Slack进行操作'],
+        'Slack Migration': ['Slack集成'],
+        'Time For An Upgrade': ['是时候升级了'],
+        'Well, look who has private channels with alert rules.': [
+          '好吧，看看谁拥有带有警报规则的私有频道。',
+        ],
+        'Next Steps': ['下一步'],
+        "\n                See, that wasn't so bad. Just click <strong>Upgrade</strong> to start the authentication flow for the new Slack app.\n                ":
+          [
+            '\n                看，这并没有那么糟糕，只需单击 <strong>升级</strong> 即可启动新 Slack 应用程序的身份验证流程。\n                ',
+          ],
+        '\n                Have questions? Emails us at <a href="mailto:partners@sentry.io?subject=Slack Upgrade"><strong>partners@sentry.io</strong></a>\n                ':
+          [
+            '\n                有疑问？通过邮箱 <a href="mailto:partners@sentry.io?subject=Slack Upgrade"><strong>partners@sentry.io</strong></a>联系我们\n                ',
+          ],
+        "Farewell to Slack's legacy workspace apps.": [
+          '告别 Slack 的传统工作区应用程序。',
+        ],
+        "The time has come, Slack's deprecated its workspace apps. And with it, goes our legacy Slack integration.":
+          [
+            '时机已到，Slack 已弃用其工作区应用程序。 随之而来的是我们传统的 Slack 集成。',
+          ],
+        "But don't worry, we built you a whole new Sentry-Slack integration. Just authorize the app, and then you can get back to doing whatever it is you came here to do.":
+          [
+            '但别担心，我们为您打造了一个全新的 Sentry-Slack 集成。 只需授权该应用程序，然后您就可以重新开始做您来到这里要做的任何事情。',
+          ],
+        'Your existing alert rules may need some love.': [
+          '您可能需要关注一下现有的警报规则。',
+        ],
+        "If you don't have private channels in your alert rules, just authorize our new Slack app and then you can get on with your life.":
+          [
+            '如果你的警报规则中没有私人频道，只需授权我们新的 Slack 应用，然后就可以继续你的生活。',
+          ],
+        "Once you've upgraded your integration, all other organizations with the same workspace will be upgraded as well.":
+          ['升级集成后，具有相同工作区的所有其他组织也将升级。'],
+        'Unlink Team': ['取消关联团队'],
+        'Team Unlinked': ['团队 未关联'],
+        'Slack Unlinked': ['Slack 未关联'],
+        'Your Slack identity has been unassociated with your Sentry account.': [
+          '您的Slack身份已与您的Sentry账户取消关联.',
+        ],
+        'Azure DevOps Setup': ['Azure DevOps安装'],
+        'No accounts found. Please check that you are an Azure DevOps account owner.': [
+          '没有找到帐户。 请检查您是否是 Azure DevOps 帐户的所有者。',
+        ],
+        'Configure Azure DevOps to use with Sentry.': ['配置Azure DevOps使用Sentry。'],
+        'No Organization Access': ['没有组织权限'],
+        'You do not have access to any organizations within Sentry.': [
+          '您无权访问Sentry内的任何组织',
+        ],
+        'If you were expecting otherwise, this may be due to a configuration change in the organization. Please check your email inbox for an invite link to rejoin the organization.':
+          [
+            '如果您另有预期，这可能是由于组织中的配置更改。请检查您的 电子邮箱 收件箱以获取重新加入组织的邀请链接。',
+          ],
+        'Alternatively, reach out to an admin in your organization to re-invite you using ':
+          ['或者，联系您单位中的管理员，使用'],
+        'this guide': ['这份指引'],
+        'If you need to make changes to your user account, ': [
+          '如果您需要对您的用户账户作出变更，',
+        ],
+        'please click here.': ['请点击这里'],
+        'Authorize Application': ['已授权应用'],
+        'Authorization Error': ['授权出错'],
+        'Test Configuration': ['测试配置'],
+        'Please correct the errors below.': ['请改正以下错误：'],
+        'IP Address:': ['IP 地址：'],
+        'Email:': ['Email:'],
+        'Setup Error': ['安装出错'],
+        'Create New': ['新建'],
+        'Link Existing': ['连接已有项'],
+        'You still need to <a href="%(link)s">associate an identity</a> with %(title)s before you can\n        create issues with this service.':
+          [
+            '你需要把<a href="%(link)s”>身份</a>与%(title)s绑定起来，才能使用这项服务创建事件。',
+          ],
+        'Your server administrator will need to configure authentication with\n            <strong>%(auth_provider)s</strong> before you can use this plugin.':
+          [
+            '如需使用此插件，你的服务器管理员需要用<strong>%(auth_provider)s</strong>来配置验证服务。',
+          ],
+        'You still need to <a href="%(plugin_link)s">configure this plugin</a>\n                before you can use it.':
+          ['您需要<a href="%(plugin_link)s">配置插件</a>来使用它'],
+        'Changes to your configuration were saved successfully.': [
+          '对配置的修改已保存成功。',
+        ],
+        'Reactivate Account': ['重新激活账户'],
+        'Sentry - Setup Wizard': ['Sentry - 安装向导'],
+        b: ['b'],
+        k: ['k'],
+        '0 minutes': ['0分钟'],
+        'just now': ['刚刚'],
+        yesterday: ['昨天'],
+        '%s ago': ['%s ago'],
+        'created at': ['创建于'],
+        'last used at': ['最后使用于'],
+        authenticator: ['验证器'],
+        authenticators: ['验证器'],
+        'email address': ['Email 地址'],
+        username: ['用户名'],
+        'staff status': ['员工状态'],
+        'Designates whether the user can log into this admin site.': [
+          '是否允许该用户登陆该管理界面。',
+        ],
+        active: ['激活'],
+        'Designates whether this user should be treated as active. Unselect this instead of deleting accounts.':
+          ['是否使该用户处于激活状态。您可以取消选择而不是删除帐户。'],
+        'superuser status': ['超级用户状态'],
+        'Designates that this user has all permissions without explicitly assigning them.':
+          ['是否允许该用户拥有所有未特别分配给他的权限。'],
+        managed: ['管理'],
+        'Designates whether this user should be treated as managed. Select this to disallow the user from modifying their account (username, password, etc).':
+          [
+            '是否将这个用户指定为受管理账户。选择该项将防止用户修改其账户（用户名，密码等）。',
+          ],
+        'is sentry app': ['是Sentry应用'],
+        'Designates whether this user is the entity used for Permissionson behalf of a Sentry App. Cannot login or use Sentry like anormal User would.':
+          [
+            '指定此用户是否为代表 Sentry 应用程序用于 权限 的实体。 无法像普通用户那样登录或使用 Sentry。',
+          ],
+        'password expired': ['密码已过期'],
+        'If set to true then the user needs to change the password on next sign in.': [
+          '如果设置为真，用户下次登录时必须修改密码。',
+        ],
+        'date of last password change': ['上一次密码修改时间'],
+        'The date the password was changed last.': ['上一次密码修改时间'],
+        'date joined': ['加入日期'],
+        'last active': ['最后激活'],
+        users: ['用户'],
+        verified: ['已认证'],
+        'Designates whether this user has confirmed their email.': [
+          '指定该用户是否已确认 email。',
+        ],
+        'The link you followed is invalid or expired.': ['链接已失效或过期。'],
+        'Please enter a correct %(username)s and password. Note that both fields may be case-sensitive.':
+          ['请输入正确的%(username)s和密码。请注意，用户名和密码是大小写敏感的。'],
+        'You have made too many failed authentication attempts. Please try again later.':
+          ['验证失败太多次，请稍后再试。'],
+        "Your Web browser doesn't appear to have cookies enabled. Cookies are required for logging in.":
+          ['您的浏览器似乎没用启用cookies。登录需要Cookies。'],
+        'This account is inactive.': ['此账号已经失效。'],
+        'Email updates': ['邮件更新'],
+        'An account is already registered with that email address.': [
+          '该电子邮件地址已经注册过账户。',
+        ],
+        'The account you are trying to recover is managed and does not support password recovery.':
+          ['你尝试找回的这个账户不支持密码找回功能。'],
+        'New Email': ['新 Email'],
+        'Current password': ['当前密码'],
+        'You will need to enter your current account password to make changes.': [
+          '需要输入当前密码来进行变更。',
+        ],
+        'The password you entered is not correct.': ['输入的密码不正确。'],
+        'You must confirm your current password to make changes.': [
+          '需要确认当前密码来进行变更。',
+        ],
+        'Authenticator code': ['认证码'],
+        'Authenticator or recovery code': ['认证或恢复码'],
+        'Invalid username': ['无效的用户名'],
+        'Not set': ['未设置'],
+        'There was an error confirming your email. Please try again or visit your Account Settings to resend the verification email.':
+          ['确认电子邮件时发生错误。请进入你的账户设置重新发送验证邮件。'],
+        'There was an error confirming your email.': ['确认邮件时发生错误。'],
+        'A verification email has been sent to %s.': ['验证邮件已经发送给 %s。'],
+        'Your email (%s) has already been verified.': ['你的电子邮件 (%s) 已确认。'],
+        'Thanks for confirming your email': ['感谢您确认电子邮件'],
+        'The organization does not exist or does not have Single Sign-On enabled.': [
+          '该组织不存在或没有启用单点登录。',
+        ],
+        'An unknown error occurred while submitting your report. Please try again.': [
+          '提交报告时发生错误，请重试。',
+        ],
+        'Some fields were invalid. Please correct the errors and try again.': [
+          '某些字段填写无效。请更正错误并重试。',
+        ],
+        'Your feedback has been sent. Thank you!': ['您的反馈已发送。谢谢！'],
+        "It looks like we're having issues.": ['看来，我们有些问题。'],
+        'Our team has been notified.': ['已提醒我们的团队。'],
+        "If you'd like to help, tell us what happened below.": [
+          '如果您愿意帮忙，您可以在下方告诉我们发生了什么。',
+        ],
+        'What happened?': ['发生了什么？'],
+        'Submit Crash Report': ['提交崩溃报告'],
+        'jane@example.com': ['jane@example.com'],
+        "I clicked on 'X' and then hit 'Confirm'": ["我点了 'X' 然后触发了 '提交'"],
+        'The SSO feature is not enabled for this organization.': [
+          '该组织未启用 SSO 登录功能。',
+        ],
+        'SSO authentication has been disabled.': ['SSO 登录已禁用。'],
+        'A reminder email has been sent to members who have not yet linked their accounts.':
+          ['已向所有尚未链接账户的成员发送提醒邮件。'],
+        'Require SSO': ['需要 SSO'],
+        'Require members use a valid linked SSO account to access this organization': [
+          '成员需要使用已有效链接 SSO 的账户来访问该组织',
+        ],
+        'Enable SCIM': ['启用SCIM'],
+        'Enable SCIM to manage Memberships and Teams via your Provider': [
+          '使 SCIM 能够通过提供商管理成员资格和团队',
+        ],
+        'The default role new members will receive when logging in for the first time.': [
+          '新成员第一次登录时将接到的默认角色。',
+        ],
+        'Invalid request.': ['非法请求。'],
+        'Invalid confirmation code. Try again.': ['无效的确认码，请重试。'],
+        'Unable to update dashboard': ['无法更新面板'],
+        'Unable to delete dashboard': ['无法删除面板'],
+        'Unable to fetch dashboards': ['无法提取仪表板'],
+        'Unable to create dashboard': ['无法创建面板'],
+        'Unable to load dashboard': ['无法加载面板'],
+        'You are viewing a frontend deploy preview of [commitLink] ([branchLink])': [
+          '您正在查看 [commitLink] ([branchLink]) 的前端部署视图',
+        ],
+        'You are developing against production Sentry API, please BE CAREFUL, as your changes will affect production data.':
+          ['您正在使用生产Sentry API进行开发，请务必小心，因为您的改动将会影响线上数据'],
+        'Changed [fieldName] from [oldValue] to [newValue]': [
+          '修改[fieldName]：[oldValue] 至 [newValue]',
+        ],
+        'Unable to restore [fieldName] from [oldValue] to [newValue]': [
+          '无法恢复 [fieldName]：[oldValue] 至 [newValue]',
+        ],
+        'Restored [fieldName] from [oldValue] to [newValue]': [
+          '恢复 [fieldName]：[oldValue] 至 [newValue]',
+        ],
+        'Error fetching team key transactions': ['提取团队关键事务时出错'],
+        'Saving changes…': ['正在保存更改...'],
+        'Unable to update key transaction': ['无法更新键事务'],
+        'Error transferring [project]. [message]': ['出现传输错误 [project]. [message]'],
+        'Restoring Release…': ['正在恢复发布版本...'],
+        'Release was successfully restored.': ['发布版本已成功恢复'],
+        'Release could not be be restored.': ['发布版本无法恢复'],
+        'Archiving Release…': ['正在归档发布版本...'],
+        'Release was successfully archived.': ['发布版本已成功归档'],
+        'Release could not be be archived.': ['发布版本无法归档'],
+        'Copy to Clipboard': ['复制到剪贴板'],
+        'Got it': ['明白了'],
+        Archive: ['归档'],
+        'one user…': ['一个用户...'],
+        '%s users…': ['%s 个用户'],
+        Unignore: ['取消忽略'],
+        'Silences alerts for this issue and removes it from the issue stream by default.':
+          ['默认情况下，将此问题的警报静音，并将其从问题流中删除。'],
+        'one time…': ['一次...'],
+        '%s times…': ['%s 次…'],
+        'More resolve options': ['更多处理选项'],
+        'You can delete this comment due to your superuser status': [
+          '由于您的超级用户状态，您可以删除此评论',
+        ],
+        'Division by 0 is not allowed': ['不允许被0除'],
+        'Maximum operators exceeded': ['最大操作超限'],
+        'Based on [commit:commit data]': ['基于[提交: 提交数据]'],
+        'Matching Issue Owners Rule': ['匹配问题所有者规则'],
+        'You can auto-assign issues by adding [issueOwners:Issue Owner rules].': [
+          '您可以通过添加 [问题所有者：问题所有者规则] 来自动分配问题。',
+        ],
+        'Suggestion: [name]': ['建议：[名字]'],
+        ' + %s others': ['%s其他'],
+        Suggested: ['建议'],
+        'Project Thresholds': ['项目阈值'],
+        'Gauge performance using different metrics for each project. Set response time thresholds, per project, for the Apdex and User Misery Scores in each project’s Performance settings.':
+          [
+            '为每个项目使用不同的指标来衡量绩效。在每个项目的性能设置中为每个项目的 Apdex 和用户痛苦分数设置响应时间阈值。',
+          ],
+        'Response Time Thresholds': ['响应时间阈值'],
+        'Use this menu to adjust each transaction’s satisfactory response time threshold, which can vary across transactions. These thresholds are used to calculate Apdex and User Misery, metrics that indicate how satisfied and miserable users are, respectively.':
+          [
+            '使用此菜单可以调整每个事务的满意响应时间阈值，该阈值可能因事务而异。这些阈值用于计算Apdex和用户痛苦，这两个指标分别表示用户的满意度和痛苦程度。',
+          ],
+        'Create a project for any type of application you want to monitor.': [
+          '为需要监控的任何类型应用创建项目',
+        ],
+        'Track the health of every release, see differences between releases from crash analytics to adoption rates.':
+          ['跟踪每个版本的运行状况，查看版本之间从崩溃分析到采用率的差异。'],
+        'Query and unlock insights into the health of your entire system and get answers to critical business questions all in one place.':
+          ['查询并解锁对整个系统运行状况的见解，并在一个位置获得关键业务问题的答案。'],
+        'Today only admins in your organization can create alert rules but we recommend [link:allowing members to create alerts], too.':
+          [
+            '目前，只有组织中的管理员才能创建警报规则，但我们也建议 [链接：允许成员创建警报]。',
+          ],
+        Allow: ['允许'],
+        'Event Breakdown': ['事件细分'],
+        'The event breakdown shows you the breakdown of event types within a trace.': [
+          '事件细分显示跟踪中事件类型的细分。',
+        ],
+        'Filter by Span Operation': ['按跨度操作筛选'],
+        'You can now filter these transaction events based on http, db, browser or resource operation.':
+          ['您现在可以根据 http、db、浏览器或资源操作过滤这些事务事件。'],
+        'Suspect Tags': ['可疑标签'],
+        "See which tags often correspond to slower transactions. You'll want to investigate these more. [link:Learn more]":
+          [
+            '查看哪些标签通常对应于较慢的事务。您需要进一步调查这些内容。[友情链接：了解更多]',
+          ],
+        '[currentStepCount] of [totalStepCount]': ['[当前步数] 的 [总步数]'],
+        'There was an error saving your preferences.': ['保存首选项时出错。'],
+        'Use default avatar': ['使用默认头像'],
+        'Please upload an image smaller than [size]px by [size]px.': [
+          '请上传小于 [size]px x x [size]px 的图片。',
+        ],
+        '[upload:Upload an image] to get started.': ['[上传：上传图片] 以开始使用。'],
+        'Open In Issues': ['打开方式问题'],
+        'This feature is internal and available for QA purposes': [
+          '此功能是内置的，可用于 QA 目的',
+        ],
+        'This feature is available for early adopters and may change': [
+          '此功能适用于早期采用者，可能会更改',
+        ],
+        'This feature is new! Try it out and let us know what you think': [
+          '此功能是新功能！尝试一下，让我们知道您的想法',
+        ],
+        alpha: ['阿尔法'],
+        new: ['新增功能'],
+        '%s has an invalid date range. Please try a more recent date range.': [
+          '%s 的日期范围无效。请尝试最近的日期范围。',
+        ],
+        seconds: ['秒钟'],
+        minutes: ['分钟'],
+        hours: ['小时'],
+        days: ['天'],
+        'Error loading health data': ['加载运行状况数据时出错'],
+        'Show %s hidden items': ['显示%s隐藏的项目'],
+        'Loading...': ['加载中...'],
+        'The email [actorEmail] is not a member of your organization. [inviteUser:Invite] them or link additional emails in [accountSettings:account settings].':
+          [
+            '电子邮箱 [actorEmail] 不是组织的成员。[邀请用户：邀请]他们或在[帐户设置：帐户设置]中链接其他电子邮箱。',
+          ],
+        'Select All': ['选择全部'],
+        'Select a configuration to continue': ['选择要继续的配置'],
+        'Select a Project to continue': ['选择一个项目以继续'],
+        '[providerName] Configurations': ['[提供商名称]配置'],
+        'Successfully updated organization settings': ['已成功更新组织设置'],
+        'Unable to update organization settings': ['无法更新组织设置'],
+        'Ask your organization owner or manager to [settingsLink:enable alerts access] for you.':
+          ['请您的组织所有者或管理员为您 [设置链接：启用警报访问权限]。'],
+        'Create Alert': ['创建警报'],
+        "Sit tight. We'll shoot you an email when your data is ready for download.": [
+          '耐心等待。当您的数据可供下载时，我们会向您发送一封电子邮箱。',
+        ],
+        "It looks like we're already working on it. Sit tight, we'll email you.": [
+          '看起来我们已经在努力了。请坐，我们会给您发电子邮箱。',
+        ],
+        'Request a Demo': ['申请演示项目'],
+        'Sign Up': ['登记'],
+        'Requires discover feature.': ['需要发现功能。'],
+        'User Misery': ['用户痛苦'],
+        'Web Vitals': ['网页指标'],
+        'Span Operations': ['跨度操作'],
+        Apdex: ['顶点'],
+        'Frontend Performance': ['前端性能'],
+        'Backend Performance': ['后端性能'],
+        'Mobile Performance': ['移动性能'],
+        '[Unknown] Performance': ['[未知]性能'],
+        'For more performance metrics, specify which platform this project is using in [link]':
+          ['有关更多性能指标，请在 [link] 中指定此项目正在使用的平台'],
+        'project settings.': ['项目设置。'],
+        'All Releases': ['所有版本'],
+        'This Release': ['此版本'],
+        'No transactions found': ['未找到交易'],
+        'operation duration': ['操作持续时间'],
+        'Span durations are summed over the course of an entire transaction. Any overlapping spans are only counted once.':
+          ['跨度持续时间是在整个事务过程中求和的。任何重叠跨度仅计数一次。'],
+        'Searching…': ['搜索。。。'],
+        'If all else fails, [link:contact us] with more details': [
+          '如果所有其他方法都失败了，[链接：联系我们]提供更多细节',
+        ],
+        'in [location]': ['在 [位置]'],
+        'This is an attachment containing a session replay. [replayLink:View the replay] or [jsonLink:view the raw JSON].':
+          ['这是包含会话重播的附件。[重播链接：查看重播]或[json链接：查看原始JSON]。'],
+        Send: ['发送'],
+        Later: ['之后'],
+        Generic: ['通用'],
+        Relative: ['相对'],
+        Absolute: ['绝对'],
+        Session: ['会期'],
+        Types: ['类型'],
+        Levels: ['水平'],
+        'App Build': ['应用构建'],
+        'External Free Storage': ['外部免费存储'],
+        Family: ['家庭'],
+        'Model Id': ['型号编号'],
+        'NPOT Support': ['非壶支持'],
+        'Vendor ID': ['供应商编号'],
+        Index: ['索引'],
+        'Latest State': ['最新状态'],
+        State: ['州'],
+        'Trace ID': ['跟踪标识'],
+        'Span ID': ['跨度标识'],
+        'Parent Span ID': ['父跨度 ID'],
+        'Operation Name': ['操作名称'],
+        'before this event': ['在此事件之前'],
+        Replay: ['重播'],
+        Runtime: ['运行时'],
+        'Trace Details': ['跟踪详细信息'],
+        'Application State': ['应用程序状态'],
+        'Insufficient permissions to preview attachments': ['预览附件的权限不足'],
+        'This attachment cannot be previewed': ['无法预览此附件'],
+        'File Name': ['文件名'],
+        'Your limit of stored crash reports has been reached for this issue. [attachmentsLink: View crashes] or [settingsLink: configure limit].':
+          [
+            '已达到此问题的存储崩溃报告限制。[附件链接：视图崩溃]或[设置链接：配置限制]。',
+          ],
+        View: ['视图'],
+        'Adjusted timestamps by %s': ['按 %s 调整时间戳'],
+        Throughput: ['吞吐量'],
+        Operation: ['操作'],
+        'View Transaction': ['查看交易'],
+        'View screenshot': ['查看屏幕截图'],
+        Screenshot: ['截图'],
+        'Date Created': ['创建日期'],
+        'MIME Type': ['哑剧类型'],
+        'Screenshots help identify what the user saw when the event happened': [
+          '屏幕截图有助于识别事件发生时用户看到的内容',
+        ],
+        'Are you sure you wish to delete this screenshot?': [
+          '您确定要删除此屏幕截图吗？',
+        ],
+        'Fails threshold at %s.': ['在 %s 处失败阈值。'],
+        'These vitals were collected using an outdated SDK version and may not be accurate. To ensure accurate web vitals in new transaction events, please update your SDK to the latest version.':
+          [
+            '这些指标是使用过时的 SDK 版本收集的，可能不准确。为确保新交易事件中的 Web 指标准确无误，请将您的 SDK 更新到最新版本。',
+          ],
+        'Mobile Vitals': ['移动生命体征'],
+        'Click here to experiment with other grouping configs': [
+          '单击此处尝试其他分组配置',
+        ],
+        'Contributing variant': ['贡献变体'],
+        'Non-contributing variant: %s': ['无贡献变体： %s'],
+        'Non-contributing variant': ['无贡献变体'],
+        Nothing: ['无'],
+        'Contributing values': ['贡献价值'],
+        'Fingerprint rule': ['指纹规则'],
+        'The server-side fingerprinting rule that produced the fingerprint.': [
+          '生成指纹的服务器端指纹规则。',
+        ],
+        'Client fingerprint values': ['客户端指纹值'],
+        'The client sent a fingerprint that was overridden by a server-side fingerprinting rule.':
+          ['客户端发送的指纹已被服务器端指纹规则覆盖。'],
+        'hashing algorithm produced a hash that does not match the event': [
+          '哈希算法生成与事件不匹配的哈希',
+        ],
+        'Uses a complex grouping algorithm taking event data into account': [
+          '使用考虑事件数据的复杂分组算法',
+        ],
+        'Overrides the default grouping by a custom fingerprinting rule': [
+          '通过自定义指纹规则覆盖默认分组',
+        ],
+        'Uses a complex grouping algorithm taking event data and a fingerprint into account':
+          ['使用复杂的分组算法，考虑事件数据和指纹'],
+        nothing: ['无'],
+        generic: ['通用'],
+        Fatal: ['致命'],
+        Undefined: ['定义'],
+        'Switch to absolute': ['切换到绝对值'],
+        'Switch to relative': ['切换到相对'],
+        'Sorry, no breadcrumbs match your search query': [
+          '抱歉，没有与您的搜索查询匹配的痕迹导航',
+        ],
+        'Reset filter': ['重置过滤器'],
+        'Clear search bar': ['清除搜索栏'],
+        'There are no breadcrumbs to be displayed': ['没有要显示的面包屑'],
+        'Search breadcrumbs': ['搜索痕迹导航'],
+        'Some frames appear to be minified. Did you configure the [plugin]?': [
+          '某些帧似乎已缩小。您是否配置了 [插件]？',
+        ],
+        'from [exceptionModule]': ['从 [异常模块]'],
+        'No relevant stack trace has been found!': ['未找到相关的堆栈跟踪！'],
+        'No app only stack trace has been found!': ['未找到仅限应用程序的堆栈跟踪！'],
+        'The debug information file for this image could not be downloaded': [
+          '无法下载此映像的调试信息文件',
+        ],
+        'The debug information file for this image failed to process': [
+          '无法处理此映像的调试信息文件',
+        ],
+        'No debug information could be found in any of the specified sources': [
+          '在任何指定的源中都找不到调试信息',
+        ],
+        'Debug information for this image was found and successfully processed': [
+          '找到并成功处理此映像的调试信息',
+        ],
+        'The image was not required for processing the stack trace': [
+          '处理堆栈跟踪不需要该映像',
+        ],
+        'An internal error occurred while handling this image': [
+          '处理此图像时发生内部错误',
+        ],
+        Missing: ['失踪'],
+        Ok: ['还行'],
+        Unreferenced: ['未引用'],
+        'You do not have permission to download debug files': [
+          '您没有下载调试文件的权限',
+        ],
+        'You do not have permission to delete debug files': ['您没有删除调试文件的权限'],
+        'Actions not available because this debug file was deleted': [
+          '操作不可用，因为此调试文件已删除',
+        ],
+        'This debug file was uploaded [when] after this event.': [
+          '此调试文件是[在]此事件之后上传的。',
+        ],
+        'Uploaded [timesince]': ['上传 [时间自]'],
+        'This debug file was uploaded [when] before this event. It takes up to 1 hour for new files to propagate. To apply new debug information, reprocess this issue.':
+          [
+            '此调试文件是[在]此事件之前上传的。新文件最多需要 1 小时才能传播。若要应用新的调试信息，请重新处理此问题。',
+          ],
+        'This debug file was uploaded [when] before this event. It takes up to 1 hour for new files to propagate.':
+          ['此调试文件是[在]此事件之前上传的。新文件最多需要 1 小时才能传播。'],
+        'This debug file was uploaded [when] after this event. To apply new debug information, reprocess this issue.':
+          ['此调试文件是[在]此事件之后上传的。若要应用新的调试信息，请重新处理此问题。'],
+        Failed: ['失败'],
+        'Not Found': ['未找到'],
+        Unapplied: ['未应用'],
+        debug: ['调试'],
+        'Debug information provides function names and resolves inlined frames during symbolication':
+          ['调试信息在符号化期间提供函数名称并解析内联帧'],
+        sources: ['来源'],
+        'Source code information allows Sentry to display source code context for stack frames':
+          ['源代码信息允许Sentry显示堆栈帧的源代码上下文'],
+        symtab: ['符号选项卡'],
+        unwind: ['放松'],
+        'Stack unwinding information improves the quality of stack traces extracted from minidumps':
+          ['堆栈展开信息提高了从小型转储中提取的堆栈跟踪的质量'],
+        "This debug information file is from Sentry's internal symbol server for this project":
+          ['此调试信息文件来自此项目的 Sentry 内部符号服务器'],
+        'This debug information file is from a built-in symbol server': [
+          '此调试信息文件来自内置符号服务器',
+        ],
+        'This debug information file is from a custom symbol server': [
+          '此调试信息文件来自自定义符号服务器',
+        ],
+        'Download Details': ['下载详情'],
+        'Permission Error': ['权限错误'],
+        'This file was deleted after the issue was processed.': [
+          '处理问题后，此文件已删除。',
+        ],
+        'This issue was processed before this debug information file was available. To apply new debug information, reprocess this issue.':
+          [
+            '在此调试信息文件可用之前，已处理此问题。若要应用新的调试信息，请重新处理此问题。',
+          ],
+        'This issue was processed before this debug information file was available': [
+          '在此调试信息文件可用之前，已处理此问题',
+        ],
+        'Sorry, no debug files match your search query': [
+          '抱歉，没有与您的搜索查询匹配的调试文件',
+        ],
+        'There are no debug files to be displayed': ['没有要显示的调试文件'],
+        'Debug File Candidates': ['调试文件候选项'],
+        'These are the Debug Information Files (DIFs) corresponding to this image which have been looked up on [docLink:symbol servers] during the processing of the stacktrace.':
+          [
+            '这些是与此映像对应的调试信息文件 （DIF），在处理堆栈跟踪期间已在 [docLink：符号服务器] 上查找。',
+          ],
+        Source: ['源'],
+        'Search debug file candidates': ['搜索调试文件候选项'],
+        Information: ['信息'],
+        'Address Range': ['地址范围'],
+        'Debug File': ['调试文件'],
+        'Code ID': ['代码编号'],
+        'Code File': ['代码文件'],
+        Processing: ['加工'],
+        Sentry: ['Sentry'],
+        'An error occurred while deleting the debug file.': ['删除调试文件时出错。'],
+        Image: ['图像'],
+        'Search for this debug file in all images for the %s project': [
+          '在%s项目的所有图像中搜索此调试文件',
+        ],
+        'Open in Settings': ['在“设置”中打开'],
+        'You’ve uploaded new debug files. Reprocess events in this issue to view a better stack trace':
+          ['您已上传新的调试文件。重新处理此问题中的事件以查看更好的堆栈跟踪'],
+        'This event cannot be reprocessed because the event has not been found': [
+          '无法重新处理此事件，因为尚未找到该事件',
+        ],
+        'This event cannot be reprocessed because a required attachment is missing': [
+          '无法重新处理此事件，因为缺少所需的附件',
+        ],
+        'This event cannot be reprocessed': ['无法重新处理此事件'],
+        'Sorry, no images match your search query': [
+          '抱歉，没有与您的搜索查询匹配的图片',
+        ],
+        'There are no images to be displayed': ['没有要显示的图像'],
+        'Search images loaded': ['搜索已加载的图像'],
+        'Stack Unwinding': ['烟囱放卷'],
+        'Stack Trace': ['堆栈跟踪'],
+        Culture: ['文化'],
+        'This frame appears in all other events related to this issue': [
+          '此帧出现在与此问题相关的所有其他事件中',
+        ],
+        'Frame repeated %s times': ['帧重复 %s 次'],
+        'Go to Images Loaded': ['转到已加载的图像'],
+        'Stack trace configuration saved.': ['堆栈跟踪配置已保存。'],
+        'Expand function details': ['展开函数详细信息'],
+        'Hide function details': ['隐藏功能详细信息'],
+        'Inline frame, found by stack scanning': ['内联框架，通过堆栈扫描找到'],
+        'Inline frame': ['内联框架'],
+        'Crashed in non-app': ['在非应用中崩溃'],
+        'The symbol was not found within the debug file.': ['在调试文件中找不到该符号。'],
+        'No image is specified for the address of the frame.': [
+          '没有为帧的地址指定图像。',
+        ],
+        'The debug file could not be retrieved from any of the sources.': [
+          '无法从任何源检索调试文件。',
+        ],
+        'The retrieved debug file could not be processed.': [
+          '无法处理检索到的调试文件。',
+        ],
+        'Called from': ['从 调用'],
+        'No or unknown stacktrace': ['无堆栈跟踪或未知堆栈跟踪'],
+        '%s Active Filters': ['%s 活动筛选器'],
+        'Search for spans': ['搜索跨度'],
+        'Requires Manual Instrumentation': ['需要手动检测'],
+        'For in-depth instructions on setting up tracing, view [docLink:our documentation].':
+          ['有关设置跟踪的深入说明，请查看 [docLink：我们的文档]。'],
+        'To manually instrument certain regions of your code, view [docLink:our documentation].':
+          ['要手动检测代码的某些区域，请查看 [docLink：我们的文档]。'],
+        'Trace times are equal': ['跟踪时间相等'],
+        'Invalid view window': ['无效的视图窗口'],
+        'Equal start and end times': ['相等的开始和结束时间'],
+        'Reversed start and end times': ['反转的开始和结束时间'],
+        Regroup: ['重组'],
+        'This span is showing a direct child. Remove transaction to hide': [
+          '此跨度显示的是直接子级。删除要隐藏的交易',
+        ],
+        'This span has a direct child. Add transaction to view': [
+          '此跨度具有直接子级。添加交易记录以查看',
+        ],
+        'Loading embedded transaction': ['加载嵌入式事务'],
+        'Error loading embedded transaction': ['加载嵌入式事务时出错'],
+        'View Children': ['查看儿童'],
+        'View Summary': ['查看摘要'],
+        'This is a span that has no parent span within this transaction. It has been attached to the transaction root span by default.':
+          ['这是此事务中没有父跨度的跨度。默认情况下，它已附加到事务根跨度。'],
+        'spans out of view': ['跨度超出视野'],
+        '[numOfSpans] hidden span': ['[spansnumOfSpans] hidden span'],
+        '[numOfSpans] hidden spans': ['[spansnumOfSpans] hidden spans'],
+        'The next spans are unavailable. You may have exceeded the span limit or need to address missing instrumentation.':
+          ['下一个跨度不可用。您可能已超出跨度限制或需要解决缺少的检测问题。'],
+        'Autogrouped ': ['自动分组'],
+        ' and more': ['等等'],
+        'View Trace': ['查看跟踪'],
+        'There is no trace for this transaction': ['此事务没有痕迹'],
+        id: ['编号'],
+        'was active': ['处于活动状态'],
+        errored: ['已出错'],
+        'Thread Errored': ['线程出错'],
+        'Filter Threads': ['过滤线程'],
+        'You have no threads': ['您没有线程'],
+        'No threads found': ['未找到线程'],
+        'Errored with [crashedInfo]': ['错误与 [崩溃信息]'],
+        invalid: ['无效'],
+        redacted: ['已编辑'],
+        'Operation Breakdown': ['操作明细'],
+        'Span durations are summed over the course of an entire transaction. Any overlapping spans are only counted once. Percentages are calculated by dividing the summed span durations by the total of all span durations.':
+          [
+            '跨度持续时间是在整个事务过程中求和的。任何重叠跨度仅计数一次。百分比的计算方法是将总的跨度持续时间除以所有跨度持续时间的总和。',
+          ],
+        Assemblies: ['组件'],
+        'Unsymbolicated version not available': ['无符号化版本不可用'],
+        'Minified version not available': ['缩小版本不可用'],
+        'Only full version available': ['仅提供完整版'],
+        'Most Relevant': ['最相关'],
+        'Full Stack Trace': ['全栈跟踪'],
+        'Download raw stack trace file': ['下载原始堆栈跟踪文件'],
+        Options: ['选项'],
+        'There was an error rendering the title': ['呈现标题时出错'],
+        'This is your current [label].': ['这是您当前的 [标签]。'],
+        'Issue Link Settings': ['问题链接设置'],
+        'Read Docs': ['阅读文档'],
+        'Terms of Use': ['使用条款'],
+        'Event Processing for this project is currently degraded. Events may appear with larger delays than usual or get dropped. Please check the [link:Status] page for a potential outage.':
+          [
+            '此项目的事件处理当前已降级。事件可能会比平时出现更大的延迟或被丢弃。请查看 [链接：状态] 页面以了解潜在的中断。',
+          ],
+        'Event Processing for the [projectSlugs] projects is currently degraded. Events may appear with larger delays than usual or get dropped. Please check the [link:Status] page for a potential outage.':
+          [
+            '[projectSlugs] 项目的事件处理当前已降级。事件可能会比平时出现更大的延迟或被丢弃。请查看 [链接：状态] 页面以了解潜在的中断。',
+          ],
+        'Close Modal': ['关闭对话框'],
+        'No results found for your query': ['未找到查询的结果'],
+        '[integration] Issue': ['[集成]问题'],
+        '%s Integration': ['%s集成'],
+        'Issue Tracking': ['问题追踪'],
+        New: ['新建'],
+        Unhandled: ['未处理'],
+        'An unhandled error was detected in this Issue.': [
+          '此问题中检测到未处理的错误。',
+        ],
+        'Events in %s': ['%s 中的事件'],
+        'Events in release %s': ['版本 %s 中的事件'],
+        'When the most recent event in this issue was captured.': [
+          '捕获本期中的最新事件的时间。',
+        ],
+        'When the first event in this issue was captured.': [
+          '捕获本期中的第一个事件的时间。',
+        ],
+        'Any Environment': ['任何环境'],
+        'N/A': ['不适用'],
+        'in release ': ['发布中'],
+        'No tags found in the selected environments': ['在所选环境中未找到标记'],
+        'From %s': ['从 %s'],
+        '%s results': ['%s 结果'],
+        'No results from %s': ['%s 没有结果'],
+        Graph: ['图'],
+        'Value:': ['值:'],
+        Deprecated: ['废弃'],
+        Muted: ['静音中'],
+        '+ Create New Dashboard': ['  创建新仪表板'],
+        'Max widgets ([maxWidgets]) per dashboard reached.': [
+          '达到每个仪表板的最大小组件（[maxWidgets]）。',
+        ],
+        'Multiple queries were used to create this widget visualization. Which query would you like to view in Discover?':
+          ['多个查询用于创建此小组件可视化。您希望在“发现”中查看哪个查询？'],
+        'Full URL to the symbol server': ['符号服务器的完整 URL'],
+        'User for HTTP basic auth': ['HTTP 基本身份验证的用户'],
+        'Password for HTTP basic auth': ['HTTP 基本身份验证的密码'],
+        '(Password unchanged)': ['（密码不变）'],
+        'Clear password': ['清除密码'],
+        'Directory Layout': ['目录布局'],
+        'The layout of the folder structure.': ['文件夹结构的布局。'],
+        'Path Casing': ['路径大小写'],
+        'The case of files and folders.': ['文件和文件夹的情况。'],
+        'Save changes': ['保存更改'],
+        'Update [name] Repository': ['更新 [名称] 存储库'],
+        'Add [name] Repository': ['添加 [名称] 存储库'],
+        '(Secret Access Key unchanged)': ['（秘密访问键不变）'],
+        'Client Email': ['客户电子邮箱'],
+        'Email address of the GCS service account.': ['GCS 服务帐户的电子邮件地址。'],
+        '(Private Key unchanged)': ['（私有键不变）'],
+        'The service account key. Credentials can be managed on the [link].': [
+          '服务帐户密钥。可以在 [链接] 上管理凭据。',
+        ],
+        'The path at which files are located within this repository.': [
+          '文件在此存储库中所在的路径。',
+        ],
+        'Name of the S3 bucket. Read permissions are required to download symbols.': [
+          'S3 存储桶的名称。下载符号需要读取权限。',
+        ],
+        Region: ['地区'],
+        'The AWS region and availability zone of the bucket.': [
+          '存储桶的 AWS 区域和可用区。',
+        ],
+        'Edit Ownership Rules': ['编辑所有权规则'],
+        'Action Required': ['所需操作'],
+        'Please verify your email before [actionMessage], or [link].': [
+          '请在 [操作消息] 或 [链接] 之前验证您的电子邮箱。',
+        ],
+        'go to your email settings': ['转到您的电子邮箱设置'],
+        '%s of %s': ['%s 的 %s'],
+        'Search for documentation, FAQs, blog posts...': [
+          '搜索文档、常见问题解答、博客文章...',
+        ],
+        'Send invite': ['发送邀请'],
+        'Send invite requests (%s)': ['发送邀请请求 （%s）'],
+        'Send invite request': ['发送邀请请求'],
+        'Invite new members by email to join your organization.': [
+          '通过电子邮箱邀请新成员加入您的组织。',
+        ],
+        'Enter one or more emails': ['输入一封或多封电子邮箱'],
+        '%s invites': ['%s 邀请'],
+        '%s invite requests': ['%s 邀请请求'],
+        '[inviteRequests] pending approval, [failed] failed to send.': [
+          '[邀请请求] 等待批准，[失败] 发送失败。',
+        ],
+        '[inviteRequests] pending approval': ['[邀请请求] 待批准'],
+        'Duplicate emails between invite rows.': ['邀请行之间的重复电子邮箱。'],
+        Duplicate: ['复制'],
+        'Reprocess Events': ['重新处理事件'],
+        'Reprocessing applies new debug files and grouping enhancements to this Issue. Please consider these impacts:':
+          ['重新处理会对此问题应用新的调试文件和分组增强功能。请考虑以下影响：'],
+        "[strong:Quota applies.] Every event you choose to reprocess counts against your plan's quota. Rate limits and spike protection do not apply.":
+          [
+            '[强：配额适用。] 您选择重新处理的每个事件都会占用您的计划配额。速率限制和尖峰保护不适用。',
+          ],
+        '[strong:Attachment storage required.] If your events come from minidumps or unreal crash reports, you must have [link:attachment storage] enabled.':
+          [
+            '[强：需要附件存储。] 如果事件来自小型转储或虚幻崩溃报告，则必须启用 [链接：附件存储]。',
+          ],
+        'Please wait one hour after upload before attempting to reprocess missing debug files.':
+          ['请在上传后等待一小时，然后再尝试重新处理丢失的调试文件。'],
+        'For more information, please refer to [link:the documentation.]': [
+          '有关详细信息，请参阅 [链接：文档。]',
+        ],
+        'Failed to reprocess. Please check your input.': [
+          '无法重新处理。请检查您的输入。',
+        ],
+        'Number of events to be reprocessed': ['要重新处理的事件数'],
+        'If you set a limit, we will reprocess your most recent events.': [
+          '如果您设置了限制，我们将重新处理您最近的事件。',
+        ],
+        'Reprocess all events': ['重新处理所有事件'],
+        'Remaining events': ['剩余事件'],
+        'What to do with the events that are not reprocessed.': [
+          '如何处理未重新处理的事件。',
+        ],
+        Keep: ['保持'],
+        '[read] and [write] access to [resources] resources': [
+          '对 [资源] 资源的 [读取] 和 [写入] 访问权限',
+        ],
+        '[admin] access to [resources] resources': ['[管理员] 对 [资源] 资源的访问权限'],
+        'Authored By %s': ['作者 %s'],
+        '[read] access to [resources] resources': ['[读取] 访问 [资源] 资源'],
+        'Request to publish %s successful.': ['请求发布 %s 成功。'],
+        'Request to publish [app] fails. [detail]': ['请求发布 [应用] 失败。[详细]'],
+        'Publish Request Questionnaire': ['发布请求调查问卷'],
+        'Request Publication': ['请求发布'],
+        'Team request sent for approval': ['团队请求已发送以供审批'],
+        'Edit Widget': ['编辑小部件'],
+        'event id': ['事件 ID'],
+        'You need at least one project to use this view': [
+          '至少需要一个项目才能使用此视图',
+        ],
+        Skip: ['跳过'],
+        Install: ['安装'],
+        Tracing: ['追踪'],
+        'Waiting for event': ['等待事件中'],
+        'Some tasks should be completed before completing these tasks': [
+          '有些任务应在完成这些任务之前完成',
+        ],
+        Completed: ['完成'],
+        '[requisite] before completing this task': ['[必需] 在完成此任务之前'],
+        Start: ['开始'],
+        'No user was associated with completing this task': [
+          '没有用户与完成此任务相关联',
+        ],
+        'Invite your team': ['邀请你的团队'],
+        'Create another project': ['创建另一个项目'],
+        'Upload source maps': ['上传源地图'],
+        Reset: ['重置'],
+        'There are no items to display': ['没有要显示的项目'],
+        'My Teams': ['我的团队'],
+        'Filter Platforms': ['过滤平台'],
+        'This plugin is considered beta and may change in the future.': [
+          '此插件被认为是测试版，将来可能会更改。',
+        ],
+        Samples: ['例子'],
+        OS: ['操作系统'],
+        'Project:': ['项目：'],
+        'Errors:': ['错误：'],
+        Errors: ['错误'],
+        'Seen By': ['发现者：'],
+        Explore: ['浏览'],
+        weeks: ['星期'],
+        Transactions: ['交易'],
+        Theme: ['主题'],
+        '%s minutes': ['%s 分钟'],
+        '%s days': ['%s 天'],
+        '%s hours': ['%s 小时'],
+        'Team Slug': ['团队Slug'],
+        Manual: ['手动'],
+        'Debug Symbols': ['Debug 标识'],
+        Examples: ['示例'],
+        Java: ['Java'],
+        'Manual Setup': ['手动设置'],
+        'Source Maps': ['源代码映射'],
+        'Events per minute': ['每分钟事件数'],
+        Bar: ['柱状图'],
+        Line: ['折线图'],
+        Exclude: ['排除'],
+        Include: ['包括'],
+        'Request Time': ['请求时间'],
+        'App Start Cold': ['App 冷启动'],
+        'First Paint': ['首屏'],
+        'App Start Warm': ['App 热启动'],
+        'Error copying to clipboard': ['复制到剪贴板时出错'],
+        'Copied to clipboard': ['复制到剪贴板'],
+        'Verify Email Address': ['认证电子邮件地址'],
+        'Send a test email to %s': ['发送一封测试邮件到 %s'],
+        "%s's account has been deleted.": ['%s的账号已被删除。'],
+        "%s's account has been deactivated.": ['%s的账号已被停用。'],
+        'Editing user: %s': ['编辑用户: %s'],
+        'The users primary email address': ['用户的主电子邮件地址'],
+        'Permanently Delete User': ['永久删除用户'],
+        'Remove user %s': ['移除用户 %s'],
+        'There are no warnings at this time': ['目前没有警告'],
+        'Use STARTTLS? (exclusive with SSL)': ['使用 STARTTLS？（与SSL互斥）'],
+        'Use SSL? (exclusive with STARTTLS)': ['使用 SSL？（与STARTTLS互斥）'],
+        'Edit Alert Rule': ['编辑告警规则'],
+        'Search by name': ['搜索名称'],
+        'Alert ID': ['告警 ID'],
+        Triggered: ['触发'],
+        'Triggered ': ['触发'],
+        'Resolved ': ['解决'],
+        'Error deleting rule': ['删除规则遇到错误'],
+        'Delete Alert Rule?': ['删除警告规则？'],
+        'All Teams': ['所有团队'],
+        'View Docs': ['查看文档'],
+        'Unable to fetch environments': ['环境变量同步失败'],
+        'Deleted alert rule': ['删除告警规则'],
+        Value: ['值'],
+        'Last 6 hours': ['最近 6 小时'],
+        'Last 3 days': ['最近 3 天'],
+        When: ['时间'],
+        'Events: ': ['事件:'],
+        'Filter events': ['过滤事件'],
+        'Looking for your slack channel (this can take a while)': [
+          '正在查找您的Slack频道（这可能需要一段时间）',
+        ],
+        'Threshold Type': ['阈值类型'],
+        'Total Users': ['总用户'],
+        Notification: ['通知'],
+        Owner: ['所有者'],
+        Production: ['生产'],
+        'Alert Creation Wizard': ['告警创建向导'],
+        'Number of Errors': ['错误数'],
+        'Add Widget': ['添加小部件'],
+        Dataset: ['数据'],
+        'Known Users': ['已知用户'],
+        'Anonymous Users': ['匿名用户'],
+        'Top 5 Events': ['Top 5 事件'],
+        '1 Minute': ['1 分钟'],
+        '5 Minutes': ['5 分钟'],
+        '15 Minutes': ['15 分钟'],
+        '30 Minutes': ['30 分钟'],
+        '1 Hour': ['1 小时'],
+        '1 Day': ['1 天'],
+        'Sort By': ['排序方式'],
+        'Legend Alias': ['图例别名'],
+        'Remove query': ['删除查询'],
+        'Add Query': ['添加查询'],
+        'Remove this Y-Axis': ['移除此 Y 轴'],
+        'Add Overlay': ['添加叠加'],
+        'Add an Equation': ['添加公式'],
+        'Update Widget': ['更新微件'],
+        'Custom Widget': ['自定义小部件'],
+        'Updated widget.': ['更新的小部件。'],
+        'Added widget.': ['添加了小部件。'],
+        'Widget Library': ['小部件库'],
+        JSON: ['JSON'],
+        'Save as': ['另存为'],
+        'Field Parameter': ['参数字段'],
+        'Parameter: ': ['参数'],
+        Columns: ['列'],
+        JavaScript: ['JavaScript'],
+        Average: ['平均'],
+        Queries: ['查询'],
+        Forbidden: ['禁止访问'],
+        'Total Time Spent': ['总共花费时间'],
+        Any: ['任何'],
+        'Install %s': ['安装 %s'],
+        'Submitting…': ['提交。。。'],
+        'Go to AWS': ['跳转到 AWS'],
+        'Finish Setup': ['完成设置'],
+        Unsubscribe: ['取消订阅'],
+        Share: ['分享'],
+        'Copy to clipboard': ['复制到剪贴板'],
+        Latency: ['延迟'],
+        More: ['更多'],
+        'Merged Issues': ['合并问题'],
+        '%s Participants': ['%s 参与者'],
+        'View All Events': ['查看所有活动'],
+        'Current Event': ['当前事件'],
+        'Select an environment': ['选择一个环境'],
+        Platforms: ['平台'],
+        Welcome: ['欢迎'],
+        'Sorry, but this organization is currently in progress of being deleted. No turning back.':
+          ['抱歉，该组织正在删除，无法撤消。'],
+        'Team: ': ['团队:'],
+        'Environment:': ['环境变量:'],
+        Today: ['今日'],
+        'Date Range:': ['日期范围:'],
+        'View Stats': ['查看统计'],
+        'update your SDK version': ['更新你的 SDK 版本'],
+        'Missing instrumentation': ['缺少检测'],
+        'Issue Details': ['问题详情'],
+        Percentile: ['百分比'],
+        Parameter: ['参数'],
+        'Span Operation Breakdown': ['跨度操作细分'],
+        'Reset View': ['重置视图'],
+        'Calculation Method': ['计算方法'],
+        'Response Time Threshold (ms)': ['响应时间阈值 (毫秒)'],
+        'Transaction Settings': ['事件设置'],
+        'Reset All': ['重置全部'],
+        'Error Count': ['错误总数'],
+        sessions: ['会话'],
+        "This action can't be undone.": ['这个操作不可撤销。'],
+        'Rotate Secret Key': ['轮替密钥'],
+        'Error disabling %s': ['禁用 %s 发生错误'],
+        print: ['打印'],
+        download: ['下载'],
+        'Notification Settings': ['通知设置'],
+        'PEM keys': ['PEM 秘钥'],
+        'Remove API Key': ['删除 API 秘钥'],
+        'Source Code Root': ['源码根目录'],
+        'Sentry [type]': ['Sentry [类型]'],
+        'External [type]': ['外部 [类型]'],
+        'Set up External [type] Mappings.': ['设置外部 [类型] 映射。'],
+        'Add [type] Mapping': ['添加 [类型] 映射'],
+        'Type root path of your source code, e.g. `src/`.': [
+          '输入你的源码根目录，例如: `src/`。',
+        ],
+        Repo: ['仓库'],
+        'Choose repo': ['选择仓库'],
+        Branch: ['分支'],
+        'Type your branch': ['输入你的分支'],
+        edit: ['编辑'],
+        'Delete Key': ['删除秘钥'],
+        'Copy Key': ['复制秘钥'],
+        'Edit Key': ['编辑秘钥'],
+        Refresh: ['刷新'],
+        'Search teams': ['搜索团队'],
+        'Team Settings': ['团队设置'],
+        ProGuard: ['ProGuard'],
+        'Browser Extension': ['浏览器插件'],
+        'Discarded Issue': ['被丢弃的问题'],
+        'Invalid CSP': ['无效的 CSP'],
+        'Legacy Browser': ['旧版浏览器'],
+        'Web Crawler': ['网络爬虫'],
+        '%s errors ': ['%s 错误'],
+        'Revoking key…': ['撤销秘钥中...'],
+        'Hide deprecated DSN': ['隐藏废弃的 DSN'],
+        'Show deprecated DSN': ['显示废弃的 DSN'],
+        'Deprecated DSN includes a secret which is no longer required by newer SDK versions. If you are unsure which to use, follow installation instructions for your language.':
+          [
+            '废弃DSN包含新版本的SDK不再需要的秘钥。如果您不确定使用哪一个，参考您语言的安装说明。',
+          ],
+        'Add File': ['添加文件'],
+        File: ['文件'],
+        'See the [link:releases documentation] for more information.': [
+          '更多信息请查看[link:版本API文档]。',
+        ],
+        'no events configured': ['未配置事件'],
+        'Alerts Settings': ['告警设置'],
+        'View Alert Rules': ['查看告警规则'],
+        Forwarded: ['转发'],
+        'Uploaded debug information files': ['上传的调试信息文件'],
+        'There are no debug symbols that match your search.': [
+          '没有搜索到匹配的调试符号。',
+        ],
+        'Successfully added built-in repository': ['已成功添加内置仓库'],
+        'Successfully removed built-in repository': ['已成功移除内置仓库'],
+        'Select built-in repository': ['选择内置仓库'],
+        'Delete Repository': ['删除仓库'],
+        'Successfully added custom repository': ['已成功添加自定义存储库'],
+        'Successfully updated custom repository': ['已成功更新自定义存储库'],
+        'An error occurred while updating the custom repository': [
+          '更新自定义存储库时出错',
+        ],
+        Mapping: ['映射'],
+        'File Size': ['文件大小'],
+        empty: ['空'],
+        'Report URI': ['报告 URI'],
+        Artifact: ['工件'],
+        'Are you sure you want to remove this tag?': ['您确定要删除这个标签吗？'],
+        'Remove tag': ['删除标签'],
+        'You are about to unsubscribe from project notifications for the following project:':
+          ['你将取消订阅下列项目的通知：'],
+        'You can subscribe to it again by going to your account settings.': [
+          '在你的账户设置中，你可以重新订阅。',
+        ],
+        'See an example': ['例如'],
+      };
+      var orgin = {
         Username: ['用户名'],
         Permissions: ['权限'],
         'Default (let Sentry decide)': ['默认 (由 Sentry 为您决定)'],
@@ -2366,6 +3905,7 @@
           lang: 'zh_CN',
         },
       };
+      e.exports = Object.assign(orgin, translatedOnly);
     },
   },
 ]);
