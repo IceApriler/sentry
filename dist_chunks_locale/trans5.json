@@ -1,0 +1,642 @@
+{
+  "File IO Problem Creation Rate": ["文件 I/O 问题创建速率"],
+  "Controls the overall rate at which performance problems are detected by the File IO Detector": [
+    "控制文件 I/O 检测器检测性能问题的总体速率"
+  ],
+  "Controls the overall rate at which performance problems are detected by the slow DB span detector.": [
+    "控制慢数据库跨度检测器检测性能问题的总体速率。"
+  ],
+  "Controls the rate at which performance problems are detected by the slow DB span detector for LA organizations.": [
+    "控制慢数据库跨度检测器为 LA 组织检测性能问题的速率。"
+  ],
+  "Controls the rate at which performance problems are detected by the slow DB span detector for EA organizations.": [
+    "控制慢数据库跨度检测器为 EA 组织检测性能问题的速率。"
+  ],
+  "Controls the rate at which performance problems are detected by the slow DB span detector for GA organizations.": [
+    "控制慢数据库跨度检测器为 GA 组织检测性能问题的速率。"
+  ],
+  "Controls the overall rate at which performance problems are detected by the MN+1 DB detector.": [
+    "控制 MN+1 数据库检测器检测性能问题的总体速率。"
+  ],
+  "Controls the % of orgs in which performance problems are detected by the MN+1 DB detector for LA organizations.": [
+    "控制 MN+1 数据库检测器为 LA 组织检测性能问题的组织百分比。"
+  ],
+  "Controls the % of orgs in which performance problems are detected by the MN+1 DB detector for EA organizations.": [
+    "控制 MN+1 数据库检测器为 EA 组织检测性能问题的组织百分比。"
+  ],
+  "Controls the % of orgs in which performance problems are detected by the MN+1 DB detector for GA organizations.": [
+    "控制 MN+1 数据库检测器为 GA 组织检测性能问题的组织百分比。"
+  ],
+  "Controls the overall rate at which performance problems are detected by the large render blocking asset detector.": [
+    "控制大型渲染阻塞资源检测器检测性能问题的总体速率。"
+  ],
+  "Controls the rate at which performance problems are detected by the large render blocking asset detector for LA organizations.": [
+    "控制大型渲染阻塞资源检测器为 LA 组织检测性能问题的速率。"
+  ],
+  "Controls the rate at which performance problems are detected by the large render blocking asset detector for EA organizations.": [
+    "控制大型渲染阻塞资源检测器为 EA 组织检测性能问题的速率。"
+  ],
+  "Controls the rate at which performance problems are detected by the large render blocking asset detector for GA organizations.": [
+    "控制大型渲染阻塞资源检测器为 GA 组织检测性能问题的速率。"
+  ],
+  "Time Between Spans": ["跨度时间间隔"],
+  "Maximum time, in ms, between consecutive HTTP spans to be considered part of the same problem.": [
+    "连续 HTTP 跨度之间被视为同一问题的最大时间间隔，以毫秒为单位。"
+  ],
+  "Consecutive Count Threshold": ["连续计数阈值"],
+  "The minimum number of offending spans that must occur consecutively.": ["必须连续发生的违规跨度的最小数量。"],
+  "Span Duration Threshold": ["跨度持续时间阈值"],
+  "The duration, in ms, that a span must exceed for it to be considered an offending span.": [
+    "一个跨度要被视为违规跨度必须超过的持续时间，以毫秒为单位。"
+  ],
+  "Payload Size Threshold": ["负载大小阈值"],
+  "The threshold at which the payload size of an HTTP span is considered to be too large, in bytes.": [
+    "HTTP 跨度的负载大小被视为过大的阈值，以字节为单位。"
+  ],
+  "Controls the rate at which performance problems are detected by the blocked main thread profiling detector for LA organizations.": [
+    "控制阻塞主线程分析检测器为 LA 组织检测性能问题的速率。"
+  ],
+  "Controls the rate at which performance problems are detected by the blocked main thread profiling detector for EA organizations.": [
+    "控制阻塞主线程分析检测器为 EA 组织检测性能问题的速率。"
+  ],
+  "Controls the rate at which performance problems are detected by the blocked main thread profiling detector for GA organizations.": [
+    "控制阻塞主线程分析检测器为 GA 组织检测性能问题的速率。"
+  ],
+  "Controls the rate at which profile blocked main thread performance problems are sent to post process group for LA organizations.": [
+    "控制为 LA 组织将分析阻塞主线程性能问题发送到后期处理组的速率。"
+  ],
+  "Controls the rate at which profile blocked main thread performance problems are sent to post process group for EA organizations.": [
+    "控制为 EA 组织将分析阻塞主线程性能问题发送到后期处理组的速率。"
+  ],
+  "Controls the rate at which profile blocked main thread performance problems are sent to post process group for GA organizations.": [
+    "控制为 GA 组织将分析阻塞主线程性能问题发送到后期处理组的速率。"
+  ],
+  "Organization Creation Rate Limit": ["组织创建速率限制"],
+  "Send my contact information along with usage statistics": ["将我的联系信息与使用统计信息一起发送"],
+  "Please keep my usage information anonymous": ["请将我的使用信息匿名化"],
+  "If enabled, any stats reported to sentry.io will exclude identifying information (such as your administrative email address). By anonymizing your installation the Sentry team will be unable to contact you about security updates. For more information on what data is sent to Sentry, see the [link:documentation]. Note: This is separate from error-reporting for the self-hosted installer. The data reported to the beacon only includes usage stats from your running self-hosted instance.": [
+    "如果启用，向 sentry.io 报告的任何统计信息都将排除身份识别信息（例如您的管理员电子邮件地址）。通过匿名化您的安装，Sentry 团队将无法就安全更新与您联系。有关发送到 Sentry 的数据的详细信息，请参阅 [link:文档]。注意：这与自托管安装程序的错误报告是分开的。报告到信标的数据显示您正在运行的自托管实例的使用统计信息。"
+  ],
+  "No, I would prefer to keep CPU/RAM usage private": ["不，我更希望将 CPU/内存使用情况保持私密"],
+  "Yes, I would love to help Sentry developers improve the experience of self-hosted by sending CPU/RAM usage": [
+    "是的，我愿意通过发送 CPU/内存使用情况来帮助 Sentry 开发者改进自托管的体验"
+  ],
+  "Recording CPU/RAM usage will greatly help our development team understand how self-hosted sentry\n      is being typically used, and to keep track of improvements that we hope to bring you in the future.": [
+    "记录 CPU/内存使用情况将大大帮助我们的开发团队了解自托管 sentry 的典型使用方式，并跟踪我们希望将来为您带来的改进。"
+  ],
+  "Performance problem detection rate": ["性能问题检测速率"],
+  "Controls the rate at which performance problems are detected across the entire system. A value of 0 will disable performance issue detection, and a value of 1.0 turns on detection for every ingested transaction.": [
+    "控制整个系统检测性能问题的速率。值为 0 将禁用性能问题检测，值为 1.0 则对每个摄取的事务启用检测。"
+  ],
+  "Performance problem creation rate": ["性能问题创建速率"],
+  "Controls the rate at which performance issues are created across the entire system. A value of 0 will disable performance issue detection, and a value of 1.0 turns on creation for every detected performance problem.": [
+    "控制整个系统创建性能问题的速率。值为 0 将禁用性能问题检测，值为 1.0 则为每个检测到的性能问题创建问题。"
+  ],
+  "Performance issues creation EA Rollout": ["性能问题创建 EA 推广"],
+  "Controls the rate at which performance issues are created for EA organizations.": ["控制为 EA 组织创建性能问题的速率。"],
+  "Performance issues creation GA Rollout": ["性能问题创建 GA 推广"],
+  "Controls the rate at which performance issues are created for all organizations.": ["控制为所有组织创建性能问题的速率。"],
+  "Performance issues post process group EA Rollout": ["性能问题后期处理组 EA 推广"],
+  "Controls the rate at which performance issues sent through post process group for EA organizations.": [
+    "控制为 EA 组织将性能问题通过后期处理组发送的速率。"
+  ],
+  "Performance issues post process group GA Rollout": ["性能问题后期处理组 GA 推广"],
+  "Controls the rate at which performance issues sent through post process group for all organizations.": [
+    "控制为所有组织将性能问题通过后期处理组发送的速率。"
+  ],
+  "N+1 detection rate": ["N+1 检测速率"],
+  "Controls the rate at which performance problems are detected specifically for N+1 detection. Value of 0 will disable detection, a value of 1.0 fully enables it.": [
+    "控制专门针对 N+1 检测的性能问题检测速率。值为 0 将禁用检测，值为 1.0 则完全启用。"
+  ],
+  "N+1 creation rate": ["N+1 创建速率"],
+  "N+1 (DB) detection rate": ["N+1（数据库）检测速率"],
+  "Set Conditions": ["设置条件"],
+  "Select Alert": ["选择警报"],
+  "Set Conditions for": ["为...设置条件"],
+  "Review Thresholds": ["审查阈值"],
+  "Real-time visibility into problems with your code and the impact on your users, along with a view of your existing alert rules, their status, project, team, and creation date.": [
+    "实时了解代码中的问题及其对用户的影响，并查看现有的警报规则、其状态、项目、团队和创建日期。"
+  ],
+  "View Features": ["查看功能"],
+  "No incidents exist for the current query.": ["当前查询没有事件。"],
+  "Learn more about [link:Metric Alerts]": ["了解更多关于 [link:指标警报] 的信息"],
+  "This page only shows metric alerts.": ["此页面仅显示指标警报。"],
+  "Still Active": ["仍然活跃"],
+  "More signal, less noise": ["更多信号，更少噪音"],
+  "Not every error is worth an email. Set your own rules for alerts you need, with information that helps.": [
+    "并非每个错误都值得发送邮件。为您需要的警报设置自己的规则，并提供有帮助的信息。"
+  ],
+  "Actively monitoring every [interval]": ["每 [interval] 积极监控一次"],
+  "Alert not triggered yet": ["警报尚未触发"],
+  "Alert has not been activated yet": ["警报尚未激活"],
+  "Last activated ": ["最后激活时间"],
+  "Deleted rule": ["已删除的规则"],
+  "No alert rules found for the current query.": ["未找到当前查询的警报规则。"],
+  "There was an error loading alerts.": ["加载警报时出错。"],
+  "Up": ["正常"],
+  "Down": ["宕机"],
+  "Uptime Alert Status: [statusText]": ["正常运行时间警报状态：[statusText]"],
+  "Metric Alert Status: [status]": ["指标警报状态：[status]"],
+  "Issue Alert": ["问题警报"],
+  "Are you sure you want to delete \"%s\"? You won't be able to view the history of this alert once it's deleted.": [
+    "您确定要删除 \"%s\" 吗？一旦删除，您将无法查看此警报的历史记录。"
+  ],
+  "This Uptime Monitoring alert was auto-detected. [learnMore: Learn more].": [
+    "此正常运行时间监控警报是自动检测到的。[learnMore: 了解更多]。"
+  ],
+  "Auto Detected": ["自动检测"],
+  "Filter teams": ["筛选团队"],
+  "Alerts Triggered": ["触发的警报"],
+  "Total Alerts": ["总警报数"],
+  "default message": ["默认消息"],
+  "No issues exist for the current query.": ["当前查询没有问题。"],
+  "Successfully updated": ["更新成功"],
+  "Unable to update alert rule": ["无法更新警报规则"],
+  "Successfully re-enabled": ["重新启用成功"],
+  "The alert rule you were looking for was not found.": ["未找到您查找的警报规则。"],
+  "The conditions in this alert rule conflict and might not be working properly. [link:Edit alert rule]": [
+    "此警报规则中的条件存在冲突，可能无法正常工作。[link:编辑警报规则]"
+  ],
+  "This alert was disabled due to lack of activity. Please [keepAlive] to enable this alert.": [
+    "由于缺乏活动，此警报已被禁用。请 [keepAlive] 以启用此警报。"
+  ],
+  "click here": ["点击这里"],
+  "This alert is disabled due to missing actions. Please edit the alert rule to enable this alert.": [
+    "由于缺少操作，此警报已被禁用。请编辑警报规则以启用此警报。"
+  ],
+  "This alert is disabled due to its configuration and needs to be edited to be enabled.": [
+    "由于配置问题，此警报已被禁用，需要编辑才能启用。"
+  ],
+  "This alert is scheduled to be disabled [date] due to lack of activity. Please [keepAlive] to keep this alert active. [docs:Learn more]": [
+    "由于缺乏活动，此警报计划在 [date] 禁用。请 [keepAlive] 以保持此警报活动。[docs:了解更多]"
+  ],
+  "Edit to enable": ["编辑以启用"],
+  "[creator] muted this alert so these notifications won't be sent in the future.": [
+    "[creator] 已将此警报静音，因此将来不会发送这些通知。"
+  ],
+  "[creator] muted this alert[forEveryone]so you won't get these notifications in the future.": [
+    "[creator] 已将此警报静音 [forEveryone]，因此将来您不会收到这些通知。"
+  ],
+  "No alerts triggered": ["未触发警报"],
+  "Alert Conditions": ["警报条件"],
+  "Alert Rule Details": ["警报规则详情"],
+  "Date created": ["创建日期"],
+  "Created by": ["创建者"],
+  "[when:When] an event is captured [selector]": ["[when:当] 捕获事件 [selector]"],
+  "and %s...": ["和 %s..."],
+  "[if:If] [selector] of these filters match": ["[if:如果] 这些过滤器中的 [selector] 匹配"],
+  "[then:Then] perform these actions": ["[then:然后] 执行这些操作"],
+  "Do nothing": ["不采取行动"],
+  "The issue changes state from archived to escalating": ["问题状态从已归档变为升级"],
+  "Send a notification to %s": ["向 %s 发送通知"],
+  "Send a notification to #%s": ["向 #%s 发送通知"],
+  "Select an environment and project": ["选择环境和项目"],
+  "Set conditions": ["设置条件"],
+  "[when:When] an event is captured by Sentry and [selector] of the following happens": [
+    "[when:当] Sentry 捕获事件并且以下情况 [selector] 发生"
+  ],
+  "Add optional trigger...": ["添加可选触发器..."],
+  "[if:If][selector] of these filters match": ["[if:如果] 这些过滤器中的 [selector] 匹配"],
+  "Add optional filter...": ["添加可选过滤器..."],
+  "Add action...": ["添加操作..."],
+  "Send Test Notification": ["发送测试通知"],
+  "Set action interval": ["设置操作间隔"],
+  "Perform the actions above once this often for an issue": ["对于一个问题，每如此频繁地执行上述操作"],
+  "Add a name and owner": ["添加名称和所有者"],
+  "This name will show up in notifications and the owner will give permissions to your whole team to edit and view this alert.": [
+    "此名称将显示在通知中，所有者将授予您的整个团队编辑和查看此警报的权限。"
+  ],
+  "Alert - %s": ["警报 - %s"],
+  "Looking for that channel took too long :(": ["查找该频道耗时太长 :("],
+  "Sending a test notification...": ["正在发送测试通知..."],
+  "Sending test notifications...": ["正在发送测试通知..."],
+  "Notification sent!": ["通知已发送！"],
+  "Notifications sent!": ["通知已发送！"],
+  "Notification failed": ["通知失败"],
+  "Notifications failed": ["通知失败"],
+  "Required": ["必需"],
+  "Looking through all your channels...": ["正在查看您的所有频道..."],
+  "There was a problem deleting the alert": ["删除警报时出现问题"],
+  "Field Required": ["字段必需"],
+  "Unable to access this alert rule -- check to make sure you have the correct permissions": [
+    "无法访问此警报规则，请确保您具有正确的权限"
+  ],
+  "Enter Alert Name": ["输入警报名称"],
+  "This rule fully duplicates \"[alertName]\" in the project [projectName] and cannot be saved.": [
+    "此规则与项目 [projectName] 中的 “[alertName]” 完全重复，无法保存。"
+  ],
+  "Alerts without conditions can fire too frequently. Are you sure you want to save this alert rule?": [
+    "没有条件的警报可能触发过于频繁。您确定要保存此警报规则吗？"
+  ],
+  "Yes, I don’t mind if this alert gets noisy": ["是的，我不介意此警报变得吵闹"],
+  "Failed to load integration data": ["加载集成数据失败"],
+  "Preview is not supported for these conditions": ["不支持这些条件的预览"],
+  "Select a condition to generate a preview": ["选择一个条件以生成预览"],
+  "Select a condition above to see which issues would've triggered this alert": [
+    "选择上面的一个条件以查看哪些问题会触发此警报"
+  ],
+  "[issueCount] issues would have triggered this rule in the past 14 days [approximately:approximately]. If you're looking to reduce noise then make sure to [link:read the docs].": [
+    "在过去 14 天内，[issueCount] 个问题会触发此规则 [approximately:大约]。如果您希望减少干扰，请务必 [link:阅读文档]。"
+  ],
+  "Previews that include issue frequency conditions are approximated": ["包含问题频率条件的预览是近似的"],
+  "No preview available": ["没有预览可用"],
+  "We couldn't find any issues that would've triggered your rule": ["我们没有找到会触发您的规则的问题"],
+  "Showing [pageIssues] of [issueCount] issues": ["显示 [pageIssues] 个问题，共 [issueCount] 个"],
+  "This project doesn't support sessions. [link:View supported platforms]": [
+    "此项目不支持会话。[link:查看支持的平台]"
+  ],
+  "Percent of sessions affected is approximated by the ratio of the issue frequency to the number of sessions in the project. [link:Learn more.]": [
+    "受影响的会话百分比是通过问题频率与项目中会话数量的比率近似估算的。[link:了解更多。]"
+  ],
+  "Having rate limiting problems? Enter a channel or user ID.": ["遇到速率限制问题吗？请输入频道或用户 ID。"],
+  "Note that you must enter a Discord channel ID, not a channel name.": ["请注意，您必须输入 Discord 频道 ID，而不是频道名称。"],
+  "The conditions highlighted in red are in conflict. They may prevent the alert from ever being triggered.": [
+    "用红色突出显示的条件存在冲突。它们可能会阻止警报被触发。"
+  ],
+  "No One": ["无"],
+  "Suggested Assignees, Team, or Member": ["建议的负责人、团队或成员"],
+  "Send notification to…": ["发送通知到…"],
+  "Notify integration…": ["通知集成…"],
+  "Create new…": ["创建新…"],
+  "Issue state change": ["问题状态更改"],
+  "Issue frequency": ["问题频率"],
+  "[name] Settings": ["[name] 设置"],
+  "Send Alerts to Slack. Install the integration now.": ["将警报发送到 Slack。立即安装集成。"],
+  "Set Up Slack Now": ["立即设置 Slack"],
+  "Send alerts to your messaging service. Install the integration now.": ["将警报发送到您的消息服务。立即安装集成。"],
+  "Connect with a messaging tool": ["连接到消息工具"],
+  "Receive alerts and digests right where you work.": ["在您工作的地方接收警报和摘要。"],
+  "Connect to messaging": ["连接到消息服务"],
+  "Changes applied.": ["更改已应用。"],
+  "When this alert is triggered [ticketType] will be created with the following fields. It will also [linkToDocs:stay in sync] with the new Sentry Issue.": [
+    "当此警报被触发时，将创建具有以下字段的 [ticketType]。它还将与新的 Sentry 问题 [linkToDocs:保持同步]。"
+  ],
+  "When this alert is triggered [ticketType] will be created with the following fields.": [
+    "当此警报被触发时，将创建具有以下字段的 [ticketType]。"
+  ],
+  "same time 5 minutes ago": ["5 分钟前的同一时间"],
+  "same time 15 minutes ago": ["15 分钟前的同一时间"],
+  "same time one hour ago": ["1 小时前的同一时间"],
+  "same time one day ago": ["1 天前的同一时间"],
+  "same time one week ago": ["1 周前的同一时间"],
+  "same time one month ago": ["1 个月前的同一时间"],
+  "Alert Rule settings have been updated since this alert was triggered.": [
+    "自触发此警报以来，警报规则设置已更新。"
+  ],
+  "Exclude archived issues": ["排除已归档的问题"],
+  "Dismiss Alert": ["忽略警报"],
+  "Alert rules can now exclude errors associated with archived issues. Please make sure to review the rule's alert thresholds after editing.": [
+    "警报规则现在可以排除与已归档问题相关的错误。编辑后请务必审查规则的警报阈值。"
+  ],
+  "Custom time": ["自定义时间"],
+  "An error occurred while fetching the alert rule.": ["获取警报规则时发生错误。"],
+  "This alert rule could not be found.": ["找不到此警报规则。"],
+  "Status: %s": ["状态：%s"],
+  " %s in %s compared to the ": ["%s 中的 %s 与"],
+  "higher": ["更高"],
+  "lower": ["更低"],
+  "Summary": ["摘要"],
+  "The time spent waiting for metrics matching the filters used.": ["等待与使用的过滤器匹配的指标所花费的时间。"],
+  " over ": ["在"],
+  "Alert Rule Modified": ["警报规则已修改"],
+  "This alert lacks historical data due to filters for which we don’t routinely extract metrics.": [
+    "由于使用了我们不常规提取指标的过滤器，此警报缺乏历史数据。"
+  ],
+  "Hidden Alert": ["隐藏的警报"],
+  "Hidden Alerts": ["隐藏的警报"],
+  "Reason": ["原因"],
+  "Date Triggered": ["触发日期"],
+  "No alerts triggered during this time.": ["在此期间未触发警报。"],
+  "No issues for this alert rule": ["此警报规则没有问题"],
+  "New Deploy": ["新部署"],
+  "New Release": ["新版本"],
+  "Alert Status": ["警报状态"],
+  "Filters Used": ["使用的过滤器"],
+  "Activated by": ["激活者"],
+  "Last modified": ["最后修改"],
+  "Change alert status to %s": ["将警报状态更改为 %s"],
+  "[metric] is [threshold]% [comparisonType] in [timeWindow] compared to the [comparisonDelta]": [
+    "[metric] 在 [timeWindow] 内比 [comparisonDelta] [threshold]% [comparisonType]"
+  ],
+  "[metric] is [condition] in [timeWindow]": ["[metric] 在 [timeWindow] 内 [condition]"],
+  "%s Conditions": ["%s 条件"],
+  "Then": ["然后"],
+  "The following problems occurred while creating your alert:": ["创建您的警报时出现以下问题："],
+  "No project was selected": ["未选择项目"],
+  "Too many environments were selected": ["选择的环境太多"],
+  "An event type wasn't selected. [defaultSetting] has been set as the default": [
+    "未选择事件类型。已将 [defaultSetting] 设置为默认值"
+  ],
+  "An alert can’t use the metric [yAxis] just yet.": ["警报暂时无法使用 [yAxis] 指标。"],
+  "No metrics in this project": ["此项目中没有指标"],
+  "No options": ["没有选项"],
+  "Select an operation": ["选择操作"],
+  "[timeWindow] interval": ["[timeWindow] 区间"],
+  "Filter events by level, message, and other properties…": ["按级别、消息和其他属性筛选事件…"],
+  "Filter sessions by release version…": ["按版本筛选会话…"],
+  "Filter transactions by URL, tags, and other properties…": ["按 URL、标签和其他属性筛选事务…"],
+  "Define your metric": ["定义您的指标"],
+  "Select Monitor Type": ["选择监控类型"],
+  "Continuous": ["持续"],
+  "Continuously monitor trends for the metrics outlined below": ["持续监控下面列出的指标趋势"],
+  "for": ["对于"],
+  "Temporarily monitor specified query given activation condition": ["在激活条件下临时监控指定查询"],
+  "The chart data above is an estimate based on the stored transactions that match the filters specified.": [
+    "上面的图表数据是基于与指定过滤器匹配的存储事务的估计值。"
+  ],
+  "The wildcard operator is not supported here.": ["此处不支持通配符操作符。"],
+  "Free text search is not allowed. If you want to partially match transaction names, use glob patterns like \"transaction:*transaction-name*\"": [
+    "不允许自由文本搜索。如果您想部分匹配事务名称，请使用如 \"transaction:*transaction-name*\" 的 glob 模式"
+  ],
+  "The field [field] isn't supported for performance alerts.": ["字段 [field] 不支持用于性能警报。"],
+  "We don’t routinely collect metrics from [fields]. However, we’ll do so [strong:once this alert has been saved.]": [
+    "我们不常规从 [fields] 收集指标。但是，我们将在 [strong:保存此警报后] 进行收集。"
+  ],
+  "Looks good to me!": ["看起来不错！"],
+  "Set thresholds": ["设置阈值"],
+  "We've added [code:is:unresolved] to your events filter; please make sure the current thresholds are still valid as this alert is now filtering out resolved and archived errors.": [
+    "我们已将 [code:is:unresolved] 添加到您的事件筛选器中；请确保当前阈值仍然有效，因为此警报现在将筛选掉已解决和已归档的错误。"
+  ],
+  "Resolution threshold must be greater than alert": ["解决阈值必须大于警报"],
+  "Resolution threshold must be less than alert": ["解决阈值必须小于警报"],
+  "Alert threshold must be less than resolution": ["警报阈值必须小于解决"],
+  "Alert threshold must be greater than resolution": ["警报阈值必须大于解决"],
+  "Warning threshold must be less than critical threshold": ["警告阈值必须小于严重阈值"],
+  "Warning threshold must be greater than critical threshold": ["警告阈值必须大于严重阈值"],
+  "You need to select a metric before you can save the alert": ["在保存警报之前，您需要选择一个指标"],
+  "critical threshold": ["严重阈值"],
+  "Alert not valid: missing %s": ["警报无效：缺少 %s"],
+  "%s is not supported for on-demand metric alerts": ["%s 不支持按需指标警报"],
+  "Activation condition and monitor window must be set for activated alerts": [
+    "对于已激活的警报，必须设置激活条件和监控窗口"
+  ],
+  "Saving your alert rule, hold on...": ["正在保存您的警报规则，请稍候..."],
+  "Unable to save alert%s": ["无法保存警报"],
+  "Establish ownership": ["建立所有权"],
+  "No span metrics in this project": ["此项目中没有跨度指标"],
+  "Select a filter": ["选择筛选器"],
+  "Select an aggregate": ["选择聚合"],
+  "All spans": ["所有跨度"],
+  "Percent Change: {x%} higher or lower compared to previous period": ["百分比变化：与上一时期相比 {x%} 更高或更低"],
+  "Percent Change: {x%} higher or lower compared to": ["百分比变化：与 [comparison] 相比 {x%} 更高或更低"],
+  "optional: channel ID or user ID": ["可选：频道 ID 或用户 ID"],
+  "Remove action": ["删除操作"],
+  "There was a problem adding an action": ["添加操作时出现问题"],
+  "There was a problem changing an action": ["更改操作时出现问题"],
+  "Set actions": ["设置操作"],
+  "Select a status level": ["选择状态级别"],
+  "Select Level": ["选择级别"],
+  "Select an Action": ["选择操作"],
+  "Select Action": ["选择操作"],
+  "Add Action": ["添加操作"],
+  "Estimated Transactions": ["估计的事务数"],
+  "Your filter conditions contain an unsupported field - please review.": ["您的筛选条件包含不支持的字段 - 请审查。"],
+  "An error occurred while fetching data": ["获取数据时发生错误"],
+  "Automatic": ["自动"],
+  "When below Critical or Warning": ["当低于严重或警告"],
+  "When lower than Critical or Warning": ["当低于严重或警告"],
+  "Lower than": ["低于"],
+  "When above Critical or Warning": ["当高于严重或警告"],
+  "When higher than Critical or Warning": ["当高于严重或警告"],
+  "Higher than": ["高于"],
+  "Drag to adjust threshold[break]You can hold shift to fine tune": ["拖动以调整阈值 [换行] 您可以按住 Shift 进行微调"],
+  "For %s minute": ["在 %s 分钟内"],
+  "For %s minutes": ["在 %s 分钟内"],
+  "Emai​l": ["电子邮件"],
+  "Pagerduty": ["Pagerduty"],
+  "MS Teams": ["微软团队"],
+  "Opsgenie": ["Opsgenie"],
+  "Discord": ["Discord"],
+  "Deleted metric": ["已删除的指标"],
+  "Select a metrics to continue": ["选择指标以继续"],
+  "ERRORS": ["错误"],
+  "SESSIONS": ["会话"],
+  "PERFORMANCE": ["性能"],
+  "METRICS": ["指标"],
+  "CUSTOM": ["自定义"],
+  "Uptime Alert Details": ["正常运行时间警报详情"],
+  "The uptime alert rule you were looking for was not found.": ["未找到您查找的正常运行时间警报规则。"],
+  "Set a URL to monitor": ["设置要监控的 URL"],
+  "The URL to monitor": ["要监控的 URL"],
+  "Uptime rule name": ["正常运行时间规则名称"],
+  "Are you sure you want to delete \"%s\"? Once deleted, this alert cannot be recreated automatically.": [
+    "您确定要删除 \"%s\" 吗？一旦删除，此警报将无法自动重新创建。"
+  ],
+  "Delete Uptime Rule?": ["删除正常运行时间规则？"],
+  "Uptime Monitoring is currently in Early Access. Additional configuration options will be available soon.": [
+    "正常运行时间监控目前处于早期访问阶段。更多配置选项即将推出。"
+  ],
+  "No issues relating to this uptime alert have been found.": ["未找到与此正常运行时间警报相关的问题。"],
+  "deprecated": ["已弃用"],
+  "Users Experiencing Errors": ["遇到错误的用户"],
+  "Transaction Duration": ["事务持续时间"],
+  "Failure Rate": ["失败率"],
+  "Custom Metric": ["自定义指标"],
+  "Span Metric": ["跨度指标"],
+  "Custom Measurement": ["自定义测量"],
+  "Crash Free Session Rate": ["无崩溃会话率"],
+  "Crash Free User Rate": ["无崩溃用户率"],
+  "LLM cost": ["大型语言模型成本"],
+  "LLM token usage": ["大型语言模型令牌使用量"],
+  "When there are more than 100,000 tokens used within an hour": ["当一小时内使用超过 10 万个令牌时"],
+  "Receive an alert when the total cost of tokens used by your LLMs reaches a limit.": [
+    "当您的大型语言模型使用的令牌总成本达到限制时接收警报。"
+  ],
+  "When there are more than $100 used by LLM  within an hour": ["当大型语言模型一小时内使用超过 100 美元时"],
+  "A session begins when a user starts the application and ends when it’s closed or sent to the background. A crash is when a session ends due to an error and this type of alert lets you monitor when those crashed sessions exceed a threshold. This lets you get a better picture of the health of your app.": [
+    "当用户启动应用程序时会话开始，并在关闭或置于后台时结束。崩溃是指会话因错误而结束，此类警报可让您监控这些崩溃会话何时超过阈值。这可以让您更好地了解应用的健康状况。"
+  ],
+  "When the Crash Free Rate is below 98%, send a Slack notification to the team.": [
+    "当无崩溃率低于 98% 时，向团队发送 Slack 通知。"
+  ],
+  "Crash Free Users is the percentage of distinct users that haven’t experienced a crash and so this type of alert tells you when the overall user experience dips below a certain unacceptable threshold.": [
+    "无崩溃用户是指未经历过崩溃的独特用户百分比，因此此类警报会告知您整体用户体验何时低于某个不可接受的阈值。"
+  ],
+  "When the Crash Free Rate is below 97%, send an email notification to yourself.": [
+    "当无崩溃率低于 97% 时，向自己发送电子邮件通知。"
+  ],
+  "Issues are groups of errors that have a similar stacktrace. Set an alert for new issues, when an issue changes state, frequency of errors, or users affected by an issue.": [
+    "问题是具有相似堆栈跟踪的错误组。可以为新问题、问题状态更改、错误频率或受问题影响的用户设置警报。"
+  ],
+  "When the triggering event's level is fatal.": ["当触发事件的级别为致命时。"],
+  "When an issue was seen 100 times in the last 2 days.": ["当问题在过去两天内出现 100 次。"],
+  "Create a JIRA ticket when an issue changes state from resolved to unresolved and is unassigned.": [
+    "当问题从已解决变为未解决且未分配时创建 JIRA 工单。"
+  ],
+  "Alert when the number of errors in a project matching your filters crosses a threshold. This is useful for monitoring the overall level or errors in your project or errors occurring in specific parts of your app.": [
+    "当与您的筛选器匹配的项目中的错误数量超过阈值时发出警报。这有助于监控项目的整体错误级别或特定部分发生的错误。"
+  ],
+  "When the signup page has more than 10k errors in 5 minutes.": ["当注册页面在 5 分钟内出现超过 1 万个错误时。"],
+  "When there are more than 500k errors in 10 minutes from a specific file.": [
+    "当特定文件在 10 分钟内出现超过 50 万个错误时。"
+  ],
+  "Alert when the number of users affected by errors in your project crosses a threshold.": [
+    "当受项目错误影响的用户数量超过阈值时发出警报。"
+  ],
+  "When 100k users experience an error in 1 hour.": ["当 10 万用户在一小时内遇到错误时。"],
+  "When 100 users experience a problem on the Checkout page.": ["当 100 个用户在结账页面遇到问题时。"],
+  "Throughput is the total number of transactions in a project and you can alert when it reaches a threshold within a period of time.": [
+    "吞吐量是项目中的事务总数，当它在一段时间内达到阈值时可以发出警报。"
+  ],
+  "When number of transactions on a key page exceeds 100k per minute.": ["当关键页面的事务数每分钟超过 10 万次时。"],
+  "When number of transactions drops below a threshold.": ["当事务数低于阈值时。"],
+  "Monitor how long it takes for transactions to complete. Use flexible aggregates like percentiles, averages, and min/max.": [
+    "监控事务完成所需的时间。使用灵活的聚合方式，如百分位数、平均值和最小值/最大值。"
+  ],
+  "When any transaction is slower than 3 seconds.": ["当任何事务慢于 3 秒时。"],
+  "When the 75th percentile response time is higher than 250 milliseconds.": [
+    "当第 75 百分位的响应时间高于 250 毫秒时。"
+  ],
+  "Apdex is a metric used to track and measure user satisfaction based on your application response times. The Apdex score provides the ratio of satisfactory, tolerable, and frustrated requests in a specific transaction or endpoint.": [
+    "Apdex 是一种用于跟踪和衡量基于应用响应时间的用户满意度的指标。Apdex 分数提供了特定事务或端点中满意、可容忍和沮丧请求的比例。"
+  ],
+  "When apdex is below 300.": ["当 apdex 低于 300 时。"],
+  "Failure rate is the percentage of unsuccessful transactions. Sentry treats transactions with a status other than “ok,” “canceled,” and “unknown” as failures.": [
+    "失败率是不成功事务的百分比。Sentry 将状态不是“ok”、“canceled”和“unknown”的事务视为失败。"
+  ],
+  "When the failure rate for an important endpoint reaches 10%.": ["当重要端点的失败率达到 10% 时。"],
+  "Largest Contentful Paint (LCP) measures loading performance. It marks the point when the largest image or text block is visible within the viewport. A fast LCP helps reassure the user that the page is useful, and so we recommend an LCP of less than 2.5 seconds.": [
+    "Largest Contentful Paint (LCP) 测量加载性能。它标记了视口中最大的图像或文本块可见的时刻。快速的 LCP 有助于让用户确信页面是有用的，因此我们建议 LCP 不超过 2.5 秒。"
+  ],
+  "When the 75th percentile LCP of your homepage is longer than 2.5 seconds.": [
+    "当您主页的第 75 百分位 LCP 超过 2.5 秒时。"
+  ],
+  "First Input Delay (FID) measures interactivity as the response time when the user tries to interact with the viewport. A low FID helps ensure that a page is useful, and we recommend a FID of less than 100 milliseconds.": [
+    "First Input Delay (FID) 测量交互性，即用户尝试与视口交互时的响应时间。低 FID 有助于确保页面是有用的，我们建议 FID 不超过 100 毫秒。"
+  ],
+  "When the average FID of a page is longer than 4 seconds.": ["当页面的平均 FID 超过 4 秒时。"],
+  "Cumulative Layout Shift (CLS) measures visual stability by quantifying unexpected layout shifts that occur during the entire lifespan of the page. A CLS of less than 0.1 is a good user experience, while anything greater than 0.25 is poor.": [
+    "Cumulative Layout Shift (CLS) 通过量化页面整个生命周期内发生的意外布局偏移来衡量视觉稳定性。CLS 小于 0.1 是良好的用户体验，而大于 0.25 则为不良体验。"
+  ],
+  "When the CLS of a page is more than 0.5.": ["当页面的 CLS 超过 0.5 时。"],
+  "Alert on performance metrics which are not listed above, such as first paint (FP), first contentful paint (FCP), and time to first byte (TTFB).": [
+    "对上述未列出的性能指标发出警报，例如首次绘制 (FP)、首次内容绘制 (FCP) 和首次字节时间 (TTFB)。"
+  ],
+  "When the 95th percentile FP of a page is longer than 250 milliseconds.": [
+    "当页面的第 95 百分位 FP 超过 250 毫秒时。"
+  ],
+  "When the average TTFB of a page is longer than 600 milliseconds.": ["当页面的平均 TTFB 超过 600 毫秒时。"],
+  "Alert on custom metrics that you have configured and are not related to errors, transactions or sessions.": [
+    "对您配置的与错误、事务或会话无关的自定义指标发出警报。"
+  ],
+  "When the 75th percentile of your login flow is taking longer than 500 milliseconds.": [
+    "当您的登录流程的第 75 百分位耗时超过 500 毫秒时。"
+  ],
+  "When the number of sign-ups dropped by 10% compared to the previous week.": ["当注册数量比前一周下降 10% 时。"],
+  "Alert on custom [link:span metrics] that you have configured, such as number of sign-ups or duration of your login.": [
+    "对您配置的自定义 [link:跨度指标] 发出警报，例如注册数量或登录持续时间。"
+  ],
+  "Receive an alert when the total number of tokens used by your LLMs reaches a limit.": [
+    "当您的大型语言模型使用的令牌总数达到限制时接收警报。"
+  ],
+  "Unable to load authentication configuration": ["无法加载身份验证配置"],
+  "Experimental SPA mode does not currently support SSO style login. To develop against the [org] you'll need to copy your production session cookie.": [
+    "实验性单页面应用模式目前不支持 SSO 登录方式。要针对 [org] 进行开发，您需要复制您的生产会话 cookie。"
+  ],
+  "something super secret": ["超级机密的东西"],
+  "We'd love to keep you updated via email with product and feature\n           announcements, promotions, educational materials, and events. Our\n           updates focus on relevant information, and we'll never sell your data\n           to third parties. See our [link] for more details.": [
+    "我们希望通过电子邮件向您发送产品和功能公告、促销、教育资料和活动的更新。我们的更新专注于相关信息，我们绝不会将您的数据出售给第三方。请参阅我们的 [link] 了解详细信息。"
+  ],
+  "Yes, I would like to receive updates via email": ["是的，我希望通过电子邮件接收更新"],
+  "No, I'd prefer not to receive these updates": ["不，我不希望接收这些更新"],
+  "Your ID is the slug after the hostname. e.g. [example] is [slug].": ["您的 ID 是主机名后的 slug。例如，[example] 是 [slug]。"],
+  "We have made some updates to our self-hosted beacon broadcast system, and just need to get a quick answer from you.": [
+    "我们对自托管信标广播系统进行了一些更新，只需要您的快速答复。"
+  ],
+  "No, I'd prefer to keep CPU/RAM usage private": ["不，我更希望将 CPU/内存使用情况保持私密"],
+  "CPU/RAM Usage": ["CPU/内存使用情况"],
+  "Recording CPU/RAM usage will greatly help our development team understand how self-hosted sentry\n            is typically being used, and to keep track of improvements that we hope to bring you in the future.": [
+    "记录 CPU/内存使用情况将大大帮助我们的开发团队了解自托管 sentry 的典型使用方式，并跟踪我们希望将来为您带来的改进。"
+  ],
+  "Errors and Transactions": ["错误和事务"],
+  "States, Assignment, Time, etc.": ["状态、分配、时间等"],
+  "Sessions, Crash rates, etc.": ["会话、崩溃率等"],
+  "Add widget": ["添加小部件"],
+  "Export Dashboard": ["导出仪表盘"],
+  "Edit Dashboard": ["编辑仪表盘"],
+  "Dashboard Editing": ["仪表盘编辑"],
+  "Are you sure you want to delete this dashboard?": ["您确定要删除此仪表盘吗？"],
+  "Save and Finish": ["保存并完成"],
+  "Go Back": ["返回"],
+  "Add Dashboard": ["添加仪表盘"],
+  "Resize Widget": ["调整小部件大小"],
+  "Unique Issues Causing Crashes": ["导致崩溃的唯一问题"],
+  "Overall Number of Errors": ["错误总数"],
+  "Issues Causing Crashes": ["导致崩溃的问题"],
+  "Crashes Over Time": ["随时间的崩溃情况"],
+  "Crashes by OS": ["按操作系统划分的崩溃情况"],
+  "Overall Warm Startup Time": ["整体热启动时间"],
+  "Overall Cold Startup Time": ["整体冷启动时间"],
+  "Warm Startup Times": ["热启动时间"],
+  "Cold Startup Times": ["冷启动时间"],
+  "Handled vs. Unhandled": ["已处理与未处理"],
+  "Overall Frozen Frames": ["整体冻结帧"],
+  "Max Warm Startup Time": ["最大热启动时间"],
+  "Max Cold Startup Time": ["最大冷启动时间"],
+  "Area Chart": ["面积图"],
+  "Line Chart": ["折线图"],
+  "Big Number": ["大数字"],
+  "Handled": ["已处理"],
+  "Untitled dashboard": ["未命名的仪表盘"],
+  "Errors by Country": ["按国家划分的错误"],
+  "High Throughput Transactions": ["高吞吐量事务"],
+  "Errors by Browser": ["按浏览器划分的错误"],
+  "Overall User Misery": ["整体用户痛苦"],
+  "Overall Apdex": ["整体 Apdex"],
+  "General Template": ["通用模板"],
+  "Various Frontend and Backend Widgets": ["各种前端和后端小部件"],
+  "Issues Assigned to Me or My Teams": ["分配给我或我的团队的问题"],
+  "Transactions Ordered by Misery": ["按痛苦排序的事务"],
+  "Errors by Browser Over Time": ["随时间的浏览器错误"],
+  "Frontend Template": ["前端模板"],
+  "Erroring URLs and Web Vitals": ["错误 URL 和网络核心指标"],
+  "Top 5 Issues by Unique Users Over Time": ["随时间的前 5 个问题（按唯一用户数）"],
+  "Errors by Browser as Percentage": ["按浏览器划分的错误百分比"],
+  "Top 5 Issues by Unique Users": ["前 5 个问题（按唯一用户数）"],
+  "URLs grouped by Issue": ["按问题分组的 URL"],
+  "Transactions 404ing": ["返回 404 的事务"],
+  "Layout Shift Over Time": ["随时间的布局偏移"],
+  "LCP by Country": ["按国家划分的 LCP"],
+  "Number of Issues": ["问题数量"],
+  "Page Load Over Time": ["随时间的页面加载情况"],
+  "Slowest Pageloads": ["最慢的页面加载"],
+  "Overall LCP": ["整体 LCP"],
+  "Slow Page Navigations": ["慢页面导航"],
+  "Overall FCP": ["整体 FCP"],
+  "Overall CLS": ["整体 CLS"],
+  "Overall FID": ["整体 FID"],
+  "Backend Template": ["后端模板"],
+  "Issues and Performance": ["问题和性能"],
+  "Transactions Erroring Over Time": ["随时间的错误事务"],
+  "Erroring Transactions by Percentage": ["按百分比划分的错误事务"],
+  "Transactions Erroring": ["错误事务"],
+  "p75 Over Time": ["随时间的第 75 百分位"],
+  "Throughput (Errors Per Minute)": ["吞吐量（每分钟错误数）"],
+  "Tasks Transactions with Poor Apdex": ["Apdex 较差的任务事务"],
+  "HTTP Transactions with Poor Apdex": ["Apdex 较差的 HTTP 事务"],
+  "Overall Duration": ["整体持续时间"],
+  "Overall HTTP Spans": ["整体 HTTP 跨度"],
+  "Overall DB Spans": ["整体数据库跨度"],
+  "Mobile Template": ["移动设备模板"],
+  "Crash Details and Performance Vitals": ["崩溃详情和性能指标"],
+  "Total Crashes": ["总崩溃次数"],
+  "Unique Users Who Crashed": ["崩溃的独特用户数"],
+  "Issues dataset does not yet support descending order": ["问题数据集尚不支持降序"],
+  "no results": ["无结果"],
+  "Releases data is only available from Jul 12. Please retry your query with a more recent date range.": [
+    "版本数据仅从 7 月 12 日开始可用。请使用更近的日期范围重试您的查询。"
+  ],
+  "Sorting currently not supported with session.status": ["当前 session.status 不支持排序"],
+  "Widget not found": ["未找到小部件"],
+  "Dashboard deleted": ["仪表盘已删除"],
+  "Dashboard updated": ["仪表盘已更新"],
+  "You have unsaved changes, are you sure you want to leave?": ["您有未保存的更改，确定要离开吗？"],
+  "You have unsaved dashboard filters. You can save or discard them.": ["您有未保存的仪表盘筛选器。您可以保存或舍弃。"],
+  "Dashboard created": ["仪表盘已创建"],
+  "Create Dashboard": ["创建仪表盘"],
+  "Preview Dashboard": ["预览仪表盘"],
+  "Dashboard filters updated": ["仪表盘筛选器已更新"],
+  "Import Dashboard": ["导入仪表盘"],
+  "%s widget": ["%s 小部件"],
+  "%s widgets": ["%s 小部件"]
+}

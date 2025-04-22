@@ -1,0 +1,1220 @@
+{
+  "Install [code:sentry-sdk]:": [
+    "安装 [code:sentry-sdk]："
+  ],
+  "Setup the application production environment in your [code:config/prod.exs]": [
+    "在 [code:config/prod.exs] 中配置应用的生产环境："
+  ],
+  "Package Source Code": [
+    "打包源代码"
+  ],
+  "Add a call to [code:mix sentry.package_source_code] in your release script to make sure the stacktraces you receive are complete.": [
+    "在您的发布脚本中添加对 [code:mix sentry.package_source_code] 的调用，以确保您收到的堆栈跟踪是完整的。"
+  ],
+  "Setup for Plug and Phoenix Applications": [
+    "Plug 和 Phoenix 应用的设置："
+  ],
+  "You can capture errors in Plug (and Phoenix) applications with [plugContext:Sentry.PlugContext] and [plugCapture:Sentry.PlugCapture]:": [
+    "您可以使用 [plugContext:Sentry.PlugContext] 和 [plugCapture:Sentry.PlugCapture] 在 Plug（和 Phoenix）应用中捕获错误："
+  ],
+  "[sentryPlugContextCode:Sentry.PlugContext] gathers the contextual information for errors, and [sentryPlugCaptureCode:Sentry.PlugCapture] captures and sends any errors that occur in the Plug stack.": [
+    "[sentryPlugContextCode:Sentry.PlugContext] 收集错误的上下文信息，[sentryPlugCaptureCode:Sentry.PlugCapture] 捕获并发送在 Plug 堆栈中发生的任何错误。"
+  ],
+  "Import [sentryFlutter: sentry_flutter] and initialize it": [
+    "导入 [sentryFlutter: sentry_flutter] 并初始化："
+  ],
+  "Flutter Profiling alpha is available for iOS and macOS since SDK version 7.12.0.": [
+    "自 SDK 版本 7.12.0 起，Flutter 概要分析 alpha 版支持 iOS 和 macOS。"
+  ],
+  "We offer a range of methods to provide Sentry with debug symbols so that you can see symbolicated stack traces and triage issues faster.": [
+    "我们提供了多种方法，将调试符号提供给 Sentry，以便您可以查看符号化的堆栈跟踪并更快地对问题进行分类。"
+  ],
+  "If Sentry has access to your application's source code, it can show snippets of code source context around the location of stack frames, which helps to quickly pinpoint problematic code.": [
+    "如果 Sentry 能够访问您的应用程序的源代码，它可以在堆栈帧的位置显示代码源上下文的片段，这有助于快速定位问题代码。"
+  ],
+  "You need Sentry Flutter SDK version [codeVersion:7.19.0] or higher. Learn more about installation methods in our [docsLink:full documentation].": [
+    "您需要 Sentry Flutter SDK [codeVersion:7.19.0] 或更高版本。在我们的 [docsLink:完整文档] 中了解安装方法。"
+  ],
+  "Install our Go Echo SDK using [code:go get]:": [
+    "使用 [code:go get] 安装我们的 Go Echo SDK："
+  ],
+  "Import and initialize the Sentry SDK early in your application's setup:": [
+    "在应用设置的早期导入并初始化 Sentry SDK："
+  ],
+  "[sentryEchoCode:sentryecho] accepts a struct of [optionsCode:Options] that allows you to configure how the handler will behave.": [
+    "[sentryEchoCode:sentryecho] 接受一个 [optionsCode:Options] 结构体，允许您配置处理程序的行为。"
+  ],
+  "Currently it respects 3 options:": [
+    "目前它支持 3 个选项："
+  ],
+  "Usage": [
+    "使用方法："
+  ],
+  "[sentryEchoCode:sentryecho] attaches an instance of [sentryHubLink:*sentry.Hub] to the [echoContextCode:echo.Context], which makes it available throughout the rest of the request's lifetime. You can access it by using the [getHubFromContextCode:sentryecho.GetHubFromContext()] method on the context itself in any of your proceeding middleware and routes. And it should be used instead of the global [captureMessageCode:sentry.CaptureMessage], [captureExceptionCode:sentry.CaptureException] or any other calls, as it keeps the separation of data between the requests.": [
+    "[sentryEchoCode:sentryecho] 将 [sentryHubLink:*sentry.Hub] 的一个实例附加到 [echoContextCode:echo.Context]，使其在整个请求生命周期的其余部分可用。您可以通过在后续的中间件和路由中的上下文本身上使用 [getHubFromContextCode:sentryecho.GetHubFromContext()] 方法来访问它。应使用它代替全局的 [captureMessageCode:sentry.CaptureMessage]、[captureExceptionCode:sentry.CaptureException] 或其他调用，因为它保持了请求之间的数据分离。"
+  ],
+  "Keep in mind that [sentryHubCode:*sentry.Hub] won't be available in middleware attached before [sentryEchoCode:sentryecho]!": [
+    "请注意，在 [sentryEchoCode:sentryecho] 之前附加的中间件中无法使用 [sentryHubCode:*sentry.Hub]！"
+  ],
+  "Accessing Request in [beforeSendCode:BeforeSend] callback": [
+    "在 [beforeSendCode:BeforeSend] 回调中访问请求："
+  ],
+  "Install our Go FastHTTP SDK using [code:go get]:": [
+    "使用 [code:go get] 安装我们的 Go FastHTTP SDK："
+  ],
+  "[sentryfasthttpCode:sentryfasthttp] accepts a struct of [optionsCode:Options] that allows you to configure how the handler will behave.": [
+    "[sentryfasthttpCode:sentryfasthttp] 接受一个 [optionsCode:Options] 结构体，允许您配置处理程序的行为。"
+  ],
+  "[sentryfasthttpCode:sentryfasthttp] attaches an instance of [sentryHubLink:*sentry.Hub] to the request's context, which makes it available throughout the rest of the request's lifetime. You can access it by using the [getHubFromContextCode:sentryfasthttp.GetHubFromContext()] method on the request itself in any of your proceeding middleware and routes. And it should be used instead of the global [captureMessageCode:sentry.CaptureMessage], [captureExceptionCode:sentry.CaptureException], or any other calls, as it keeps the separation of data between the requests.": [
+    "[sentryfasthttpCode:sentryfasthttp] 将 [sentryHubLink:*sentry.Hub] 的一个实例附加到请求的上下文中，使其在整个请求生命周期的其余部分可用。您可以通过在后续的中间件和路由中的请求本身上使用 [getHubFromContextCode:sentryfasthttp.GetHubFromContext()] 方法来访问它。应使用它代替全局的 [captureMessageCode:sentry.CaptureMessage]、[captureExceptionCode:sentry.CaptureException] 或其他调用，因为它保持了请求之间的数据分离。"
+  ],
+  "Keep in mind that [sentryHubCode:*sentry.Hub] won't be available in middleware attached before [sentryfasthttpCode:sentryfasthttp]!": [
+    "请注意，在 [sentryfasthttpCode:sentryfasthttp] 之前附加的中间件中无法使用 [sentryHubCode:*sentry.Hub]！"
+  ],
+  "Install our Go Fiber SDK using [code:go get]:": [
+    "使用 [code:go get] 安装我们的 Go Fiber SDK："
+  ],
+  "[sentryFiberCode:sentryfiber] accepts a struct of [optionsCode:Options] that allows you to configure how the handler will behave.": [
+    "[sentryFiberCode:sentryfiber] 接受一个 [optionsCode:Options] 结构体，允许您配置处理程序的行为。"
+  ],
+  "[sentryFiberCode:sentryfiber] attaches an instance of [sentryHubLink:*sentry.Hub] to the [fiberContextCode:*fiber.Ctx], which makes it available throughout the rest of the request's lifetime. You can access it by using the [getHubFromContextCode:sentryfiber.GetHubFromContext()] method on the context itself in any of your proceeding middleware and routes. And it should be used instead of the global [captureMessageCode:sentry.CaptureMessage], [captureExceptionCode:sentry.CaptureException] or any other calls, as it keeps the separation of data between the requests.": [
+    "[sentryFiberCode:sentryfiber] 将 [sentryHubLink:*sentry.Hub] 的一个实例附加到 [fiberContextCode:*fiber.Ctx]，使其在整个请求生命周期的其余部分可用。您可以通过在后续的中间件和路由中的上下文本身上使用 [getHubFromContextCode:sentryfiber.GetHubFromContext()] 方法来访问它。应使用它代替全局的 [captureMessageCode:sentry.CaptureMessage]、[captureExceptionCode:sentry.CaptureException] 或其他调用，因为它保持了请求之间的数据分离。"
+  ],
+  "Keep in mind that [sentryHubCode:*sentry.Hub] won't be available in middleware attached before [sentryFiberCode:sentryfiber]!": [
+    "请注意，在 [sentryFiberCode:sentryfiber] 之前附加的中间件中无法使用 [sentryHubCode:*sentry.Hub]！"
+  ],
+  "Install our Go Gin SDK using [code:go get]:": [
+    "使用 [code:go get] 安装我们的 Go Gin SDK："
+  ],
+  "[sentryGinCode:sentrygin] accepts a struct of [optionsCode:Options] that allows you to configure how the handler will behave.": [
+    "[sentryGinCode:sentrygin] 接受一个 [optionsCode:Options] 结构体，允许您配置处理程序的行为。"
+  ],
+  "[sentryGinCode:sentrygin] attaches an instance of [sentryHubLink:*sentry.Hub] to the [ginContextCode:*gin.Context], which makes it available throughout the rest of the request's lifetime. You can access it by using the [getHubFromContextCode:sentrygin.GetHubFromContext()] method on the context itself in any of your proceeding middleware and routes. And it should be used instead of the global [captureMessageCode:sentry.CaptureMessage], [captureExceptionCode:sentry.CaptureException], or any other calls, as it keeps the separation of data between the requests.": [
+    "[sentryGinCode:sentrygin] 将 [sentryHubLink:*sentry.Hub] 的一个实例附加到 [ginContextCode:*gin.Context]，使其在整个请求生命周期的其余部分可用。您可以通过在后续的中间件和路由中的上下文本身上使用 [getHubFromContextCode:sentrygin.GetHubFromContext()] 方法来访问它。应使用它代替全局的 [captureMessageCode:sentry.CaptureMessage]、[captureExceptionCode:sentry.CaptureException] 或其他调用，因为它保持了请求之间的数据分离。"
+  ],
+  "Keep in mind that [sentryHubCode:*sentry.Hub] won't be available in middleware attached before [sentryGinCode:sentrygin]!": [
+    "请注意，在 [sentryGinCode:sentrygin] 之前附加的中间件中无法使用 [sentryHubCode:*sentry.Hub]！"
+  ],
+  "Install our Go SDK using [code:go get]:": [
+    "使用 [code:go get] 安装我们的 Go SDK："
+  ],
+  "The quickest way to verify Sentry in your Go program is to capture a message:": [
+    "验证 Go 程序中的 Sentry 的最快速方法是捕获一条消息："
+  ],
+  "Install our Go HTTP SDK using [code:go get]:": [
+    "使用 [code:go get] 安装我们的 Go HTTP SDK："
+  ],
+  "[sentryHttpCode:sentryhttp] accepts a struct of [optionsCode:Options] that allows you to configure how the handler will behave.": [
+    "[sentryHttpCode:sentryhttp] 接受一个 [optionsCode:Options] 结构体，允许您配置处理程序的行为。"
+  ],
+  "[sentryHttpCode:sentryhttp] attaches an instance of [sentryHubLink:*sentry.Hub] to the request's context, which makes it available throughout the rest of the request's lifetime. You can access it by using the [getHubFromContextCode:sentry.GetHubFromContext()] method on the request itself in any of your proceeding middleware and routes. And it should be used instead of the global [captureMessageCode:sentry.CaptureMessage], [captureExceptionCode:sentry.CaptureException], or any other calls, as it keeps the separation of data between the requests.": [
+    "[sentryHttpCode:sentryhttp] 将 [sentryHubLink:*sentry.Hub] 的一个实例附加到请求的上下文中，使其在整个请求生命周期的其余部分可用。您可以通过在后续的中间件和路由中的请求本身上使用 [getHubFromContextCode:sentry.GetHubFromContext()] 方法来访问它。应使用它代替全局的 [captureMessageCode:sentry.CaptureMessage]、[captureExceptionCode:sentry.CaptureException] 或其他调用，因为它保持了请求之间的数据分离。"
+  ],
+  "Keep in mind that [sentryHubCode:*sentry.Hub] won't be available in middleware attached before [sentryHttpCode:sentryhttp]!": [
+    "请注意，在 [sentryHttpCode:sentryhttp] 之前附加的中间件中无法使用 [sentryHubCode:*sentry.Hub]！"
+  ],
+  "Install our Go Iris SDK using [code:go get]:": [
+    "使用 [code:go get] 安装我们的 Go Iris SDK："
+  ],
+  "[sentryirisCode:sentryiris] accepts a struct of [optionsCode:Options] that allows you to configure how the handler will behave.": [
+    "[sentryirisCode:sentryiris] 接受一个 [optionsCode:Options] 结构体，允许您配置处理程序的行为。"
+  ],
+  "[sentryirisCode:sentryiris] attaches an instance of [sentryHubLink:*sentry.Hub] to the [irisContextCode:iris.Context], which makes it available throughout the rest of the request's lifetime. You can access it by using the [getHubFromContextCode:sentryiris.GetHubFromContext()] method on the context itself in any of your proceeding middleware and routes. And it should be used instead of the global [captureMessageCode:sentry.CaptureMessage], [captureExceptionCode:sentry.CaptureException], or any other calls, as it keeps the separation of data between the requests.": [
+    "[sentryirisCode:sentryiris] 将 [sentryHubLink:*sentry.Hub] 的一个实例附加到 [irisContextCode:iris.Context]，使其在整个请求生命周期的其余部分可用。您可以通过在后续的中间件和路由中的上下文本身上使用 [getHubFromContextCode:sentryiris.GetHubFromContext()] 方法来访问它。应使用它代替全局的 [captureMessageCode:sentry.CaptureMessage]、[captureExceptionCode:sentry.CaptureException] 或其他调用，因为它保持了请求之间的数据分离。"
+  ],
+  "Keep in mind that [sentryHubCode:*sentry.Hub] won't be available in middleware attached before [sentryirisCode:sentryiris]!": [
+    "请注意，在 [sentryirisCode:sentryiris] 之前附加的中间件中无法使用 [sentryHubCode:*sentry.Hub]！"
+  ],
+  "[sentryMartiniCode:sentrymartini] accepts a struct of [optionsCode:Options] that allows you to configure how the handler will behave.": [
+    "[sentryMartiniCode:sentrymartini] 接受一个 [optionsCode:Options] 结构体，允许您配置处理程序的行为。"
+  ],
+  "[sentryMartiniCode:sentrymartini] maps an instance of [sentryHubLink:*sentry.Hub] as one of the services available throughout the rest of the request's lifetime. You can access it by providing a hub [sentryHubCode:*sentry.Hub] parameter in any of your proceeding middleware and routes. And it should be used instead of the global [captureMessageCode:sentry.CaptureMessage], [captureExceptionCode:sentry.CaptureException], or any other calls, as it keeps the separation of data between the requests.": [
+    "[sentryMartiniCode:sentrymartini] 将 [sentryHubLink:*sentry.Hub] 的一个实例映射为在请求生命周期其余部分可用的服务之一。您可以通过在后续的中间件和路由中提供 hub [sentryHubCode:*sentry.Hub] 参数来访问它。应使用它代替全局的 [captureMessageCode:sentry.CaptureMessage]、[captureExceptionCode:sentry.CaptureException] 或其他调用，因为它保持了请求之间的数据分离。"
+  ],
+  "Keep in mind that [sentryHubCode:*sentry.Hub] won't be available in middleware attached before [sentryMartiniCode:sentrymartini]!": [
+    "请注意，在 [sentryMartiniCode:sentrymartini] 之前附加的中间件中无法使用 [sentryHubCode:*sentry.Hub]！"
+  ],
+  "Install our Go Martini SDK using [code:go get]:": [
+    "使用 [code:go get] 安装我们的 Go Martini SDK："
+  ],
+  "Install our Go Negroni SDK using [code:go get]:": [
+    "使用 [code:go get] 安装我们的 Go Negroni SDK："
+  ],
+  "[sentryNegroniCode:sentrynegroni] accepts a struct of [optionsCode:Options] that allows you to configure how the handler will behave.": [
+    "[sentryNegroniCode:sentrynegroni] 接受一个 [optionsCode:Options] 结构体，允许您配置处理程序的行为。"
+  ],
+  "[sentryNegroniCode:sentrynegroni] attaches an instance of [sentryHubLink:*sentry.Hub] to the request's context, which makes it available throughout the rest of the request's lifetime. You can access it by using the [getHubFromContextCode:sentry.GetHubFromContext()] method on the request itself in any of your proceeding middleware and routes. And it should be used instead of the global [captureMessageCode:sentry.CaptureMessage], [captureExceptionCode:sentry.CaptureException], or any other calls, as it keeps the separation of data between the requests.": [
+    "[sentryNegroniCode:sentrynegroni] 将 [sentryHubLink:*sentry.Hub] 的一个实例附加到请求的上下文中，使其在整个请求生命周期的其余部分可用。您可以通过在后续的中间件和路由中的请求本身上使用 [getHubFromContextCode:sentry.GetHubFromContext()] 方法来访问它。应使用它代替全局的 [captureMessageCode:sentry.CaptureMessage]、[captureExceptionCode:sentry.CaptureException] 或其他调用，因为它保持了请求之间的数据分离。"
+  ],
+  "Keep in mind that [sentryHubCode:*sentry.Hub] won't be available in middleware attached before [sentryNegroniCode:sentrynegroni]!": [
+    "请注意，在 [sentryNegroniCode:sentrynegroni] 之前附加的中间件中无法使用 [sentryHubCode:*sentry.Hub]！"
+  ],
+  "Using Negroni's 'panicHandlerFuncCode' Option": [
+    "使用 Negroni 的 'panicHandlerFuncCode' 选项："
+  ],
+  "Negroni provides an option called [panicHandlerFuncCode:PanicHandlerFunc], which lets you 'plug-in' to its default [recoveryCode:Recovery] middleware.": [
+    "Negroni 提供了一个名为 [panicHandlerFuncCode:PanicHandlerFunc] 的选项，允许您将其默认的 [recoveryCode:Recovery] 中间件进行扩展。"
+  ],
+  "[sentrynegroniCode:sentrynegroni] exports a very barebones implementation, which utilizes it, so if you don't need anything else than just reporting panics to Sentry, you can use it instead, as it's just one line of code!": [
+    "[sentrynegroniCode:sentrynegroni] 导出了一个非常基础的实现，可以利用它进行扩展，因此如果您只需要将恐慌报告给 Sentry 而不需要其他功能，您可以改用它，因为它只有一行代码！"
+  ],
+  "You can still use [beforeSendCode:BeforeSend] and event processors to modify data before delivering it to Sentry, using this method as well.": [
+    "您仍然可以使用 [beforeSendCode:BeforeSend] 和事件处理器来修改数据，然后再将其发送到 Sentry，此方法同样适用。"
+  ],
+  "Sentry for Java is a collection of modules provided by Sentry; it supports Java 1.8 and above. At its core, Sentry for Java provides a raw client for sending events to Sentry. If you use [strong:Spring Boot, Spring, Logback, or Log4j2], we recommend visiting our Sentry Java documentation for installation instructions.": [
+    "Sentry for Java 是由 Sentry 提供的一系列模块；它支持 Java 1.8 及更高版本。在核心层面，Sentry for Java 提供了一个原始客户端，用于向 Sentry 发送事件。如果您使用的是 [strong:Spring Boot、Spring、Logback 或 Log4j2]，我们建议访问我们的 Sentry Java 文档以获取安装说明。"
+  ],
+  "Install the SDK via %s:": [
+    "通过 %s 安装 SDK："
+  ],
+  "To see source context in Sentry, you have to generate an auth token by visiting the [link:Organization Auth Tokens] settings. You can then set the token as an environment variable that is used by the build plugins.": [
+    "要在 Sentry 中查看源上下文，您需要通过访问 [link:Organization Auth Tokens] 设置生成一个认证令牌。然后，您可以将该令牌设置为环境变量，由构建插件使用。"
+  ],
+  "The [link:Sentry Gradle Plugin] automatically installs the Sentry SDK as well as available integrations for your dependencies. Add the following to your [code:build.gradle] file:": [
+    "[link:Sentry Gradle 插件] 会自动安装 Sentry SDK 以及适用于您的依赖项的集成。将以下内容添加到 [code:build.gradle] 文件中："
+  ],
+  "The [link:Sentry Maven Plugin] automatically installs the Sentry SDK as well as available integrations for your dependencies. Add the following to your [code:pom.xml] file:": [
+    "[link:Sentry Maven 插件] 会自动安装 Sentry SDK 以及适用于您的依赖项的集成。将以下内容添加到 [code:pom.xml] 文件中："
+  ],
+  "Add the sentry SDK to your [code:libraryDependencies]:": [
+    "将 sentry SDK 添加到您的 [code:libraryDependencies] 中："
+  ],
+  "If you prefer to manually upload your source code to Sentry, please refer to [link:Manually Uploading Source Context].": [
+    "如果您更愿意手动将源代码上传到 Sentry，请参阅 [link:Manually Uploading Source Context]。"
+  ],
+  "Configure Sentry as soon as possible in your application's lifecycle:": [
+    "在应用生命周期中尽早配置 Sentry："
+  ],
+  "Trigger your first event from your development environment by intentionally creating an error with the [code:Sentry#captureException] method, to test that everything is working:": [
+    "通过故意使用 [code:Sentry#captureException] 方法在开发环境中创建错误来触发您的第一个事件，以测试一切是否正常工作："
+  ],
+  "If you're new to Sentry, use the email alert to access your account and complete a product tour.": [
+    "如果您是 Sentry 新用户，请使用电子邮件警报访问您的账户并完成产品导览。"
+  ],
+  "If you're an existing user and have disabled alerts, you won't receive this email.": [
+    "如果您是现有用户且已禁用警报，则不会收到此邮件。"
+  ],
+  "Check out our sample applications.": [
+    "查看我们的示例应用。"
+  ],
+  "Stay ahead of latency issues and trace every slow transaction to a poor-performing API call or database query.": [
+    "先发制人地解决延迟问题，并追踪每一个缓慢的事务到性能不佳的 API 调用或数据库查询。"
+  ],
+  "Package Manager": [
+    "包管理器"
+  ],
+  "The [code:sentry-log4j2] library provides [log4jLink:Log4j 2.x] support for Sentry via an [appenderLink:Appender] that sends logged exceptions to Sentry.": [
+    "[code:sentry-log4j2] 库通过一个将记录的异常发送到 Sentry 的 [appenderLink:Appender] 为 Sentry 提供 [log4jLink:Log4j 2.x] 支持。"
+  ],
+  "Install Sentry's integration with Log4j 2.x using %s:": [
+    "使用 %s 安装 Sentry 与 Log4j 2.x 的集成："
+  ],
+  "The following example using the [log4j2Code:log4j2.xml] format to configure a [sentryConsoleAppenderCode:ConsoleAppender] that logs to standard out at the INFO level, and a [sentryAppenderCode:SentryAppender] that logs to the Sentry server at the ERROR level.": [
+    "以下示例使用 [log4j2Code:log4j2.xml] 格式配置一个在 INFO 级别记录到标准输出的 [sentryConsoleAppenderCode:ConsoleAppender]，以及一个在 ERROR 级别记录到 Sentry 服务器的 [sentryAppenderCode:SentryAppender]。"
+  ],
+  "You'll also need to configure your DSN (client key) if it's not already in the [code:log4j2.xml] configuration. Learn more in [link:our documentation for DSN configuration].": [
+    "如果 DSN（客户端密钥）尚未在 [code:log4j2.xml] 配置中，您还需要配置它。了解更多，请参阅 [link:我们的 DSN 配置文档]。"
+  ],
+  "Gradle": [
+    "Gradle"
+  ],
+  "Next, you'll need to set your log levels, as illustrated here. You can learn more about [link:configuring log levels] in our documentation.": [
+    "接下来，您需要设置日志级别，如下例所示。您可以在我们的文档中了解更多关于 [link:配置日志级别] 的信息。"
+  ],
+  "Last, create an intentional error, so you can test that everything is working:": [
+    "最后，故意创建一个错误，以便测试一切是否正常工作："
+  ],
+  "Maven": [
+    "Maven"
+  ],
+  "The sentry-logback library provides Logback support for Sentry using an [link:Appender] that sends logged exceptions to Sentry.": [
+    "sentry-logback 库使用一个 [link:Appender] 将记录的异常发送到 Sentry，从而为 Sentry 提供 Logback 支持。"
+  ],
+  "Install Sentry's integration with Logback using %s:": [
+    "使用 %s 安装 Sentry 与 Logback 的集成："
+  ],
+  "The following example configures a ConsoleAppender that logs to standard out at the INFO level, and a SentryAppender that logs to the Sentry server at the ERROR level. This only an example of a non-Sentry appender set to a different logging threshold, similar to what you may already have in your project.": [
+    "以下示例配置了一个在 INFO 级别记录到标准输出的 ConsoleAppender，以及一个在 ERROR 级别记录到 Sentry 服务器的 SentryAppender。这只是将非 Sentry appender 设置为不同日志阈值的一个示例，类似于您项目中可能已有的配置。"
+  ],
+  "You'll also need to configure your DSN (client key) if it's not already in the [code:logback.xml] configuration. Learn more in [link:our documentation for DSN configuration].": [
+    "如果 DSN（客户端密钥）尚未在 [code:logback.xml] 配置中，您还需要配置它。了解更多，请参阅 [link:我们的 DSN 配置文档]。"
+  ],
+  "Other build tools": [
+    "其他构建工具"
+  ],
+  "For other dependency managers see the [link:central Maven repository].": [
+    "对于其他依赖管理器，请参阅 [link:central Maven 仓库]。"
+  ],
+  "Sentry's integration with [springBootLink:Spring Boot] supports Spring Boot 2.1.0 and above. If you're on an older version, use [legacyIntegrationLink:our legacy integration].": [
+    "Sentry 与 [springBootLink:Spring Boot] 的集成为 Spring Boot 2.1.0 及更高版本提供支持。如果您使用的是旧版本，请使用 [legacyIntegrationLink:我们的旧版集成]。"
+  ],
+  "Open up [applicationPropertiesCode:src/main/application.properties] (or [applicationYmlCode:src/main/application.yml]) and configure the DSN, and any other settings you need:": [
+    "打开 [applicationPropertiesCode:src/main/application.properties]（或 [applicationYmlCode:src/main/application.yml]）并配置 DSN 以及您需要的任何其他设置："
+  ],
+  "Then create an intentional error, so you can test that everything is working using either Java or Kotlin:": [
+    "然后故意创建一个错误，以便使用 Java 或 Kotlin 测试一切是否正常工作："
+  ],
+  "Sentry's integration with Spring supports Spring Framework 5.1.2 and above. If you're on an older version, use [legacyIntegrationLink:our legacy integration].": [
+    "Sentry 与 Spring 的集成为 Spring Framework 5.1.2 及更高版本提供支持。如果您使用的是旧版本，请使用 [legacyIntegrationLink:我们的旧版集成]。"
+  ],
+  "Install Sentry's integration with Spring using %s:": [
+    "使用 %s 安装 Sentry 与 Spring 的集成："
+  ],
+  "The [libraryName] library provides an [codeEnableSentry:@EnableSentry] annotation that registers all required Spring beans. [codeEnableSentry:@EnableSentry] can be placed on any class annotated with [configurationLink:@Configuration] including the main entry class in Spring Boot applications annotated with [springBootApplicationLink:@SpringBootApplication].": [
+    "[libraryName] 库提供了一个 [codeEnableSentry:@EnableSentry] 注解，用于注册所有必需的 Spring Bean。[codeEnableSentry:@EnableSentry] 可以放在任何带有 [configurationLink:@Configuration] 注解的类上，包括带有 [springBootApplicationLink:@SpringBootApplication] 注解的 Spring Boot 应用的主要入口类。"
+  ],
+  "Spring Version": [
+    "Spring 版本"
+  ],
+  "Spring 6": [
+    "Spring 6"
+  ],
+  "Spring 5": [
+    "Spring 5"
+  ],
+  "…loading": [
+    "…正在加载"
+  ],
+  "Angular Features": [
+    "Angular 功能"
+  ],
+  "Learn about our first class integration with the Angular framework.": [
+    "了解我们与 Angular 框架的一流集成。"
+  ],
+  "Initialize the Sentry Angular SDK in your [code:main.ts] file as early as possible, before initializing Angular:": [
+    "在 [code:main.ts] 文件中尽早初始化 Sentry Angular SDK，最好是在初始化 Angular 之前："
+  ],
+  "In order to use Session Replay, you will need version 7.27.0 of [codeAngular:@sentry/angular] at minimum. You do not need to install any additional packages.": [
+    "为了使用会话回放，您至少需要 [codeAngular:@sentry/angular] 的 7.27.0 版本。您不需要安装任何其他软件包。"
+  ],
+  "For the User Feedback integration to work, you must have the Sentry browser SDK package, or an equivalent framework SDK (e.g. [codeAngular:@sentry/angular]) installed, minimum version 7.85.0.": [
+    "为了使用户反馈集成正常工作，您必须安装 Sentry 浏览器 SDK 软件包或等效的框架 SDK（例如 [codeAngular:@sentry/angular]），最低版本为 7.85.0。"
+  ],
+  "Add the Sentry SDK as a dependency using [codeNpm:npm], [codeYarn:yarn] or [codePnpm:pnpm]:": [
+    "使用 [codeNpm:npm]、[codeYarn:yarn] 或 [codePnpm:pnpm] 将 Sentry SDK 添加为依赖项："
+  ],
+  "Register the Sentry Angular SDK's ErrorHandler and Tracing providers in your [codeModule:app.module.ts] file:": [
+    "在您的 [codeModule:app.module.ts] 文件中注册 Sentry Angular SDK 的 ErrorHandler 和 Tracing 提供程序："
+  ],
+  "Customize your SDK Setup": [
+    "自定义 SDK 设置"
+  ],
+  "Learn how to further configure and customize your Sentry Astro SDK setup.": [
+    "了解如何进一步配置和自定义您的 Sentry Astro SDK 设置。"
+  ],
+  "There are several privacy and sampling options available. Learn more about configuring Session Replay by reading the [link:configuration docs].": [
+    "有多种隐私和采样选项可供选择。通过阅读 [link:配置文档] 了解更多关于配置会话回放的信息。"
+  ],
+  "You can set sample rates directly in your [code:astro.config.js] file:": [
+    "您可以在 [code:astro.config.js] 文件中直接设置采样率："
+  ],
+  "Further Replay options, like privacy settings, can be set in a [code:sentry.client.config.js] file:": [
+    "其他回放选项（如隐私设置）可以在 [code:sentry.client.config.js] 文件中设置："
+  ],
+  "Note that creating your own [code:sentry.client.config.js] file will override the default settings in your [code2:astro.config.js] file. Learn more about this [link:here].": [
+    "请注意，创建您自己的 [code:sentry.client.config.js] 文件将覆盖 [code2:astro.config.js] 文件中的默认设置。有关此内容的更多信息，请参阅 [link:here]。"
+  ],
+  "For the User Feedback integration to work, you must have the Sentry browser SDK package, or an equivalent framework SDK (e.g. [code:@sentry/astro]) installed, minimum version 7.85.0.": [
+    "为了使用户反馈集成正常工作，您必须安装 Sentry 浏览器 SDK 软件包或等效的框架 SDK（例如 [code:@sentry/astro]），最低版本为 7.85.0。"
+  ],
+  "Install the [sentryAstroPkg:@sentry/astro] package with the [astroCli:astro] CLI:": [
+    "使用 [astroCli:astro] CLI 安装 [sentryAstroPkg:@sentry/astro] 软件包："
+  ],
+  "Sentry's integration with [astroLink:Astro] supports Astro 3.0.0 and above.": [
+    "Sentry 与 [astroLink:Astro] 的集成为 Astro 3.0.0 及更高版本提供支持。"
+  ],
+  "Open up your [astroConfig:astro.config.mjs] file and configure the DSN, and any other settings you need:": [
+    "打开您的 [astroConfig:astro.config.mjs] 文件并配置 DSN 以及您需要的任何其他设置："
+  ],
+  "Add your Sentry auth token to the [authTokenEnvVar:SENTRY_AUTH_TOKEN] environment variable:": [
+    "将您的 Sentry 认证令牌添加到 [authTokenEnvVar:SENTRY_AUTH_TOKEN] 环境变量中："
+  ],
+  "You can further customize your SDK by [manualSetupLink:manually inializing the SDK].": [
+    "您可以通过 [manualSetupLink:手动初始化 SDK] 进一步自定义您的 SDK。"
+  ],
+  "Then throw a test error anywhere in your app, so you can test that everything is working:": [
+    "然后在应用中的任意位置抛出一个测试错误，以确保一切正常工作："
+  ],
+  "You need a minimum version 7.27.0 of [code:@sentry/ember] in order to use Session Replay. You do not need to install any additional packages.": [
+    "为了使用会话回放，您需要 [code:@sentry/ember] 的最低版本 7.27.0。您不需要安装任何其他软件包。"
+  ],
+  "For the User Feedback integration to work, you must have the Sentry browser SDK package, or an equivalent framework SDK (e.g. [code:@sentry/ember]) installed, minimum version 7.85.0.": [
+    "为了使用户反馈集成正常工作，您必须安装 Sentry 浏览器 SDK 软件包或等效的框架 SDK（例如 [code:@sentry/ember]），最低版本为 7.85.0。"
+  ],
+  "Sentry captures data by using an SDK within your application’s runtime.": [
+    "Sentry 通过在应用运行时使用 SDK 来捕获数据。"
+  ],
+  "You should [initCode:init] the Sentry SDK as soon as possible during your application load up in [appCode:app.js], before initializing Ember:": [
+    "您应该在初始化 Ember 之前，在 [appCode:app.js] 中尽早 [initCode:init] Sentry SDK，最好是在应用加载期间："
+  ],
+  "You need a minimum version 7.27.0 of [code:@sentry/gatsby] in order to use Session Replay. You do not need to install any additional packages.": [
+    "为了使用会话回放，您需要 [code:@sentry/gatsby] 的最低版本 7.27.0。您不需要安装任何其他软件包。"
+  ],
+  "Note: If [codeGatsby:gatsby-config.js] has any settings for the [codeSentry:@sentry/gatsby] plugin, they need to be moved into [codeConfig:sentry.config.js]. The [codeGatsby:gatsby-config.js] file does not support non-serializable options, like [codeNew:new Replay()].": [
+    "注意：如果 [codeGatsby:gatsby-config.js] 为 [codeSentry:@sentry/gatsby] 插件有任何设置，则需要将其移到 [codeConfig:sentry.config.js] 中。[codeGatsby:gatsby-config.js] 文件不支持不可序列化的选项，例如 [codeNew:new Replay()]。"
+  ],
+  "For the User Feedback integration to work, you must have the Sentry browser SDK package, or an equivalent framework SDK (e.g. [code:@sentry/gatsby]) installed, minimum version 7.85.0.": [
+    "为了使用户反馈集成正常工作，您必须安装 Sentry 浏览器 SDK 软件包或等效的框架 SDK（例如 [code:@sentry/gatsby]），最低版本为 7.85.0。"
+  ],
+  "Register the [codeSentry@sentry/gatsby] plugin in your Gatsby configuration file (typically [codeGatsby:gatsby-config.js]).": [
+    "在您的 Gatsby 配置文件（通常是 [codeGatsby:gatsby-config.js]）中注册 [codeSentry@sentry/gatsby] 插件。"
+  ],
+  "Then, configure your [codeSentry:Sentry.init:]": [
+    "然后，配置您的 [codeSentry:Sentry.init:]："
+  ],
+  "Add the Sentry SDK as a dependency using [codeNpm:npm] or [codeYarn:yarn]:": [
+    "使用 [codeNpm:npm] 或 [codeYarn:yarn] 将 Sentry SDK 添加为依赖项："
+  ],
+  "For the Session Replay to work, you must have the Sentry browser SDK package, or an equivalent framework SDK (e.g. [code:@sentry/react]) installed, minimum version 7.27.0.": [
+    "为了使会话回放正常工作，您必须安装 Sentry 浏览器 SDK 软件包或等效的框架 SDK（例如 [code:@sentry/react]），最低版本为 7.27.0。"
+  ],
+  "For the User Feedback integration to work, you must have the Sentry browser SDK package, or an equivalent framework SDK (e.g. [code:@sentry/react]) installed, minimum version 7.85.0.": [
+    "为了使用户反馈集成正常工作，您必须安装 Sentry 浏览器 SDK 软件包或等效的框架 SDK（例如 [code:@sentry/react]），最低版本为 7.85.0。"
+  ],
+  "Add this script tag to the top of the page:": [
+    "将此脚本标签添加到页面顶部："
+  ],
+  "Make sure that Session Replay is enabled in your [link:project settings].": [
+    "确保在您的 [link:项目设置] 中启用了会话回放。"
+  ],
+  "Alert: The Replay integration must be added to your [sentryClient:sentry.client.config.js] file. Adding it to any server-side configuration files (like [instrumentation:instrumentation.ts]) will break your build because the Replay integration depends on Browser APIs.": [
+    "警告：回放集成必须添加到您的 [sentryClient:sentry.client.config.js] 文件中。将其添加到任何服务器端配置文件（如 [instrumentation:instrumentation.ts]）中会破坏您的构建，因为回放集依赖于浏览器 API。"
+  ],
+  "For the User Feedback integration to work, you must have the Sentry browser SDK package, or an equivalent framework SDK (e.g. [code:@sentry/nextjs]) installed, minimum version 7.85.0.": [
+    "为了使用户反馈集成正常工作，您必须安装 Sentry 浏览器 SDK 软件包或等效的框架 SDK（例如 [code:@sentry/nextjs]），最低版本为 7.85.0。"
+  ],
+  "Alert: The User Feedback integration must be added to your [sentryClient:sentry.client.config.js] file. Adding it to any server-side configuration files (like [instrumentation:instrumentation.ts]) will break your build because the Replay integration depends on Browser APIs.": [
+    "警告：用户反馈集成必须添加到您的 [sentryClient:sentry.client.config.js] 文件中。将其添加到任何服务器端配置文件（如 [instrumentation:instrumentation.ts]）中会破坏您的构建，因为回放集依赖于浏览器 API。"
+  ],
+  "Configure your app automatically with the [wizardLink:Sentry wizard].": [
+    "使用 [wizardLink:Sentry 向导] 自动配置您的应用。"
+  ],
+  "The Sentry wizard will automatically patch your application to configure the Sentry SDK:": [
+    "Sentry 向导将自动修改您的应用以配置 Sentry SDK："
+  ],
+  "Create [serverCode:sentry.server.config.js], [clientCode:sentry.client.config.js] and [edgeCode:sentry.edge.config.js] with the default [sentryInitCode:Sentry.init].": [
+    "使用默认的 [sentryInitCode:Sentry.init] 创建 [serverCode:sentry.server.config.js]、[clientCode:sentry.client.config.js] 和 [edgeCode:sentry.edge.config.js]。"
+  ],
+  "Create or update the Next.js instrumentation file [instrumentationCode:instrumentation.ts] to initialize the SDK with the configuration files added in the previous step.": [
+    "创建或更新 Next.js 仪器文件 [instrumentationCode:instrumentation.ts] 以使用上一步添加的配置文件初始化 SDK。"
+  ],
+  "Create or update your Next.js config [nextConfig:next.config.js] with the default Sentry configuration.": [
+    "使用默认的 Sentry 配置创建或更新您的 Next.js 配置 [nextConfig:next.config.js]。"
+  ],
+  "Create a [bundlerPluginsEnv:.env.sentry-build-plugin] with an auth token (which is used to upload source maps when building the application).": [
+    "创建一个 [bundlerPluginsEnv:.env.sentry-build-plugin] 文件，其中包含认证令牌（用于在构建应用时上传源映射）。"
+  ],
+  "Add an example page to your app to verify your Sentry setup.": [
+    "添加一个示例页面到您的应用中以验证 Sentry 设置。"
+  ],
+  "If you already have the configuration for Sentry in your application, and just need this project's ([projectSlug]) DSN, you can find it below:": [
+    "如果您已经在应用中配置了 Sentry，只需要此项目（[projectSlug]）的 DSN，可以在下方找到："
+  ],
+  "React Features": [
+    "React 功能"
+  ],
+  "Learn about our first class integration with the React framework.": [
+    "了解我们与 React 框架的一流集成。"
+  ],
+  "React Router": [
+    "React 路由器"
+  ],
+  "Configure routing, so Sentry can generate parameterized transaction names for a better overview on the Performance page.": [
+    "配置路由，以便 Sentry 可以为性能页面生成参数化的事务名称，从而获得更好的概览。"
+  ],
+  "Add the Sentry SDK as a dependency using [codeNpm:npm] or [codeYarn:yarn]. You need a minimum version 7.27.0 of [code:@sentry/react] in order to use Session Replay. You do not need to install any additional packages.": [
+    "使用 [codeNpm:npm] 或 [codeYarn:yarn] 将 Sentry SDK 添加为依赖项。为了使用会话回放，您需要 [code:@sentry/react] 的最低版本 7.27.0。您不需要安装任何其他软件包。"
+  ],
+  "For the User Feedback integration to work, you must have the Sentry browser SDK package, or an equivalent framework SDK (e.g. [code:@sentry/remix]) installed, minimum version 7.85.0.": [
+    "为了使用户反馈集成正常工作，您必须安装 Sentry 浏览器 SDK 软件包或等效的框架 SDK（例如 [code:@sentry/remix]），最低版本为 7.85.0。"
+  ],
+  "Sentry's integration with [remixLink:Remix] supports Remix 1.0.0 and above.": [
+    "Sentry 与 [remixLink:Remix] 的集成为 Remix 1.0.0 及更高版本提供支持。"
+  ],
+  "The Sentry wizard will automatically add code to your project to inialize and configure the Sentry SDK:": [
+    "Sentry 向导会自动向您的项目中添加代码以初始化和配置 Sentry SDK："
+  ],
+  "Create two files in the root directory of your project, [clientEntry:entry.client.tsx] and [serverEntry:entry.server.tsx] (if they don't already exist).": [
+    "在您的项目根目录中创建两个文件，[clientEntry:entry.client.tsx] 和 [serverEntry:entry.server.tsx]（如果它们尚不存在）。"
+  ],
+  "Add the default [sentryInitCode:Sentry.init] call to both, client and server entry files.": [
+    "在客户端和服务器入口文件中都添加默认的 [sentryInitCode:Sentry.init] 调用。"
+  ],
+  "Create a [cliRc:.sentryclirc] with an auth token to upload source maps (this file is automatically added to your [gitignore:.gitignore]).": [
+    "创建一个 [cliRc:.sentryclirc] 文件，其中包含用于上传源映射的认证令牌（此文件将自动添加到您的 [gitignore:.gitignore] 中）。"
+  ],
+  "Adjust your [buildscript:build] script in your [pkgJson:package.json] to automatically upload source maps to Sentry when you build your application.": [
+    "调整您的 [pkgJson:package.json] 中的 [buildscript:build] 脚本，以便在构建应用时自动将源映射上传到 Sentry。"
+  ],
+  "You can also further [manualConfigure:configure your SDK] or [manualSetupLink:set it up manually], without the wizard.": [
+    "您还可以进一步 [manualConfigure:配置您的 SDK] 或 [manualSetupLink:手动设置]，无需使用向导。"
+  ],
+  "Note: The Replay integration only needs to be added to your [entryClient:entry.client.tsx] file. It will not run if it is added into [sentryServer:sentry.server.config.js].": [
+    "注意：回放集成只需添加到您的 [entryClient:entry.client.tsx] 文件中。如果将其添加到 [sentryServer:sentry.server.config.js] 中，它将不会运行。"
+  ],
+  "Solid Features": [
+    "Solid 功能"
+  ],
+  "Learn about our first class integration with the Solid framework.": [
+    "了解我们与 Solid 框架的一流集成。"
+  ],
+  "You need a minimum version 8.9.1 of [code:@sentry/solid] in order to use Session Replay. You do not need to install any additional packages.": [
+    "为了使用会话回放，您需要 [code:@sentry/solid] 的最低版本 8.9.1。您不需要安装任何其他软件包。"
+  ],
+  "For the User Feedback integration to work, you must have the Sentry browser SDK package, or an equivalent framework SDK (e.g. [code:@sentry/solid]) installed, minimum version 7.85.0.": [
+    "为了使用户反馈集成正常工作，您必须安装 Sentry 浏览器 SDK 软件包或等效的框架 SDK（例如 [code:@sentry/solid]），最低版本为 7.85.0。"
+  ],
+  "Initialize Sentry as early as possible in your application's lifecycle, usually your solid app's entry point ([code:main.ts/js]):": [
+    "在应用生命周期中尽早初始化 Sentry，通常是您的 Solid 应用的入口点（[code:main.ts/js]）："
+  ],
+  "Svelte Features": [
+    "Svelte 功能"
+  ],
+  "Learn about our first class integration with the Svelte framework.": [
+    "了解我们与 Svelte 框架的一流集成。"
+  ],
+  "You need a minimum version 7.27.0 of [code:@sentry/svelte] in order to use Session Replay. You do not need to install any additional packages.": [
+    "为了使用会话回放，您需要 [code:@sentry/svelte] 的最低版本 7.27.0。您不需要安装任何其他软件包。"
+  ],
+  "For the User Feedback integration to work, you must have the Sentry browser SDK package, or an equivalent framework SDK (e.g. [code:@sentry/svelte]) installed, minimum version 7.85.0.": [
+    "为了使用户反馈集成正常工作，您必须安装 Sentry 浏览器 SDK 软件包或等效的框架 SDK（例如 [code:@sentry/svelte]），最低版本为 7.85.0。"
+  ],
+  "Initialize Sentry as early as possible in your application's lifecycle, usually your Svelte app's entry point ([code:main.ts/js]):": [
+    "在应用生命周期中尽早初始化 Sentry，通常是您的 Svelte 应用的入口点（[code:main.ts/js]）："
+  ],
+  "Create or update [hookClientCode:src/hooks.client.js] and [hookServerCode:src/hooks.server.js] with the default [sentryInitCode:Sentry.init] call and SvelteKit hooks handlers.": [
+    "使用默认的 [sentryInitCode:Sentry.init] 调用和 SvelteKit 钩子处理程序创建或更新 [hookClientCode:src/hooks.client.js] 和 [hookServerCode:src/hooks.server.js]。"
+  ],
+  "Update [code:vite.config.js] to add source maps upload and auto-instrumentation via Vite plugins.": [
+    "更新 [code:vite.config.js] 以通过 Vite 插件添加源映射上传和自动 instrumentation。"
+  ],
+  "Create [sentryClircCode:.sentryclirc] and [sentryPropertiesCode:sentry.properties] files with configuration for sentry-cli (which is used when automatically uploading source maps).": [
+    "创建 [sentryClircCode:.sentryclirc] 和 [sentryPropertiesCode:sentry.properties] 文件，其中包含 sentry-cli 的配置（在自动上传源映射时使用）。"
+  ],
+  "For the User Feedback integration to work, you must have the Sentry browser SDK package, or an equivalent framework SDK (e.g. [code:@sentry/sveltekit]) installed, minimum version 7.85.0.": [
+    "为了使用户反馈集成正常工作，您必须安装 Sentry 浏览器 SDK 软件包或等效的框架 SDK（例如 [code:@sentry/sveltekit]），最低版本为 7.85.0。"
+  ],
+  "Vue Features": [
+    "Vue 功能"
+  ],
+  "Learn about our first class integration with the Vue framework.": [
+    "了解我们与 Vue 框架的一流集成。"
+  ],
+  "You need a minimum version 7.27.0 of [code:@sentry/vue] in order to use Session Replay. You do not need to install any additional packages.": [
+    "为了使用会话回放，您需要 [code:@sentry/vue] 的最低版本 7.27.0。您不需要安装任何其他软件包。"
+  ],
+  "Vue Version": [
+    "Vue 版本"
+  ],
+  "For the User Feedback integration to work, you must have the Sentry browser SDK package, or an equivalent framework SDK (e.g. [code:@sentry/vue]) installed, minimum version 7.85.0.": [
+    "为了使用户反馈集成正常工作，您必须安装 Sentry 浏览器 SDK 软件包或等效的框架 SDK（例如 [code:@sentry/vue]），最低版本为 7.85.0。"
+  ],
+  "Install the Sentry Vue SDK as a dependency using [codeNpm:npm] or [codeYarn:yarn], alongside the Sentry Vue SDK:": [
+    "使用 [codeNpm:npm] 或 [codeYarn:yarn] 将 Sentry Vue SDK 安装为依赖项，并附带 Sentry Vue SDK："
+  ],
+  "Sentry supports Kotlin for both JVM and Android. This wizard guides you through set up in the JVM scenario. If you're interested in [strong:Android], head over to the [gettingStartedWithAndroidLink:Getting Started] for that SDK instead. At its core, Sentry for Java provides a raw client for sending events to Sentry. If you use [strong2:Spring Boot, Spring, Logback, JUL, or Log4j2], head over to our [gettingStartedWithJavaLink:Getting Started for Sentry Java].": [
+    "Sentry 支持 JVM 和 Android 上的 Kotlin。此向导将指导您完成 JVM 场景的设置。如果您对 [strong:Android] 感兴趣，请转到该 SDK 的 [gettingStartedWithAndroidLink:Getting Started]。在核心层面，Sentry for Java 提供了一个原始客户端，用于向 Sentry 发送事件。如果您使用的是 [strong2:Spring Boot、Spring、Logback、JUL 或 Log4j2]，请转到我们的 [gettingStartedWithJavaLink:Sentry Java 入门]。"
+  ],
+  "Creating and Uploading Minidumps": [
+    "创建和上传 Minidumps"
+  ],
+  "Depending on your operating system and programming language, there are various alternatives to create minidumps and upload them to Sentry. See the following resources for libraries that support generating minidump crash reports:": [
+    "根据您的操作系统和编程语言，有多种方法可以创建 minidumps 并将其上传到 Sentry。请参阅以下资源，了解支持生成 minidump 崩溃报告的库："
+  ],
+  "If you have already integrated a library that generates minidumps and would just like to upload them to Sentry, you need to configure the [minidumpEndpointUrlItalic:Minidump Endpoint URL], which can be found at [projectSettingsItalic:Project Settings > Client Keys (DSN)]. This endpoint expects a [postCode:POST] request with the minidump in the [uploadFileMinidumpCode:upload_file_minidump] field:": [
+    "如果您已经集成了一个生成 minidumps 的库，并且只想将它们上传到 Sentry，则需要配置 [minidumpEndpointUrlItalic:Minidump 终结点 URL]，您可以在 [projectSettingsItalic:项目设置 > 客户端密钥（DSN）] 中找到。此终结点期望一个 [postCode:POST] 请求，其中包含 [uploadFileMinidumpCode:upload_file_minidump] 字段中的 minidump："
+  ],
+  "To send additional information, add more form fields to this request. For a full description of fields accepted by Sentry, see [passingAdditionalDataLink:Passing Additional Data].": [
+    "要发送额外的信息，请为此请求添加更多表单字段。有关 Sentry 接受的字段的完整描述，请参阅 [passingAdditionalDataLink:传递额外数据]。"
+  ],
+  "Install the SDK by downloading the [releasesLink:latest release]. Next, follow the instructions in the [nativeSDKDocumentationLink:Native SDK Documentation] to build and link the SDK library.": [
+    "通过下载 [releasesLink:最新版本] 安装 SDK。接下来，按照 [nativeSDKDocumentationLink:原生 SDK 文档] 中的说明构建并链接 SDK 库。"
+  ],
+  "Import and initialize the Sentry SDK early in your application setup:": [
+    "在应用设置的早期导入并初始化 Sentry SDK："
+  ],
+  "Alternatively, the DSN can be passed as [code:SENTRY_DSN] environment variable during runtime. This can be especially useful for server applications.": [
+    "或者，可以在运行时将 DSN 作为 [code:SENTRY_DSN] 环境变量传递。这对于服务器应用程序尤其有用。"
+  ],
+  "The quickest way to verify Sentry in your Native application is by capturing a message:": [
+    "验证原生应用中的 Sentry 的最快速方法是捕获一条消息："
+  ],
+  "Install the SDK by downloading the [releasesLink:latest release]. Next, follow the instructions in the [nativeQTSDKDocumentationLink:Native SDK Documentation] to build the SDK library.": [
+    "通过下载 [releasesLink:最新版本] 安装 SDK。接下来，按照 [nativeQTSDKDocumentationLink:原生 SDK 文档] 中的说明构建 SDK 库。"
+  ],
+  "The quickest way to verify Sentry in your Qt application is by capturing a message:": [
+    "验证 Qt 应用中的 Sentry 的最快速方法是捕获一条消息："
+  ],
+  "Download the SDK and follow the instructions that are provided in the [nintendoDoc:Nintendo Developer documentation].": [
+    "下载 SDK 并按照 [nintendoDoc:Nintendo 开发者文档] 中提供的说明进行操作。"
+  ],
+  "Add the Sentry AWS Serverless SDK as a dependency:": [
+    "将 Sentry AWS Serverless SDK 添加为依赖项："
+  ],
+  "Ensure that Sentry is imported and initialized at the beginning of your file, prior to any other [require:require] or [import:import] statements. Then, wrap your lambda handler with Sentry's [code:wraphandler] function:": [
+    "确保在文件开头导入并初始化 Sentry，优先于任何其他 [require:require] 或 [import:import] 语句。然后，使用 Sentry 的 [code:wraphandler] 函数包装您的 lambda 处理程序："
+  ],
+  "You need a minimum version [codeVersion:8.0.0] of [codePackage:@sentry/aws-serverless]:": [
+    "您需要 [codePackage:@sentry/aws-serverless] 的最低版本 [codeVersion:8.0.0]："
+  ],
+  "Add the Sentry Node SDK as a dependency:": [
+    "将 Sentry Node SDK 添加为依赖项："
+  ],
+  "Ensure that Sentry is imported and initialized at the beginning of your file, prior to any other [require:require] or [import:import] statements.": [
+    "确保在文件开头导入并初始化 Sentry，优先于任何其他 [require:require] 或 [import:import] 语句。"
+  ],
+  "Note: You need to call both [captureExceptionCode:captureException] and [flushCode:flush] for captured events to be successfully delivered to Sentry.": [
+    "注意：您需要同时调用 [captureExceptionCode:captureException] 和 [flushCode:flush]，才能将捕获的事件成功发送到 Sentry。"
+  ],
+  "Initialize Sentry as early as possible in your application's lifecycle. Otherwise, auto-instrumentation will not work.": [
+    "在应用生命周期中尽早初始化 Sentry。否则，自动 instrumentation 将无法工作。"
+  ],
+  "To initialize the SDK before everything else, create an external file called [code:instrument.js/mjs].": [
+    "为了在其他所有操作之前初始化 SDK，请创建一个名为 [code:instrument.js/mjs] 的外部文件。"
+  ],
+  "Make sure to import [code1:instrument.js/mjs] at the top of your file. Set up the error handler after all controllers and before any other error middleware. This setup is typically done in your application's entry point file, which is usually [code2:index.(js|ts)]. If you're running your application in ESM mode, or looking for alternative ways to set up Sentry, read about [docs:installation methods in our docs].": [
+    "确保在文件顶部导入 [code1:instrument.js/mjs]。在所有控制器之后和任何其他错误中间件之前设置错误处理程序。此设置通常在应用的入口文件中进行，通常是 [code2:index.(js|ts)]。如果您以 ESM 模式运行应用，或寻找设置 Sentry 的其他方法，请阅读 [docs:我们的文档中的安装方法]。"
+  ],
+  "Make sure to import [code1:instrument.js/mjs] at the top of your file. Set up the error handler. This setup is typically done in your application's entry point file, which is usually [code2:index.(js|ts)]. If you're running your application in ESM mode, or looking for alternative ways to set up Sentry, read about [docs:installation methods in our docs].": [
+    "确保在文件顶部导入 [code1:instrument.js/mjs]。设置错误处理程序。此设置通常在应用的入口文件中进行，通常是 [code2:index.(js|ts)]。如果您以 ESM 模式运行应用，或寻找设置 Sentry 的其他方法，请阅读 [docs:我们的文档中的安装方法]。"
+  ],
+  "Add the Sentry Serverless SDK as a dependency to your [code:package.json]:": [
+    "将 Sentry Serverless SDK 添加为 [code:package.json] 中的依赖项："
+  ],
+  "Ensure that Sentry is imported and initialized at the beginning of your file, prior to any other [require:require] or [import:import] statements. Then, use the Sentry SDK to wrap your functions:": [
+    "确保在文件开头导入并初始化 Sentry，优先于任何其他 [require:require] 或 [import:import] 语句。然后，使用 Sentry SDK 包装您的函数："
+  ],
+  "You need a minimum version [codeVersion:8.0.0] of [codePackage:@sentry/google-cloud-serverless]:": [
+    "您需要 [codePackage:@sentry/google-cloud-serverless] 的最低版本 [codeVersion:8.0.0]："
+  ],
+  "Add the Sentry NestJS SDK as a dependency:": [
+    "将 Sentry NestJS SDK 添加为依赖项："
+  ],
+  "Import [code1:instrument.js/mjs] in your [code2:main.ts/js] file:": [
+    "在 [code2:main.ts/js] 文件中导入 [code1:instrument.js/mjs]："
+  ],
+  "Then you can add the [code1:SentryModule] as a root module. The [code2:SentryModule] needs to be registered before any other module that should be instrumented by Sentry.": [
+    "然后您可以将 [code1:SentryModule] 添加为根模块。[code2:SentryModule] 需要在任何其他应由 Sentry 进行 instrumentation 的模块之前注册。"
+  ],
+  "Once the SDK is installed or updated, you can enable code locations being emitted with your metrics in your [code:config/sentry.php] file:": [
+    "安装或更新 SDK 后，您可以在 [code:config/sentry.php] 文件中启用代码位置随指标一起发出："
+  ],
+  "Next, create [code:resources/views/errors/500.blade.php], and embed the feedback code:": [
+    "接下来，创建 [code:resources/views/errors/500.blade.php]，并嵌入反馈代码："
+  ],
+  "For Laravel 5 up to 5.4 there is some extra work needed. You need to open up [codeApp:App/Exceptions/Handler.php] and extend the [codeRender:render] method to make sure the 500 error is rendered as a view correctly, in 5.5+ this step is not required anymore.": [
+    "对于 Laravel 5 到 5.4，需要做一些额外的工作。您需要打开 [codeApp:App/Exceptions/Handler.php] 并扩展 [codeRender:render] 方法，以确保正确将 500 错误渲染为视图，在 5.5+ 中不再需要此步骤。"
+  ],
+  "This guide is for Laravel 11.0 an up. We also provide instructions for [otherVersionsLink:other versions] as well as [lumenSpecificLink:Lumen-specific instructions].": [
+    "本指南适用于 Laravel 11.0 及更高版本。我们还为 [otherVersionsLink:其他版本] 以及 [lumenSpecificLink:Lumen 特定说明] 提供了相关说明。"
+  ],
+  "Install the [code:sentry/sentry-laravel] package:": [
+    "安装 [code:sentry/sentry-laravel] 软件包："
+  ],
+  "Install the Excimer extension via PECL:": [
+    "通过 PECL 安装 Excimer 扩展："
+  ],
+  "The Excimer PHP extension supports PHP 7.2 and up. Excimer requires Linux or macOS and doesn't support Windows. For additional ways to install Excimer, see [sentryPhpDocumentationLink: Sentry documentation].": [
+    "Excimer PHP 扩展支持 PHP 7.2 及更高版本。Excimer 需要 Linux 或 macOS，不支持 Windows。有关安装 Excimer 的其他方法，请参阅 [sentryPhpDocumentationLink:Sentry 文档]。"
+  ],
+  "Enable capturing unhandled exception to report to Sentry by making the following change to your [code:bootstrap/app.php]:": [
+    "通过以下更改启用捕获未处理的异常并报告给 Sentry：修改您的 [code:bootstrap/app.php]。"
+  ],
+  "Configure the Sentry DSN with this command:": [
+    "使用此命令配置 Sentry DSN："
+  ],
+  "It creates the config file ([sentryPHPCode:config/sentry.php]) and adds the [dsnCode:DSN] to your [envCode:.env] file where you can add further configuration options:": [
+    "它创建配置文件 ([sentryPHPCode:config/sentry.php]) 并将 [dsnCode:DSN] 添加到您的 [envCode:.env] 文件中，您可以在其中添加更多配置选项："
+  ],
+  "You can test your configuration using the provided [code:sentry:test] artisan command:": [
+    "您可以使用提供的 [code:sentry:test] artisan 命令测试您的配置："
+  ],
+  "You need a minimum version [codeVersionLaravel:4.2.0] of the Laravel SDK and a minimum version [codeVersion:4.3.0] of the PHP SDK installed": [
+    "您需要安装 Laravel SDK 的最低版本 [codeVersionLaravel:4.2.0] 和 PHP SDK 的最低版本 [codeVersion:4.3.0]"
+  ],
+  "To install the PHP SDK, you need to be using Composer in your project. For more details about Composer, see the [composerDocumentationLink:Composer documentation].": [
+    "要安装 PHP SDK，您需要在项目中使用 Composer。有关 Composer 的更多详细信息，请参阅 [composerDocumentationLink:Composer 文档]。"
+  ],
+  "To capture all errors, even the one during the startup of your application, you should initialize the Sentry PHP SDK as soon as possible.": [
+    "为了捕获所有错误，包括应用启动期间的错误，您应尽早初始化 Sentry PHP SDK。"
+  ],
+  "To instrument certain regions of your code, you can [instrumentationLink:create transactions to capture them].": [
+    "为了 instrumentation 某些代码区域，您可以 [instrumentationLink:创建事务来捕获它们]。"
+  ],
+  "In PHP you can either capture a caught exception or capture the last error with captureLastError.": [
+    "在 PHP 中，您可以捕获已捕获的异常，也可以使用 captureLastError 捕获上次错误。"
+  ],
+  "You need a minimum version [codeVersion:4.3.0] of the Sentry PHP SDK installed.": [
+    "您需要安装 Sentry PHP SDK 的最低版本 [codeVersion:4.3.0]。"
+  ],
+  "Once the SDK is installed or updated, you can enable code locations being emitted with your metrics:": [
+    "安装或更新 SDK 后，您可以启用代码位置随指标一起发出："
+  ],
+  "Install the [code:sentry/sentry-symfony] bundle:": [
+    "安装 [code:sentry/sentry-symfony] 捆绑包："
+  ],
+  "Add your DSN to your [code:.env] file:": [
+    "将您的 DSN 添加到 [code:.env] 文件中："
+  ],
+  "Add further configuration options to your [code:config/packages/sentry.yaml] file:": [
+    "将更多配置选项添加到 [code:config/packages/sentry.yaml] 文件中："
+  ],
+  "Symfony is supported via the [code:sentry-symfony] package as a native bundle.": [
+    "Symfony 通过 [code:sentry-symfony] 捆绑包作为原生捆绑包得到支持。"
+  ],
+  "After you visit the [code:/_sentry-test page], you can view and resolve the recorded error by logging into [sentryLink:sentry.io] and opening your project. Clicking on the error's title will open a page where you can see detailed information and mark it as resolved.": [
+    "访问 [code:/_sentry-test 页面] 后，您可以通过登录 [sentryLink:sentry.io] 并打开您的项目来查看和解决记录的错误。点击错误标题将打开一个页面，您可以在其中查看详细信息并将其标记为已解决。"
+  ],
+  "[link:Many more samples in the [code:dotnet] SDK repository] [strong:(C#)]": [
+    "[link:[code:dotnet] SDK 仓库中有更多示例] [strong:(C#)]"
+  ],
+  "Sentry for PowerShell module supports PowerShell 7.2+ on Windows, macOS, and Linux as well as Windows PowerShell 5.1+.": [
+    "Sentry for PowerShell 模块支持 Windows、macOS 和 Linux 上的 PowerShell 7.2+ 以及 Windows PowerShell 5.1+。"
+  ],
+  "Install the module:": [
+    "安装模块："
+  ],
+  "Initialize the SDK as early as possible.": [
+    "尽早初始化 SDK。"
+  ],
+  "Check out [link:the documentation] to learn more about the API and instrumentations.": [
+    "查看 [link:文档] 以了解更多关于 API 和 instrumentation 的信息。"
+  ],
+  "You can find sample usage of the SDK:": [
+    "您可以找到 SDK 的示例用法："
+  ],
+  "[link:Samples in the [code:powershell] SDK repository]": [
+    "[link:[code:powershell] SDK 仓库中的示例]"
+  ],
+  "The AIOHTTP integration adds support for the [link:AIOHTTP-Server Web Framework].": [
+    "AIOHTTP 集成为 [link:AIOHTTP-Server Web Framework] 添加了支持。"
+  ],
+  "Install [code:sentry-sdk] from PyPI:": [
+    "从 PyPI 安装 [code:sentry-sdk]："
+  ],
+  "You need a minimum version [codeVersion:1.18.0] of the [codePackage:sentry-python] SDK for the profiling feature.": [
+    "对于概要分析功能，您需要 [codePackage:sentry-python] SDK 的最低版本 [codeVersion:1.18.0]。"
+  ],
+  "If you're on Python 3.6, you also need the [code:aiocontextvars] package:": [
+    "如果您使用的是 Python 3.6，还需要 [code:aiocontextvars] 包："
+  ],
+  "If you have the [code:aiohttp] package in your dependencies, the AIOHTTO integration will be enabled automatically. There is nothing to do for you except initializing the Sentry SDK before initializing your application:": [
+    "如果您在依赖项中有 [code:aiohttp] 包，AIOHTTP 集成将自动启用。除了在初始化应用之前初始化 Sentry SDK 外，您无需执行任何操作："
+  ],
+  "You can easily verify your Sentry installation by creating a route that triggers an error:": [
+    "您可以通过创建一个触发错误的路由轻松验证 Sentry 安装："
+  ],
+  "When you point your browser to [localhostLInk:http://localhost:8080/] a transaction in the Performance section of Sentry will be created.": [
+    "当您在浏览器中访问 [localhostLInk:http://localhost:8080/] 时，将在 Sentry 的性能部分创建一个事务。"
+  ],
+  "Additionally, an error event will be sent to Sentry and will be connected to the transaction.": [
+    "此外，错误事件将被发送到 Sentry 并与事务关联。"
+  ],
+  "It takes a couple of moments for the data to appear in Sentry.": [
+    "数据出现在 Sentry 中需要几秒钟。"
+  ],
+  "The ASGI middleware can be used to instrument any bare bones ASGI application. If you have a ASGI based web framework (like FastAPI, Starlette, or others), please use the specific integration for the framework.": [
+    "ASGI 中间件可用于 instrumentation 任何基础的 ASGI 应用。如果您使用的是基于 ASGI 的 Web 框架（如 FastAPI、Starlette 或其他），请使用该框架的特定集成。"
+  ],
+  "Wrap your ASGI application with [code: SentryAsgiMiddleware]:": [
+    "使用 [code:SentryAsgiMiddleware] 包装您的 ASGI 应用："
+  ],
+  "The middleware supports both ASGI 2 and ASGI 3 transparently.": [
+    "中间件透明地支持 ASGI 2 和 ASGI 3。"
+  ],
+  "To verify that everything is working trigger an error on purpose:": [
+    "为了验证一切正常工作，请故意触发一个错误："
+  ],
+  "Run your ASGI app with uvicorn ([code:uvicorn main:app --port 8000]) and point your browser to [link:http://localhost:8000]. A transaction in the Performance section of Sentry will be created.": [
+    "使用 uvicorn 运行您的 ASGI 应用 ([code:uvicorn main:app --port 8000]) 并在浏览器中访问 [link:http://localhost:8000]。将在 Sentry 的性能部分创建一个事务。"
+  ],
+  "Create a deployment package on your local machine and install the required dependencies in the deployment package. For more information, see [link:AWS Lambda deployment package in Python].": [
+    "在本地机器上创建部署包，并在部署包中安装所需的依赖项。有关详细信息，请参阅 [link:Python 中的 AWS Lambda 部署包]。"
+  ],
+  "Install our Python SDK using [code:pip]:": [
+    "使用 [code:pip] 安装我们的 Python SDK："
+  ],
+  "You can use the AWS Lambda integration for the Python SDK like this:": [
+    "您可以这样使用 Python SDK 的 AWS Lambda 集成："
+  ],
+  "Check out Sentry's [link:AWS sample apps] for detailed examples.": [
+    "查看 Sentry 的 [link:AWS 示例应用] 以获取详细示例。"
+  ],
+  "Timeout Warning": [
+    "超时警告"
+  ],
+  "The timeout warning reports an issue when the function execution time is near the [link:configured timeout].": [
+    "当函数执行时间接近 [link:配置的超时时间] 时，超时警告会报告问题。"
+  ],
+  "To enable the warning, update the SDK initialization to set [codeTimeout:timeout_warning] to [codeStatus:true]:": [
+    "要启用警告，请更新 SDK 初始化以将 [codeTimeout:timeout_warning] 设置为 [codeStatus:true]："
+  ],
+  "The timeout warning is sent only if the timeout in the Lambda Function configuration is set to a value greater than one second.": [
+    "只有当 Lambda 函数配置中的超时时间设置为大于一秒的值时，才会发送超时警告。"
+  ],
+  "If you are using another web framework inside of AWS Lambda, the framework might catch those exceptions before we get to see them. Make sure to enable the framework specific integration as well, if one exists. See [link:Integrations] for more information.": [
+    "如果您在 AWS Lambda 内部使用另一个 Web 框架，该框架可能会在我们看到这些异常之前捕获它们。如果存在特定于框架的集成，请确保也启用它。有关详细信息，请参阅 [link:Integrations]。"
+  ],
+  "The Bottle integration adds support for the [link:Bottle Web Framework].": [
+    "Bottle 集成为 [link:Bottle Web Framework] 添加了支持。"
+  ],
+  "Install [sentrySdkCode:sentry-sdk] from PyPI with the [sentryBotteCode:bottle] extra:": [
+    "使用带有 [sentryBotteCode:bottle] 额外组件的 PyPI 安装 [sentrySdkCode:sentry-sdk]："
+  ],
+  "If you have the [code:bottle] package in your dependencies, the Bottle integration will be enabled automatically when you initialize the Sentry SDK. Initialize the Sentry SDK before your app has been initialized:": [
+    "如果您在依赖项中有 [code:bottle] 包，初始化 Sentry SDK 时将自动启用 Bottle 集成。在初始化应用之前初始化 Sentry SDK："
+  ],
+  "To verify that everything is working, trigger an error on purpose:": [
+    "为了验证一切正常工作，请故意触发一个错误："
+  ],
+  "When you point your browser to [link:http://localhost:8000/] a transaction in the Performance section of Sentry will be created.": [
+    "当您在浏览器中访问 [link:http://localhost:8000/] 时，将在 Sentry 的性能部分创建一个事务。"
+  ],
+  "To verify if your SDK is initialized on worker start, you can pass `debug=True` to `sentry_sdk.init()` to see extra output when the SDK is initialized. If the output appears during worker startup and not only after a task has started, then it's working properly.": [
+    "为了验证 SDK 是否在工作进程启动时初始化，您可以在 `sentry_sdk.init()` 中传递 `debug=True`，以便在 SDK 初始化时看到额外的输出。如果输出出现在工作进程启动期间而不仅是在任务启动后，则说明它工作正常。"
+  ],
+  "Sentry uses custom message headers for distributed tracing. For Celery versions 4.x, with [celeryDocLink: message protocol of version 1], this functionality is broken, and Celery fails to propagate custom headers to the worker. Protocol version 2, which is the default since Celery version 4.0, is not affected.\n\n              The fix for the custom headers propagation issue was introduced to Celery project ([celeryPRLink: PR]) starting with version 5.0.1. However, the fix was not backported to versions 4.x.\n              ": [
+    "Sentry 为分布式跟踪使用自定义消息标题。对于 Celery 4.x 版本，使用 [celeryDocLink: 版本 1 的消息协议] 时，此功能会中断，Celery 无法将自定义标题传播到工作进程。自 Celery 4.0 版本以来，默认的协议版本 2 不受影响。\n\n              自版本 5.0.1 起，Celery 项目 ([celeryPRLink: PR]) 引入了修复自定义标题传播问题的补丁。但是，该修复未被反向移植到 4.x 版本。\n              "
+  ],
+  "The celery integration adds support for the [link:Celery Task Queue System].": [
+    "Celery 集成为 [link:Celery 任务队列系统] 添加了支持。"
+  ],
+  "Install [code:sentry-sdk] from PyPI with the [code:celery] extra:": [
+    "使用带有 [code:celery] 额外组件的 PyPI 安装 [code:sentry-sdk]："
+  ],
+  "If you have the [code:celery] package in your dependencies, the Celery integration will be enabled automatically when you initialize the Sentry SDK.": [
+    "如果您在依赖项中有 [code:celery] 包，初始化 Sentry SDK 时将自动启用 Celery 集成。"
+  ],
+  "Make sure that the call to [code:init] is loaded on worker startup, and not only in the module where your tasks are defined. Otherwise, the initialization happens too late and events might end up not being reported.": [
+    "确保在工作进程启动时加载对 [code:init] 的调用，而不仅仅是在定义任务的模块中。否则，初始化发生得太晚，事件可能不会被报告。"
+  ],
+  "Standalone Setup": [
+    "独立设置"
+  ],
+  "If you're using Celery standalone, there are two ways to set this up:": [
+    "如果您独立使用 Celery，有两种设置方法："
+  ],
+  "Initializing the SDK in the configuration file loaded with Celery's [code:--config] parameter": [
+    "在使用 Celery 的 [code:--config] 参数加载的配置文件中初始化 SDK"
+  ],
+  "Initializing the SDK by hooking it to either the [celerydInit: celeryd_init] or [workerInit: worker_init] signals:": [
+    "通过将 SDK 钩接到 [celerydInit: celeryd_init] 或 [workerInit: worker_init] 信号来初始化 SDK"
+  ],
+  "Setup With Django": [
+    "与 Django 的集成设置"
+  ],
+  "If you're using Celery with Django in a conventional setup, have already initialized the SDK in [settingsLink:your settings.py], and have Celery using the same settings with [celeryDocsLinks:config_from_object], you don't need to initialize the SDK separately for Celery.": [
+    "如果您在传统设置中使用 Celery 和 Django，已经在 [settingsLink:your settings.py] 中初始化了 SDK，并且 Celery 使用 [celeryDocsLinks:config_from_object] 使用相同的设置，则无需为 Celery 单独初始化 SDK。"
+  ],
+  "Install [sentrySdkCode:sentry-sdk] from PyPI with the [sentryBotteCode:chalice] extra:": [
+    "使用带有 [sentryBotteCode:chalice] 额外组件的 PyPI 安装 [sentrySdkCode:sentry-sdk]："
+  ],
+  "To configure the SDK, initialize it with the integration before or after your app has been initialized:": [
+    "要配置 SDK，请在初始化应用之前或之后使用集成进行初始化："
+  ],
+  "When you enter the [code:\"/\"] route or the scheduled task is run, an error event will be sent to Sentry.": [
+    "当您进入 [code:\"/\"] 路由或计划任务运行时，错误事件将被发送到 Sentry。"
+  ],
+  "Initialize the Sentry SDK in your Django [codeSettings:settings.py] file:": [
+    "在您的 Django [codeSettings:settings.py] 文件中初始化 Sentry SDK："
+  ],
+  "When you point your browser to [link:http://localhost:8000/sentry-debug/] an error with a trace will be created. So you can explore errors and tracing portions of Sentry.": [
+    "当您在浏览器中访问 [link:http://localhost:8000/sentry-debug/] 时，将创建一个带有跟踪的错误。这样您就可以探索 Sentry 的错误和跟踪部分。"
+  ],
+  "It can take a couple of moments for the data to appear in Sentry. Bear with us, the internet is huge.": [
+    "数据出现在 Sentry 中可能需要几秒钟。请耐心等待，互联网很大。"
+  ],
+  "The Falcon integration adds support for the [link:Falcon Web Framework].": [
+    "Falcon 集成为 [link:Falcon Web Framework] 添加了支持。"
+  ],
+  "Install [sentrySdkCode:sentry-sdk] from PyPI with the [sentryFalconCode:falcon] extra:": [
+    "使用带有 [sentryFalconCode:falcon] 额外组件的 PyPI 安装 [sentrySdkCode:sentry-sdk]："
+  ],
+  "If you have the [codeFalcon:falcon] package in your dependencies, the Falcon integration will be enabled automatically when you initialize the Sentry SDK. Initialize the Sentry SDK before your app has been initialized:": [
+    "如果您在依赖项中有 [codeFalcon:falcon] 包，初始化 Sentry SDK 时将自动启用 Falcon 集成。在初始化应用之前初始化 Sentry SDK："
+  ],
+  "The FastAPI integration adds support for the [link:FastAPI Framework].": [
+    "FastAPI 集成为 [link:FastAPI 框架] 添加了支持。"
+  ],
+  "Install [sentrySdkCode:sentry-sdk] from PyPI with the [sentryFastApiCode:fastapi] extra:": [
+    "使用带有 [sentryFastApiCode:fastapi] 额外组件的 PyPI 安装 [sentrySdkCode:sentry-sdk]："
+  ],
+  "If you have the [codeFastAPI:fastapi] package in your dependencies, the FastAPI integration will be enabled automatically when you initialize the Sentry SDK. Initialize the Sentry SDK before your app has been initialized:": [
+    "如果您在依赖项中有 [codeFastAPI:fastapi] 包，初始化 Sentry SDK 时将自动启用 FastAPI 集成。在初始化应用之前初始化 Sentry SDK："
+  ],
+  "The above configuration captures both error and performance data. To reduce the volume of performance data captured, change [code:traces_sample_rate] to a value between 0 and 1.": [
+    "上述配置会捕获错误和性能数据。若要减少捕获的性能数据量，请将 [code:traces_sample_rate] 设置为介于 0 到 1 之间的值。"
+  ],
+  "When you point your browser to [link:http://localhost:8000/sentry-debug/] a transaction in the Performance section of Sentry will be created.": [
+    "当您在浏览器中访问 [link:http://localhost:8000/sentry-debug/] 时，将在 Sentry 的性能部分创建一个事务。"
+  ],
+  "The Flask integration adds support for the [link:Flask Framework].": [
+    "Flask 集成为 [link:Flask 框架] 提供了支持。"
+  ],
+  "Install [sentrySdkCode:sentry-sdk] from PyPI with the [sentryFlaskCode:flask] extra:": [
+    "通过 PyPI 安装带有 [sentryFlaskCode:flask] 额外组件的 [sentrySdkCode:sentry-sdk]："
+  ],
+  "If you have the [codeFlask:flask] package in your dependencies, the Flask integration will be enabled automatically when you initialize the Sentry SDK. Initialize the Sentry SDK before your app has been initialized:": [
+    "如果您在依赖项中有 [codeFlask:flask] 包，初始化 Sentry SDK 时将自动启用 Flask 集成。在初始化应用之前初始化 Sentry SDK："
+  ],
+  "When you point your browser to [link:http://localhost:5000/] a transaction in the Performance section of Sentry will be created.": [
+    "当您在浏览器中访问 [link:http://localhost:5000/] 时，将在 Sentry 的性能部分创建一个事务。"
+  ],
+  "You can use the Google Cloud Functions integration for the Python SDK like this:": [
+    "您可以这样使用 Python SDK 的 Google Cloud Functions 集成："
+  ],
+  "Check out Sentry's [link:GCP sample apps] for detailed examples.": [
+    "查看 Sentry 的 [link:GCP 示例应用] 以获取详细示例。"
+  ],
+  "The timeout warning is sent only if the timeout in the Cloud Function configuration is set to a value greater than one second.": [
+    "只有当 Cloud Function 配置中的超时时间设置为大于一秒的值时，才会发送超时警告。"
+  ],
+  "If you are using a web framework in your Cloud Function, the framework might catch those exceptions before we get to see them. Make sure to enable the framework specific integration as well, if one exists. See [link:Integrations] for more information.": [
+    "如果您在 Cloud Function 中使用了 Web 框架，该框架可能会在我们捕获到这些异常之前将其拦截。如果存在特定于框架的集成，请确保也启用它。有关详细信息，请参阅 [link:Integrations]。"
+  ],
+  "The PyMongo integration adds support for [link:PyMongo], the official MongoDB driver. It adds breadcrumbs and performance traces for all queries.": [
+    "PyMongo 集成为官方 MongoDB 驱动程序 [link:PyMongo] 提供了支持。它为所有查询添加了面包屑和性能跟踪。"
+  ],
+  "Install [sentrySdkCode:sentry-sdk] from PyPI with the [pymongoCode:pymongo] extra:": [
+    "通过 PyPI 安装带有 [pymongoCode:pymongo] 额外组件的 [sentrySdkCode:sentry-sdk]："
+  ],
+  "To configure the SDK, initialize it before creating any of PyMongo's MongoClient instances:": [
+    "要配置 SDK，请在创建任何 PyMongo 的 MongoClient 实例之前进行初始化："
+  ],
+  "The above configuration captures both breadcrumbs and performance data. To reduce the volume of performance data captured, change [code:traces_sample_rate] to a value between 0 and 1.": [
+    "上述配置会捕获面包屑和性能数据。若要减少捕获的性能数据量，请将 [code:traces_sample_rate] 设置为介于 0 到 1 之间的值。"
+  ],
+  "If you haven’t already, start by downloading Raven. The easiest way is with [code:pip]:": [
+    "如果您尚未安装，可以从下载 Raven 开始。最简单的方法是使用 [code:pip]："
+  ],
+  "A Pylons-specific middleware exists to enable easy configuration from settings:": [
+    "存在一个特定于 Pylons 的中间件，以便从设置中轻松进行配置："
+  ],
+  "Configuration is handled via the sentry namespace:": [
+    "配置通过 sentry 命名空间进行管理："
+  ],
+  "Logger setup": [
+    "日志记录器设置"
+  ],
+  "Add the following lines to your project’s [initCode:.ini] file to setup [sentryHandlerCode:SentryHandler]:": [
+    "要设置 [sentryHandlerCode:SentryHandler]，请将以下行添加到项目的 [initCode:.ini] 文件中："
+  ],
+  "You may want to set up other loggers as well.": [
+    "您可能还需要设置其他日志记录器。"
+  ],
+  "The Pyramid integration adds support for the [link:Pyramid Web Framework].": [
+    "Pyramid 集成为 [link:Pyramid Web Framework] 提供了支持。"
+  ],
+  "If you have the [codePyramid:pyramid] package in your dependencies, the Pyramid integration will be enabled automatically when you initialize the Sentry SDK. Initialize the Sentry SDK before your app has been initialized:": [
+    "如果您在依赖项中有 [codePyramid:pyramid] 包，初始化 Sentry SDK 时将自动启用 Pyramid 集成。在初始化应用之前初始化 Sentry SDK："
+  ],
+  "When you point your browser to [link:http://localhost:6543/] an error event will be sent to Sentry.": [
+    "当您在浏览器中访问 [link:http://localhost:6543/] 时，将向 Sentry 发送一个错误事件。"
+  ],
+  "Raise an unhandled Python exception by inserting a divide by zero expression into your application:": [
+    "通过在应用中插入一个除以零的表达式来引发一个未处理的 Python 异常："
+  ],
+  "The Quart integration adds support for the [link:Quart Web Framework].": [
+    "Quart 集成为 [link:Quart Web Framework] 提供了支持。"
+  ],
+  "Install [sentrySdkCode:sentry-sdk] from PyPI with the [sentryQuartCode:quart] extra:": [
+    "通过 PyPI 安装带有 [sentryQuartCode:quart] 额外组件的 [sentrySdkCode:sentry-sdk]："
+  ],
+  "Job definition": [
+    "作业定义"
+  ],
+  "Settings for worker": [
+    "工作进程设置"
+  ],
+  "Main Python Script": [
+    "主 Python 脚本"
+  ],
+  "When you run [codeMain:python main.py] a transaction named [codeTrxName:testing_sentry] in the Performance section of Sentry will be created.": [
+    "运行 [codeMain:python main.py] 时，将在 Sentry 的性能部分创建一个名为 [codeTrxName:testing_sentry] 的事务。"
+  ],
+  "If you run the RQ worker with [codeWorker:rq worker -c mysettings] a transaction for the execution of [codeFunction:hello()] will be created. Additionally, an error event will be sent to Sentry and will be connected to the transaction.": [
+    "如果您使用 [codeWorker:rq worker -c mysettings] 运行 RQ 工作进程，将创建一个用于执行 [codeFunction:hello()] 的事务。此外，将向 Sentry 发送一个错误事件并与该事务关联。"
+  ],
+  "The RQ integration adds support for the [link:RQ Job Queue System].": [
+    "RQ 集成为 [link:RQ 作业队列系统] 提供了支持。"
+  ],
+  "Install [code:sentry-sdk] from PyPI with the [sentryRQCode:rq] extra:": [
+    "通过 PyPI 安装带有 [sentryRQCode:rq] 额外组件的 [code:sentry-sdk]："
+  ],
+  "If you have the [codeRq:rq] package in your dependencies, the RQ integration will be enabled automatically when you initialize the Sentry SDK.": [
+    "如果您在依赖项中有 [codeRq:rq] 包，初始化 Sentry SDK 时将自动启用 RQ 集成。"
+  ],
+  "Create a file called [code:mysettings.py] with the following content:": [
+    "创建一个名为 [code:mysettings.py] 的文件，内容如下："
+  ],
+  "Start your worker with:": [
+    "使用以下命令启动工作进程："
+  ],
+  "Generally, make sure that the call to [code:init] is loaded on worker startup, and not only in the module where your jobs are defined. Otherwise, the initialization happens too late and events might end up not being reported.": [
+    "通常，请确保在工作进程启动时加载对 [code:init] 的调用，而不仅仅是在定义作业的模块中。否则，初始化可能太晚，导致事件未被报告。"
+  ],
+  "To verify, create a simple job and a [code:main.py] script that enqueues the job in RQ, then start an RQ worker to run the job:": [
+    "为了验证，请创建一个简单的作业和一个 [code:main.py] 脚本，将作业加入 RQ 队列，然后启动一个 RQ 工作进程来运行该作业："
+  ],
+  "The Sanic integration adds support for the [link:Sanic Web Framework].": [
+    "Sanic 集成为 [link:Sanic Web Framework] 提供了支持。"
+  ],
+  "Install [sentrySdkCode:sentry-sdk] from PyPI with the [sentrySanicCode:sanic] extra:": [
+    "通过 PyPI 安装带有 [sentrySanicCode:sanic] 额外组件的 [sentrySdkCode:sentry-sdk]："
+  ],
+  "f you're on Python 3.6, you also need the [code:aiocontextvars] package:": [
+    "如果您使用的是 Python 3.6，还需要 [code:aiocontextvars] 包："
+  ],
+  "If you have the [codeSanic:sanic] package in your dependencies, the Sanic integration will be enabled automatically when you initialize the Sentry SDK. Initialize the Sentry SDK before your app has been initialized:": [
+    "如果您在依赖项中有 [codeSanic:sanic] 包，初始化 Sentry SDK 时将自动启用 Sanic 集成。在初始化应用之前初始化 Sentry SDK："
+  ],
+  "When you point your browser to [link:http://localhost:8000/] an error will be sent to Sentry.": [
+    "当您在浏览器中访问 [link:http://localhost:8000/] 时，将向 Sentry 发送一个错误。"
+  ],
+  "It is recommended to use an [link:integration for your particular serverless environment if available], as those are easier to use and capture more useful information.": [
+    "建议使用适用于您特定无服务器环境的 [link:集成]（如果可用），因为这些集成更容易使用且能捕获更有用的信息。"
+  ],
+  "If you use a serverless provider not directly supported by the SDK, you can use this generic integration.": [
+    "如果您使用的无服务器提供商不受 SDK 直接支持，可以使用此通用集成。"
+  ],
+  "Apply the [code:serverless_function] decorator to each function that might throw errors:": [
+    "将 [code:serverless_function] 装饰器应用于每个可能引发错误的函数："
+  ],
+  "Wrap a functions with the [code:serverless_function] that triggers an error:": [
+    "使用会引发错误的 [code:serverless_function] 包装函数："
+  ],
+  "Now deploy your function. When you now run your function an error event will be sent to Sentry.": [
+    "现在部署您的函数。运行函数时，将向 Sentry 发送一个错误事件。"
+  ],
+  "The Starlette integration adds support for the Starlette Framework.": [
+    "Starlette 集成为 Starlette 框架提供了支持。"
+  ],
+  "Install [sentrySdkCode:sentry-sdk] from PyPI with the [sentryStarletteCode:starlette] extra:": [
+    "通过 PyPI 安装带有 [sentryStarletteCode:starlette] 额外组件的 [sentrySdkCode:sentry-sdk]："
+  ],
+  "If you have the [codeStarlette:starlette] package in your dependencies, the Starlette integration will be enabled automatically when you initialize the Sentry SDK. Initialize the Sentry SDK before your app has been initialized:": [
+    "如果您在依赖项中有 [codeStarlette:starlette] 包，初始化 Sentry SDK 时将自动启用 Starlette 集成。在初始化应用之前初始化 Sentry SDK："
+  ],
+  "The Tornado integration adds support for the [link:Tornado Web Framework].": [
+    "Tornado 集成为 [link:Tornado Web Framework] 提供了支持。"
+  ],
+  "Install [sentrySdkCode:sentry-sdk] from PyPI with the [sentryTornadoCode:tornado] extra:": [
+    "通过 PyPI 安装带有 [sentryTornadoCode:tornado] 额外组件的 [sentrySdkCode:sentry-sdk]："
+  ],
+  "If you have the [codeTornado:tornado] package in your dependencies, the Tornado integration will be enabled automatically when you initialize the Sentry SDK. Initialize the Sentry SDK before your app has been initialized:": [
+    "如果您在依赖项中有 [codeTornado:tornado] 包，初始化 Sentry SDK 时将自动启用 Tornado 集成。在初始化应用之前初始化 Sentry SDK："
+  ],
+  "When you point your browser to [link:http://localhost:8888/] a transaction in the Performance section of Sentry will be created.": [
+    "当您在浏览器中访问 [link:http://localhost:8888/] 时，将在 Sentry 的性能部分创建一个事务。"
+  ],
+  "The Tryton integration adds support for the [link:Tryton Framework Server].": [
+    "Tryton 集成为 [link:Tryton 框架服务器] 提供了支持。"
+  ],
+  "To configure the SDK, initialize it with the integration in a custom [code:wsgi.py] script:": [
+    "要配置 SDK，请在自定义 [code:wsgi.py] 脚本中使用集成进行初始化："
+  ],
+  "In Tryton>=5.4 an error handler can be registered to respond the client with a custom error message including the Sentry event id instead of a traceback.": [
+    "在 Tryton>=5.4 中，可以注册一个错误处理程序，以便用包含 Sentry 事件 ID 的自定义错误消息（而不是回溯）响应客户端。"
+  ],
+  "It is recommended to use an [link:integration for your particular WSGI framework if available], as those are easier to use and capture more useful information.": [
+    "建议使用适用于您特定 WSGI 框架的 [link:集成]（如果可用），因为这些集成更容易使用且能捕获更有用的信息。"
+  ],
+  "If you use a WSGI framework not directly supported by the SDK, or wrote a raw WSGI app, you can use this generic WSGI middleware. It captures errors and attaches a basic amount of information for incoming requests.": [
+    "如果您使用的 WSGI 框架不受 SDK 直接支持，或者您编写了一个原始的 WSGI 应用，可以使用此通用 WSGI 中间件。它会捕获错误并为传入的请求附加基本信息。"
+  ],
+  "Then you can use this generic WSGI middleware. It captures errors and attaches a basic amount of information for incoming requests.": [
+    "然后您可以使用此通用 WSGI 中间件。它会捕获错误并为传入的请求附加基本信息。"
+  ],
+  "Wrap your app with Sentry to automatically instrument it with [touchEventTrakingLink:touch event tracking] and [automaticPerformanceMonitoringLink:automatic tracing]:": [
+    "使用 Sentry 包装您的应用，以自动使用 [touchEventTrakingLink:触摸事件跟踪] 和 [automaticPerformanceMonitoringLink:自动跟踪] 进行 instrumentation："
+  ],
+  "You do not need to do this for Sentry to work or if your app does not have a single parent \"App\" component.": [
+    "如果您的应用没有单一的父 \"App\" 组件，或者您不需要此功能来使 Sentry 工作，则无需执行此操作。"
+  ],
+  "Then create an intentional error, so you can test that everything is working:": [
+    "然后创建一个故意的错误，以测试一切是否正常工作："
+  ],
+  "Or, try a native crash with:": [
+    "或者，尝试使用以下方法触发原生崩溃："
+  ],
+  "Sentry can measure the performance of your app automatically when instrumented with the following routers:": [
+    "当使用以下路由器进行 instrumentation 时，Sentry 可以自动测量应用的性能："
+  ],
+  "React Navigation": [
+    "React 导航"
+  ],
+  "React Navigation V4 and prior": [
+    "React 导航 V4 及更早版本"
+  ],
+  "React Native Navigation": [
+    "React Native 导航"
+  ],
+  "Expo Router": [
+    "Expo 路由器"
+  ],
+  "Additionally, you can create transactions and spans programatically:": [
+    "此外，您还可以通过编程方式创建事务和跨度："
+  ],
+  "For example:": [
+    "例如："
+  ],
+  "For more information, please refer to the [docLink: Sentry React Native documentation].": [
+    "有关详细信息，请参阅 [docLink:Sentry React Native 文档]。"
+  ],
+  "Complete stack traces will be shown for React Native Javascript errors by default using Sentry's [automaticSourceMapsUploadLink:automatic source maps upload]. To set up manual source maps upload follow [guideLink:this guide].": [
+    "默认情况下，Sentry 将使用 [automaticSourceMapsUploadLink:自动源映射上传] 显示 React Native JavaScript 错误的完整堆栈跟踪。若要设置手动上传源映射，请按照 [guideLink:此指南] 操作。"
+  ],
+  "You'll also need to upload [debugSymbolsLink:Debug Symbols] generated by the native iOS and Android tooling for native crashes.": [
+    "您还需要上传由原生 iOS 和 Android 工具生成的 [debugSymbolsLink:调试符号]，用于处理原生崩溃。"
+  ],
+  "If Sentry has access to your application's source code, it can show snippets of code [italic:(source context)] around the location of stack frames, which helps to quickly pinpoint problematic code.": [
+    "如果 Sentry 能够访问您的应用源代码，则可以在堆栈帧位置显示代码片段 [italic:(源代码上下文)]，这有助于快速定位问题代码。"
+  ],
+  "Source Context will be shown for React Native Javascript error by default if source maps are uploaded. To set up source maps upload, follow the [sourceMapsGuideLink:Source Maps guide].": [
+    "如果上传了源映射，则默认情况下，React Native JavaScript 错误将显示源代码上下文。若要设置源映射上传，请按照 [sourceMapsGuideLink:源映射指南] 操作。"
+  ],
+  "To enable source context for native errors, you'll need to upload native debug symbols to Sentry by following the instructions at [uploadWithGradleLink:Uploading Source Code Context With Sentry Gradle Plugin] and Uploading Source Context With Xcode.": [
+    "若要为原生错误启用源代码上下文，您需要按照 [uploadWithGradleLink:使用 Sentry Gradle 插件上传源代码上下文] 中的说明以及使用 Xcode 上传源代码上下文的说明，将原生调试符号上传到 Sentry。"
+  ],
+  "Sentry captures data by using an SDK within your application’s runtime. If you are using Expo, see [expoLink:How to Add Sentry to Your Expo Project]. This SDK works for both managed and bare projects.": [
+    "Sentry 通过在应用运行时使用 SDK 来捕获数据。如果您使用的是 Expo，请参阅 [expoLink:如何将 Sentry 添加到您的 Expo 项目]。此 SDK 适用于托管项目和裸项目。"
+  ],
+  "Run [code:@sentry/wizard]:": [
+    "运行 [code:@sentry/wizard]："
+  ],
+  "[wizardLink:Sentry Wizard] will patch your project accordingly, though you can [setupManuallyLink:setup manually] if you prefer.": [
+    "[wizardLink:Sentry 向导] 将相应地修改您的项目，但如果您愿意，可以选择 [setupManuallyLink:手动设置]。"
+  ],
+  "iOS Specifics: When you use Xcode, you can hook directly into the build process to upload debug symbols and source maps.": [
+    "iOS 特定：使用 Xcode 时，您可以直接连接到构建过程以上传调试符号和源映射。"
+  ],
+  "Android Specifics: We hook into Gradle for the source map build process. When you run [gradLewCode:./gradlew] assembleRelease, source maps are automatically built and uploaded to Sentry. If you have enabled Gradle's [orgGradleCode:org.gradle.configureondemand] feature, you'll need a clean build, or you'll need to disable this feature to upload the source map on every build by setting [orgGradleCodeConfigureCode:org.gradle.configureondemand=false] or remove it.": [
+    "Android 特定：我们会连接到 Gradle 的源映射构建过程。当您运行 [gradLewCode:./gradlew] assembleRelease 时，源映射会自动构建并上传到 Sentry。如果您启用了 Gradle 的 [orgGradleCode:org.gradle.configureondemand] 功能，则需要进行一次干净的构建，或者您需要通过设置 [orgGradleCodeConfigureCode:org.gradle.configureondemand=false] 或移除该功能来禁用它，以便在每次构建时上传源映射。"
+  ],
+  "React Native Profiling beta is available since SDK version 5.8.0.": [
+    "自 SDK 版本 5.8.0 起，React Native 概要分析 beta 版可用。"
+  ],
+  "The \"sentry-wizard\" will try to add it to your [code:App.tsx]": [
+    "“sentry-wizard” 将尝试将其添加到您的 [code:App.tsx] 中。"
+  ],
+  "The Sentry SDK for Ruby comes as a gem that should be added to your [gemfileCode:Gemfile]:": [
+    "Sentry Ruby SDK 以 gem 的形式提供，应添加到您的 [gemfileCode:Gemfile] 中："
+  ],
+  "Ruby Profiling beta is available since SDK version 5.9.0. We use the [stackprofLink:stackprof gem] to collect profiles for Ruby. Make sure [stackprofCode:stackprof] is loaded before [sentryRubyCode:sentry-ruby].": [
+    "自 SDK 版本 5.9.0 起，Ruby 概要分析 beta 版可用。我们使用 [stackprofLink:stackprof gem] 为 Ruby 收集概要分析数据。确保在加载 [sentryRubyCode:sentry-ruby] 之前已加载 [stackprofCode:stackprof]。"
+  ],
+  "After adding the gems, run the following to install the SDK:": [
+    "添加 gem 后，运行以下命令安装 SDK："
+  ],
+  "Add [sentryRackCode:use Sentry::Rack::CaptureExceptions] to your [sentryConfigCode:config.ru] or other rackup file (this is automatically inserted in Rails):": [
+    "将 [sentryRackCode:use Sentry::Rack::CaptureExceptions] 添加到您的 [sentryConfigCode:config.ru] 或其他 rackup 文件中（在 Rails 中会自动插入此内容）："
+  ],
+  "This snippet contains a deliberate error and message sent to Sentry and can be used as a test to make sure that everything's working as expected.": [
+    "此代码片段包含一个故意的错误和发送到 Sentry 的消息，可用作测试以确保一切正常工作。"
+  ],
+  "In Rails, all uncaught exceptions will be automatically reported. We support Rails 5 and newer.": [
+    "在 Rails 中，所有未捕获的异常都会自动报告。我们支持 Rails 5 及更高版本。"
+  ],
+  "The Sentry SDK for Rails comes as two gems that should be added to your [gemfileCode:Gemfile]:": [
+    "Sentry Rails SDK 包含两个 gem，应添加到您的 [gemfileCode:Gemfile] 中："
+  ],
+  "Run the following Rails generator to create the initializer file [code:config/initializers/sentry.rb].": [
+    "运行以下 Rails 生成器以创建初始化文件 [code:config/initializers/sentry.rb]："
+  ],
+  "You can then change the Sentry configuration as follows:": [
+    "然后，您可以如下更改 Sentry 配置："
+  ],
+  "In Rails, being able to serve dynamic pages in response to errors is required to pass the needed [codeEvent:event_id] to the JavaScript SDK. [link:Read our docs] to learn more. Once you're able to serve dynamic exception pages, you can support user feedback.": [
+    "在 Rails 中，为了将所需的 [codeEvent:event_id] 传递给 JavaScript SDK，必须能够响应错误提供动态页面。[link:阅读我们的文档] 以了解更多信息。一旦能够提供动态异常页面，就可以支持用户反馈。"
+  ],
+  "Additionally, you need the template that brings up the dialog:": [
+    "此外，您还需要用于显示对话框的模板："
+  ],
+  "To use Sentry Ruby all you need is your DSN. Like most Sentry libraries it will honor the [sentryDSN:SENTRY_DSN] environment variable. You can find it on the project settings page under API Keys. You can either export it as environment variable or manually configure it with [sentryInit:Sentry.init]:": [
+    "要使用 Sentry Ruby，您只需要 DSN。像大多数 Sentry 库一样，它会识别 [sentryDSN:SENTRY_DSN] 环境变量。您可以在项目设置页面的 API 密钥部分找到它。您可以将其导出为环境变量，也可以使用 [sentryInit:Sentry.init] 手动配置它："
+  ],
+  "To add Sentry to your Rust project you just need to add a new dependency to your [code:Cargo.toml]:": [
+    "要将 Sentry 添加到您的 Rust 项目中，只需在 [code:Cargo.toml] 中添加一个新依赖项："
+  ],
+  "[code:Sentry.init()] will return you a guard that when freed, will prevent process exit until all events have been sent (within a timeout).": [
+    "[code:Sentry.init()] 会返回一个守护程序，当它被释放时，在所有事件发送完成（或超时）之前，会阻止进程退出。"
+  ],
+  "The quickest way to verify Sentry in your Rust application is to cause a panic:": [
+    "验证 Rust 应用中的 Sentry 的最快速方法是触发一个恐慌："
+  ],
+  "You need at least version 0.32.1 of the [codeSentry:sentry] or  [codeSentryCore:sentry-core] crates installed. Enable the [codeFeature:UNSTABLE_metrics] feature.": [
+    "您需要安装 [codeSentry:sentry] 或 [codeSentryCore:sentry-core] 的 0.32.1 或更高版本的 crate。启用 [codeFeature:UNSTABLE_metrics] 功能。"
+  ],
+  "Then you'll be able to add metrics as [codeCounters:counters], [codeSets:sets], [codeDistribution:distributions], and [codeGauge:gauges]. These are available under the [codeNamespace:Sentry.metrics] namespace. Try out this example:": [
+    "这样您就可以将指标添加为 [codeCounters:计数器]、[codeSets:集合]、[codeDistribution:分布] 和 [codeGauge:测量仪]。这些位于 [codeNamespace:Sentry.metrics] 命名空间下。试试这个示例："
+  ],
+  "You need a minimum version [codeVersion:2.0.0] of the Unity SDK installed.": [
+    "您需要安装 Unity SDK 的最低版本为 [codeVersion:2.0.0]。"
+  ],
+  "Once the SDK is installed or updated, you can enable the experimental metrics feature and code locations being emitted in your RuntimeConfiguration.": [
+    "安装或更新 SDK 后，您可以在 RuntimeConfiguration 中启用实验性指标功能和代码位置的输出。"
+  ],
+  "Install the package via the [link:Unity Package Manager] using a Git URL to Sentry's SDK repository:": [
+    "通过 [link:Unity 包管理器] 使用指向 Sentry SDK 仓库的 Git URL 安装该软件包："
+  ],
+  "The Unity SDK now supports line numbers for IL2CPP. The feature is currently in beta, but you can enable it at [code:Tools -> Sentry -> Advanced -> IL2CPP] line numbers. To learn more check out our [link:docs].": [
+    "Unity SDK 现在支持 IL2CPP 的行号。此功能目前处于测试阶段，但您可以在 [code:Tools -> Sentry -> Advanced -> IL2CPP] 行号中启用它。欲了解更多，请查看我们的 [link:文档]。"
+  ],
+  "Access the Sentry configuration window by going to Unity's top menu: [toolsCode:Tools] > [sentryCode:Sentry] and enter the following DSN:": [
+    "要访问 Sentry 配置窗口，请转到 Unity 的顶部菜单：[toolsCode:Tools] > [sentryCode:Sentry]，然后输入以下 DSN："
+  ],
+  "And that's it! Now Sentry can capture errors automatically.": [
+    "就这样！现在 Sentry 可以自动捕获错误了。"
+  ],
+  "If you like additional contexts you could enable [link:Screenshots].": [
+    "如果您喜欢其他上下文，可以启用 [link:截图]。"
+  ],
+  "Once it is configured with the DSN you can call the SDK from anywhere:": [
+    "一旦配置了 DSN，就可以从任何地方调用 SDK："
+  ],
+  "Troubleshooting": [
+    "故障排除"
+  ],
+  "Confirm the URL doesn't have a trailing whitespace at the end. The Unity Package Manager will fail to find the package if a trailing whitespace is appended.": [
+    "请确认 URL 末尾没有多余的空格。如果附带了尾随空格，Unity 包管理器将无法找到该包。"
+  ],
+  "If you're running into any kind of issue please check out our [troubleshootingLink:troubleshooting page] or [raiseAnIssueLink:raise an issue].": [
+    "如果您遇到任何问题，请查看我们的 [troubleshootingLink:故障排除页面] 或 [raiseAnIssueLink:提交问题]。"
+  ],
+  "Add the configuration section:": [
+    "添加配置部分："
+  ],
+  "If a [crashReportCode:CrashReportClient] section already exists, simply changing the value of [dataRouterUrlCode:DataRouterUrl] is enough.": [
+    "如果已存在 [crashReportCode:CrashReportClient] 部分，则只需更改 [dataRouterUrlCode:DataRouterUrl] 的值即可。"
+  ],
+  "Upload Debug Symbols": [
+    "上传调试符号"
+  ],
+  "To allow Sentry to fully process native crashes and provide you with symbolicated stack traces, you need to upload [debugInformationItalic:调试信息文件] (sometimes also referred to as [debugSymbolsItalic:调试符号] or just [symbolsItalic:符号]). We recommend uploading debug information during your build or release process.": [
+    "为了让 Sentry 完整处理原生崩溃并为您提供符号化的堆栈跟踪，您需要上传调试信息文件（有时也称为调试符号或符号）。我们建议在构建或发布过程中上传调试信息。"
+  ],
+  "For all libraries where you'd like to receive symbolication, [strong:you need to provide debug information]. This includes dependencies and operating system libraries.": [
+    "对于所有您希望接收符号化的库，[strong:您需要提供调试信息]。这包括依赖项和操作系统库。"
+  ],
+  "In addition to debug information files, Sentry needs [italic:call frame information] (CFI) to extract accurate stack traces from minidumps of optimized release builds. CFI is usually part of the executables and not copied to debug symbols. Unless you are uploading Breakpad symbols, be sure to also include the binaries when uploading files to Sentry": [
+    "除了调试信息文件外，Sentry 还需要 [italic:调用帧信息]（CFI），以便从优化的发布构建的 minidump 中提取准确的堆栈跟踪。CFI 通常是可执行文件的一部分，不会复制到调试符号中。除非您上传的是 Breakpad 符号，否则在向 Sentry 上传文件时，请确保包含二进制文件。"
+  ],
+  "For more information on uploading debug information and their supported formats, check out our [link:Debug Information Files documentation].": [
+    "有关上传调试信息及其支持格式的详细信息，请参阅我们的 [link:调试信息文件文档]。"
+  ],
+  "Download the latest plugin sources from the [link:Releases] page and place it in the project's 'Plugins' directory. On the next project launch, UE will prompt to build Sentry module.": [
+    "从 [link:发布页面] 下载最新的插件源代码，并将其放置在项目的 “插件” 目录中。下次启动项目时，UE 将提示构建 Sentry 模块。"
+  ],
+  "After the successful build, in the editor navigate to the [strong:Project Settings > Plugins > Code Plugins] menu and check whether the Sentry plugin is enabled.": [
+    "构建成功后，在编辑器中转到 [strong:项目设置 > 插件 > 代码插件] 菜单并检查是否已启用 Sentry 插件。"
+  ],
+  "To access the plugin API from within C++, add Sentry support to the build script (MyProject.build.cs):'": [
+    "要从 C++ 内部访问插件 API，请在构建脚本 (MyProject.build.cs) 中添加对 Sentry 的支持："
+  ],
+  "Access the Sentry configuration window by going to editor's menu: [strong:Project Settings > Plugins > Sentry] and enter the following DSN:": [
+    "要访问 Sentry 配置窗口，请转到编辑器菜单：[strong:项目设置 > 插件 > Sentry] 并输入以下 DSN："
+  ],
+  "Once everything is configured you can call the plugin API from both C++ and blueprints:": [
+    "配置完成后，您可以从 C++ 和蓝图中调用插件 API："
+  ]
+}

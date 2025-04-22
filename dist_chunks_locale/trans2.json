@@ -1,0 +1,1985 @@
+{
+  "Fiddlesticks. Performance isn’t available for your [platform] project yet but we’re definitely still working on it. Stay tuned.": [
+    "抱歉，性能监控功能尚未对您的 [platform] 项目开放，但我们正在积极开发中，请耐心等待。"
+  ],
+  "Go to Sentry Documentation": [
+    "前往 Sentry 文档"
+  ],
+  "Go to documentation": [
+    "查看文档"
+  ],
+  "Adding Performance to your [platform] project is simple. Make sure you've got these basics down.": [
+    "为您的 [platform] 项目添加性能监控很简单，请先掌握以下基础知识。"
+  ],
+  "Waiting for this project's first transaction event": [
+    "正在等待该项目的第一个事务事件"
+  ],
+  "We've received this project's first transaction event!": [
+    "已收到该项目的第一个事务事件！"
+  ],
+  "%s other platform": [
+    "%s 其他平台"
+  ],
+  "%s other platforms": [
+    "%s 其他平台"
+  ],
+  "Sure you haven't misspelled? If you're using a lesser-known platform, consider choosing a more generic SDK like Browser JavaScript, Python, Node, .NET & Java or create a generic project, by selecting [linkOther:“Other”].": [
+    "确认平台名称拼写正确吗？如果您使用的是较为小众的平台，可以考虑选择更通用的 SDK（如浏览器 JavaScript、Python、Node、.NET 和 Java）或创建一个通用项目，选择 [linkOther:“其他”] 即可。"
+  ],
+  "Select 'Other'": [
+    "选择“其他”"
+  ],
+  "[collapse]": [
+    "折叠"
+  ],
+  "[+%s more]": [
+    "[+%s 更多]"
+  ],
+  "Function level insights": [
+    "函数级洞察"
+  ],
+  "Discover slow-to-execute or resource intensive functions within your application": [
+    "发现应用程序中执行缓慢或资源密集型的函数"
+  ],
+  "Export Profile": [
+    "导出性能分析报告"
+  ],
+  "Bottom Up": [
+    "自底向上"
+  ],
+  "Top Down": [
+    "自顶向下"
+  ],
+  "How often this frame appeared in stack samples.": [
+    "该帧在堆栈样本中出现的频率。"
+  ],
+  "Aggregated duration of this frame across different samples": [
+    "该帧在不同样本中的聚合持续时间"
+  ],
+  "Frame": [
+    "帧"
+  ],
+  "Upgrade to version 1.2.0 of @sentry/profiling-node to enable CPU usage collection": [
+    "请升级到 @sentry/profiling-node 的 1.2.0 版本以启用 CPU 使用情况的收集"
+  ],
+  "Upgrade to version 8.9.6 of sentry-cocoa SDK to enable CPU usage collection": [
+    "请升级到 sentry-cocoa SDK 的 8.9.6 版本以启用 CPU 使用情况的收集"
+  ],
+  "Upgrade to version 1.2.0 of @sentry/profiling-node to enable memory usage collection": [
+    "请升级到 @sentry/profiling-node 的 1.2.0 版本以启用内存使用情况的收集"
+  ],
+  "Upgrade to version 8.9.6 of sentry-cocoa SDK to enable memory usage collection": [
+    "请升级到 sentry-cocoa SDK 的 8.9.6 版本以启用内存使用情况的收集"
+  ],
+  "Upgrade to version 8.9.6 of sentry-cocoa SDK to enable battery usage collection": [
+    "请升级到 sentry-cocoa SDK 的 8.9.6 版本以启用电池使用情况的收集"
+  ],
+  "Differential Flamegraph": [
+    "差异火焰图"
+  ],
+  "Profile duration was too short to collect enough metrics": [
+    "分析时间过短，无法收集足够的指标数据"
+  ],
+  "Profile failed to collect a sufficient amount of measurements to render a chart": [
+    "性能分析未能收集足够的测量数据，无法渲染图表"
+  ],
+  "Profile has no measurements": [
+    "性能分析没有测量数据"
+  ],
+  "Profile has empty measurements": [
+    "性能分析的测量数据为空"
+  ],
+  "at": [
+    "在"
+  ],
+  "Copy function name": [
+    "复制函数名称"
+  ],
+  "Copy source location": [
+    "复制源码位置"
+  ],
+  "Open in GitHub is not supported for this platform": [
+    "此平台不支持在 GitHub 中打开"
+  ],
+  "Could not find source code location in GitHub": [
+    "在 GitHub 中找不到源码位置"
+  ],
+  "Open in GitHub": [
+    "在 GitHub 中打开"
+  ],
+  "Color Coding": [
+    "颜色编码"
+  ],
+  "Sorting": [
+    "排序"
+  ],
+  "Functions": [
+    "函数"
+  ],
+  "All frames": [
+    "所有帧"
+  ],
+  "Application frames": [
+    "应用程序帧"
+  ],
+  "System frames": [
+    "系统帧"
+  ],
+  "Highlight all occurrences": [
+    "高亮所有出现位置"
+  ],
+  "Appears in %s profiles": [
+    "出现在 %s 个分析报告中"
+  ],
+  "Profiles": [
+    "分析报告"
+  ],
+  "All Frames": [
+    "所有帧"
+  ],
+  "Application Frames": [
+    "应用程序帧"
+  ],
+  "System Frames": [
+    "系统帧"
+  ],
+  "Collapse recursion": [
+    "折叠递归"
+  ],
+  "Table left": [
+    "表格左侧"
+  ],
+  "Table bottom": [
+    "表格底部"
+  ],
+  "Table right": [
+    "表格右侧"
+  ],
+  "Show on flamegraph": [
+    "在火焰图中显示"
+  ],
+  "Self time is the amount of time spent by this function excluding the time spent by other functions called within it.": [
+    "独占时间是指该函数自身执行所花费的时间，不包括调用其他函数所花费的时间。"
+  ],
+  "Total Time": [
+    "总时间"
+  ],
+  "Total time is the total amount of time spent by this function.": [
+    "总时间是指该函数执行所花费的总时间。"
+  ],
+  "Classification": [
+    "分类"
+  ],
+  "OS Version": [
+    "操作系统版本"
+  ],
+  "Locale": [
+    "语言环境"
+  ],
+  "Timestamp": [
+    "时间戳"
+  ],
+  "transaction": [
+    "事务"
+  ],
+  "received at": [
+    "接收时间"
+  ],
+  "organization": [
+    "组织"
+  ],
+  "project": [
+    "项目"
+  ],
+  "platform": [
+    "平台"
+  ],
+  "release": [
+    "版本"
+  ],
+  "environment": [
+    "环境"
+  ],
+  "threads": [
+    "线程"
+  ],
+  "model": [
+    "型号"
+  ],
+  "manufacturer": [
+    "制造商"
+  ],
+  "classification": [
+    "分类"
+  ],
+  "os": [
+    "操作系统"
+  ],
+  "os version": [
+    "操作系统版本"
+  ],
+  "locale": [
+    "语言环境"
+  ],
+  "ø": [
+    "ø"
+  ],
+  "UI Frames": [
+    "UI 帧"
+  ],
+  "Battery": [
+    "电池"
+  ],
+  "CPU": [
+    "CPU"
+  ],
+  "Failed to load profile": [
+    "加载性能分析报告失败"
+  ],
+  "This profile either has no samples or the total duration of frames in the profile is 0.": [
+    "该性能分析报告没有样本数据，或报告中所有帧的总持续时间为 0。"
+  ],
+  "Export Raw Profile": [
+    "导出原始性能分析报告"
+  ],
+  "Failed to import profile with error": [
+    "导入性能分析报告时出错：%s"
+  ],
+  "Drop profile here": [
+    "将性能分析报告拖放到此处"
+  ],
+  "No associated transaction found": [
+    "未找到关联的事务"
+  ],
+  "Transaction has no spans": [
+    "事务没有跨度"
+  ],
+  "op": [
+    "操作"
+  ],
+  "status": [
+    "状态"
+  ],
+  "Differential Flamegraph Settings": [
+    "差异火焰图设置"
+  ],
+  "Reset Zoom": [
+    "重置缩放"
+  ],
+  "By System vs Application Frame": [
+    "按系统帧与应用帧"
+  ],
+  "By Symbol Name": [
+    "按符号名称"
+  ],
+  "By Package": [
+    "按包"
+  ],
+  "By System Frame": [
+    "按系统帧"
+  ],
+  "By Application Frame": [
+    "按应用帧"
+  ],
+  "By Recursion": [
+    "按递归"
+  ],
+  "By Frequency": [
+    "按频率"
+  ],
+  "Find Frames": [
+    "查找帧"
+  ],
+  "Also supports regular expressions, e.g. /^functionName/i": [
+    "还支持正则表达式，例如 /^functionName/i"
+  ],
+  "Empty Profiles": [
+    "空分析报告"
+  ],
+  "%s sample": [
+    "%s 个样本"
+  ],
+  "%s samples": [
+    "%s 个样本"
+  ],
+  "Call Order": [
+    "调用顺序"
+  ],
+  "Alphabetical": [
+    "按字母顺序"
+  ],
+  "Left Heavy": [
+    "左侧优先"
+  ],
+  "source": [
+    "来源"
+  ],
+  "application frame": [
+    "应用帧"
+  ],
+  "system frame": [
+    "系统帧"
+  ],
+  "inline frame": [
+    "内联帧"
+  ],
+  "no change": [
+    "无变化"
+  ],
+  "removed function": [
+    "已移除的函数"
+  ],
+  "new function": [
+    "新函数"
+  ],
+  "samples, ": [
+    "样本，"
+  ],
+  "Profile has no dropped or slow frames": [
+    "性能分析报告中没有丢帧或慢帧"
+  ],
+  "frozen frame": [
+    "卡顿帧"
+  ],
+  "slow frame": [
+    "慢帧"
+  ],
+  "Function name copied to clipboard": [
+    "函数名称已复制到剪贴板"
+  ],
+  "Failed to copy function name to clipboard": [
+    "复制函数名称到剪贴板失败"
+  ],
+  "Failed to resolve path for this function frame.": [
+    "无法解析该函数帧的路径。"
+  ],
+  "Function source copied to clipboard": [
+    "函数源码已复制到剪贴板"
+  ],
+  "Failed to copy function source to clipboard": [
+    "复制函数源码到剪贴板失败"
+  ],
+  "Slowest app functions": [
+    "最慢的应用函数"
+  ],
+  "Total Self Time": [
+    "总独占时间"
+  ],
+  "No functions data": [
+    "无函数数据"
+  ],
+  "Profiler ID": [
+    "分析器 ID"
+  ],
+  "Thread ID": [
+    "线程 ID"
+  ],
+  "Transaction ID": [
+    "事务 ID"
+  ],
+  "Precise Start Timestamp": [
+    "精确开始时间戳"
+  ],
+  "Precise Finish Timestamp": [
+    "精确结束时间戳"
+  ],
+  "Device Architecture": [
+    "设备架构"
+  ],
+  "Device Classification": [
+    "设备分类"
+  ],
+  "Device Locale": [
+    "设备语言环境"
+  ],
+  "Device Manufacturer": [
+    "设备制造商"
+  ],
+  "Device Model": [
+    "设备型号"
+  ],
+  "OS Build": [
+    "操作系统版本"
+  ],
+  "OS Name": [
+    "操作系统名称"
+  ],
+  "P50()": [
+    "P50()"
+  ],
+  "P75()": [
+    "P75()"
+  ],
+  "P95()": [
+    "P95()"
+  ],
+  "P99()": [
+    "P99()"
+  ],
+  "Count()": [
+    "计数()"
+  ],
+  "Unknown Transaction": [
+    "未知事务"
+  ],
+  "Go to Transaction": [
+    "查看事务"
+  ],
+  "Profile Summary": [
+    "性能分析摘要"
+  ],
+  "Unsupported": [
+    "不支持"
+  ],
+  "Profile Code": [
+    "分析代码"
+  ],
+  "Latest profile": [
+    "最新分析"
+  ],
+  "Slowest profile": [
+    "最慢分析"
+  ],
+  "View Profiles": [
+    "查看分析报告"
+  ],
+  "Package": [
+    "包"
+  ],
+  "P75 Self Time": [
+    "P75 独占时间"
+  ],
+  "Example Profiles": [
+    "示例分析报告"
+  ],
+  "Slowest Functions": [
+    "最慢函数"
+  ],
+  "Application": [
+    "应用"
+  ],
+  "Bookmark Project": [
+    "收藏项目"
+  ],
+  "Pending Requests": [
+    "待处理请求"
+  ],
+  "You'll need to join a team with access before you can view this data.": [
+    "您需要加入一个有访问权限的团队才能查看此数据。"
+  ],
+  "Request to join team sent.": [
+    "已发送加入团队的请求。"
+  ],
+  "There was an error while trying to request access.": [
+    "尝试请求访问时出错。"
+  ],
+  "%s Child": [
+    "%s 子项"
+  ],
+  "%s Children": [
+    "%s 个子项"
+  ],
+  "%s Descendant": [
+    "%s 后代"
+  ],
+  "%s Descendants": [
+    "%s 个后代"
+  ],
+  "View the error for this Transaction": [
+    "查看此事务的错误"
+  ],
+  "View [eventPrefix] [eventType]": [
+    "查看 [eventPrefix] [eventType]"
+  ],
+  "Related Issue": [
+    "相关问题"
+  ],
+  "View all events": [
+    "查看所有事件"
+  ],
+  "No services connected": [
+    "未连接任何服务"
+  ],
+  "Connect to a service": [
+    "连接到服务"
+  ],
+  "This Event": [
+    "此事件"
+  ],
+  "Root": [
+    "根"
+  ],
+  "%s Ancestor": [
+    "%s 祖先"
+  ],
+  "%s Ancestors": [
+    "%s 个祖先"
+  ],
+  "Parent": [
+    "父项"
+  ],
+  "The replay is still processing.": [
+    "回放仍在处理中。"
+  ],
+  "The replay was rate-limited and could not be accepted. [link:View the stats page] for more information.": [
+    "回放因速率限制而无法接受。[link:查看统计页面] 以获取更多信息。"
+  ],
+  "The replay has been deleted by a member in your organization.": [
+    "回放已被组织中的成员删除。"
+  ],
+  "There were network errors and the replay was not saved.": [
+    "出现网络错误，回放未保存。"
+  ],
+  "An ad-blocker was turned on for the user's session. [link:Read our docs] for a workaround.": [
+    "用户的会话中启用了广告拦截器。[link:阅读我们的文档] 以获取解决方法。"
+  ],
+  "Other reasons may include:": [
+    "其他原因可能包括："
+  ],
+  "The replay associated with this event cannot be found. In most cases, the replay wasn't accepted because your replay quota was exceeded at the time. To learn more, [link:read our docs].": [
+    "无法找到与此事件关联的回放。在大多数情况下，回放未被接受是因为您的回放配额已用完。[link:阅读我们的文档] 以获取更多信息。"
+  ],
+  "Session Replay isn't available for %s.": [
+    "会话回放不适用于 %s。"
+  ],
+  "[docsLink: See our docs] to find out which platforms are supported.": [
+    "[docsLink: 查看我们的文档] 以了解支持哪些平台。"
+  ],
+  "Open Hydration Diff": [
+    "打开水合差异"
+  ],
+  "This modal helps with debugging hydration errors by diffing the dom before and after the app hydrated. [boldBefore:Before Hydration] refers to the html rendered on the server. [boldAfter:After Hydration] refers to the html rendered on the client. This feature is actively being developed; please share any questions or feedback to the discussion linked above.": [
+    "此模态框通过比较应用水合前后 DOM 的差异来帮助调试水合错误。[boldBefore:水合前] 指服务器端渲染的 HTML，[boldAfter:水合后] 指客户端渲染的 HTML。此功能正在积极开发中；请在上面链接的讨论中分享任何问题或反馈。"
+  ],
+  "Search by this component": [
+    "按此组件搜索"
+  ],
+  "App is suspended": [
+    "应用已暂停"
+  ],
+  "Dismiss banner": [
+    "关闭横幅"
+  ],
+  "This replay contains a [code:canvas] element. Please update your SDK to 7.98.0 or higher to enable [code:canvas] recording. [link:Learn more in our docs].": [
+    "此回放包含 [code:canvas] 元素。请将您的 SDK 更新到 7.98.0 或更高版本以启用 [code:canvas] 录制。[link:在我们的文档中了解更多]。"
+  ],
+  "This replay contains a [code:canvas] element. Learn how to enable [code:canvas] recording [link:in our docs].": [
+    "此回放包含 [code:canvas] 元素。[link:在我们的文档中] 了解如何启用 [code:canvas] 录制。"
+  ],
+  "Configure sampling rates and recording thresholds": [
+    "配置采样率和录制阈值"
+  ],
+  "Element Masking/Blocking": [
+    "元素遮罩/阻断"
+  ],
+  "Unmask text (****) and unblock media (img, svg, video, etc.)": [
+    "取消遮罩文本 (****) 并取消阻断媒体 (img、svg、video 等)"
+  ],
+  "Network Details": [
+    "网络详情"
+  ],
+  "Capture request and response headers or bodies": [
+    "捕获请求和响应的标头或正文"
+  ],
+  "Canvas Support": [
+    "Canvas 支持"
+  ],
+  "Opt-in to record HTML [code:canvas] elements, added in SDK version 7.98.0": [
+    "选择加入以录制 HTML [code:canvas] 元素，此功能在 SDK 版本 7.98.0 中添加"
+  ],
+  "replay configure resources": [
+    "回放缓冲区配置资源"
+  ],
+  "Configure Replay": [
+    "配置回放"
+  ],
+  "Sentry wasn't able to identify the correct event to display a diff for this hydration error.": [
+    "Sentry 无法识别正确的事件以显示此水合错误的差异。"
+  ],
+  "Slider Diff": [
+    "滑块差异"
+  ],
+  "Side By Side Diff": [
+    "并排差异"
+  ],
+  "Html Diff": [
+    "HTML 差异"
+  ],
+  "Before Hydration": [
+    "水合前"
+  ],
+  "After Hydration": [
+    "水合后"
+  ],
+  "How the initial server-rendered page looked.": [
+    "初始服务器渲染页面的外观。"
+  ],
+  "Before": [
+    "之前"
+  ],
+  "How React re-rendered the page on your browser, after detecting a hydration error.": [
+    "React 在检测到水合错误后，在您的浏览器中重新渲染页面的方式。"
+  ],
+  "After": [
+    "之后"
+  ],
+  "Copy Before": [
+    "复制之前内容"
+  ],
+  "Copy After": [
+    "复制之后内容"
+  ],
+  "Session Replay for mobile apps is currently in beta. Beta features are still in progress and may have bugs.": [
+    "移动应用的会话回放目前处于测试阶段。测试功能仍在开发中，可能会有错误。"
+  ],
+  "number of errors": [
+    "错误数量"
+  ],
+  "1 error": [
+    "1 个错误"
+  ],
+  "%s errors": [
+    "%s 个错误"
+  ],
+  "hidden projects": [
+    "隐藏项目"
+  ],
+  "total errors": [
+    "总错误数"
+  ],
+  "Dead Clicks": [
+    "无效点击"
+  ],
+  "Rage Clicks": [
+    "愤怒点击"
+  ],
+  "Jump Up": [
+    "向上跳转"
+  ],
+  "↑ Jump to current timestamp": [
+    "↑ 跳转到当前时间戳"
+  ],
+  "Jump Down": [
+    "向下跳转"
+  ],
+  "↓ Jump to current timestamp": [
+    "↓ 跳转到当前时间戳"
+  ],
+  "Name:": [
+    "名称："
+  ],
+  "Buffering...": [
+    "缓冲中..."
+  ],
+  "Fast forwarding at %sx": [
+    "以 %sx 倍速快进"
+  ],
+  "Fast forwarding through inactivity": [
+    "在不活动时快进"
+  ],
+  "Seek slider": [
+    "进度滑块"
+  ],
+  "Right click & inspect your app’s DOM with your browser": [
+    "右键单击并使用浏览器检查应用的 DOM"
+  ],
+  "Playback Speed": [
+    "播放速度"
+  ],
+  "Fast-Forward Inactivity": [
+    "在不活动时快进"
+  ],
+  "Rewind 10s": [
+    "倒回 10 秒"
+  ],
+  "Rewind 10 seconds": [
+    "倒回 10 秒"
+  ],
+  "Next breadcrumb": [
+    "下一个面包屑"
+  ],
+  "Fast-forward to next breadcrumb": [
+    "快进到下一个面包屑"
+  ],
+  "Current Screen Name": [
+    "当前屏幕名称"
+  ],
+  "Current URL": [
+    "当前 URL"
+  ],
+  "Funny looking URL? It contains content scrubbed by our [filters] and may no longer be valid. This is to protect your users' privacy. If necessary, you can turn this off in your [settings].": [
+    "URL 看起来奇怪吗？它包含被我们的 [过滤器] 清理的内容，可能已不再有效。这是为了保护用户的隐私。如有必要，您可以在 [设置] 中关闭此功能。"
+  ],
+  "Exit full screen": [
+    "退出全屏"
+  ],
+  "Enter full screen": [
+    "进入全屏"
+  ],
+  "Restart Replay": [
+    "重新开始回放"
+  ],
+  "Play": [
+    "播放"
+  ],
+  "Replay Not Found": [
+    "未找到回放"
+  ],
+  "The replay you are looking for was not found.": [
+    "未找到您要查找的回放。"
+  ],
+  "The replay might be missing events or metadata.": [
+    "回放可能缺少事件或元数据。"
+  ],
+  "Or there may be an issue loading the actions from the server, click to try loading the Replay again.": [
+    "或者服务器加载动作时可能出现问题，点击此处重试加载回放。"
+  ],
+  "Read Changelog": [
+    "阅读更新日志"
+  ],
+  "Understand what your users do when your user experience doesn't meet their expectations": [
+    "了解用户在您的用户体验未达到预期时的行为"
+  ],
+  "Introducing Rage and Dead Clicks": [
+    "介绍愤怒点击和无效点击"
+  ],
+  "What's new in [version]": [
+    "[版本] 中的新功能"
+  ],
+  "version [version_number]": [
+    "版本 [版本号]"
+  ],
+  "Collapse Sidebar": [
+    "折叠侧边栏"
+  ],
+  "Open Sidebar": [
+    "打开侧边栏"
+  ],
+  "Zoom out": [
+    "缩小"
+  ],
+  "Zoom in": [
+    "放大"
+  ],
+  "Hide details": [
+    "隐藏详情"
+  ],
+  "Mask All Text": [
+    "遮罩所有文本"
+  ],
+  "Block All Media": [
+    "阻断所有媒体"
+  ],
+  "Session Replay isn’t available for your [platform] project. It supports all browser JavaScript applications. It is built to work with @sentry/browser and our browser framework SDKs.": [
+    "会话回放不适用于您的 [platform] 项目。它支持所有浏览器 JavaScript 应用。它与 @sentry/browser 和我们的浏览器框架 SDK 兼容。"
+  ],
+  "Getting Started with Session Replay": [
+    "开始使用会话回放"
+  ],
+  "All events in this issue were moved during reprocessing. [link]": [
+    "此问题中的所有事件在重新处理期间已移动。[链接]"
+  ],
+  "See %s new event": [
+    "查看 %s 个新事件"
+  ],
+  "See %s new events": [
+    "查看 %s 个新事件"
+  ],
+  "Events in this issue were successfully reprocessed. [link]": [
+    "此问题中的事件已成功重新处理。[链接]"
+  ],
+  "See %s reprocessed event": [
+    "查看 %s 个重新处理的事件"
+  ],
+  "See %s reprocessed events": [
+    "查看 %s 个重新处理的事件"
+  ],
+  "[actor] marked this issue as resolved in versions greater than [version].": [
+    "[actor] 将此问题标记为在 [version] 之后的版本中已解决。"
+  ],
+  "This issue has been marked as resolved in versions greater than [version].": [
+    "此问题已被标记为在 [version] 之后的版本中已解决。"
+  ],
+  "%s Alerts": [
+    "%s 个警报"
+  ],
+  "List of project alert rules": [
+    "项目警报规则列表"
+  ],
+  "Open Sudo Modal": [
+    "打开 Sudo 模态框"
+  ],
+  "Open Sudo Modal to re-identify yourself.": [
+    "打开 Sudo 模态框重新验证身份。"
+  ],
+  "Open Superuser Modal": [
+    "打开超级用户模态框"
+  ],
+  "Open Superuser Modal to re-identify yourself.": [
+    "打开超级用户模态框重新验证身份。"
+  ],
+  "Toggle dark mode": [
+    "切换深色模式"
+  ],
+  "Toggle dark mode (superuser only atm)": [
+    "切换深色模式（目前仅限超级用户）"
+  ],
+  "Toggle Translation Markers": [
+    "切换翻译标记"
+  ],
+  "Toggles translation markers on or off in the application": [
+    "在应用中切换翻译标记的开关"
+  ],
+  "Search Documentation and FAQ": [
+    "搜索文档和常见问题"
+  ],
+  "Open the Documentation and FAQ search modal.": [
+    "打开文档和常见问题搜索模态框。"
+  ],
+  "Open in Production": [
+    "在生产环境中打开"
+  ],
+  "Open the current page in sentry.io": [
+    "在 sentry.io 中打开当前页面"
+  ],
+  "Clear search query": [
+    "清除搜索查询"
+  ],
+  "Create a search query": [
+    "创建搜索查询"
+  ],
+  "Space": [
+    "空格"
+  ],
+  "Delete %s": [
+    "删除 %s"
+  ],
+  "Edit parameters for filter: %s": [
+    "编辑过滤器 %s 的参数"
+  ],
+  "Edit value for filter: %s": [
+    "编辑过滤器 %s 的值"
+  ],
+  "Remove filter: %s": [
+    "删除过滤器： %s"
+  ],
+  "Edit operator for filter: %s": [
+    "编辑过滤器 %s 的操作符"
+  ],
+  "Edit function parameters": [
+    "编辑函数参数"
+  ],
+  "Include time": [
+    "包含时间"
+  ],
+  "UTC": [
+    "协调世界时 (UTC)"
+  ],
+  "%s": [
+    "%s"
+  ],
+  "Toggle %s": [
+    "切换 %s"
+  ],
+  "Edit filter value": [
+    "编辑过滤器值"
+  ],
+  "%s second ago": [
+    "%s 秒前"
+  ],
+  "%s seconds ago": [
+    "%s 秒前"
+  ],
+  "%s minute ago": [
+    "%s 分钟前"
+  ],
+  "%s minutes ago": [
+    "%s 分钟前"
+  ],
+  "%s hour ago": [
+    "%s 小时前"
+  ],
+  "%s hours ago": [
+    "%s 小时前"
+  ],
+  "%s day ago": [
+    "%s 天前"
+  ],
+  "%s days ago": [
+    "%s 天前"
+  ],
+  "%s week ago": [
+    "%s 周前"
+  ],
+  "%s weeks ago": [
+    "%s 周前"
+  ],
+  "How can we make search better for you?": [
+    "我们如何能让搜索更好地为您服务？"
+  ],
+  "A tag sent with one or more events": [
+    "随一个或多个事件发送的标签"
+  ],
+  "Recent": [
+    "最近"
+  ],
+  "Add a search term": [
+    "添加搜索词"
+  ],
+  "This token is invalid": [
+    "此令牌无效"
+  ],
+  "Free text is not supported in this search": [
+    "此搜索不支持自由文本"
+  ],
+  "Wildcards not supported in search": [
+    "搜索中不支持通配符"
+  ],
+  "The OR operator is not allowed in this search": [
+    "此搜索中不允许使用 OR 操作符"
+  ],
+  "The AND operator is not allowed in this search": [
+    "此搜索中不允许使用 AND 操作符"
+  ],
+  "Quotes must enclose text or be escaped": [
+    "引号必须包围文本或进行转义"
+  ],
+  "Negation is not allowed in this search.": [
+    "此搜索中不允许使用否定。"
+  ],
+  "Filter must have a value": [
+    "过滤器必须有值"
+  ],
+  "Invalid boolean. Expected true, 1, false, or 0.": [
+    "无效的布尔值。应为 true、1、false 或 0。"
+  ],
+  "Invalid file size. Expected number followed by file size unit suffix": [
+    "无效的文件大小。应为数字后跟文件大小单位后缀"
+  ],
+  "Invalid number. Expected number then optional k, m, or b suffix (e.g. 500k)": [
+    "无效的数字。应为数字然后是可选的 k、m 或 b 后缀（例如 500k）"
+  ],
+  "Function parameters should not have empty values": [
+    "函数参数不应有空值"
+  ],
+  "Lists should not have empty values": [
+    "列表不应有空值"
+  ],
+  "Parentheses are not supported in this search": [
+    "此搜索中不支持括号"
+  ],
+  "Invalid key. \"%s\" is not a supported search key.": [
+    "无效的键。\"%s\" 不是支持的搜索键。"
+  ],
+  "Invalid duration. Expected number followed by duration unit suffix": [
+    "无效的持续时间。应为数字后跟持续时间单位后缀"
+  ],
+  "Invalid date format. Expected +/-duration (e.g. +1h) or ISO 8601-like (e.g. %s or %s)": [
+    "无效的日期格式。应为 +/-持续时间（例如 +1h）或类似 ISO 8601（例如 %s 或 %s）"
+  ],
+  "From [start] until [end] we experienced problems with the following services": [
+    "从 [开始] 到 [结束]，我们在以下服务中遇到了问题"
+  ],
+  "This incident started [timeAgo]. We're experiencing problems with the following services": [
+    "此事件始于 [timeAgo]。我们在以下服务中遇到了问题"
+  ],
+  "Full Incident Details": [
+    "事件完整详情"
+  ],
+  "([time])": [
+    "（[时间]）"
+  ],
+  "Search Support, Docs and More": [
+    "搜索支持、文档等"
+  ],
+  "Visit Help Center": [
+    "访问帮助中心"
+  ],
+  "Join our Discord": [
+    "加入我们的 Discord"
+  ],
+  "Traces": [
+    "追踪"
+  ],
+  "Crons": [
+    "定时任务"
+  ],
+  "Replays": [
+    "回放"
+  ],
+  "Metrics": [
+    "指标"
+  ],
+  "Insights": [
+    "洞察"
+  ],
+  "Primary Navigation": [
+    "主要导航"
+  ],
+  "[numberRemaining] Remaining [task]": [
+    "[剩余数量] 个剩余 [任务]"
+  ],
+  "Recent service updates": [
+    "最近的服务更新"
+  ],
+  "User auth tokens": [
+    "用户认证令牌"
+  ],
+  "%s project": [
+    "%s 项目"
+  ],
+  "%s projects": [
+    "%s 项目"
+  ],
+  "Stack Trace Frames": [
+    "堆栈跟踪帧"
+  ],
+  "In-App Frames": [
+    "应用内帧"
+  ],
+  "Unable to fetch releases": [
+    "无法获取版本发布"
+  ],
+  "No items found": [
+    "未找到项目"
+  ],
+  "For more information, please see the documentation": [
+    "有关详细信息，请参阅文档"
+  ],
+  "Wildcards aren't supported here.": [
+    "此处不支持通配符。"
+  ],
+  "The field [field] isn't supported here.": [
+    "字段 [field] 在此处不受支持。"
+  ],
+  "See all searchable properties in the docs.": [
+    "在文档中查看所有可搜索的属性。"
+  ],
+  "[value]": [
+    "[值]"
+  ],
+  ">=[value]": [
+    ">=[值]"
+  ],
+  "<=[value]": [
+    "<=[值]"
+  ],
+  ">[value]": [
+    ">[值]"
+  ],
+  "<[value]": [
+    "<[值]"
+  ],
+  "=[value]": [
+    "=[值]"
+  ],
+  "Values": [
+    "值"
+  ],
+  "Common Search Terms": [
+    "常用搜索词"
+  ],
+  "Operator Helpers": [
+    "操作符帮助"
+  ],
+  "Properties": [
+    "属性"
+  ],
+  "Keys": [
+    "键"
+  ],
+  "After a custom datetime": [
+    "在自定义日期时间之后"
+  ],
+  "Before a custom datetime": [
+    "在自定义日期时间之前"
+  ],
+  "At a custom datetime": [
+    "在自定义日期时间"
+  ],
+  "Switch to Light Mode": [
+    "切换到浅色模式"
+  ],
+  "Switch to Dark Mode": [
+    "切换到深色模式"
+  ],
+  "Error Events": [
+    "错误事件"
+  ],
+  "Transaction Events": [
+    "事务事件"
+  ],
+  "Cron Events": [
+    "定时任务事件"
+  ],
+  "Replay Events": [
+    "回放事件"
+  ],
+  "Uptime Events": [
+    "正常运行时间事件"
+  ],
+  "Matching filters": [
+    "匹配的过滤器"
+  ],
+  "Total in %s": [
+    "总计在 %s 中"
+  ],
+  "Since issue began": [
+    "自问题开始以来"
+  ],
+  "%s item": [
+    "%s 个项目"
+  ],
+  "%s items": [
+    "%s 个项目"
+  ],
+  "Open link": [
+    "打开链接"
+  ],
+  "More tabs": [
+    "更多标签页"
+  ],
+  "This tag is in the current filter conditions": [
+    "此标签在当前过滤条件中"
+  ],
+  "Team Roles": [
+    "团队角色"
+  ],
+  "Members of a team have access to specific areas, such as a new release or a new application feature.": [
+    "团队成员可以访问特定区域，例如新版本或新应用功能。"
+  ],
+  "Create team": [
+    "创建团队"
+  ],
+  "Search…": [
+    "搜索..."
+  ],
+  "Custom range: 2h, 4d, 8w…": [
+    "自定义范围：2h、4d、8w..."
+  ],
+  "Invalid Period": [
+    "无效的周期"
+  ],
+  "Last minute": [
+    "最近 1 分钟"
+  ],
+  "Last %s minutes": [
+    "最近 %s 分钟"
+  ],
+  "Last day": [
+    "最近 1 天"
+  ],
+  "Last %s days": [
+    "最近 %s 天"
+  ],
+  "Last week": [
+    "最近 1 周"
+  ],
+  "Last %s weeks": [
+    "最近 %s 周"
+  ],
+  "\n             Unfortunately your browser does not support U2F. You need to use\n             a different two-factor method or switch to a browser that supports\n             it (Google Chrome or Microsoft Edge).": [
+    "不幸的是，您的浏览器不支持 U2F。您需要使用其他双因素认证方法，或切换到支持 U2F 的浏览器（如 Google Chrome 或 Microsoft Edge）。"
+  ],
+  "Enroll with WebAuthn": [
+    "使用 WebAuthn 注册"
+  ],
+  "Sign in with WebAuthn": [
+    "使用 WebAuthn 登录"
+  ],
+  "This device is already registered with Sentry.": [
+    "此设备已在 Sentry 中注册。"
+  ],
+  "[p1:The Sentry server administrator modified the device\n                 registrations.] [p2:You need to remove and re-add the device to continue using\n                 your U2F device. Use a different sign-in method or contact [support] for\n                 assistance.]": [
+    "[p1:Sentry 服务器管理员修改了设备注册信息。] [p2:您需要移除并重新添加设备才能继续使用您的 U2F 设备。请使用其他登录方法或联系 [support] 获取帮助。]"
+  ],
+  "Your code sleuth eagerly awaits its first mission.": [
+    "您的代码侦探正急切地等待着第一个任务。"
+  ],
+  "Set up the Sentry SDK": [
+    "设置 Sentry SDK"
+  ],
+  "Install Sentry": [
+    "安装 Sentry"
+  ],
+  "Configure Sentry": [
+    "配置 Sentry"
+  ],
+  "Preview a Sentry Issue": [
+    "预览 Sentry 问题"
+  ],
+  "Get Started with Sentry Issues": [
+    "开始使用 Sentry 问题"
+  ],
+  "[miserableUsers] out of [totalUsers] unique users waited more than [duration]ms (4x the response time threshold)": [
+    "[miserableUsers] 个用户（共 [totalUsers] 个独立用户）等待时间超过 [duration] 毫秒（响应时间阈值的 4 倍）"
+  ],
+  "User Misery score is [userMisery], representing users who waited more than [duration]ms (4x the response time threshold)": [
+    "用户痛苦指数为 [userMisery]，代表等待时间超过 [duration] 毫秒（响应时间阈值的 4 倍）的用户"
+  ],
+  "User Misery score is [userMisery], meaning [miserableUsers] out of [totalUsers] unique users had a miserable experience.": [
+    "用户痛苦指数为 [userMisery]，意味着 [miserableUsers] 个用户（共 [totalUsers] 个独立用户）经历了痛苦的体验。"
+  ],
+  "User Misery score is [userMisery].": [
+    "用户痛苦指数为 [userMisery]。"
+  ],
+  "Releases are better with commit data!": [
+    "有提交数据的版本发布更好！"
+  ],
+  "Connect a repository to see commit info, files changed, and authors involved in future releases.": [
+    "连接仓库以查看未来的版本发布的提交信息、更改的文件和参与的作者。"
+  ],
+  "Connect a repository": [
+    "连接仓库"
+  ],
+  "1H": [
+    "1 小时"
+  ],
+  "24H": [
+    "24 小时"
+  ],
+  "7D": [
+    "7 天"
+  ],
+  "14D": [
+    "14 天"
+  ],
+  "30D": [
+    "30 天"
+  ],
+  "Session Replays": [
+    "会话回放"
+  ],
+  "Indexed Transactions": [
+    "索引事务"
+  ],
+  "Monitor Check-Ins": [
+    "监控签入"
+  ],
+  "Spans": [
+    "跨度"
+  ],
+  "Cron Monitors": [
+    "定时任务监控"
+  ],
+  "Profile Hours": [
+    "性能分析小时数"
+  ],
+  "Metrics Hours": [
+    "指标小时数"
+  ],
+  "This view is only available with Performance Monitoring.": [
+    "此视图仅在性能监控中可用。"
+  ],
+  "This view is only available with Discover.": [
+    "此视图仅在 Discover 中可用。"
+  ],
+  "This view is only available with Release Health.": [
+    "此视图仅在版本健康中可用。"
+  ],
+  "Additional Email": [
+    "附加邮箱"
+  ],
+  "e.g. secondary@example.com": [
+    "例如 secondary@example.com"
+  ],
+  "Designate an alternative email for this account": [
+    "为该账户指定一个备用邮箱"
+  ],
+  "Add this new email address to your account?": [
+    "将此新邮箱地址添加到您的账户中？"
+  ],
+  "Add Secondary Emails": [
+    "添加备用邮箱"
+  ],
+  "Current Password": [
+    "当前密码"
+  ],
+  "Your current password": [
+    "您的当前密码"
+  ],
+  "New Password": [
+    "新密码"
+  ],
+  "Verify New Password": [
+    "确认新密码"
+  ],
+  "Verify your new password": [
+    "确认您的新密码"
+  ],
+  "Passwords do not match": [
+    "密码不匹配"
+  ],
+  "Select your theme preference. It can be synced to your system's theme, always light mode, or always dark mode.": [
+    "选择您的主题偏好。它可以与您的系统主题同步，始终使用浅色模式或始终使用深色模式。"
+  ],
+  "Stack Trace Order": [
+    "堆栈跟踪顺序"
+  ],
+  "Choose the default ordering of frames in stack traces": [
+    "选择堆栈跟踪中帧的默认排序方式"
+  ],
+  "Default Issue Event": [
+    "默认问题事件"
+  ],
+  "Choose what event gets displayed by default": [
+    "选择默认显示的事件"
+  ],
+  "Attachments Access": [
+    "附件访问权限"
+  ],
+  "Role required to download event attachments, such as native crash reports or log files.": [
+    "下载事件附件（如原生崩溃报告或日志文件）所需的权限。"
+  ],
+  "Debug Files Access": [
+    "调试文件访问权限"
+  ],
+  "Role required to download debug information files, proguard mappings and source maps.": [
+    "下载调试信息文件、proguard 映射和源码映射所需的权限。"
+  ],
+  "Organization Slug": [
+    "组织标识符"
+  ],
+  "A human-friendly name for the organization": [
+    "组织的人性化名称"
+  ],
+  "Opt-in to [link:new features] before they're released to the public": [
+    "在向公众发布之前选择加入 [link:new features]"
+  ],
+  "AI Suggested Solution": [
+    "AI 建议解决方案"
+  ],
+  "Opt-in to [link:ai suggested solution] to get AI help on how to solve an issue.": [
+    "选择加入 [link:ai suggested solution] 以获取 AI 帮助解决问題。"
+  ],
+  "Automatically Configure Uptime Alerts": [
+    "自动配置正常运行时间警报"
+  ],
+  "Detect most-used URLs for uptime monitoring.": [
+    "检测用于正常运行时间监控的常用 URL。"
+  ],
+  "Allow organization members to freely join any team": [
+    "允许组织成员自由加入任何团队"
+  ],
+  "Let Members Create Projects": [
+    "允许成员创建项目"
+  ],
+  "Allow organization members to create and configure new projects.": [
+    "允许组织成员创建和配置新项目。"
+  ],
+  "You must be on a business plan to toggle this feature.": [
+    "您必须使用商业计划才能切换此功能。"
+  ],
+  "Let Members Delete Events": [
+    "允许成员删除事件"
+  ],
+  "Let Members Create and Edit Alerts": [
+    "允许成员创建和编辑警报"
+  ],
+  "Allow members to create, edit, and delete alert rules by granting them the `alerts:write` scope.": [
+    "通过授予成员 `alerts:write` 权限，允许他们创建、编辑和删除警报规则。"
+  ],
+  "Enter additional field names to match against when scrubbing data for all projects. Separate multiple entries with a newline.": [
+    "输入在清理所有项目数据时要匹配的其他字段名称。多个条目请换行分隔。"
+  ],
+  "Global Safe Fields": [
+    "全局安全字段"
+  ],
+  "Enter field names which data scrubbers should ignore. Separate multiple entries with a newline.": [
+    "输入数据清理程序应忽略的字段名称。多个条目请换行分隔。"
+  ],
+  "Enable to prevent IP addresses from being stored for new events": [
+    "启用后，新事件的 IP 地址将不会被存储"
+  ],
+  "Require and enforce two-factor authentication for all members": [
+    "要求并强制所有成员使用双因素认证"
+  ],
+  "Enable to require and enforce two-factor authentication for all members": [
+    "启用后，将要求并强制所有成员使用双因素认证"
+  ],
+  "Require Email Verification": [
+    "要求电子邮件验证"
+  ],
+  "Require and enforce email address verification for all members": [
+    "要求并强制所有成员验证电子邮件地址"
+  ],
+  "This will remove all members whose email addresses are not verified from your organization. It will also send them an email to verify their address and reinstate their access and settings. Do you want to continue?": [
+    "这将从您的组织中移除所有未验证电子邮件地址的成员。还将向他们发送一封电子邮件以验证其地址并恢复其访问权限和设置。您要继续吗？"
+  ],
+  "Are you sure you want to allow users to access your organization without verifying their email address?": [
+    "您确定要允许用户在未验证电子邮件地址的情况下访问您的组织吗？"
+  ],
+  "Are you sure you want to disable sourcecode fetching for JavaScript events? This will affect Sentry's ability to aggregate issues if you're not already uploading sourcemaps as artifacts.": [
+    "您确定要禁用 JavaScript 事件的源码获取吗？如果您尚未将源码地图作为构件上传，这将影响 Sentry 聚合问题的能力。"
+  ],
+  "Allow JavaScript Source Fetching": [
+    "允许获取 JavaScript 源码"
+  ],
+  "Store native crash reports such as Minidumps for improved processing and download in issue details": [
+    "存储原生崩溃报告（如 Minidumps），以改进处理并在问题详情中下载"
+  ],
+  "Allow users to request to join your organization": [
+    "允许用户申请加入您的组织"
+  ],
+  "Enable to allow users to request to join your organization": [
+    "启用后，允许用户申请加入您的组织"
+  ],
+  "Are you sure you want to allow users to request to join your organization?": [
+    "您确定要允许用户申请加入您的组织吗？"
+  ],
+  "Data Scrubbing": [
+    "数据清理"
+  ],
+  "Enable to apply default scrubbers to prevent things like passwords and credit cards from being stored": [
+    "启用后，应用默认的数据清理程序以防止存储密码和信用卡等信息"
+  ],
+  "The email subject to use (excluding the prefix) for individual alerts. Usable variables include: $title, $shortID, $projectID, $orgID, and ${tag:key}, such as ${tag:environment} or ${tag:release}.": [
+    "用于单个警报的电子邮件主题（不包括前缀）。可用变量包括：$title、$shortID、$projectID、$orgID 和 ${tag:key}，例如 ${tag:environment} 或 ${tag:release}。"
+  ],
+  "%s minute": [
+    "%s 分钟"
+  ],
+  "%s day": [
+    "%s 天"
+  ],
+  "%s hour": [
+    "%s 小时"
+  ],
+  "[strong:Caution]: Enabling auto resolve will immediately resolve anything that has not been seen within this period of time. There is no undo!": [
+    "[strong:注意]：启用自动解决将立即解决在此时间段内未再次出现的所有问题。此操作无法撤销！"
+  ],
+  "Examples: https://example.com, *, *.example.com, *:80. Separate multiple entries with a newline": [
+    "示例：https://example.com、*、*.example.com、*:80。多个条目请换行分隔"
+  ],
+  "my-awesome-project": [
+    "我的超赞项目"
+  ],
+  "A name for this project": [
+    "项目的名称"
+  ],
+  "Changing a project's name will also change the project slug. This can break your build scripts! Please proceed carefully.": [
+    "更改项目名称也将更改项目标识符。这可能会破坏您的构建脚本！请谨慎操作。"
+  ],
+  "The primary platform for this project": [
+    "该项目的主要平台"
+  ],
+  "Fingerprint Rules": [
+    "指纹规则"
+  ],
+  "error.type:MyException -> fingerprint-value\nstack.function:some_panic_function -> fingerprint-value": [
+    "error.type:MyException -> 指纹值\nstack.function:some_panic_function -> 指纹值"
+  ],
+  "Changing fingerprint rules will apply to future events only (can take up to a minute).": [
+    "更改指纹规则仅适用于未来的事件（可能需要 1 分钟才能生效）。"
+  ],
+  "This can be used to modify the fingerprint rules on the server with custom rules.\n        Rules follow the pattern [pattern]. To learn more about fingerprint rules, [docs:read the docs].": [
+    "这可以用于使用自定义规则修改服务器上的指纹规则。\n规则遵循 [pattern] 模式。要了解有关指纹规则的更多信息，请 [docs:阅读文档]。"
+  ],
+  "Stack Trace Rules": [
+    "堆栈跟踪规则"
+  ],
+  "stack.function:raise_an_exception ^-group\nstack.function:namespace::* +app": [
+    "stack.function:raise_an_exception ^-group\nstack.function:namespace::* +app"
+  ],
+  "Changing stack trace rules will apply to future events only (can take up to a minute).": [
+    "更改堆栈跟踪规则仅适用于未来的事件（可能需要 1 分钟才能生效）。"
+  ],
+  "This can be used to enhance the grouping algorithm with custom rules.\n        Rules follow the pattern [pattern]. To learn more about stack trace rules, [docs:read the docs].": [
+    "这可以用于使用自定义规则增强分组算法。\n规则遵循 [pattern] 模式。要了解有关堆栈跟踪规则的更多信息，请 [docs:阅读文档]。"
+  ],
+  "Enter additional field names to match against when scrubbing data. Separate multiple entries with a newline": [
+    "输入在清理数据时要匹配的其他字段名称。多个条目请换行分隔"
+  ],
+  "Enter field names which data scrubbers should ignore. Separate multiple entries with a newline": [
+    "输入数据清理程序应忽略的字段名称。多个条目请换行分隔"
+  ],
+  "Store native crash reports such as Minidumps for improved processing and download in issue details. Overrides [organizationSettingsLink: organization settings].": [
+    "存储原生崩溃报告（如 Minidumps），以改进处理并在问题详情中下载。覆盖 [organizationSettingsLink: 组织设置]。"
+  ],
+  "Inherit organization settings ([organizationValue])": [
+    "继承组织设置 ([organizationValue])"
+  ],
+  "All webhook requests for your integration will be sent to this URL. Visit the [webhook_docs:documentation] to see the different types and payloads.": [
+    "您集成的所有 Webhook 请求将发送到此 URL。请访问 [webhook_docs: 文档] 查看不同类型和负载。"
+  ],
+  "If enabled, this integration will be available in Issue Alert rules and Metric Alert rules in Sentry. The notification destination is the Webhook URL specified above. More on actions [learn_more:here].": [
+    "如果启用，此集成将在 Sentry 的问题警报规则和指标警报规则中提供。通知目的地是上面指定的 Webhook URL。更多关于操作的信息 [learn_more: 在这里]。"
+  ],
+  "Schema for your UI components. Click [schema_docs:here] for documentation.": [
+    "UI 组件的模式。点击 [schema_docs: 这里] 查看文档。"
+  ],
+  "Show Sentry Branding in Crash Report Modal": [
+    "在崩溃报告模态框中显示 Sentry 标识"
+  ],
+  "Show \"powered by Sentry\" within the Crash Report Modal. We appreciate you helping get the word out about Sentry! <3": [
+    "在崩溃报告模态框中显示“由 Sentry 提供支持”。感谢您帮助宣传 Sentry！<3"
+  ],
+  "Enable Crash Report Notifications": [
+    "启用崩溃报告通知"
+  ],
+  "Get notified on feedback submissions from the [crashReportModalDocsLink: Crash Report Modal], [webApiEndpointLink: web endpoint], and JS SDK (pre-v8). [feedbackWidgetDocsLink: Feedback widget] notifications are not affected by this setting and are on by default.": [
+    "通过 [crashReportModalDocsLink: 崩溃报告模态框]、[webApiEndpointLink: web 端点] 和 JS SDK（pre-v8）接收反馈提交的通知。[feedbackWidgetDocsLink: 反馈小部件] 通知不受此设置影响，默认为开启状态。"
+  ],
+  "Add the [sagpLink:Sentry Android Gradle plugin] to your [app:app] module:": [
+    "将 [sagpLink:Sentry Android Gradle 插件] 添加到您的 [app:app] 模块中："
+  ],
+  "Configuration is done via the application [manifest: AndroidManifest.xml]. Under the hood Sentry uses a [provider:ContentProvider] to initialize the SDK based on the values provided below. This way the SDK can capture important crashes and metrics right from the app start.": [
+    "配置通过应用程序的 [manifest: AndroidManifest.xml] 完成。在内部，Sentry 使用 [provider:ContentProvider] 根据下面提供的值初始化 SDK。这样 SDK 就可以从应用启动时捕获重要的崩溃和指标。"
+  ],
+  "Here's an example config which should get you started:": [
+    "以下是一个示例配置，可以帮助您入门："
+  ],
+  "This snippet contains an intentional error and can be used as a test to make sure that everything's working as expected. You can add it to your app's [mainActivity: MainActivity].": [
+    "此代码片段包含一个故意的错误，可以用作测试以确保一切正常工作。您可以将其添加到应用的 [mainActivity: MainActivity] 中。"
+  ],
+  "Advanced Configuration": [
+    "高级配置"
+  ],
+  "Customize the SDK initialization behavior.": [
+    "自定义 SDK 初始化行为。"
+  ],
+  "Jetpack Compose": [
+    "Jetpack Compose"
+  ],
+  "Learn about our first class integration with Jetpack Compose.": [
+    "了解我们与 Jetpack Compose 的一流集成。"
+  ],
+  "ProGuard/R8": [
+    "ProGuard/R8"
+  ],
+  "Deobfuscate and get readable stacktraces in your Sentry errors.": [
+    "对混淆代码进行反混淆，并在 Sentry 错误中获取可读的堆栈跟踪。"
+  ],
+  "Source Context": [
+    "源码上下文"
+  ],
+  "See your source code as part of your stacktraces in Sentry.": [
+    "在 Sentry 的堆栈跟踪中查看您的源码上下文。"
+  ],
+  "Installation Mode": [
+    "安装模式"
+  ],
+  "Add Sentry automatically to your app with the [wizardLink:Sentry wizard] (call this inside your project directory).": [
+    "使用 [wizardLink:Sentry 向导] 自动将 Sentry 添加到您的应用中（在您的项目目录中调用此命令）。"
+  ],
+  "The Sentry wizard will automatically patch your application:": [
+    "Sentry 向导将自动修改您的应用程序："
+  ],
+  "Update your app's [buildGradle:build.gradle] file with the Sentry Gradle plugin and configure it.": [
+    "使用 Sentry Gradle 插件更新您的应用的 [buildGradle:build.gradle] 文件并进行配置。"
+  ],
+  "Update your [manifest: AndroidManifest.xml] with the default Sentry configuration": [
+    "使用默认的 Sentry 配置更新您的 [manifest: AndroidManifest.xml]"
+  ],
+  "Create [sentryProperties: sentry.properties] with an auth token to upload proguard mappings (this file is automatically added to [gitignore: .gitignore])": [
+    "创建 [sentryProperties: sentry.properties] 并添加认证令牌以上传 proguard 映射（此文件将自动添加到 [gitignore: .gitignore] 中）"
+  ],
+  "Add an example error to your app's Main Activity to verify your Sentry setup": [
+    "在应用的 MainActivity 中添加一个示例错误以验证您的 Sentry 设置"
+  ],
+  "Alternatively, you can also [manualSetupLink:set up the SDK manually].": [
+    "或者，您也可以 [manualSetupLink: 手动设置 SDK]。"
+  ],
+  "We recommend installing the SDK with Swift Package Manager (SPM), but we also support [alternateMethods: alternate installation methods]. To integrate Sentry into your Xcode project using SPM, open your App in Xcode and open [addPackage: File > Add Packages]. Then add the SDK by entering the Git repo url in the top right search field:": [
+    "我们建议使用 Swift Package Manager (SPM) 安装 SDK，但也支持 [alternateMethods: 其他安装方法]。要通过 SPM 将 Sentry 集成到您的 Xcode 项目中，请在 Xcode 中打开您的应用并选择 [addPackage: File > Add Packages]。然后，在右上角的搜索框中输入 Git 仓库 URL 来添加 SDK："
+  ],
+  "Alternatively, when your project uses a [packageSwift: Package.swift] file to manage dependencies, you can specify the target with:": [
+    "或者，如果您的项目使用 [packageSwift: Package.swift] 文件来管理依赖项，可以通过以下方式指定目标："
+  ],
+  "Install the Sentry SDK via Swift Package Manager or Cocoapods": [
+    "通过 Swift Package Manager 或 Cocoapods 安装 Sentry SDK"
+  ],
+  "Update your [appDelegate: AppDelegate] or SwiftUI App Initializer with the default Sentry configuration and an example error": [
+    "使用默认的 Sentry 配置和示例错误更新您的 [appDelegate: AppDelegate] 或 SwiftUI App 初始化器"
+  ],
+  "Add a new [phase: Upload Debug Symbols] phase to your [xcodebuild: xcodebuild] build script": [
+    "为您的 [xcodebuild: xcodebuild] 构建脚本添加一个新的 [phase: 上传调试符号] 阶段"
+  ],
+  "Create [sentryclirc: .sentryclirc] with an auth token to upload debug symbols (this file is automatically added to [gitignore: .gitignore])": [
+    "创建 [sentryclirc: .sentryclirc] 并添加认证令牌以上传调试符号（此文件将自动添加到 [gitignore: .gitignore] 中）"
+  ],
+  "When you're using Fastlane, it will add a Sentry lane for uploading debug symbols": [
+    "当您使用 Fastlane 时，它会添加一个用于上传调试符号的 Sentry 轨道"
+  ],
+  "Make sure you initialize the SDK as soon as possible in your application lifecycle e.g. in your [appDelegate:] method:": [
+    "请确保在应用生命周期中尽早初始化 SDK，例如在您的 [appDelegate:] 方法中："
+  ],
+  "When using SwiftUI and your app doesn't implement an app delegate, initialize the SDK within the [initializer: App conformer's initializer]:": [
+    "当使用 SwiftUI 且您的应用未实现应用委托时，在 [initializer: App 协议的初始化方法] 中初始化 SDK："
+  ],
+  "The Sentry wizard automatically adds a code snippet that captures a message to your project. Simply run your app and you should see this message in your Sentry project.": [
+    "Sentry 向导会自动向您的项目中添加一个捕获消息的代码片段。只需运行您的应用，您就应该在 Sentry 项目中看到此消息。"
+  ],
+  "Experimental Features": [
+    "实验性功能"
+  ],
+  "Want to play with some new features? Try out our experimental features for [vh: View Hierarchy], [ttfd: Time to Full Display (TTFD)], [metricKit: MetricKit], [prewarmedAppStart: Prewarmed App Start Tracing], and [asyncStacktraces: Swift Async Stacktraces]. Experimental features are still a work-in-progress and may have bugs. We recognize the irony. [break] Let us know if you have feedback through [gh: GitHub issues].": [
+    "想试试新功能吗？体验我们针对 [vh: 视图层次结构]、[ttfd: 完全显示时间 (TTFD)]、[metricKit: MetricKit]、[prewarmedAppStart: 预热应用启动跟踪] 和 [asyncStacktraces: Swift 异步堆栈跟踪] 的实验性功能。实验性功能仍在开发中，可能会有错误。我们明白其中的讽刺意味。[换行] 如果您有任何反馈，请通过 [gh: GitHub 问题] 告知我们。"
+  ],
+  "This snippet contains an intentional error you can use to test that errors are uploaded to Sentry correctly. You can add it to your main [viewController: ViewController].": [
+    "此代码片段包含一个故意的错误，可用于测试错误是否正确上传到 Sentry。您可以将其添加到您的主 [viewController: ViewController] 中。"
+  ],
+  "CocoaPods/Carthage": [
+    "CocoaPods/Carthage"
+  ],
+  "Learn about integrating Sentry into your project using CocoaPods or Carthage.": [
+    "了解如何使用 CocoaPods 或 Carthage 将 Sentry 集成到您的项目中。"
+  ],
+  "Symbolicate and get readable stacktraces in your Sentry errors.": [
+    "对符号进行解析，并在您的 Sentry 错误中获取可读的堆栈跟踪。"
+  ],
+  "SwiftUI": [
+    "SwiftUI"
+  ],
+  "Learn about our first class integration with SwiftUI.": [
+    "了解我们与 SwiftUI 的一流集成。"
+  ],
+  "Collect and analyze performance profiles from real user devices in production.": [
+    "收集并分析生产环境中真实用户设备的性能分析报告。"
+  ],
+  "You need Sentry Cocoa SDK version [codeVersion:8.23.0] or higher. Learn more about installation methods in our [docsLink:full documentation].": [
+    "您需要 Sentry Cocoa SDK [codeVersion:8.23.0] 或更高版本。在我们的 [docsLink:完整文档] 中了解安装方法。"
+  ],
+  "To enable capturing metrics, you need to enable the metrics feature.": [
+    "要启用指标捕获，您需要启用指标功能。"
+  ],
+  "Then you'll be able to add metrics as [codeCounters:counters], [codeSets:sets], [codeDistribution:distributions], and [codeGauge:gauges]. These are available under the [codeNamespace:SentrySDK.metrics()] namespace.": [
+    "然后您可以添加指标，如 [codeCounters:计数器]、[codeSets:集合]、[codeDistribution:分布] 和 [codeGauge:测量仪]。这些位于 [codeNamespace:SentrySDK.metrics()] 命名空间下。"
+  ],
+  "To capture user feedback regarding a crash, use the [code:SentryOptions.onCrashedLastRun] callback. This callback gets called shortly after the initialization of the SDK when the last program execution terminated with a crash. It is not guaranteed that this is called on the main thread.": [
+    "要捕获有关崩溃的用户反馈，请使用 [code:SentryOptions.onCrashedLastRun] 回调。当上次程序执行以崩溃结束时，此回调将在 SDK 初始化后不久被调用。不保证此回调在主线程上被调用。"
+  ],
+  "Sentry captures data by using an SDK within your application's runtime.": [
+    "Sentry 通过在应用运行时使用 SDK 来捕获数据。"
+  ],
+  "Initialize Sentry as early as possible in your application's lifecycle.": [
+    "在应用生命周期中尽早初始化 Sentry。"
+  ],
+  "This snippet contains an intentional error and can be used as a test to make sure that everything's working as expected.": [
+    "此代码片段包含一个故意的错误，可以用作测试以确保一切正常工作。"
+  ],
+  "Track down transactions to connect the dots between 10-second page loads and poor-performing API calls or slow database queries.": [
+    "通过追踪事务，将 10 秒的页面加载与性能不佳的 API 调用或慢数据库查询联系起来。"
+  ],
+  "You need a minimum version [codeVersion:7.91.0] of [codePackage:@sentry/bun].": [
+    "您需要 [codePackage:@sentry/bun] 的最低版本 [codeVersion:7.91.0]。"
+  ],
+  "Install the Sentry Capacitor SDK as a dependency using [codeNpm:npm] or [codeYarn:yarn], alongside the Sentry [siblingName:] SDK:": [
+    "使用 [codeNpm:npm] 或 [codeYarn:yarn] 安装 Sentry Capacitor SDK 作为依赖项，并与 Sentry [siblingName:] SDK 一起使用："
+  ],
+  "The version of the Sentry [siblingName:] SDK must match with the version referred by Sentry Capacitor. To check which version of the Sentry [siblingName:] SDK is installed, use the following command: [code:npm info @sentry/capacitor peerDependencies]": [
+    "Sentry [siblingName:] SDK 的版本必须与 Sentry Capacitor 所引用的版本匹配。要检查已安装的 Sentry [siblingName:] SDK 的版本，请使用以下命令：[code:npm info @sentry/capacitor peerDependencies]"
+  ],
+  "Capacitor 2 Setup": [
+    "Capacitor 2 设置"
+  ],
+  "If you are using Capacitor 2 or older, follow this step to add required changes in order to initialize the Capacitor SDK on Android.": [
+    "如果您使用的是 Capacitor 2 或更早版本，请按照此步骤添加所需更改以在 Android 上初始化 Capacitor SDK。"
+  ],
+  "Get to the root cause of an error or latency issue faster by seeing all the technical details related to that issue in one visual replay on your web application.": [
+    "通过在您的 Web 应用程序的一个视觉回放中查看与该问题相关的所有技术细节，更快地找到错误或延迟问题的根本原因。"
+  ],
+  "Sibling Package": [
+    "配套软件包"
+  ],
+  "You should init the Sentry capacitor SDK in your [code:main.ts] file as soon as possible during application load up, before initializing Sentry [siblingName:]:": [
+    "您应该在应用加载期间尽早初始化 Sentry capacitor SDK，在初始化 Sentry [siblingName:] 之前："
+  ],
+  "Angular 12+": [
+    "Angular 12+"
+  ],
+  "The Sentry Angular SDK exports a function to instantiate ErrorHandler provider that will automatically send JavaScript errors captured by the Angular's error handler.": [
+    "Sentry Angular SDK 导出一个函数，用于实例化 ErrorHandler 提供程序，该提供程序将自动发送由 Angular 错误处理程序捕获的 JavaScript 错误。"
+  ],
+  "Angular 10 & 11": [
+    "Angular 10 和 11"
+  ],
+  "React": [
+    "React"
+  ],
+  "Vue 3": [
+    "Vue 3"
+  ],
+  "Vue 2": [
+    "Vue 2"
+  ],
+  "Install our SDK using the cordova command:": [
+    "使用 cordova 命令安装我们的 SDK："
+  ],
+  "You should [initCode:init] the SDK in the [deviceReadyCode:deviceReady] function, to make sure the native integrations runs. For more details about Cordova [link:click here]": [
+    "您应该在 [deviceReadyCode:deviceReady] 函数中 [initCode:init] SDK，以确保原生集成运行。有关 Cordova 的更多详细信息，请 [link:点击这里]"
+  ],
+  "One way to verify your setup is by intentionally causing an error that breaks your application.": [
+    "验证设置的一种方法是故意引发一个导致应用崩溃的错误。"
+  ],
+  "Calling an undefined function will throw an exception:": [
+    "调用未定义的函数将引发异常："
+  ],
+  "Sentry captures data by using an SDK within your application’s runtime. Add the following to your [pubspec: pubspec.yaml]": [
+    "Sentry 通过在应用运行时使用 SDK 来捕获数据。将以下内容添加到您的 [pubspec: pubspec.yaml] 中："
+  ],
+  "Import [sentry: sentry] and initialize it": [
+    "导入 [sentry: sentry] 并初始化它"
+  ],
+  "You can configure the [sentryDsn: SENTRY_DSN], [sentryRelease: SENTRY_RELEASE], [sentryDist: SENTRY_DIST], and [sentryEnv: SENTRY_ENVIRONMENT] via the Dart environment variables passing the [dartDefine: --dart-define] flag to the compiler, as noted in the code sample.": [
+    "可以通过向编译器传递 [dartDefine: --dart-define] 标志来使用 Dart 环境变量配置 [sentryDsn: SENTRY_DSN]、[sentryRelease: SENTRY_RELEASE]、[sentryDist: SENTRY_DIST] 和 [sentryEnv: SENTRY_ENVIRONMENT]，如代码示例中所示。"
+  ],
+  "Create an intentional error, so you can test that everything is working:": [
+    "创建一个故意的错误，以便测试一切是否正常工作："
+  ],
+  "If you're new to Sentry, use the email alert to access your account and complete a product tour.[break] If you're an existing user and have disabled alerts, you won't receive this email.": [
+    "如果您是 Sentry 新用户，请使用电子邮件警报访问您的账户并完成产品导览。[换行]如果您是现有用户且已禁用警报，则不会收到此邮件。"
+  ],
+  "You'll be able to monitor the performance of your app using the SDK. For example:": [
+    "您将能够使用 SDK 监控应用的性能。例如："
+  ],
+  "To learn more about the API and automatic instrumentations, check out the [perfDocs: performance documentation].": [
+    "要了解更多有关 API 和自动instrumentation的信息，请查看 [perfDocs: 性能文档]。"
+  ],
+  "You need Sentry Dart SDK version [codeVersion:7.19.0] or higher. Learn more about installation methods in our [docsLink:full documentation].": [
+    "您需要 Sentry Dart SDK [codeVersion:7.19.0] 或更高版本。在我们的 [docsLink:完整文档] 中了解安装方法。"
+  ],
+  "You need a minimum version [codeVersion:7.91.0] of [codePackage:@sentry/deno].": [
+    "您需要 [codePackage:@sentry/deno] 的最低版本 [codeVersion:7.91.0]。"
+  ],
+  "Then you'll be able to add metrics as [codeCounters:counters], [codeSets:sets], [codeDistribution:distributions], and [codeGauge:gauges]. These are available under the [codeNamespace:Sentry.metrics] namespace. This API is available in both renderer and main processes. Try out this example:": [
+    "然后您可以添加指标，如 [codeCounters:计数器]、[codeSets:集合]、[codeDistribution:分布] 和 [codeGauge:测量仪]。这些位于 [codeNamespace:Sentry.metrics] 命名空间下。此 API 在渲染进程和主线程中均可用。试试这个示例："
+  ],
+  "Once you've verified the package is initialized properly and sent a test event, consider visiting our [link:complete ASP.NET docs].": [
+    "一旦您验证了软件包已正确初始化并发送了测试事件，可以考虑访问我们的 [link:完整的 ASP.NET 文档]。"
+  ],
+  "See the following examples that demonstrate how to integrate Sentry with various frameworks.": [
+    "查看以下示例，了解如何将 Sentry 与各种框架集成。"
+  ],
+  "[link:Multiple samples in the [code:dotnet] SDK repository] [strong:(C#)]": [
+    "[link:[code:dotnet] SDK 仓库中的多个示例] [strong:(C#)]"
+  ],
+  "[link:Basic F# sample] [strong:(F#)]": [
+    "[link:基本 F# 示例] [strong:(F#)]"
+  ],
+  "If you are rendering the page from the server, for example on ASP.NET MVC, the [code:Error.cshtml] razor page can be:": [
+    "例如，如果您从服务器端呈现页面（如在 ASP.NET MVC 中），[code:Error.cshtml] Razor 页面可以是："
+  ],
+  "Install the [strong:NuGet] package:": [
+    "安装 [strong:NuGet] 软件包："
+  ],
+  "Package Manager:": [
+    "包管理器："
+  ],
+  "Using Entity Framework 6?": [
+    "使用 Entity Framework 6 吗？"
+  ],
+  "You should [initCode:init] the Sentry SDK as soon as possible during your application load by adding Sentry to [globalCode:Global.asax.cs]:": [
+    "您应该在应用加载期间尽早通过将 Sentry 添加到 [globalCode:Global.asax.cs] 来 [initCode:init] Sentry SDK："
+  ],
+  "Add Sentry to [programCode:Program.cs] through the [webHostCode:WebHostBuilder]:": [
+    "通过 [webHostCode:WebHostBuilder] 将 Sentry 添加到 [programCode:Program.cs]："
+  ],
+  "To verify your set up, you can capture a message with the SDK:": [
+    "要验证您的设置，可以使用 SDK 捕获一条消息："
+  ],
+  "If you don't want to depend on the static class, the SDK registers a client in the DI container. In this case, you can [link:take [code:IHub] as a dependency].": [
+    "如果您不想依赖静态类，SDK 在 DI 容器中注册了一个客户端。在这种情况下，您可以 [link:将 [code:IHub] 作为依赖项]。"
+  ],
+  "You can measure the performance of your endpoints by adding a middleware to [code:Startup.cs]:": [
+    "您可以通过向 [code:Startup.cs] 添加中间件来测量端点的性能："
+  ],
+  "You'll be able to monitor the performance of your actions automatically. To add additional spans to it, you can use the API:": [
+    "您将能够自动监控操作的性能。要添加更多的跨度，您可以使用 API："
+  ],
+  "[link:Giraffe F# sample] [strong:(F#)]": [
+    "[link:Giraffe F# 示例] [strong:(F#)]"
+  ],
+  "Sentry provides an integration with AWS Lambda ASP.NET Core Server through the Sentry.AspNetCore NuGet package.": [
+    "Sentry 通过 Sentry.AspNetCore NuGet 软件包提供与 AWS Lambda ASP.NET Core Server 的集成。"
+  ],
+  "Add the Sentry dependency:": [
+    "添加 Sentry 依赖项："
+  ],
+  "You can combine this integration with a logging library like [strong:log4net, NLog, or Serilog] to include both request data as well as your logs as breadcrumbs. The logging integrations also capture events when an error is logged.": [
+    "您可以将此集成与 [strong:log4net、NLog 或 Serilog] 等日志库结合使用，将请求数据和日志作为面包屑包含进来。日志集成还会在记录错误时捕获事件。"
+  ],
+  "All [code:ASP.NET Core] configurations are valid here. But one configuration in particular is relevant.": [
+    "所有 [code:ASP.NET Core] 配置在这里都有效。但其中一项配置特别相关。"
+  ],
+  "[code:FlushOnCompletedRequest] ensures all events are flushed out. This is because the general ASP.NET Core hooks for when the process is exiting are not guaranteed to run in a serverless environment. This setting ensures that no event is lost if AWS recycles the process.": [
+    "[code:FlushOnCompletedRequest] 确保所有事件都被清除。这是因为 ASP.NET Core 中处理进程退出的一般钩子在无服务器环境中不一定执行。此设置确保如果 AWS 回收进程，不会丢失任何事件。"
+  ],
+  "You can verify your setup by throwing an exception from a function:": [
+    "您可以通过从函数中抛出异常来验证设置："
+  ],
+  "And make a request to that lambda:": [
+    "并向该 lambda 发出请求："
+  ],
+  "Check out the [link:Sentry ASP.NET Core] documentation for the complete set of options.": [
+    "查看 [link:Sentry ASP.NET Core] 文档以获取完整的选项集。"
+  ],
+  "Additionally, for all platforms except iOS/Mac Catalyst, you need to add a dependency on the [sentryProfilingPackage:Sentry.Profiling] NuGet package.": [
+    "此外，对于 iOS/Mac Catalyst 以外的所有平台，您需要添加对 [sentryProfilingPackage:Sentry.Profiling] NuGet 软件包的依赖。"
+  ],
+  "Profiling for .NET Framework and .NET on Android are not supported.": [
+    "不支持对 .NET Framework 和 Android 上的 .NET 进行性能分析。"
+  ],
+  "Initialize the SDK as early as possible. For example, call [sentrySdkCode:SentrySdk.Init] in your [programCode:Program.cs] file:": [
+    "尽早初始化 SDK。例如，在 [programCode:Program.cs] 文件中调用 [sentrySdkCode:SentrySdk.Init]："
+  ],
+  "Verify Sentry is correctly configured by sending a message": [
+    "通过发送一条消息验证 Sentry 是否配置正确"
+  ],
+  "You can measure the performance of your code by capturing transactions and spans.": [
+    "您可以通过捕获事务和跨度来测量代码的性能。"
+  ],
+  "Check out [link:the documentation] to learn more about the API and automatic instrumentations.": [
+    "查看 [link:文档] 以了解更多关于 API 和自动instrumentation的信息。"
+  ],
+  "You can find an example ASP.NET MVC 5 app with Sentry integrated [link:on this GitHub repository].": [
+    "您可以在 [link:此 GitHub 仓库] 上找到一个集成了 Sentry 的 ASP.NET MVC 5 应用示例。"
+  ],
+  "In addition, these examples demonstrate how to integrate Sentry with various frameworks:": [
+    "此外，这些示例展示了如何将 Sentry 与各种框架集成："
+  ],
+  "Sentry for .NET is a collection of NuGet packages provided by Sentry; it supports .NET Framework 4.6.1 and .NET Core 2.0 and above. At its core, Sentry for .NET provides a raw client for sending events to Sentry. If you use a framework such as [strong:ASP.NET, WinForms, WPF, MAUI, Xamarin, Serilog], or similar, we recommend visiting our [link:Sentry .NET] documentation for installation instructions.": [
+    "Sentry for .NET 是由 Sentry 提供的一系列 NuGet 软件包；它支持 .NET Framework 4.6.1 和 .NET Core 2.0 及更高版本。在核心层面，Sentry for .NET 提供了一个原始客户端，用于向 Sentry 发送事件。如果您使用的是 [strong:ASP.NET、WinForms、WPF、MAUI、Xamarin、Serilog] 等框架，我们建议访问我们的 [link:Sentry .NET] 文档以获取安装说明。"
+  ],
+  "To verify your setup, you can capture a message with the SDK:": [
+    "要验证您的设置，可以使用 SDK 捕获一条消息："
+  ],
+  "[link:Google Cloud Functions sample]": [
+    "[link:Google Cloud Functions 示例]"
+  ],
+  "Install the [strong:NuGet] package with Package Manager or .NET Core CLI:": [
+    "使用包管理器或 .NET Core CLI 安装 [strong:NuGet] 软件包："
+  ],
+  "Or, manually add the Sentry dependency into your csproj file:": [
+    "或者，手动将 Sentry 依赖项添加到您的 csproj 文件中："
+  ],
+  "Then, add Sentry to the [functionCode:Function] class through [functionStartupCode:FunctionsStartup]:": [
+    "然后，通过 [functionStartupCode:FunctionsStartup] 将 Sentry 添加到 [functionCode:Function] 类中："
+  ],
+  "Additionally, you'll need to set up your [sentryCode:Sentry] settings on [appsettingsCode:appsettings.json]:": [
+    "此外，您需要在 [appsettingsCode:appsettings.json] 中设置 [sentryCode:Sentry] 配置："
+  ],
+  "Then add Sentry to [mauiProgram:MauiProgram.cs] through the [mauiAppBuilderCode:MauiAppBuilder]:": [
+    "然后通过 [mauiAppBuilderCode:MauiAppBuilder] 将 Sentry 添加到 [mauiProgram:MauiProgram.cs]："
+  ],
+  "To verify your set up, you can capture a message with the SDK, anywhere in your code after the application is built, such as in a page constructor or button click event handler:": [
+    "要验证您的设置，可以在应用构建后的任何位置（例如页面构造函数或按钮点击事件处理程序中）使用 SDK 捕获一条消息："
+  ],
+  "We do not yet have automatic performance instrumentation for .NET MAUI. We will be adding that in a future release. However, if desired you can still manually instrument parts of your application.": [
+    "我们目前还没有为 .NET MAUI 提供自动性能instrumentation。我们将在未来的版本中添加此功能。但是，如果需要，您仍然可以手动instrument应用的部分内容。"
+  ],
+  "For some parts of your code, [automaticInstrumentationLink:automatic instrumentation] is available across all of our .NET SDKs, and can be used with MAUI as well:": [
+    "对于代码的某些部分，[automaticInstrumentationLink:自动instrumentation] 在我们所有的 .NET SDK 中都可用，并且也可以与 MAUI 一起使用："
+  ],
+  "If your app uses [code:HttpClient], you can instrument your HTTP calls by passing our HTTP message handler:": [
+    "如果您的应用使用 [code:HttpClient]，您可以通过传递我们的 HTTP 消息处理程序来instrument HTTP 调用："
+  ],
+  "If your app uses Entity Framework Core or SQL Client, we will automatically instrument that for you without any additional code.": [
+    "如果您的应用使用 Entity Framework Core 或 SQL Client，我们将自动为您instrument，无需额外代码。"
+  ],
+  "For other parts of your code, you can use [customInstrumentationLink:custom instrumentation], such as in the following example:": [
+    "对于代码的其他部分，您可以使用 [customInstrumentationLink:自定义instrumentation]，例如以下示例："
+  ],
+  "Sample Application": [
+    "示例应用"
+  ],
+  "See the [mauiSampleLink:MAUI Sample in the [code:sentry-dotnet] repository].": [
+    "查看 [mauiSampleLink:MAUI 示例，在 [code:sentry-dotnet] 仓库中]。"
+  ],
+  "Once you've verified the package is initialized properly and sent a test event, consider visiting our [link:complete UWP docs].": [
+    "一旦您验证了软件包已正确初始化并发送了测试事件，可以考虑访问我们的 [link:完整 UWP 文档]。"
+  ],
+  "You can find an example UWP app with Sentry integrated [link:on this GitHub repository].": [
+    "您可以在 [link:此 GitHub 仓库] 上找到一个集成了 Sentry 的 UWP 应用示例。"
+  ],
+  "Initialize the SDK as early as possible, like in the constructor of the [code:App]:": [
+    "尽早初始化 SDK，例如在 [code:App] 的构造函数中："
+  ],
+  "Additionally, you need to add a dependency on the [sentryProfilingPackage:Sentry.Profiling] NuGet package.": [
+    "此外，您需要添加对 [sentryProfilingPackage:Sentry.Profiling] NuGet 软件包的依赖。"
+  ],
+  "Profiling for .NET Framework is not supported.": [
+    "不支持对 .NET Framework 进行性能分析。"
+  ],
+  "Once you've verified the package is initialized properly and sent a test event, consider visiting our [link:complete WinForms docs].": [
+    "一旦您验证了软件包已正确初始化并发送了测试事件，可以考虑访问我们的 [link:完整 WinForms 文档]。"
+  ],
+  "Once you've verified the package is initialized properly and sent a test event, consider visiting our [link:complete WPF docs].": [
+    "一旦您验证了软件包已正确初始化并发送了测试事件，可以考虑访问我们的 [link:完整 WPF 文档]。"
+  ],
+  "Initialize the SDK as early as possible, like in the constructor of the [appCode:App], and Add [sentryXamarinFormsIntegrationCode:SentryXamarinFormsIntegration] as a new Integration to [sentryXamarinOptionsCode:SentryXamarinOptions] if you are going to run your app with Xamarin Forms:": [
+    "尽早初始化 SDK，例如在 [appCode:App] 的构造函数中，并在 [sentryXamarinOptionsCode:SentryXamarinOptions] 中添加 [sentryXamarinFormsIntegrationCode:SentryXamarinFormsIntegration] 作为新集成，如果您将使用 Xamarin Forms 运行应用的话："
+  ],
+  "Android": [
+    "Android"
+  ],
+  "Initialize the SDK on your [code:MainActivity].": [
+    "在 [code:MainActivity] 中初始化 SDK。"
+  ],
+  "iOS": [
+    "iOS"
+  ],
+  "Initialize the SDK on your [code:AppDelegate.cs].": [
+    "在 [code:AppDelegate.cs] 中初始化 SDK。"
+  ],
+  "UWP": [
+    "UWP"
+  ],
+  "Initialize the SDK on [code:App.xaml.cs].": [
+    "在 [code:App.xaml.cs] 中初始化 SDK。"
+  ],
+  "NOTE: It's recommended to not setup the CacheDirectory for UWP.": [
+    "注意：建议不要为 UWP 设置缓存目录。"
+  ],
+  "You might need to open the app again for the crash report to be sent to the server.": [
+    "可能需要重新打开应用才能将崩溃报告发送到服务器。"
+  ],
+  "Once you've verified the package is initialized properly and sent a test event, consider visiting our [link:complete Xamarin Forms docs].": [
+    "一旦您验证了软件包已正确初始化并发送了测试事件，可以考虑访问我们的 [link:完整 Xamarin Forms 文档]。"
+  ],
+  "Limitations": [
+    "限制"
+  ],
+  "There are no line numbers on stack traces for UWP and in release builds for Android and iOS.": [
+    "UWP 的堆栈跟踪以及 Android 和 iOS 的发布构建中没有行号。"
+  ],
+  "You can find an example of a Xamarin Forms app with Sentry integrated [link:on this GitHub repository].": [
+    "您可以在 [link:此 GitHub 仓库] 上找到一个集成了 Sentry 的 Xamarin Forms 应用示例。"
+  ],
+  "You need a minimum version [codeVersion:4.17.0] of [codePackage:@sentry/electron].": [
+    "您需要 [codePackage:@sentry/electron] 的最低版本 [codeVersion:4.17.0]。"
+  ],
+  "For the User Feedback integration to work, you must have the Sentry browser SDK package, or an equivalent framework SDK (e.g. [code:@sentry/electron]) installed, minimum version 7.85.0.": [
+    "要使用户反馈集成正常工作，您必须安装 Sentry 浏览器 SDK 软件包或等效的框架 SDK（例如 [code:@sentry/electron]），最低版本为 7.85.0。"
+  ],
+  "Add the Sentry Electron SDK package as a dependency:": [
+    "将 Sentry Electron SDK 软件包添加为依赖项："
+  ],
+  "You need to call [codeInit:Sentry.init] in the [codeMain:main] process and in every [codeRenderer:renderer] process you spawn.\n           For more details about configuring the Electron SDK [docsLink:click here].": [
+    "您需要在 [codeMain:main] 进程和您创建的每个 [codeRenderer:renderer] 进程中调用 [codeInit:Sentry.init]。\n有关配置 Electron SDK 的更多详细信息，请 [docsLink:点击这里]。"
+  ],
+  "Calling an undefined function will throw a JavaScript exception:": [
+    "调用未定义的函数将引发 JavaScript 异常："
+  ],
+  "With Electron you can test native crash reporting by triggering a crash:": [
+    "使用 Electron，您可以通过触发崩溃来测试原生崩溃报告："
+  ],
+  "You may want to try inserting these code snippets into both your main and any renderer processes to verify Sentry is operational in both.": [
+    "您可能需要将这些代码片段插入到主进程和任何渲染进程中，以验证 Sentry 在两者中都能正常工作。"
+  ],
+  "For the Session Replay to work, you must have the framework SDK (e.g. [code:@sentry/electron]) installed, minimum version 4.2.0.": [
+    "要使会话回放正常工作，您必须安装框架 SDK（例如 [code:@sentry/electron]），最低版本为 4.2.0。"
+  ],
+  "Capture Crashed Process Exceptions": [
+    "捕获崩溃进程异常"
+  ],
+  "This library comes with an extension to capture all error messages that the Plug handler might not. This is based on adding an erlang logger handler when your application starts:": [
+    "此库带有一个扩展，可以捕获 Plug 处理程序可能无法捕获的所有错误消息。这是基于在应用程序启动时添加一个 erlang 日志记录处理程序："
+  ],
+  "You can then report errors or messages to Sentry:": [
+    "然后您可以向 Sentry 报告错误或消息："
+  ],
+  "Edit your [mixCode:mix.exs] file to add it as a dependency and add the [sentryCode::sentry] package to your applications:": [
+    "编辑您的 [mixCode:mix.exs] 文件以将其添加为依赖项，并将 [sentryCode::sentry] 软件包添加到您的应用中："
+  ]
+}

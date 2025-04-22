@@ -1,0 +1,659 @@
+{
+  "Sorry, no Dashboards match your filters.": ["抱歉，没有与您的筛选条件匹配的仪表盘。"],
+  "Error deleting Dashboard": ["删除仪表盘时出错"],
+  "Dashboard duplicated": ["仪表盘已复制"],
+  "Error duplicating Dashboard": ["复制仪表盘时出错"],
+  "Dashboard actions": ["仪表盘操作"],
+  "Search Dashboards": ["搜索仪表盘"],
+  "A broad overview of your application’s health where you can navigate through error and performance data across multiple projects.": [
+    "一个全面了解您的应用程序健康状况的概览，您可以在多个项目中浏览错误和性能数据。"
+  ],
+  "Show Templates": ["显示模板"],
+  "Import Dashboard from JSON": ["从 JSON 导入仪表盘"],
+  "My Dashboards": ["我的仪表盘"],
+  "Dashboard Name (A-Z)": ["仪表盘名称（A-Z）"],
+  "Date Created (Newest)": ["创建日期（最新）"],
+  "Date Created (Oldest)": ["创建日期（最早）"],
+  "Most Popular": ["最受欢迎"],
+  "Latest Release(s)": ["最新版本"],
+  "Filter Releases": ["筛选版本"],
+  "Sorted by date created": ["按创建日期排序"],
+  "Please set a title for this dashboard": ["请为此仪表盘设置一个标题"],
+  "Choose your columns": ["选择您的列"],
+  "[fieldTagLink: Field and tag] columns will help you view more details about the issues (e.g., title).": [
+    "[fieldTagLink: 字段和标签] 列将帮助您查看有关问题的更多详细信息（例如，标题）。"
+  ],
+  "To stack sessions, add [functionLink: functions] f(x) that may take in additional parameters. [fieldTagLink: Field and tag] columns will help you view more details about the sessions (e.g., releases).": [
+    "要堆叠会话，请添加可能需要额外参数的 [functionLink: 函数] f(x)。[fieldTagLink: 字段和标签] 列将帮助您查看有关会话的更多详细信息（例如，版本）。"
+  ],
+  "To stack events, add [functionLink: functions] f(x) that may take in additional parameters. [fieldTagLink: Field and tag] columns will help you view more details about the events (e.g., title).": [
+    "要堆叠事件，请添加可能需要额外参数的 [functionLink: 函数] f(x)。[fieldTagLink: 字段和标签] 列将帮助您查看有关事件的更多详细信息（例如，标题）。"
+  ],
+  "We're splitting our datasets up to make it a bit easier to digest. We defaulted this widget to [splitDecision]. Edit as you see fit.": [
+    "我们正在拆分数据集以使其更易于理解。我们已将此小部件默认设置为 [splitDecision]。您可以根据需要进行编辑。"
+  ],
+  "This dataset is restricted to tabular visualization.": ["此数据集仅限于表格可视化。"],
+  "Errors (TypeError, InvalidSearchQuery, etc)": ["错误（TypeError、InvalidSearchQuery 等）"],
+  "Issues (States, Assignment, Time, etc.)": ["问题（状态、分配、时间等）"],
+  "Releases (Sessions, Crash rates)": ["版本（会话、崩溃率）"],
+  "Choose your dataset": ["选择您的数据集"],
+  "This reflects the type of information you want to use. To learn more, [link: read the docs].": [
+    "这反映了您想要使用的信息类型。要了解更多，请 [link: 阅读文档]。"
+  ],
+  "Filter down your search here. You can add multiple queries to compare data for each overlay:": [
+    "在这里筛选您的搜索。您可以添加多个查询以比较每个覆盖层的数据："
+  ],
+  "Filter down your search here:": ["在这里筛选您的搜索："],
+  "We don’t routinely collect metrics for this property and you’ve exceeded the maximum number of extracted metrics for your organization. [strong:Please review your other widgets and remove any unused or less valuable queries marked with a (!) sign.]": [
+    "我们不常规收集此属性的指标，您已超出组织的最大提取指标数量。[strong: 请审查您的其他小部件并删除标记有 (!) 符号的任何未使用或价值较低的查询。]"
+  ],
+  "We don’t routinely collect metrics from this property. However, we’ll do so [strong:once this widget has been saved.]": [
+    "我们不常规从这个属性收集指标。但是，我们将在 [strong:保存此小部件后] 进行收集。"
+  ],
+  "Filter your results": ["筛选您的结果"],
+  "Projects, environments, date range and releases have been preselected in the dashboard that this widget belongs to. You can filter the results by these fields further using the search bar. For example, typing [releaseQuery] narrows down the results specific to that release.": [
+    "项目、环境、日期范围和版本已在该小部件所属的仪表盘中预先选定。您可以使用搜索栏通过这些字段进一步筛选结果。例如，输入 [releaseQuery] 将缩小特定于该版本的结果。"
+  ],
+  "Search for issues, status, assigned, and more": ["搜索问题、状态、分配对象等"],
+  "Search for release version, session status, and more": ["搜索版本、会话状态等"],
+  "Release queries don't support wildcards.": ["版本查询不支持通配符。"],
+  "Add Group": ["添加组"],
+  "This group has too many unique values to collect metrics for it.": ["该组具有太多唯一值，无法为其收集指标。"],
+  "Group your results": ["对结果进行分组"],
+  "This is how you can group your data result by field or tag.": ["这是如何通过字段或标签对数据结果进行分组。"],
+  "Select group": ["选择组"],
+  "Remove group": ["删除组"],
+  "Sort by a column": ["按列排序"],
+  "Sort by a y-axis": ["按 Y 轴排序"],
+  "Choose one of the columns you've created to sort by.": ["选择一个您创建的列进行排序。"],
+  "Choose one of the y-axis you've created to sort by.": ["选择一个您创建的 Y 轴进行排序。"],
+  "Limit to %s result": ["限制为 %s 结果"],
+  "Limit to %s results": ["限制为 %s 结果"],
+  "Enter Equation": ["输入方程式"],
+  "Sort direction": ["排序方向"],
+  "Select a column": ["选择列"],
+  "Thresholds in %s": ["阈值为 %s"],
+  "Thresholds": ["阈值"],
+  "No max": ["无最大值"],
+  "Set thresholds to identify problematic widgets. For example: setting the max values, [thresholdValues] will display a green indicator for results in the range [greenRange], a yellow indicator for results in the range [yellowRange] and a red indicator for results above [redValue].": [
+    "设置阈值以识别有问题的小部件。例如：设置最大值，[thresholdValues] 将为范围 [greenRange] 内的结果显示绿色指示器，为范围 [yellowRange] 内的结果显示黄色指示器，为超过 [redValue] 的结果显示红色指示器。"
+  ],
+  "Choose your visualization": ["选择您的可视化方式"],
+  "This is a preview of how your widget will appear in the dashboard.": ["这是您的小部件在仪表盘中的预览。"],
+  "Choose what to plot": ["选择要绘制的内容"],
+  "Choose what to plot in the y-axis": ["选择在 Y 轴上绘制的内容"],
+  "This is the data you'd be visualizing in the display. If the overlay units conflict, the charts will always base it off of the first line.": [
+    "这是您将在显示中可视化的数据。如果覆盖单元冲突，图表将始终基于第一行。"
+  ],
+  "This is the data you'd be visualizing in the display.": ["这是您将在显示中可视化的数据。"],
+  "Are you sure you want to delete this widget?": ["您确定要删除这个小部件吗？"],
+  "Required fields must be filled out and contain valid inputs": ["必填字段必须填写并包含有效的输入"],
+  "Widget Builder": ["小部件构建器"],
+  "High to low": ["从高到低"],
+  "Low to high": ["从低到高"],
+  "Unable to save widget": ["无法保存小部件"],
+  "The widget you want to edit was not found.": ["找不到您要编辑的小部件。"],
+  "Name your widget": ["命名您的小部件"],
+  "Widget title": ["小部件标题"],
+  "Enter title": ["输入标题"],
+  "Widget Description": ["小部件描述"],
+  "Enter description (Optional)": ["输入描述（可选）"],
+  "This display type is not supported by the selected dataset.": ["所选数据集不支持此显示类型。"],
+  "Error loading widget data": ["加载小部件数据时出错"],
+  "Your selection is only applicable to [indexedData: indexed event data]. We've automatically adjusted your results.": [
+    "您的选择仅适用于 [indexedData: 索引事件数据]。我们已自动调整您的结果。"
+  ],
+  "This widget is using indexed data because it has a column with too many unique values.": [
+    "此小部件使用索引数据，因为它有一个列包含太多唯一值。"
+  ],
+  "This widget is using indexed data because you've reached your organization limit for dynamically extracted metrics.": [
+    "此小部件使用索引数据，因为您已达到组织对动态提取指标的限制。"
+  ],
+  "session.duration is no longer being recorded as of %s. Data in this widget may be incomplete.": [
+    "自 %s 起不再记录 session.duration。此小部件中的数据可能不完整。"
+  ],
+  "Error sorting by releases": ["按版本排序时出错"],
+  "Drag Widget": ["拖动小部件"],
+  "Duplicate Widget": ["复制小部件"],
+  "Delete Widget": ["删除小部件"],
+  "This widget is only applicable to indexed events.": ["此小部件仅适用于索引事件。"],
+  "Indexed": ["已索引"],
+  "Open Widget Viewer": ["打开小部件查看器"],
+  "This is a preview only. To edit, you must add this dashboard.": ["这只是预览。要进行编辑，您必须添加此仪表盘。"],
+  "Slow vs. Fast Transactions": ["慢事务与快事务"],
+  "Percentage breakdown of transaction durations over and under 300ms.": ["事务持续时间超过和低于 300 毫秒的百分比分布。"],
+  "Issues For Review": ["待审核问题"],
+  "Most recently seen unresolved issues for review.": ["最近出现的未解决待审核问题。"],
+  "Top Unhandled Error Types": ["最频繁的未处理错误类型"],
+  "Most frequently encountered unhandled errors.": ["最常遇到的未处理错误。"],
+  "Duration Distribution": ["持续时间分布"],
+  "Users Affected by Errors": ["受错误影响的用户"],
+  "Footprint of unique users affected by errors.": ["受错误影响的独特用户的足迹。"],
+  "Compare transaction durations across different percentiles.": ["比较不同百分位数的事务持续时间。"],
+  "Top 5 transactions with the largest volume.": ["事务量最大的前五个事务。"],
+  "Crash Rates for Recent Releases": ["最新版本的崩溃率"],
+  "Percentage of crashed sessions for latest releases.": ["最新版本崩溃会话的百分比。"],
+  "Session Health": ["会话健康状况"],
+  "Number of abnormal, crashed, errored and healthy sessions.": ["异常、崩溃、出错和健康会话的数量。"],
+  "Table showing page load times by country.": ["按国家显示页面加载时间的表格。"],
+  "Miserable Users": ["痛苦的用户"],
+  "Unique users who have experienced slow load times.": ["经历过加载缓慢的独特用户。"],
+  " you ": ["你"],
+  "doing here?": ["在这里做什么？"],
+  "Not that its any of our business, but were you invited to this page? It's just that we don't exactly remember emailing you about it.": [
+    "这不关我们的事，但您是被邀请到这个页面的吗？只是我们不太记得给您发过邮件。"
+  ],
+  "Close this window and we'll email you when your download is ready.": ["关闭此窗口，下载准备好时我们会给您发邮件。"],
+  "This is awkward.": ["这很尴尬。"],
+  "That link expired, so your download doesn't live here anymore. Just picked up one day and left town.": [
+    "那个链接已过期，所以您的下载不再在这里。有一天它就这样离开了。"
+  ],
+  "Make a new one with your latest data. Your old download will never see it coming.": [
+    "用您的最新数据制作一个新的下载。您的旧下载永远也想不到它会来。"
+  ],
+  "Start a New Download": ["开始新下载"],
+  "Need to make changes?": ["需要进行更改吗？"],
+  "All done.": ["全部完成。"],
+  "See, that wasn't so bad. Your data is all ready for download.": ["看，这并不糟糕。您的数据已准备好下载。"],
+  "That link won't last forever — it expires:": ["那个链接不会永远有效 — 它将在以下时间过期："],
+  "Need help verifying? [link].": ["需要帮助验证吗？[链接]。"],
+  "Check out our docs": ["查看我们的文档"],
+  "What are": ["什么是"],
+  "Explore Data over Time": ["随时间探索数据"],
+  "Analyze and visualize all of your data over time to find answers to your most complex problems.": [
+    "分析和可视化所有数据随时间的变化，以找到最复杂问题的答案。"
+  ],
+  "Filter on Event Attributes.": ["按事件属性筛选。"],
+  "Drill down on data by any custom tag or field to reduce noise and hone in on specific areas.": [
+    "通过任何自定义标签或字段深入数据，以减少干扰并专注于特定领域。"
+  ],
+  "Group Data by Tags": ["按标签分组数据"],
+  "Go beyond Issues and create custom groupings to investigate events from a different lens.": [
+    "超越问题，创建自定义分组以从不同角度调查事件。"
+  ],
+  "Save, Share and Alert": ["保存、共享和警报"],
+  "Send insights to your team and set alerts to monitor any future spikes.": [
+    "将见解发送给您的团队，并设置警报以监控未来的任何激增。"
+  ],
+  "Customize and save queries by search conditions, event fields, and tags": [
+    "通过搜索条件、事件字段和标签自定义并保存查询"
+  ],
+  "Build a new query": ["构建新查询"],
+  "View all Events": ["查看所有事件"],
+  "Get a Tour": ["获取导览"],
+  "Saved Queries": ["已保存的查询"],
+  "Sample Count": ["样本数"],
+  "Select up to 3 options": ["最多选择 3 个选项"],
+  "Y-axis": ["Y 轴"],
+  "All Transactions": ["所有事务"],
+  "All Errors": ["所有错误"],
+  "Transactions by Volume": ["按事务量划分"],
+  "Errors by Title": ["按标题划分的错误"],
+  "Errors by URL": ["按 URL 划分的错误"],
+  "Go to Summary": ["转到摘要"],
+  "The linked issue cannot be found. It may have been deleted, or merged.": [
+    "找不到链接的问题。可能已被删除或合并。"
+  ],
+  "Event Issue": ["事件问题"],
+  "Untitled query": ["未命名的查询"],
+  "New Query": ["新查询"],
+  "Search saved queries": ["搜索已保存的查询"],
+  "Recently Edited": ["最近编辑"],
+  "Most Outdated": ["最过时"],
+  "Edited": ["已编辑"],
+  "No saved queries match that filter": ["没有已保存的查询匹配该筛选条件"],
+  "Last ": ["最后"],
+  "Set as Default": ["设为默认"],
+  "Duplicate Query": ["复制查询"],
+  "You've navigated to this page from a performance metric widget generated from processed events. The results here only show indexed events.": [
+    "您是从处理后的事件生成的性能指标小部件导航到此页面的。此处的结果仅显示索引事件。"
+  ],
+  "These are unparameterized transactions. To better organize your transactions, [link:set transaction names manually].": [
+    "这些是未参数化的事务。要更好地组织您的事务，请 [link:手动设置事务名称]。"
+  ],
+  "We're splitting our datasets up to make it a bit easier to digest. We defaulted this query to [splitDecision]. Edit as you see fit.": [
+    "我们正在拆分数据集以使其更易于理解。我们已将此查询默认设置为 [splitDecision]。您可以根据需要进行编辑。"
+  ],
+  "May lead to thumb twiddling": ["可能导致无所事事"],
+  "Do it": ["执行"],
+  "Nevermind": ["作罢"],
+  "You've created a query that will search for events made\n                      [dayLimit:over more than 30 days] for [projectLimit:more than 10 projects].\n                      A lot has happened during that time, so this might take awhile.\n                      Are you sure you want to do this?": [
+    "您创建了一个查询，将搜索 [dayLimit:超过 30 天] 的事件，涉及 [projectLimit:超过 10 个项目]。\n                      在这段时间里发生了许多事情，因此这可能需要一些时间。\n                      您确定要这样做吗？"
+  ],
+  "Change the Y-Axis dropdown to display only 1 function to use this view.": [
+    "将 Y 轴下拉菜单更改为仅显示 1 个函数以使用此视图。"
+  ],
+  "No Y-Axis selected.": ["未选择 Y 轴。"],
+  "Created by:": ["创建者："],
+  "Last edited:": ["最后编辑："],
+  "Create queries to get insights into the health of your system.": ["创建查询以获取系统健康的见解。"],
+  "Based on your search criteria and sample rate, the events available may be limited because Discover uses sampled data only.": [
+    "根据您的搜索标准和采样率，可用的事件可能有限，因为 Discover 仅使用采样数据。"
+  ],
+  "Remove Default": ["移除默认"],
+  "Discover queries are disabled": ["发现查询已禁用"],
+  "Discover queries": ["发现查询"],
+  "Delete Saved Query": ["删除已保存的查询"],
+  "Discover Context Menu": ["发现上下文菜单"],
+  "Save for Org": ["保存到组织"],
+  "Saved as Discover default": ["已保存为发现默认"],
+  "Unable to set query as Discover default": ["无法将查询设置为发现默认"],
+  "Successfully removed Discover default": ["已成功移除发现默认"],
+  "Unable to remove Discover default": ["无法移除发现默认"],
+  "Add to filter": ["添加到筛选器"],
+  "Exclude from filter": ["从筛选器中排除"],
+  "Show values greater than": ["显示大于的值"],
+  "Show values less than": ["显示小于的值"],
+  "Go to release": ["转到版本"],
+  "View Stacks": ["查看堆栈"],
+  "Edit threshold ([threshold]ms)": ["编辑阈值（[threshold] 毫秒）"],
+  "Edit threshold": ["编辑阈值"],
+  "Alias": ["别名"],
+  "Sorry, you've reached the maximum number of columns (%d). Delete columns to add more.": [
+    "抱歉，您已达到最大列数（%d）。删除列以添加更多。"
+  ],
+  "Tag / Field / Function": ["标签/字段/函数"],
+  "This is using indexed data because we don't routinely collect metrics for equations.": [
+    "这是因为我们不常规收集方程的指标，所以使用索引数据。"
+  ],
+  "To group events, add [functionLink: functions] f(x) that may take in additional parameters. [fieldTagLink: Tag and field] columns will help you view more details about the events (i.e. title).": [
+    "要对事件进行分组，请添加可能需要额外参数的 [functionLink: 函数] f(x)。[fieldTagLink: 标签和字段] 列将帮助您查看有关事件的更多详细信息（例如，标题）。"
+  ],
+  "Select value": ["选择值"],
+  "Function: ": ["函数："],
+  "Equation": ["方程"],
+  "Quick Context Action Menu": ["快速上下文操作菜单"],
+  "Add as column": ["添加为列"],
+  "Title": ["标题"],
+  "There is no stack trace available for this event.": ["此事件没有可用的堆栈跟踪。"],
+  "Issue Status": ["问题状态"],
+  "There is no context available.": ["没有可用的上下文。"],
+  "Failed to load context for column.": ["加载列的上下文失败。"],
+  "[commitCount] commits by you and [authorsCount] others": ["[commitCount] 次提交，由您和 [authorsCount] 位其他作者完成"],
+  "[commitCount] commits by you and 1 other": ["[commitCount] 次提交，由您和 1 位其他作者完成"],
+  "1 commit by you and [authorsCount] others": ["1 次提交，由您和 [authorsCount] 位其他作者完成"],
+  "1 commit by you and 1 other": ["1 次提交，由您和 1 位其他作者完成"],
+  "[commitCount] commits by [authorsCount] authors": ["[commitCount] 次提交，由 [authorsCount] 位作者完成"],
+  "[commitCount] commits by 1 author": ["[commitCount] 次提交，由 1 位作者完成"],
+  "1 commit by [authorsCount] authors": ["1 次提交，由 [authorsCount] 位作者完成"],
+  "1 commit by 1 author": ["1 次提交，由 1 位作者完成"],
+  "Last Commit": ["最后的提交"],
+  "Requires discover query feature.": ["需要发现查询功能。"],
+  "There aren't that many results, start your export and it'll download immediately.": [
+    "结果并不多，开始导出并会立即下载。"
+  ],
+  "Open Group": ["打开组"],
+  "Tag Summary": ["标签摘要"],
+  "Remove Column": ["删除列"],
+  "Trace Samples": ["跟踪样本"],
+  "Indexed Spans": ["已索引的跨度"],
+  "EAP Spans": ["EAP 跨度"],
+  "Group By": ["按...分组"],
+  "Limit To": ["限制为"],
+  "Result Mode": ["结果模式"],
+  "Aggregate": ["聚合"],
+  "The User Feedback Widget allows users to submit feedback quickly and easily any time they encounter something that isn’t working as expected.": [
+    "用户反馈小部件允许用户在遇到不符合预期的情况时快速轻松地提交反馈。"
+  ],
+  "Requests": ["请求"],
+  "Average [dataType] Size": ["平均 [dataType] 大小"],
+  "Blocking": ["阻塞"],
+  "On average, this resource is [bytes] when encoded (for example when gzipped).": [
+    "平均而言，此资源在编码时（例如 gzip 压缩时）为 [bytes]。"
+  ],
+  "On average, this resource is [bytes] when decoded.": ["平均而言，此资源在解码时为 [bytes]。"],
+  "On average, the total bytes transferred over the network (body + headers) for this resource is [bytes].": [
+    "平均而言，此资源在网络上传输的总字节数（正文 + 标头）为 [bytes]。"
+  ],
+  "We couldn't find any size information for this resource, this is likely because the `timing-allow-origin` header is not set.": [
+    "我们找不到此资源的任何大小信息，这可能是因为未设置 `timing-allow-origin` 标头。"
+  ],
+  "Stylesheet": ["样式表"],
+  "Font": ["字体"],
+  "No images detected": ["未检测到图像"],
+  "Images not shown": ["未显示图像"],
+  "You know, you can see the actual images that are on your site if you opt into this feature.": [
+    "您知道，如果您启用此功能，您可以看到网站上的实际图像。"
+  ],
+  " Enable in Settings": ["在设置中启用"],
+  "Largest Images": ["最大的图像"],
+  "Example": ["示例"],
+  "Render Blocking": ["渲染阻塞"],
+  "If you're noticing unusually large resource sizes, try updating to SDK version 7.82.0 or higher.": [
+    "如果您注意到不寻常的资源大小，请尝试更新到 7.82.0 或更高版本的 SDK。"
+  ],
+  "Assets": ["资源"],
+  "Asset": ["资源"],
+  "Find large and slow-to-load resources used by your application and understand their impact on page performance.": [
+    "找出应用程序使用的大型且加载缓慢的资源，并了解其对页面性能的影响。"
+  ],
+  "[dataType] Summary": ["[dataType] 摘要"],
+  "Browser Type": ["浏览器类型"],
+  "Score Breakdown": ["得分分解"],
+  "Performance Score": ["性能得分"],
+  "The overall performance rating of this page.": ["此页面的整体性能评分。"],
+  "How is this calculated?": ["这是如何计算的？"],
+  "No Web Vitals found": ["未找到网络核心指标"],
+  "View Full Waterfall": ["查看完整瀑布图"],
+  "Page Loads": ["页面加载"],
+  "The total number of times that users have loaded this page. This number does not include any page navigations beyond initial page loads.": [
+    "用户加载此页面的总次数。此数字不包括初始页面加载之外的任何页面导航。"
+  ],
+  "Interactions": ["交互"],
+  "The total number of times that users performed an INP on this page.": ["用户在此页面上执行 INP 的总次数。"],
+  "No Change": ["无变化"],
+  "Web Vital": ["网络核心指标"],
+  "Interaction Target": ["交互目标"],
+  "Inp": ["INP"],
+  "Opportunity": ["优化机会"],
+  "Perf Score": ["性能得分"],
+  "A number rating how impactful a performance improvement on this page would be to your application's overall Performance Score.": [
+    "一个数字，用于评估此页面的性能改进对您的应用程序整体性能得分的影响程度。"
+  ],
+  "Search for more Pages": ["搜索更多页面"],
+  "Pages": ["页面"],
+  "Data Type": ["数据类型"],
+  "Pageloads": ["页面加载"],
+  "At the moment, there is support for [webVital] in the following browsers:": [
+    "目前，以下浏览器支持 [webVital]："
+  ],
+  "First Contentful Paint (FCP) measures the amount of time the first content takes to render in the viewport. Like FP, this could also show up in any form from the document object model (DOM), such as images, SVGs, or text blocks.": [
+    "首次内容绘制 (FCP) 测量第一个内容在视口中渲染所需的时间。与 FP 一样，这也可以以文档对象模型 (DOM) 中的任何形式出现，例如图像、SVG 或文本块。"
+  ],
+  "Cumulative Layout Shift (CLS) is the sum of individual layout shift scores for every unexpected element shift during the rendering process. Imagine navigating to an article and trying to click a link before the page finishes loading. Before your cursor even gets there, the link may have shifted down due to an image rendering. Rather than using duration for this Web Vital, the CLS score represents the degree of disruptive and visually unstable shifts.": [
+    "累积布局偏移 (CLS) 是在渲染过程中每个意外元素偏移的个体布局偏移得分之和。想象一下，在页面加载完成之前导航到一篇文章并尝试点击链接。在您的光标到达之前，链接可能因为图像渲染而向下移动。对于这个网络核心指标，CLS 得分代表了破坏性和视觉不稳定偏移的程度。"
+  ],
+  "Largest Contentful Paint (LCP) measures the render time for the largest content to appear in the viewport. This may be in any form from the document object model (DOM), such as images, SVGs, or text blocks. It’s the largest pixel area in the viewport, thus most visually defining. LCP helps developers understand how long it takes to see the main content on the page.": [
+    "最大内容绘制 (LCP) 测量最大的内容在视口中出现的渲染时间。这可以是来自文档对象模型 (DOM) 的任何形式，例如图像、SVG 或文本块。它是视口中的最大像素区域，因此在视觉上最具定义性。LCP 帮助开发人员了解看到页面主内容需要多长时间。"
+  ],
+  "Time to First Byte (TTFB) is a foundational metric for measuring connection setup time and web server responsiveness in both the lab and the field. It helps identify when a web server is too slow to respond to requests. In the case of navigation requests—that is, requests for an HTML document—it precedes every other meaningful loading performance metric.": [
+    "首次字节时间 (TTFB) 是测量连接建立时间和网络服务器响应性的基础指标，无论是在实验室环境中还是在实际使用中。它有助于识别网络服务器响应请求是否过慢。在导航请求的情况下（即，对 HTML 文档的请求），它先于所有其他有意义的加载性能指标。"
+  ],
+  "Interaction to Next Paint (INP) is a metric that assesses a page's overall responsiveness to user interactions by observing the latency of all click, tap, and keyboard interactions that occur throughout the lifespan of a user's visit to a page. The final INP value is the longest interaction observed, ignoring outliers.": [
+    "交互到下次绘制 (INP) 是一个指标，通过观察用户访问页面期间发生的所有点击、轻触和键盘交互的延迟来评估页面对用户交互的整体响应能力。最终的 INP 值是观察到的最长交互时间，忽略异常值。"
+  ],
+  "No Data": ["无数据"],
+  "Time To First Byte": ["首次字节时间"],
+  "The p75 [webVital] value and aggregate [webVital] score of your selected project(s).\n                          Scores and values may share some (but not perfect) correlation.": [
+    "所选项目（s）的 p75 [webVital] 值和聚合 [webVital] 得分。\n                          得分和值可能有一些（但并非完全）相关性。"
+  ],
+  "Find out how performance scores are calculated here.": ["在这里了解性能得分是如何计算的。"],
+  "No [webVital] data found in this project.": ["在此项目中未找到 [webVital] 数据。"],
+  "A number rating how impactful a performance improvement on this page would be to your application's [webVital] Performance Score.": [
+    "一个数字，用于评估此页面的性能改进对您的应用程序 [webVital] 性能得分的影响程度。"
+  ],
+  "Measure the quality of real user experience in your web applications using industry standard quality signals.": [
+    "使用行业标准的质量信号来衡量您的 Web 应用程序中真实用户体验的质量。"
+  ],
+  "Good": ["良好"],
+  "Meh": ["一般"],
+  "Poor": ["差"],
+  "View Transaction Summary": ["查看事务摘要"],
+  "Aggregate Spans": ["聚合跨度"],
+  "If pages you expect to see are missing, your framework is most likely not supported by the SDK, or your traffic is coming from unsupported browsers. Find supported browsers and frameworks [link:here].": [
+    "如果您期望看到的页面缺失，很可能您的框架不受 SDK 支持，或者您的流量来自不受支持的浏览器。找到受支持的浏览器和框架 [link:这里]。"
+  ],
+  "Keep your JavaScript SDK updated to the latest version for the best Web Vitals support.": [
+    "将您的 JavaScript SDK 更新到最新版本，以获得最佳的 Web Vitals 支持。"
+  ],
+  "Why are my pages not showing up?": ["为什么我的页面没有显示？"],
+  "Average Transaction Duration": ["平均事务持续时间"],
+  "Search for span attributes": ["搜索跨度属性"],
+  "Try Different Samples": ["尝试不同的样本"],
+  "Hit": ["命中"],
+  "Miss": ["未命中"],
+  "HIT": ["命中"],
+  "MISS": ["未命中"],
+  "Span Description": ["跨度描述"],
+  "Value Size": ["值大小"],
+  "Discover whether your application is utilizing caching effectively and understand the latency associated with cache misses.": [
+    "了解您的应用程序是否有效地利用了缓存，并了解缓存未命中相关的延迟。"
+  ],
+  "Caches": ["缓存"],
+  "Cache": ["缓存"],
+  "If you're noticing missing cache data, try updating to the latest SDK or ensure spans are manually instrumented with the right attributes. To learn more, ": [
+    "如果您注意到缓存数据缺失，请尝试更新到最新 SDK 或确保手动为跨度添加正确的属性。要了解更多，请："
+  ],
+  "Expand Insight Chart": ["展开洞察图表"],
+  "Dock to the bottom": ["停靠到底部"],
+  "Dock to the right": ["停靠到右侧"],
+  "Close Details": ["关闭详情"],
+  "[count] [text]": ["[count] [text]"],
+  "Make sure you have the correct project selected.": ["确保您选择了正确的项目。"],
+  "Supported Today: ": ["今天支持："],
+  "Don't lose your user's attention before your app loads": ["在您的应用加载之前不要失去用户的注意力"],
+  "Monitor cold and warm [dataTypePlural] and track down the operations and releases contributing to regressions.": [
+    "监控冷启动和热启动 [dataTypePlural]，并追踪导致回归的操作和版本。"
+  ],
+  "Mobile [dataType] insights give you visibility into:": ["移动 [dataType] 洞察使您能够了解："],
+  "Application start duration broken down by release.": ["按版本划分的应用启动持续时间。"],
+  "Performance by device class.": ["按设备类别划分的性能。"],
+  "Real user performance metrics.": ["真实用户的性能指标。"],
+  "Find out what your LLM model is actually saying": ["了解您的 LLM 模型实际在说什么"],
+  "Get insights into critical [dataType] metrics, like token usage, to monitor and fix issues with AI pipelines.": [
+    "获取有关关键 [dataType] 指标的洞察，如令牌使用情况，以监控和修复 AI 管道中的问题。"
+  ],
+  "See what your [dataTypePlural] are doing in production by monitoring:": ["通过监控以下内容，了解您的 [dataTypePlural] 在生产环境中的表现："],
+  "Token cost and usage per-provider and per-pipeline.": ["按提供商和管道划分的令牌成本和使用情况。"],
+  "The inputs and outputs of [dataType] calls.": ["[dataType] 调用的输入和输出。"],
+  "Performance and timing information about [dataTypePlural] in production.": ["生产环境中 [dataTypePlural] 的性能和时间信息。"],
+  "TODO": ["待办事项"],
+  "Mobile UI load insights include:": ["移动 UI 加载洞察包括："],
+  "Mobile Screens": ["移动屏幕"],
+  "Explore mobile app metrics.": ["探索移动应用指标。"],
+  "Bringing you one less hard problem in computer science": ["为您减少一个计算机科学中的难题"],
+  "We’ll tell you if the parts of your application that interact with caches are hitting cache as often as intended, and whether caching is providing the performance improvements expected.": [
+    "我们会告诉您，与缓存交互的应用程序部分是否按预期频率命中缓存，以及缓存是否提供了预期的性能改进。"
+  ],
+  "[dataType] insights include:": ["[dataType] 洞察包括："],
+  "Throughput of your cached endpoints.": ["缓存端点的吞吐量。"],
+  "Average [dataType] hit and miss duration.": ["平均 [dataType] 命中和未命中持续时间。"],
+  "Hit / miss ratio of keys accessed by your application.": ["应用访问的键的命中/未命中比率。"],
+  "Fix the slow [dataTypePlural] you honestly intended to get back to later": ["修复您确实打算稍后处理的慢速 [dataTypePlural]"],
+  "Investigate the performance of database [dataTypePlural] and get the information necessary to improve them.": [
+    "调查数据库 [dataTypePlural] 的性能并获取改进它们所需的信息。"
+  ],
+  "[dataType] insights give you visibility into:": ["[dataType] 洞察使您能够了解："],
+  "Slow [dataTypePlural].": ["慢速 [dataTypePlural]。"],
+  "High volume [dataTypePlural].": ["高容量 [dataTypePlural]。"],
+  "One off slow queries, vs. trends": ["一次性慢查询与趋势"],
+  "Are your API dependencies working as well as their landing page promised? ": [
+    "您的 API 依赖是否如其着陆页所承诺的那样运作良好？"
+  ],
+  "See the outbound HTTP requests being made to internal and external APIs, allowing you to understand trends in status codes, latency, and throughput.": [
+    "查看发送到内部和外部 API 的出站 HTTP 请求，使您能够了解状态码、延迟和吞吐量的趋势。"
+  ],
+  "Anomalies in status codes by domain.": ["按域名划分的状态码异常。"],
+  "Request throughput by domain.": ["按域名划分的请求吞吐量。"],
+  "Average duration of requests.": ["请求的平均持续时间。"],
+  "Is your favourite animated gif worth the time it takes to load?": ["您最喜欢的动画 GIF 的加载时间是否值得？"],
+  "Find large and slow-to-load [dataTypePlurl] used by your application and understand their impact on page performance.": [
+    "找出应用程序使用的大型且加载缓慢的 [dataTypePlurl]，并了解其对页面性能的影响。"
+  ],
+  "[dataType] performance broken down by category and domain.": ["按类别和域名划分的 [dataType] 性能。"],
+  "Whether [dataTypePlural] are blocking page rendering.": ["[dataTypePlural] 是否阻塞页面渲染。"],
+  "[dataType] size and whether it’s growing over time.": ["[dataType] 大小以及它是否随时间增长。"],
+  "Finally answer, is this page slow for everyone or just me?": ["终于能够回答：这个页面是对我慢还是对所有人慢？"],
+  "Get industry standard metrics telling you the quality of user experience on a web page and see what needs improving.": [
+    "获取行业标准指标，了解网页上的用户体验质量，并查看需要改进的地方。"
+  ],
+  "Performance scores broken down by page.": ["按页面划分的性能得分。"],
+  "Performance metrics for individual operations that affect page performance.": ["影响页面性能的各个操作的性能指标。"],
+  "Drill down to real user sessions.": ["深入到真实用户会话。"],
+  "Ensure your background jobs aren’t being sent to /dev/null": ["确保您的后台作业不会被发送到 /dev/null"],
+  "Understand the health and performance impact that [dataTypePlural] have on your application and diagnose errors tied to jobs.": [
+    "了解 [dataTypePlural] 对应用程序的健康和性能影响，并诊断与作业相关的错误。"
+  ],
+  "Metrics for how long jobs spend processing and waiting in queue.": ["作业在队列中处理和等待的时间指标。"],
+  "Job error rates and retry counts.": ["作业错误率和重试次数。"],
+  "Published vs., processed job volume.": ["已发布与已处理的作业量。"],
+  "Don’t lose your user's attention once your app loads": ["一旦您的应用加载，不要失去用户的注意力"],
+  "View the most active [dataTypePlural] in your mobile application and monitor your releases for screen load performance.": [
+    "查看移动应用中最活跃的 [dataTypePlural]，并监控版本的屏幕加载性能。"
+  ],
+  "Compare metrics across releases, root causing performance degradations.": ["跨版本比较指标，找出性能退化的根源。"],
+  "See performance by device class.": ["按设备类别查看性能。"],
+  "Release 1": ["版本 1"],
+  "Release 2": ["版本 2"],
+  "Filter Release": ["筛选版本"],
+  "No screens": ["无屏幕"],
+  "%s event": ["%s 事件"],
+  "%s events": ["%s 事件"],
+  "Near Average": ["接近平均"],
+  "Status Code [code] “[explanation]”": ["状态码 [code] “[explanation]”"],
+  "The application spent [percentage] of its total time on this [span]. Read more about Time Spent in our [documentation:documentation].": [
+    "应用程序在其总时间的 [percentage] 上花费在这个 [span] 上。在我们的 [documentation: 文档] 中阅读更多关于花费时间的内容。"
+  ],
+  "custom": ["自定义"],
+  "(No Detected %s)": ["（未检测到 %s）"],
+  "SQL Command": ["SQL 命令"],
+  "Resource": ["资源"],
+  "Domain": ["域名"],
+  "(No %s)": ["（无 %s）"],
+  "Geo region": ["地理区域"],
+  "Filter region": ["筛选区域"],
+  "Page": ["页面"],
+  "5XX Responses": ["5XX 响应"],
+  "Slow Frames %": ["慢帧 %"],
+  "Bundle size": ["包大小"],
+  "Avg Encoded Size": ["平均编码大小"],
+  "Avg Decoded Size": ["平均解码大小"],
+  "Avg Transfer Size": ["平均传输大小"],
+  "Avg Transaction Duration": ["平均事务持续时间"],
+  "Avg Value Size": ["平均值大小"],
+  "Response Codes (3XX, 4XX, 5XX)": ["响应码（3XX, 4XX, 5XX）"],
+  "Response Code Breakdown": ["响应码分解"],
+  "Miss Rate": ["未命中率"],
+  "Time Spent": ["花费时间"],
+  "Duration (P50, P95)": ["持续时间（P50, P95）"],
+  "Duration (P50)": ["持续时间（P50）"],
+  "An error has occurred while loading chart data": ["加载图表数据时发生错误"],
+  "Last period": ["上一周期"],
+  "Last %s": ["最近 %s"],
+  "Span": ["跨度"],
+  "Sample": ["样本"],
+  "Encoded Size": ["编码大小"],
+  "An error has occurred while loading the samples table": ["加载样本表时发生错误"],
+  "Spans per second": ["每秒跨度数"],
+  "Spans per minute": ["每分钟跨度数"],
+  "Span time spent percentage": ["跨度时间花费百分比"],
+  "Count of 5XX http errors": ["5XX HTTP 错误计数"],
+  "Percentage of HTTP responses by code": ["按代码划分的 HTTP 响应百分比"],
+  "Percentage of cache hits": ["缓存命中百分比"],
+  "Percentage of cache misses": ["缓存未命中百分比"],
+  "Count of spans with matching operation": ["匹配操作的跨度计数"],
+  "Percentage of spans with matching trace status": ["匹配跟踪状态的跨度百分比"],
+  "No queries found. Try updating your filters, or learn more about performance monitoring for queries in our [documentation:documentation].": [
+    "未找到查询。请更新您的筛选条件，或在我们的 [documentation: 文档] 中了解更多关于查询的性能监控。"
+  ],
+  "You may be missing data due to outdated SDKs: [projectList].": ["由于 SDK 过时，您可能缺失数据：[projectList]。"],
+  "Some of your projects have been omitted from query performance analysis. Please [supportLink]. Omitted projects: [projectList].": [
+    "您的某些项目已被排除在查询性能分析之外。请 [supportLink]。被排除的项目：[projectList]。"
+  ],
+  " and [count] more.": ["还有 [count] 个更多。"],
+  "Could not find query source in the selected date range. Learn more in our [documentation:documentation].": [
+    "在所选日期范围内找不到查询来源。在我们的 [documentation: 文档] 中了解更多。"
+  ],
+  "Query Description": ["查询描述"],
+  "Found In": ["发现于"],
+  "Investigate the performance of database queries and get the information necessary to improve them.": [
+    "调查数据库查询的性能并获取改进它们所需的信息。"
+  ],
+  "Search for more Queries": ["搜索更多查询"],
+  "Query Summary": ["查询摘要"],
+  "Top 5 Response Codes": ["前五个响应码"],
+  "3XXs": ["3XXs"],
+  "4XXs": ["4XXs"],
+  "5XXs": ["5XXs"],
+  "Choose breakdown type": ["选择分解类型"],
+  "By Duration": ["按持续时间"],
+  "By Response Code": ["按响应码"],
+  "Response Code": ["响应码"],
+  "2XXs": ["2XXs"],
+  "Domains": ["域名"],
+  "Non-Authoritative Information": ["非权威信息"],
+  "No Content": ["无内容"],
+  "Reset Content": ["重置内容"],
+  "Partial Content": ["部分内容"],
+  "Multi-Status": ["多状态"],
+  "Already Reported": ["已报告"],
+  "IM Used": ["使用 IM"],
+  "Multiple Choices": ["多种选择"],
+  "Moved Permanently": ["永久移动"],
+  "Found": ["已找到"],
+  "See Other": ["查看其他"],
+  "Not Modified": ["未修改"],
+  "Use Proxy": ["使用代理"],
+  "Temporary Redirect": ["临时重定向"],
+  "Permanent Redirect": ["永久重定向"],
+  "Bad Request": ["请求错误"],
+  "Unauthorized": ["未经授权"],
+  "Payment Required": ["需要付款"],
+  "Method Not Allowed": ["方法不允许"],
+  "Not Acceptable": ["不可接受"],
+  "Proxy Authentication Required": ["需要代理认证"],
+  "Request Timeout": ["请求超时"],
+  "Conflict": ["冲突"],
+  "Gone": ["已删除"],
+  "Length Required": ["需要长度"],
+  "Precondition Failed": ["前置条件失败"],
+  "Payload Too Large": ["负载过大"],
+  "URI Too Long": ["URI 过长"],
+  "Unsupported Media Type": ["不支持的媒体类型"],
+  "Range Not Satisfiable": ["范围不可满足"],
+  "Expectation Failed": ["期望失败"],
+  "I’m a teapot": ["我是一个茶壶"],
+  "Misdirected Request": ["请求误投"],
+  "Unprocessable Content": ["无法处理的内容"],
+  "Locked": ["已锁定"],
+  "Failed Dependency": ["依赖失败"],
+  "Too Early": ["过早"],
+  "Switching Protocols": ["切换协议"],
+  "Upgrade Required": ["需要升级"],
+  "Precondition Required": ["需要前置条件"],
+  "Too Many Requests": ["请求过多"],
+  "Request Header Fields Too Large": ["请求头字段过大"],
+  "Unavailable For Legal Reasons": ["因法律原因不可用"],
+  "Not Implemented": ["未实现"],
+  "Bad Gateway": ["网关错误"],
+  "Service Unavailable": ["服务不可用"],
+  "Gateway Timeout": ["网关超时"],
+  "HTTP Version Not Supported": ["HTTP 版本不支持"],
+  "Variant Also Negotiates": ["变体也协商"],
+  "Insufficient Storage": ["存储不足"],
+  "Loop Detected": ["检测到循环"],
+  "Not Extended": ["未扩展"],
+  "Network Authentication Required": ["需要网络认证"],
+  "Early Hints": ["早期提示"],
+  "OK": ["正常"],
+  "Unknown Domain": ["未知域名"],
+  "Monitor outgoing HTTP requests and investigate errors and performance bottlenecks tied to domains.": [
+    "监控出站 HTTP 请求，并调查与域名相关的错误和性能瓶颈。"
+  ],
+  "Outbound API Requests": ["出站 API 请求"],
+  "\"Unknown Domain\" entries can be caused by instrumentation errors. Please refer to our [link] for more information.": [
+    "“Unknown Domain” 条目可能是由于仪器错误引起的。请参阅我们的 [link] 以获取更多信息。"
+  ],
+  "3XX": ["3XX"],
+  "4XX": ["4XX"],
+  "5XX": ["5XX"],
+  "Domain Summary": ["域名摘要"],
+  "Search for more domains": ["搜索更多域名"],
+  "Total tokens used": ["总令牌使用量"],
+  "Number of AI pipelines": ["AI 管道数量"],
+  "Pipeline Duration": ["管道持续时间"],
+  "Total duration": ["总持续时间"],
+  "Search for pipeline": ["搜索管道"],
+  "Cost is calculated for some of the most popular models, but some providers aren't yet supported.": [
+    "成本是为一些最受欢迎的模型计算的，但有些提供商尚未得到支持。"
+  ],
+  "AI Pipeline Name": ["AI 管道名称"],
+  "Total cost": ["总成本"],
+  "Pipeline runs": ["管道运行次数"],
+  "LLM Monitoring": ["大型语言模型监控"],
+  "LLM": ["大型语言模型"],
+  "LLMs": ["大型语言模型"],
+  "Pipeline Runs Per Minute": ["每分钟管道运行次数"],
+  "Pipeline Summary": ["管道摘要"],
+  "Total Tokens Used": ["总令牌使用量"]
+}

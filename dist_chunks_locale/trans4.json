@@ -1,0 +1,693 @@
+{
+  "Crash Reporter Client": ["崩溃报告客户端"],
+  "For Windows and Mac, [link:Crash Reporter Client] provided along with Unreal Engine has to be configured in order to capture errors automatically.": [
+    "对于 Windows 和 Mac，需要配置随 Unreal Engine 提供的 [link:崩溃报告客户端] 以自动捕获错误。"
+  ],
+  "Include the UE Crash Reporter": ["包含 UE 崩溃报告"],
+  "You can add the crash reporter client to your game in [strong:Project Settings].": [
+    "您可以在 [strong:项目设置] 中将崩溃报告客户端添加到您的游戏中。"
+  ],
+  "The option is located under [strong:Project > Packaging]; select \"show advanced\" followed by checking the box for \"Include Crash Reporter\".": [
+    "该选项位于 [strong:项目 > 打包] 下；选择“显示高级”选项，然后勾选“包含崩溃报告”复选框。"
+  ],
+  "Debug Information": ["调试信息"],
+  "To get the most out of Sentry, crash reports must include debug information. In order for Sentry to be able to process the crash report and translate memory addresses to meaningful information like function names, module names, and line numbers, the crash itself must include debug information. In addition, symbols need to be uploaded to Sentry.": [
+    "为了充分利用 Sentry，崩溃报告必须包含调试信息。为了让 Sentry 能够处理崩溃报告并将内存地址转换为有意义的信息（如函数名、模块名和行号），崩溃本身必须包含调试信息。此外，还需要将符号上传到 Sentry。"
+  ],
+  "The option is also located under [strong:Project > Packaging]; select 'show advanced' followed by checking the box for 'Include Debug Files'.": [
+    "该选项同样位于 [strong:项目 > 打包] 下；选择“显示高级”选项，然后勾选“包含调试文件”复选框。"
+  ],
+  "Configure the Crash Reporter Endpoint": ["配置崩溃报告端点"],
+  "Now that the crash reporter and debug files are included, UE needs to know where to send the crash. For that, add the Sentry 'Unreal Engine Endpoint' from the 'Client Keys' settings page to the game's configuration file. This will include which project in Sentry you want to see crashes displayed in. That's accomplished by configuring the [code:CrashReportClient] in the [italic:DefaultEngine.ini] file. Changing the engine is necessary for this to work. Edit the file:": [
+    "现在崩溃报告和调试文件已经包含在内，UE 需要知道将崩溃发送到哪里。为此，请将 Sentry 的“Unreal Engine 端点”从“客户端密钥”设置页面添加到游戏的配置文件中。这将确定您希望在 Sentry 的哪个项目中显示崩溃。这是通过在 [italic:DefaultEngine.ini] 文件中配置 [code:CrashReportClient] 来实现的。为了使此功能正常工作，需要更改引擎。编辑文件："
+  ],
+  "Fine Tune Alerts": ["精细调整警报"],
+  "User Auth Tokens": ["用户认证令牌"],
+  "Edit User Auth Token": ["编辑用户认证令牌"],
+  "Tags & Context": ["标签与上下文"],
+  "Metrics Details": ["指标详情"],
+  "Artifact Bundles": ["工件包"],
+  "Artifact Bundle": ["工件包"],
+  "Release Bundles": ["发布包"],
+  "Release Bundle": ["发布包"],
+  "Issue Grouping": ["问题分组"],
+  "Loader Script": ["加载器脚本"],
+  "HPKP": ["HTTP 公钥固定"],
+  "Integration Details": ["集成详情"],
+  "Auth Providers": ["认证提供者"],
+  "Relay": ["中继"],
+  "Configure Integration": ["配置集成"],
+  "Custom Integrations": ["自定义集成"],
+  "Create Integration": ["创建集成"],
+  "Edit Integration": ["编辑集成"],
+  "Create New Auth Token": ["创建新的认证令牌"],
+  "Edit Auth Token": ["编辑认证令牌"],
+  "Early Features": ["早期功能"],
+  "Cannot assign to non-team member": ["无法分配给非团队成员"],
+  "Deleted %d Issues": ["已删除 %d 个问题"],
+  "Deleted %s": ["已删除 %s"],
+  "Merged %d Issues": ["已合并 %d 个问题"],
+  "[value] per issue": ["每个问题的 [value]"],
+  "Unable to fetch custom performance measurements": ["无法获取自定义性能测量"],
+  "Matching search filters": ["匹配搜索过滤器"],
+  "%shr": ["% 缩写形式"],
+  "%smin": ["%s 最小值"],
+  "%ss": ["%s 秒"],
+  "%sms": ["%sms 毫秒"],
+  "%swk": ["%swk 周"],
+  "%sd": ["%sd 天"],
+  "Add a function that groups events to use this view.": ["添加一个分组事件的函数以使用此视图。"],
+  "Change the date rage to at least 1 day to use this view.": ["将日期范围更改为至少 1 天以使用此视图。"],
+  "true": ["true"],
+  "false": ["false"],
+  "(empty string)": ["（空字符串）"],
+  "Toggle star for team": ["为团队切换星标"],
+  "Total Period": ["总计周期"],
+  "Previous Period": ["上一个周期"],
+  "Top 5 Period": ["前五周期"],
+  "Total Daily": ["总计每日"],
+  "Top 5 Daily": ["每日前五"],
+  "Bar Chart": ["条形图"],
+  "This replay may have been rate limited or deleted.": ["此回放可能已被限速或删除。"],
+  "(missing)": ["（缺失）"],
+  "View Replay": ["查看回放"],
+  "minute": ["分钟"],
+  "second": ["秒"],
+  "millisecond": ["毫秒"],
+  "mo": ["月"],
+  "w": ["周"],
+  "week": ["周"],
+  "day": ["天"],
+  "h": ["小时"],
+  "hour": ["小时"],
+  "sec": ["秒"],
+  "secs": ["秒"],
+  "month": ["月"],
+  "months": ["月"],
+  "yr": ["年"],
+  "The issues bookmarked by a user ID": ["由用户 ID 收藏的问题"],
+  "Name of the browser": ["浏览器名称"],
+  "CPU architecture": ["CPU 架构"],
+  "Indicates remaining battery life": ["指示剩余电池寿命"],
+  "Brand of device": ["设备品牌"],
+  "Charging at the time of the event": ["事件发生时正在充电"],
+  "The estimated performance level of the device, graded low, medium, or high": [
+    "设备的估计性能等级，分为低、中或高"
+  ],
+  "Model name across generations": ["跨代的型号名称"],
+  "The locale of the user's device": ["用户设备的区域设置"],
+  "Internal hardware revision": ["内部硬件修订版"],
+  "Descriptor details": ["描述符详细信息"],
+  "Online at the time of the event": ["事件发生时处于在线状态"],
+  "Portrait or landscape view ": ["纵向或横向视图 "],
+  "Pixel density of the device screen": ["设备屏幕的像素密度"],
+  "Dots per inch of the device screen": ["设备屏幕的每英寸点数"],
+  "Height of the device screen in pixels": ["设备屏幕的像素高度"],
+  "Width of the device screen in pixels": ["设备屏幕的像素宽度"],
+  "Indicates if it occured on a simulator": ["指示是否发生在模拟器上"],
+  "Unique device identifier": ["唯一设备标识符"],
+  "Distinguishes between build or deployment variants of the same release of an application.": [
+    "区分同一应用程序发布的构建或部署变体。"
+  ],
+  "The environment the event was seen in": ["事件发生的环境"],
+  "Determines handling status of the error": ["确定错误的处理状态"],
+  "The mechanism that created the error": ["创建错误的机制"],
+  "The type of exception": ["异常类型"],
+  "Determines unhandling status of the error": ["确定错误的未处理状态"],
+  "Original value that exhibits error": ["显示错误的原始值"],
+  "The datetime that the error was received": ["收到错误的日期时间"],
+  "Indicates if the error occurred on the main thread": ["指示错误是否发生在主线程"],
+  "Date and time of the event": ["事件的日期和时间"],
+  "Type of event (Errors, transactions, csp and default)": ["事件类型（错误、事务、csp 和默认）"],
+  "Full name of the city": ["城市的全名"],
+  "Country code based on ISO 3166-1": ["基于 ISO 3166-1 的国家代码"],
+  "Full name of the country": ["国家的全名"],
+  "Full name of the subdivision": ["行政区划的全名"],
+  "Method of the request that created the event": ["创建事件的请求方法"],
+  "The web page the resource was requested from": ["请求资源的网页"],
+  "Type of response (i.e., 200, 404)": ["响应类型（例如，200, 404）"],
+  "Full URL of the request without parameters": ["不含参数的请求完整 URL"],
+  "The event identification number": ["事件识别号码"],
+  "The properties of an issue (i.e. Resolved, unresolved)": ["问题的属性（例如，已解决、未解决）"],
+  "The issue identification short code": ["问题识别简码"],
+  "Category of issue (error or performance)": ["问题类别（错误或性能）"],
+  "The priority of the issue": ["问题的优先级"],
+  "Type of problem the issue represents (i.e. N+1 Query)": ["问题代表的问题类型（例如，N+1 查询）"],
+  "Issues last seen at a given time": ["问题最后出现在给定时间"],
+  "Severity of the event (i.e., fatal, error, warning)": ["事件的严重性（例如，致命、错误、警告）"],
+  "Location of error": ["错误位置"],
+  "Error message or transaction name": ["错误消息或事务名称"],
+  "Build and kernel version": ["构建和内核版本"],
+  "Name of the build": ["构建名称"],
+  "Version number": ["版本号"],
+  "Name of the platform": ["平台名称"],
+  "The ID of an associated profile": ["相关配置文件的 ID"],
+  "Issues first seen in a given release": ["问题首次出现在给定发布版本"],
+  "Issues first seen at a given time": ["问题首次出现在给定时间"],
+  "Determines if a tag or field exists in an event": ["确定事件中是否存在标签或字段"],
+  "Name of the Operating System": ["操作系统的名称"],
+  "The version of your code deployed to an environment": ["部署到环境中的代码版本"],
+  "The full version number that identifies the iteration": ["标识迭代的完整版本号"],
+  "The identifier unique to the project or application": ["项目或应用程序的唯一标识符"],
+  "Stage of usage (i.e., adopted, replaced, low)": ["使用阶段（例如，采用、替换、低）"],
+  "An abbreviated version number of the build": ["构建的简写版本号"],
+  "The ID of an associated Session Replay": ["相关会话回放的 ID"],
+  "Name of the platform that sent the event": ["发送事件的平台名称"],
+  "Version of the platform that sent the event": ["发送事件的平台版本"],
+  "Absolute path to the source file": ["源文件的绝对路径"],
+  "Column number of the call starting at 1": ["调用的列号，从 1 开始"],
+  "Relative path to the source file from the root directory": ["从根目录到源文件的相对路径"],
+  "Name of function being called": ["正在调用的函数名称"],
+  "Indicates if frame is related to relevant code in stack trace": ["指示帧是否与堆栈跟踪中的相关代码有关"],
+  "Line number of the call starting at 1": ["调用的行号，从 1 开始"],
+  "Platform specific module path": ["平台特定的模块路径"],
+  "The package the frame is from": ["帧来自的包"],
+  "Number of frames per stacktrace": ["每个堆栈跟踪的帧数"],
+  "Total number of events": ["事件的总数"],
+  "The time an event finishes": ["事件结束的时间"],
+  "Rounded down to the nearest hour": ["四舍五入到最近的小时"],
+  "Rounded down to the nearest day": ["四舍五入到最近的一天"],
+  "Error or transaction name identifier": ["错误或事务名称标识符"],
+  "The trace identification number": ["跟踪识别号码"],
+  "The total number of events for the current query": ["当前查询的事件总数"],
+  "Span identification number of the parent to the event": ["事件的父级的跨度识别号码"],
+  "Span identification number of the root span": ["根跨度的识别号码"],
+  "Sample rate of the trace in the SDK between 0 and 1": ["SDK 中跟踪的采样率，介于 0 和 1 之间"],
+  "Short code identifying the type of operation the span is measuring": ["简短代码，标识跨度正在测量的操作类型"],
+  "Duration of the transaction": ["事务的持续时间"],
+  "Describes the status of the span/transaction": ["描述跨度/事务的状态"],
+  "Crash type of an Unreal event": ["虚幻事件的崩溃类型"],
+  "User identification value": ["用户识别值"],
+  "The first user field available of email, username, ID, and IP": ["可用的用户字段中的第一个，包括电子邮件、用户名、ID 和 IP"],
+  "Email address of the user": ["用户的电子邮件地址"],
+  "Application specific internal identifier of the user": ["用户的应用特定内部标识符"],
+  "IP Address of the user": ["用户的 IP 地址"],
+  "Username of the user": ["用户的用户名"],
+  "Segment of the user": ["用户的细分"],
+  "Indicates if the app is in the foreground or background": ["指示应用是在前台还是后台"],
+  "Duration of the function": ["函数的持续时间"],
+  "Amount of activity in the replay from 0 to 10": ["回放中的活动量，从 0 到 10"],
+  "Version number of the browser": ["浏览器的版本号"],
+  "Number of dead clicks in the replay": ["回放中的无效点击次数"],
+  "Number of rage clicks in the replay": ["回放中的愤怒点击次数"],
+  "Number of errors in the replay": ["回放中的错误次数"],
+  "Number of segments in the replay": ["回放中的段落数"],
+  "Number of urls visited within the replay": ["回放中访问的 URL 数"],
+  "Duration of the replay, in seconds": ["回放的持续时间，以秒为单位"],
+  "Error instance": ["错误实例"],
+  "Version number of the Operating System": ["操作系统的版本号"],
+  "Whether you have seen this replay before (true/false)": ["您是否以前见过此回放（true/false）"],
+  "List of urls that were visited within the replay": ["回放中访问的 URL 列表"],
+  "`alt` of an element that was clicked": ["被点击元素的 `alt` 属性"],
+  "`class` of an element that was clicked": ["被点击元素的 `class` 属性"],
+  "`id` of an element that was clicked": ["被点击元素的 `id` 属性"],
+  "`aria-label` of an element that was clicked": ["被点击元素的 `aria-label` 属性"],
+  "`role` of an element that was clicked": ["被点击元素的 `role` 属性"],
+  "query using CSS selector-like syntax, supports class, id, and attribute selectors": [
+    "使用类似于 CSS 选择器的语法进行查询，支持类、ID 和属性选择器"
+  ],
+  "`tag` of an element that was clicked": ["被点击元素的 `tag` 属性"],
+  "`data-testid` or `data-test-id` of an element that was clicked": ["被点击元素的 `data-testid` 或 `data-test-id` 属性"],
+  "textContent of an element that was clicked": ["被点击元素的 textContent"],
+  "`title` of an element that was clicked": ["被点击元素的 `title` 属性"],
+  "the name of the frontend component that was clicked": ["被点击的前端组件的名称"],
+  "Contact email of the user writing the feedback": ["提供反馈的用户的联系电子邮件"],
+  "Language preference of the user": ["用户的语言偏好"],
+  "Timezone the feedback was submitted from": ["提交反馈的时区"],
+  "Message written by the user providing feedback": ["提供反馈的用户写的消息"],
+  "Name of the user writing feedback": ["提供反馈的用户的名称"],
+  "Name of the operating system": ["操作系统的名称"],
+  "Version number of the operating system": ["操作系统的版本号"],
+  "URL of the page that the feedback is triggered on": ["触发反馈的页面的 URL"],
+  "count of events": ["事件计数"],
+  "Unique count of the field values": ["字段值的唯一计数"],
+  "Count of unique miserable users": ["唯一痛苦用户的计数"],
+  "Count of events matching the parameter conditions": ["匹配参数条件的事件计数"],
+  "Count of web vitals with a specific status": ["具有特定状态的网络核心指标计数"],
+  "Events per second": ["每秒事件数"],
+  "Failed event percentage based on transaction.status": ["基于 transaction.status 的失败事件百分比"],
+  "Failed event count based on transaction.status": ["基于 transaction.status 的失败事件计数"],
+  "Returns the minimum value of the selected field": ["返回所选字段的最小值"],
+  "Returns maximum value of the selected field": ["返回所选字段的最大值"],
+  "Returns the total value for the selected field": ["返回所选字段的总值"],
+  "Not Recommended, a random field value": ["不推荐，随机字段值"],
+  "Returns the 50th percentile of the selected field": ["返回所选字段的第 50 个百分位数"],
+  "Returns the 75th percentile of the selected field": ["返回所选字段的第 75 个百分位数"],
+  "Returns the 90th percentile of the selected field": ["返回所选字段的第 90 个百分位数"],
+  "Returns the 95th percentile of the selected field": ["返回所选字段的第 95 个百分位数"],
+  "Returns the 99th percentile of the selected field": ["返回所选字段的第 99 个百分位数"],
+  "Returns the 100th percentile of the selected field": ["返回所选字段的第 100 个百分位数"],
+  "Returns the percentile of the selected field": ["返回所选字段的百分位数"],
+  "Returns averages for a selected field": ["返回所选字段的平均值"],
+  "Performance score based on a duration threshold": ["基于持续时间阈值的性能分数"],
+  "User-weighted performance metric that counts the number of unique users who were frustrated": [
+    "基于用户的性能指标，统计感到沮丧的唯一用户数量"
+  ],
+  "Issues last seen at a date and time": ["问题最后出现在日期和时间"],
+  "Web Vital First Paint": ["网络核心指标首次绘制"],
+  "Web Vital First Contentful Paint": ["网络核心指标首次内容绘制"],
+  "Web Vital Largest Contentful Paint": ["网络核心指标最大内容绘制"],
+  "Web Vital First Input Delay": ["网络核心指标首次输入延迟"],
+  "Web Vital Cumulative Layout Shift": ["网络核心指标累积布局偏移"],
+  "Web Vital Time To First Byte": ["网络核心指标首次字节时间"],
+  "Time between start of request to start of response": ["从请求开始到响应开始的时间"],
+  "First launch (not in memory and no process exists)": ["首次启动（不在内存中且没有进程存在）"],
+  "Already launched (partial memory and process may exist)": ["已启动（部分内存和进程可能存在）"],
+  "Total number of frames": ["帧的总数"],
+  "Number of slow frames": ["慢帧的数量"],
+  "Number of frozen frames": ["冻结帧的数量"],
+  "Number of slow frames out of the total": ["总慢帧的数量"],
+  "Number of frozen frames out of the total": ["总冻结帧的数量"],
+  "Count of slow Javascript event loops (React Native)": ["慢 JavaScript 事件循环的计数（React Native）"],
+  "Total stall duration (React Native)": ["总停滞时间（React Native）"],
+  "Duration of slowest Javascript event loop (React Native)": ["最慢 JavaScript 事件循环的持续时间（React Native）"],
+  "Total stall duration out of the total transaction duration (React Native)": [
+    "总停滞时间占总事务持续时间的比例（React Native）"
+  ],
+  "The time between application launch and complete display of all resources and views": [
+    "从应用启动到所有资源和视图完全显示的时间"
+  ],
+  "The time it takes for an application to produce its first frame": ["应用生成第一帧所需的时间"],
+  "Web Vital Interaction to Next Paint": ["网络核心指标交互到下次绘制"],
+  "Cumulative time based on the browser operation": ["基于浏览器操作的累积时间"],
+  "Cumulative time based on the database operation": ["基于数据库操作的累积时间"],
+  "Cumulative time based on the http operation": ["基于 HTTP 操作的累积时间"],
+  "Cumulative time based on the resource operation": ["基于资源操作的累积时间"],
+  "Cumulative time based on the ui operation": ["基于 UI 操作的累积时间"],
+  "The type of span action, e.g `SELECT` for a SQL span or `POST` for an HTTP span": [
+    "跨度操作的类型，例如 SQL 跨度的 `SELECT` 或 HTTP 跨度的 `POST`"
+  ],
+  "Parameterized and scrubbed description of the span": ["参数化和清理后的跨度描述"],
+  "General scope of the span’s action, i.e. the tables involved in a `db` span or the host name in an `http` span": [
+    "跨度操作的一般范围，例如 `db` 跨度中涉及的表或 `http` 跨度中的主机名"
+  ],
+  "The total time taken by the span": ["跨度所花费的总时间"],
+  "Unique hash of the span’s description": ["跨度描述的唯一哈希值"],
+  "The Insights module that the span is associated with, e.g `cache`, `db`, `http`, etc.": [
+    "跨度关联的洞察模块，例如 `cache`、`db`、`http` 等"
+  ],
+  "The operation of the span, e.g `http.client`, `middleware`": ["跨度的操作，例如 `http.client`、`middleware`"],
+  "The duration of the span excluding the duration of its child spans": ["跨度的持续时间，不包括其子跨度的持续时间"],
+  "Status of the operation the span represents": ["跨度所代表的操作的状态"],
+  "The HTTP response status code": ["HTTP 响应状态码"],
+  "The age of the issue in relative time": ["问题的相对时间年龄"],
+  "Assignee of the issue as a user ID": ["作为用户 ID 的问题负责人"],
+  "Assignee or suggestee of the issue as a user ID": ["作为用户 ID 的问题负责人或建议负责人"],
+  "URL request": ["URL 请求"],
+  "cache query": ["缓存查询"],
+  "database query": ["数据库查询"],
+  "application task": ["应用任务"],
+  "serializer": ["序列化器"],
+  "middleware": ["中间件"],
+  "resource": ["资源"],
+  "JavaScript file": ["JavaScript 文件"],
+  "stylesheet": ["样式表"],
+  "image": ["图像"],
+  "span": ["跨度"],
+  "request": ["请求"],
+  "query": ["查询"],
+  "task": ["任务"],
+  "loading…": ["加载中…"],
+  "Update to the latest version of our Slack app to get access to personal and team notifications.": [
+    "更新到我们 Slack 应用的最新版本以获取个人和团队通知。"
+  ],
+  "Not yet supported for cron issues": ["尚未支持用于定时任务问题"],
+  "How to fix ChunkLoadErrors": ["如何修复 ChunkLoadErrors"],
+  "[errorTypes] occur when the global objects `window` or `document` are not defined. This typically happens in server-side rendering (SSR) or other non-browser environments. To learn more about how to fix these errors, check out these resources:": [
+    "[错误类型] 发生在全球对象 `window` 或 `document` 未定义时。这通常发生在服务器端渲染（SSR）或其他非浏览器环境中。要了解更多关于如何修复这些错误的信息，请查看以下资源："
+  ],
+  "How to fix Document/Window Object Error": ["如何修复 Document/Window 对象错误"],
+  "[errorTypes] occur in Next.js applications when trying to redirect to the same page. To learn more about how to fix these errors, check out these resources:": [
+    "[错误类型] 发生在 Next.js 应用程序中尝试重定向到同一页面时。要了解更多关于如何修复这些错误的信息，请查看以下资源："
+  ],
+  "Fixing handleHardNavigation errors in Next.js": ["在 Next.js 中修复 handleHardNavigation 错误"],
+  "[errorTypes] occur in Next.js applications when an imported module cannot be accessed. To learn more about how to fix these errors, check out these resources:": [
+    "[错误类型] 发生在 Next.js 应用程序中当导入的模块无法访问时。要了解更多关于如何修复这些错误的信息，请查看以下资源："
+  ],
+  "Fixing \"module not found\" errors in Next.js": ["在 Next.js 中修复“模块未找到”错误"],
+  "[errorTypes] occur in Next.js applications when a route is statically generated, but uses dynamic server values at runtime. To learn more about how to fix these errors, check out these resources:": [
+    "[错误类型] 发生在 Next.js 应用程序中当路由是静态生成的，但在运行时使用动态服务器值时。要了解更多关于如何修复这些错误的信息，请查看以下资源："
+  ],
+  "Resolving \"app/ Static to Dynamic Error\" in Next.js": ["在 Next.js 中解决“app/ 静态到动态错误”"],
+  "[errorTypes] occur in React based applications when the server-rendered HTML does not match what is expected on the client. To learn more about how to fix these errors, check out these resources:": [
+    "[错误类型] 发生在基于 React 的应用程序中当服务器渲染的 HTML 与客户端预期不符时。要了解更多关于如何修复这些错误的信息，请查看以下资源："
+  ],
+  "Resolving Hydration Errors": ["解决水合错误"],
+  "[errorTypes] occur on Apple devices when there is an error with Fetch API. To learn more about how to fix these errors, check out these resources:": [
+    "[错误类型] 发生在 Apple 设备上当 Fetch API 出现错误时。要了解更多关于如何修复这些错误的信息，请查看以下资源："
+  ],
+  "Fixing Load Failed errors in JavaScript": ["在 JavaScript 中修复 Load Failed 错误"],
+  "[errorTypes] occur when there is an error with Fetch API. To learn more about how to fix these errors, check out these resources:": [
+    "[错误类型] 发生在 Fetch API 出现错误时。要了解更多关于如何修复这些错误的信息，请查看以下资源："
+  ],
+  "Fixing Failed to Fetch errors in JavaScript": ["在 JavaScript 中修复 Failed to Fetch 错误"],
+  "[errorTypes] occur when there is an error in a Fetch API call. To learn more about how to fix these errors, check out these resources:": [
+    "[错误类型] 发生在 Fetch API 调用出现错误时。要了解更多关于如何修复这些错误的信息，请查看以下资源："
+  ],
+  "Fixing Socket Hang Up errors": ["修复 Socket Hang Up 错误"],
+  "[errorTypes] occur in Next.js applications when the useRouter hook is used incorrectly. To learn more about how to fix these errors, check out these resources:": [
+    "[错误类型] 发生在 Next.js 应用程序中当 useRouter 钩子使用不当时。要了解更多关于如何修复这些错误的信息，请查看以下资源："
+  ],
+  "Fixing \"NextRouter was not mounted\" errors in Next.js": ["在 Next.js 中修复“NextRouter 未挂载”错误"],
+  "[errorTypes] occur in Python applications when a variable is defined in both global and local contexts. To learn more about how to fix these errors, check out these resources:": [
+    "[错误类型] 发生在 Python 应用程序中当变量在全局和局部上下文中都被定义时。要了解更多关于如何修复这些错误的信息，请查看以下资源："
+  ],
+  "Fixing \"UnboundLocalError\" errors in Python": ["在 Python 中修复“UnboundLocalError”错误"],
+  "[errorTypes] occur in Node.js applications when an imported module cannot be found. To learn more about how to fix these errors, check out these resources:": [
+    "[错误类型] 发生在 Node.js 应用程序中当导入的模块找不到时。要了解更多关于如何修复这些错误的信息，请查看以下资源："
+  ],
+  "Fixing \"Cannot find module\" errors in Node.js": ["在 Node.js 中修复“Cannot find module”错误"],
+  "[errorTypes] occur in Python applications when a module that does not exist is imported. To learn more about how to fix these errors, check out these resources:": [
+    "[错误类型] 发生在 Python 应用程序中当导入一个不存在的模块时。要了解更多关于如何修复这些错误的信息，请查看以下资源："
+  ],
+  "Fixing \"ImportError: No module named\" errors in Python": ["在 Python 中修复“ImportError: No module named”错误"],
+  "[errorTypes] occur in Python applications when a string is modified in place. To learn more about how to fix these errors, check out these resources:": [
+    "[错误类型] 发生在 Python 应用程序中当字符串被就地修改时。要了解更多关于如何修复这些错误的信息，请查看以下资源："
+  ],
+  "Fixing \"'str' object does not support item assignment\" errors in Python": [
+    "在 Python 中修复“'str' 对象不支持项目分配”错误"
+  ],
+  "[errorTypes] occur in React when modules are imported incorrectly. To learn more about how to fix these errors, check out these resources:": [
+    "[错误类型] 发生在 React 中当模块导入不正确时。要了解更多关于如何修复这些错误的信息，请查看以下资源："
+  ],
+  "Fixing \"Invariant Violation: Element type is invalid\" errors in React": ["在 React 中修复“Invariant Violation: Element type is invalid”错误"],
+  "Evidence": ["证据"],
+  "N+1 queries are extraneous queries (N) caused by a single, initial query (+1). In the Span Evidence above, we've identified the parent span where the extraneous spans are located and the extraneous spans themselves. To learn more about how to fix N+1 problems, check out these resources:": [
+    "N+1 查询是由单个初始查询（+1）引起的额外查询（N）。在上面的跨度证据中，我们已经确定了额外跨度所在的父跨度以及这些额外跨度本身。要了解更多关于如何修复 N+1 问题的信息，请查看以下资源："
+  ],
+  "Sentry Docs: N+1 Queries": ["Sentry 文档：N+1 查询"],
+  "Finding and Fixing Django N+1 Problems": ["查找和修复 Django N+1 问题"],
+  "Not yet supported for performance issues": ["尚未支持用于性能问题"],
+  "HTTP/1.1 can cause overhead, with long request queue times in the browser due to max connection limits. In the Span Evidence above, we've identified the extent of the wait time and spans affected by request queueing. To learn more about how to fix HTTP Overhead, check out these resources:": [
+    "HTTP/1.1 可能会导致开销，由于最大连接限制，浏览器中的请求排队时间会变长。在上面的跨度证据中，我们已经确定了等待时间的范围以及受请求排队影响的跨度。要了解更多关于如何修复 HTTP 开销的信息，请查看以下资源："
+  ],
+  "Sentry Docs: HTTP/1.1 Overhead": ["Sentry 文档：HTTP/1.1 开销"],
+  "Large render blocking assets are a type of resource span delaying First Contentful Paint (FCP). Delaying FCP means it takes more time to initially load the page for the user. Spans that end after FCP are not as critical as those that end before it. The resource span may take form of a script, stylesheet, image, or other asset that requires optimization. To learn more about how to fix large render blocking assets, check out these resources:": [
+    "大型渲染阻塞资源是一种延迟首次内容绘制（FCP）的资源跨度。延迟 FCP 意味着用户初始加载页面所需的时间会变长。在 FCP 之后结束的跨度不像在 FCP 之前结束的跨度那么关键。资源跨度可能以脚本、样式表、图像或其他需要优化的资源形式出现。要了解更多关于如何修复大型渲染阻塞资源的信息，请查看以下资源："
+  ],
+  "Web Vital: First Contentful Paint": ["网络核心指标：首次内容绘制"],
+  "Slow DB Queries are SELECT query spans that are consistently taking longer than 500ms. A quick method to understand why this may be the case is running an EXPLAIN command on the query itself. To learn more about how to fix slow DB queries, check out these resources:": [
+    "慢数据库查询是指持续时间超过 500 毫秒的 SELECT 查询跨度。一个快速了解这可能的原因的方法是对查询本身运行 EXPLAIN 命令。要了解更多关于如何修复慢数据库查询的信息，请查看以下资源："
+  ],
+  "Sentry Docs: Slow DB Queries": ["Sentry 文档：慢数据库查询"],
+  "A Large HTTP Payload issue occurs when an http payload size consistently exceeds a threshold of 300KB": [
+    "当 HTTP 负载大小持续超过 300KB 的阈值时，就会出现大型 HTTP 负载问题"
+  ],
+  "Sentry Docs: Large HTTP Payload": ["Sentry 文档：大型 HTTP 负载"],
+  "Uncompressed assets are asset spans that take over 300ms and are larger than 512kB which can usually be made faster with compression. Check that your server or CDN serving your assets is accepting the content encoding header from the browser and is returning them compressed.": [
+    "未压缩的资源是那些持续时间超过 300 毫秒且大小超过 512kB 的资源跨度，通常可以通过压缩来加快速度。请检查您的服务器或提供资源的 CDN 是否接受来自浏览器的内容编码标头，并返回压缩后的资源。"
+  ],
+  "Not yet supported for regression issues": ["尚未支持用于回归问题"],
+  "File I/O can be a long running operation that blocks the main thread. This may result in app hangs and poor UI performance. To learn more, read our documentation:": [
+    "文件 I/O 可能是一个长时间运行的操作，会阻塞主线程。这可能导致应用卡住和 UI 性能不佳。要了解更多，请阅读我们的文档："
+  ],
+  "File I/O on Main Thread": ["主线程上的文件 I/O"],
+  "Decoding a JSON blob can be a long running operation that blocks the main thread. This may result in app hangs and poor UI performance. To learn more, read our documentation:": [
+    "解码 JSON 数据块可能是一个长时间运行的操作，会阻塞主线程。这可能导致应用卡住和 UI 性能不佳。要了解更多，请阅读我们的文档："
+  ],
+  "JSON Decode on Main Thread": ["主线程上的 JSON 解码"],
+  "Decoding a compressed image (e.g. JPEG, PNG) into a bitmap can be a long running operation that blocks the main thread. This may result in app hangs and poor UI performance. To learn more, read our documentation:": [
+    "将压缩的图像（例如 JPEG、PNG）解码为位图可能是一个长时间运行的操作，会阻塞主线程。这可能导致应用卡住和 UI 性能不佳。要了解更多，请阅读我们的文档："
+  ],
+  "Image Decode on Main Thread": ["主线程上的图像解码"],
+  "Evaluating matches between strings and regular expressions (regex) can be long-running operations that may impact app responsiveness. This may result in app hangs and poor UI performance. To learn more, read our documentation:": [
+    "评估字符串和正则表达式（regex）之间的匹配可能是一个长时间运行的操作，可能会影响应用的响应性。这可能导致应用卡住和 UI 性能不佳。要了解更多，请阅读我们的文档："
+  ],
+  "Regex on Main Thread": ["主线程上的正则表达式"],
+  "The main (or UI) thread in a mobile app is responsible for handling all user interaction and needs to be able to respond to gestures and taps in real time. If a long-running operation blocks the main thread, the app becomes unresponsive, impacting the quality of the user experience. To learn more, read our documentation:": [
+    "移动应用中的主线程（或 UI 线程）负责处理所有用户交互，需要能够实时响应手势和点击。如果一个长时间运行的操作阻塞了主线程，应用将变得无响应，影响用户体验的质量。要了解更多，请阅读我们的文档："
+  ],
+  "Frame Drop": ["帧丢弃"],
+  "Consecutive DB Queries are a sequence of database spans where one or more have been identified as parallelizable, or in other words, spans that may be shifted to the start of the sequence. This often occurs when a db query performs no filtering on the data, for example a query without a WHERE clause. To learn more about how to fix consecutive DB queries, check out these resources:": [
+    "连续的数据库查询是一系列数据库跨度，其中一个或多个已被识别为可并行化，换句话说，这些跨度可以移到序列的开头。这通常发生在数据库查询不对数据进行过滤时，例如没有 WHERE 子句的查询。要了解更多关于如何修复连续的数据库查询的信息，请查看以下资源："
+  ],
+  "Sentry Docs: Consecutive DB Queries": ["Sentry 文档：连续的数据库查询"],
+  "A Consecutive HTTP issue occurs when at least 2000ms of time can be saved by parallelizing at least 3 consecutive HTTP calls occur sequentially.": [
+    "当至少 3 个连续的 HTTP 调用顺序发生时，如果通过并行化至少可以节省 2000 毫秒的时间，则会发生连续的 HTTP 问题。"
+  ],
+  "Sentry Docs: Consecutive HTTP": ["Sentry 文档：连续的 HTTP"],
+  "File IO operations on your main thread may lead to app hangs.": ["主线程上的文件 I/O 操作可能导致应用卡住。"],
+  "Sentry Docs: File IO on the Main Thread": ["Sentry 文档：主线程上的文件 I/O"],
+  "Database operations on your main thread may lead to app hangs.": ["主线程上的数据库操作可能导致应用卡住。"],
+  "Sentry Docs: Database on the Main Thread": ["Sentry 文档：主线程上的数据库"],
+  "N+1 API Calls are repeated concurrent calls to fetch a resource. These spans will always begin at the same time and may potentially be combined to fetch everything at once to reduce server load. Alternatively, you may be able to lazily load the resources. To learn more about how and when to fix N+1 API Calls, check out these resources:": [
+    "N+1 API 调用是重复的并发调用以获取资源。这些跨度总是同时开始，可能可以合并以一次性获取所有内容，从而减少服务器负载。或者，您可能可以懒加载资源。要了解更多关于如何以及何时修复 N+1 API 调用的信息，请查看以下资源："
+  ],
+  "Sentry Docs: N+1 API Calls": ["Sentry 文档：N+1 API 调用"],
+  "Area": ["区域"],
+  "gauge": ["仪表盘"],
+  "distribution": ["分布"],
+  "set": ["集合"],
+  "derived": ["派生"],
+  "counter": ["计数器"],
+  "Select a metric to get started": ["选择一个指标开始"],
+  "Metric updated": ["指标已更新"],
+  "An error occurred while updating the metric": ["更新指标时发生错误"],
+  "not extracted": ["未提取"],
+  "extracted": ["已提取"],
+  "On-demand metrics": ["按需指标"],
+  "Render time of the first pixel loaded in the viewport (may overlap with FCP).": [
+    "视口中加载的第一个像素的渲染时间（可能与 FCP 重叠）。"
+  ],
+  "Slow Frames Rate": ["慢帧率"],
+  "Slow Frames Rate is the percentage of frames recorded within a transaction that is considered slow.": [
+    "慢帧率是事务中记录的帧中被认为是慢的帧的百分比。"
+  ],
+  "Frozen Frames Rate": ["冻结帧率"],
+  "Frozen Frames Rate is the percentage of frames recorded within a transaction that is considered frozen.": [
+    "冻结帧率是事务中记录的帧中被认为是冻结的帧的百分比。"
+  ],
+  "Stalls": ["停滞"],
+  "Stalls is the number of times the application stalled within a transaction.": [
+    "停滞是应用在事务中停滞的次数。"
+  ],
+  "Total Stall Time": ["总停滞时间"],
+  "Stall Total Time is the total amount of time the application is stalled within a transaction.": [
+    "总停滞时间是应用在事务中停滞的总时间。"
+  ],
+  "Longest Stall Time": ["最长停滞时间"],
+  "Stall Longest Time is the longest amount of time the application is stalled within a transaction.": [
+    "最长停滞时间是应用在事务中停滞的最长时间。"
+  ],
+  "Stall Percentage": ["停滞百分比"],
+  "Stall Percentage is the percentage of the transaction duration the application was stalled.": [
+    "停滞百分比是事务持续时间中应用停滞的百分比。"
+  ],
+  "Time To Full Display": ["完全显示时间"],
+  "The time between application launch and complete display of all resources and views.": [
+    "从应用启动到所有资源和视图完全显示的时间。"
+  ],
+  "Time To Initial Display": ["初始显示时间"],
+  "The time it takes for an application to produce its first frame.": ["应用生成第一帧所需的时间。"],
+  "First Contentful Paint": ["首次内容绘制"],
+  "Render time of the first image, text or other DOM node in the viewport.": [
+    "视口中第一个图像、文本或其他 DOM 节点的渲染时间。"
+  ],
+  "Largest Contentful Paint": ["最大内容绘制"],
+  "Render time of the largest image, text or other DOM node in the viewport.": [
+    "视口中最大图像、文本或其他 DOM 节点的渲染时间。"
+  ],
+  "First Input Delay": ["首次输入延迟"],
+  "Response time of the browser to a user interaction (clicking, tapping, etc).": [
+    "浏览器对用户交互（点击、轻触等）的响应时间。"
+  ],
+  "Interaction to Next Paint": ["交互到下次绘制"],
+  "The duration of the longest interaction observed, ignoring outliers.": [
+    "观察到的最长交互的持续时间，忽略异常值。"
+  ],
+  "Cumulative Layout Shift": ["累积布局偏移"],
+  "Sum of layout shift scores that measure the visual stability of the page.": [
+    "衡量页面视觉稳定性的布局偏移分数之和。"
+  ],
+  "Time to First Byte": ["首次字节时间"],
+  "The time that it takes for a user's browser to receive the first byte of page content.": [
+    "用户浏览器接收页面内容的首个字节所需的时间。"
+  ],
+  "Captures the time spent making the request and receiving the first byte of the response.": [
+    "捕获发送请求和接收响应的首个字节所花费的时间。"
+  ],
+  "Cold start is a measure of the application start up time from scratch.": [
+    "冷启动是从零开始的应用启动时间的度量。"
+  ],
+  "Warm start is a measure of the application start up time while still in memory.": [
+    "热启动是应用仍在内存中时的启动时间的度量。"
+  ],
+  "Total Frames": ["总帧数"],
+  "Total frames is a count of the number of frames recorded within a transaction.": [
+    "总帧数是事务中记录的帧数。"
+  ],
+  "Slow Frames": ["慢帧"],
+  "Slow frames is a count of the number of slow frames recorded within a transaction.": [
+    "慢帧是事务中记录的慢帧数。"
+  ],
+  "Frozen Frames": ["冻结帧"],
+  "Frozen frames is a count of the number of frozen frames recorded within a transaction.": [
+    "冻结帧是事务中记录的冻结帧数。"
+  ],
+  "Layout": ["布局"],
+  "Paint": ["绘制"],
+  "Script": ["脚本"],
+  "Garbage Collection": ["垃圾回收"],
+  "Style": ["样式"],
+  "<anonymous>": ["匿名"],
+  "[native code]": ["[原生代码]"],
+  "United States of America (US)": ["美国（US）"],
+  "European Union (EU)": ["欧盟（EU）"],
+  "Significant mutations detected [count]. Replay is now stopped to prevent poor performance for your customer. [link]": [
+    "检测到显著的突变 [count]。回放已停止，以防止客户性能不佳。[链接]"
+  ],
+  "Learn more.": ["了解更多。"],
+  "Significant mutations detected [count]. This can slow down the Replay SDK, impacting your customers. [link]": [
+    "检测到显著的突变 [count]。这可能会减慢回放 SDK 的速度，影响您的客户。[链接]"
+  ],
+  "There was a conflict between the server rendered html and the first client render.": [
+    "服务器渲染的 HTML 和首次客户端渲染之间存在冲突。"
+  ],
+  "The user is preoccupied with another browser, tab, or window": ["用户正在使用另一个浏览器、标签页或窗口"],
+  "The user is currently focused on your application,": ["用户当前正在关注您的应用，"],
+  "The user is currently focused on your application": ["用户当前正在关注您的应用"],
+  "The user is preoccupied with another app or activity": ["用户正在使用另一个应用或活动"],
+  "Device connected to wifi": ["设备已连接到 wifi"],
+  "Good [value]ms": ["良好 [value]ms"],
+  "Internet connection was lost": ["互联网连接已丢失"],
+  "Meh [value]ms": ["一般 [value]ms"],
+  "Device connected to cellular network": ["设备已连接到蜂窝网络"],
+  "Poor [value]ms": ["差 [value]ms"],
+  "Device connected to ethernet": ["设备已连接到以太网"],
+  "Device was at [percent]% battery and [charging]": ["设备的电池电量为 [percent]%，并且 [charging]"],
+  "Device orientation was changed to [orientation]": ["设备方向已更改为 [orientation]"],
+  "Click on [selector] did not cause a visible effect within [timeout] ms": [
+    "点击 [selector] 在 [timeout] 毫秒内未产生可见效果"
+  ],
+  "Click on [selector] took [duration] ms to have a visible effect": [
+    "点击 [selector] 在 [duration] 毫秒后才产生可见效果"
+  ],
+  "Rage clicked [clickCount] times on [selector]": ["对 [selector] 愤怒点击了 [clickCount] 次"],
+  "[clickCount] clicks on [selector]": ["对 [selector] 点击了 [clickCount] 次"],
+  "Failed to delete replay": ["删除回放失败"],
+  "Are you sure you want to delete this replay?": ["您确定要删除此回放吗？"],
+  "Deeplink to current timestamp": ["当前时间戳的深度链接"],
+  "Share at": ["分享在"],
+  "Encountered an error while hydrating": ["在水合过程中遇到错误"],
+  "Successfully updated '[projectName]' project": ["成功更新了 '[projectName]' 项目"],
+  "Failed to update '[projectName]' project": ["更新 '[projectName]' 项目失败"],
+  "%s is not a member of the selected projects": ["%s 不是所选项目的成员"],
+  "Disabled Teams": ["已禁用的团队"],
+  "Suggested Values": ["建议的值"],
+  "All Values": ["所有值"],
+  "Your account ([email]) is already a member of this organization. [switchLink:Switch accounts]?": [
+    "您的账户 ([email]) 已经是此组织的成员。[switchLink:切换账户]？"
+  ],
+  "To continue, you must either create a new account, or login to an\n              existing Sentry account.": [
+    "要继续，您必须创建一个新账户，或者登录到一个\n              现有的 Sentry 账户。"
+  ],
+  "Note that [orgSlug] has required Single Sign-On (SSO) using\n               [authProvider]. You may create an account by authenticating with\n               the organization's SSO provider.": [
+    "请注意，[orgSlug] 要求使用\n               [authProvider] 进行单点登录（SSO）。您可以通过使用组织的 SSO 提供者进行身份验证来创建账户。"
+  ],
+  "Note that [orgSlug] has enabled Single Sign-On (SSO) using\n               [authProvider]. You may create an account by authenticating with\n               the organization's SSO provider.": [
+    "请注意，[orgSlug] 已启用使用\n               [authProvider] 的单点登录（SSO）。您可以通过使用组织的 SSO 提供者进行身份验证来创建账户。"
+  ],
+  "Join with %s": ["使用 %s 加入"],
+  "To continue, [orgSlug] requires all members to configure two-factor authentication.": [
+    "要继续，[orgSlug] 要求所有成员配置双因素身份验证。"
+  ],
+  "Configure Two-Factor Auth": ["配置双因素身份验证"],
+  "To continue, [orgSlug] requires all members to verify their email address.": [
+    "要继续，[orgSlug] 要求所有成员验证其电子邮件地址。"
+  ],
+  "Note that [orgSlug] has enabled Single Sign-On (SSO) using\n               [authProvider]. You may join the organization by authenticating with\n               the organization's SSO provider or via your standard account authentication.": [
+    "请注意，[orgSlug] 已启用使用\n               [authProvider] 的单点登录（SSO）。您可以通过使用组织的 SSO 提供者进行身份验证或通过您的标准账户身份验证来加入该组织。"
+  ],
+  "Join the %s organization": ["加入 %s 组织"],
+  "This organization invite link is no longer valid.": ["此组织邀请链接已不再有效。"],
+  "Failed to join this organization. Please try again": ["加入此组织失败。请重试"],
+  "[orgSlug] is using Sentry to track and debug errors.": ["[orgSlug] 使用 Sentry 来跟踪和调试错误。"],
+  "Projects must be transferred to a specific [organization]. You can grant specific teams access to the project later under the [projectSettings]. (Note that granting access to at least one team is necessary for the project to appear in all parts of the UI.)": [
+    "项目必须转移到特定的 [组织]。您可以在 [项目设置] 下稍后授予特定团队对项目的访问权限。（请注意，至少授予一个团队访问权限是必要的，以便项目出现在 UI 的所有部分中。）"
+  ],
+  "Upgrade to Sentry %s": ["升级到 Sentry %s"],
+  "[now] (since [start])": ["[现在]（自 [开始] 起）"],
+  "Configuration [configPath]": ["配置 [configPath]"],
+  "Sentry Admin": ["Sentry 管理员"],
+  "A test email has been sent to %s": ["已向 %s 发送了一封测试邮件"],
+  "Unable to send test email. Check your server logs": ["无法发送测试邮件。请检查您的服务器日志"],
+  "STARTTLS?": ["STARTTLS？"],
+  "SSL?": ["SSL？"],
+  "Admin Overview": ["管理员概览"],
+  "Jobs Started": ["已启动的作业"],
+  "Jobs Finished": ["已完成的作业"],
+  "Global Throughput": ["全局吞吐量"],
+  "Dropped Events": ["已丢弃的事件"],
+  "Performance Issues - Compressed Assets Detector": ["性能问题 - 压缩资源检测器"],
+  "Performance Issues - File IO on Main Thread": ["性能问题 - 主线程上的文件 I/O"],
+  "Performance Issues - Slow DB Span Detector": ["性能问题 - 慢数据库跨度检测器"],
+  "Performance Issues - Large Render Blocking Asset Detector": ["性能问题 - 大型渲染阻塞资源检测器"],
+  "Performance Issues - MN+1 DB Detector": ["性能问题 - MN+1 数据库检测器"],
+  "Performance Issues - Consecutive HTTP Span Detector": ["性能问题 - 连续 HTTP 跨度检测器"],
+  "Performance Issues - Large HTTP Payload Detector": ["性能问题 - 大型 HTTP 负载检测器"],
+  "Profiling Issues - Block Main Thread Detector Ingest": ["性能分析问题 - 阻塞主线程检测器摄取"],
+  "Profiling Issues - Block Main Thread Detector Post Process Group": ["性能分析问题 - 阻塞主线程检测器后期处理组"],
+  "Security & Abuse": ["安全与滥用"],
+  "Performance Issues - All": ["性能问题 - 全部"],
+  "Performance Issues - Detectors": ["性能问题 - 检测器"],
+  "Performance Issues - Consecutive DB Detector": ["性能问题 - 连续数据库检测器"],
+  "Performance Issues - N+1 API Calls Detector": ["性能问题 - N+1 API 调用检测器"],
+  "User account updated.": ["用户账户已更新。"],
+  "Miscellaneous": ["其他"],
+  "N+1 (DB) creation rate": ["N+1（数据库）创建速率"],
+  "Controls the rate at which performance issues are created specifically for N+1 detection. Value of 0 will disable creation, a value of 1.0 fully enables it.": [
+    "控制专门为 N+1 检测创建性能问题的速率。值为 0 将禁用创建，值为 1.0 将完全启用。"
+  ],
+  "N+1 (DB) (Extended) creation rate": ["N+1（数据库）（扩展）创建速率"],
+  "Controls the rate at which performance issues are created specifically for N+1 detection (extended). Value of 0 will disable creation, a value of 1.0 fully enables it.": [
+    "控制专门为 N+1 检测（扩展）创建性能问题的速率。值为 0 将禁用创建，值为 1.0 将完全启用。"
+  ],
+  "N+1 (DB) count threshold": ["N+1（数据库）计数阈值"],
+  "Detector threshold. Controls the number of spans required to trigger performance issues. This affects all organizations system-wide.": [
+    "检测器阈值。控制触发性能问题所需的跨度数。这会影响系统范围内的所有组织。"
+  ],
+  "N+1 (DB) duration threshold": ["N+1（数据库）持续时间阈值"],
+  "Detector threshold. Controls the threshold for the cumulative duration of involved spans required to trigger performance issues. This affects all organizations system-wide.": [
+    "检测器阈值。控制触发性能问题所需的涉及跨度的累计持续时间的阈值。这会影响系统范围内的所有组织。"
+  ],
+  "Problem Creation Rate": ["问题创建速率"],
+  "Controls the overall rate at which performance problems are detected by the Consecutive DB detector.": [
+    "控制连续数据库检测器检测到性能问题的总体速率。"
+  ],
+  "Limited Availability Detection Rate": ["有限可用性检测速率"],
+  "Controls the rate at which performance problems are detected by the Consecutive DB detector for LA organizations.": [
+    "控制连续数据库检测器为 LA 组织检测性能问题的速率。"
+  ],
+  "Early Adopter Detection Rate": ["早期采用者检测速率"],
+  "Controls the rate at which performance problems are detected by the Consecutive DB detector for EA organizations.": [
+    "控制连续数据库检测器为 EA 组织检测性能问题的速率。"
+  ],
+  "General Availability Detection Rate": ["通用可用性检测速率"],
+  "Controls the rate at which performance problems are detected by the Consecutive DB detector for GA organizations.": [
+    "控制连续数据库检测器为 GA 组织检测性能问题的速率。"
+  ],
+  "Controls the overall rate at which performance problems are detected by the N+1 API Calls detector.": [
+    "控制 N+1 API 调用检测器检测性能问题的总体速率。"
+  ],
+  "Controls the rate at which performance problems are detected by the N+1 API Calls detector for LA organizations.": [
+    "控制 N+1 API 调用检测器为 LA 组织检测性能问题的速率。"
+  ],
+  "Controls the rate at which performance problems are detected by the N+1 API Calls detector for EA organizations.": [
+    "控制 N+1 API 调用检测器为 EA 组织检测性能问题的速率。"
+  ],
+  "Controls the rate at which performance problems are detected by the for N+1 API Calls detector for GA organizations.": [
+    "控制 N+1 API 调用检测器为 GA 组织检测性能问题的速率。"
+  ],
+  "Controls the overall rate at which performance problems are detected by the compressed assets detector.": [
+    "控制压缩资源检测器检测性能问题的总体速率。"
+  ],
+  "Controls the rate at which performance problems are detected by the compressed assets detector for LA organizations.": [
+    "控制压缩资源检测器为 LA 组织检测性能问题的速率。"
+  ],
+  "Controls the rate at which performance problems are detected by the compressed assets detector for EA organizations.": [
+    "控制压缩资源检测器为 EA 组织检测性能问题的速率。"
+  ],
+  "Controls the rate at which performance problems are detected by the compressed assets detector for GA organizations.": [
+    "控制压缩资源检测器为 GA 组织检测性能问题的速率。"
+  ]
+}

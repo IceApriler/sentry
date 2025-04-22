@@ -1,0 +1,1116 @@
+{
+  "Receive email notifications about when your code gets deployed. This can be customized in settings.": [
+    "接收有关代码部署时间的电子邮件通知。可以在设置中自定义。"
+  ],
+  "Total Project": [
+    "项目总计"
+  ],
+  "Active Users": [
+    "活跃用户"
+  ],
+  "Active Sessions": [
+    "活跃会话"
+  ],
+  "Build Number": [
+    "构建编号"
+  ],
+  "Semantic Version": [
+    "语义版本"
+  ],
+  "Date Adopted": [
+    "采用日期"
+  ],
+  "Select one environment to use this sort option.": [
+    "选择一个环境以使用此排序选项。"
+  ],
+  "Low Adoption": [
+    "低采用率"
+  ],
+  "This release has a low percentage of sessions compared to other releases in this project. [link:Learn more]": [
+    "与该项目中的其他版本相比，此版本的会话占比很低。[link:了解更多]"
+  ],
+  "This release has a high percentage of sessions compared to other releases in this project. [link:Learn more]": [
+    "与该项目中的其他版本相比，此版本的会话占比很高。[link:了解更多]"
+  ],
+  "This release was previously Adopted, but now has a lower level of sessions compared to other releases in this project. [link:Learn more]": [
+    "此版本之前已被采用，但现在与其他版本相比会话水平较低。[link:了解更多]"
+  ],
+  "During the session an unhandled global error/promise rejection occurred.": [
+    "在会话期间发生了一个未处理的全局错误/承诺拒绝。"
+  ],
+  "Non applicable for Javascript.": [
+    "对 JavaScript 不适用。"
+  ],
+  "No errors were captured during session life-time.": [
+    "在会话期间没有捕获到任何错误。"
+  ],
+  "During the session at least one handled error occurred.": [
+    "在会话期间至少发生了一个已处理的错误。"
+  ],
+  "The application had an unrecoverable error (a panic)": [
+    "应用程序发生了一个不可恢复的错误（恐慌）"
+  ],
+  "Number of users who experienced an unhandled error": [
+    "经历未处理错误的用户数量"
+  ],
+  "An unknown session exit": [
+    "未知的会话退出"
+  ],
+  "Percentage of unique users that experienced an App Not Responding (ANR) error": [
+    "经历应用无响应（ANR）错误的独立用户百分比"
+  ],
+  "Percentage of unique users that experienced an App Not Responding (ANR) error when the app was running in the foreground": [
+    "当应用在前台运行时经历应用无响应（ANR）错误的独立用户百分比"
+  ],
+  "Crashed": [
+    "崩溃"
+  ],
+  "Other Crashed": [
+    "其他崩溃"
+  ],
+  "Other Abnormal": [
+    "其他异常"
+  ],
+  "Other Errored": [
+    "其他错误"
+  ],
+  "Other Healthy": [
+    "其他正常"
+  ],
+  "Other Crash Free Users": [
+    "其他无崩溃用户"
+  ],
+  "Other Crash Free Sessions": [
+    "其他无崩溃会话"
+  ],
+  "Other Releases": [
+    "其他版本"
+  ],
+  "Number of sessions with a crashed state": [
+    "处于崩溃状态的会话数量"
+  ],
+  "Percentage of sessions/users who did not experience a crash.": [
+    "未经历崩溃的会话/用户百分比。"
+  ],
+  "Percentage of unique users with non-crashed sessions": [
+    "非崩溃会话的独立用户百分比"
+  ],
+  "Percentage of non-crashed sessions": [
+    "非崩溃会话的百分比"
+  ],
+  "The percentage of crash free sessions.": [
+    "无崩溃会话的百分比。"
+  ],
+  "Adoption compares the sessions or users of a release with the total sessions or users for this project in the last 24 hours.": [
+    "采用率将版本的会话或用户数量与该项目在过去 24 小时内的总会话或用户数量进行比较。"
+  ],
+  "The process was terminated due to an unhandled exception or a request to the server that ended with an error": [
+    "由于未处理的异常或对服务器的请求以错误结束，进程被终止"
+  ],
+  "An unknown session exit. Like due to loss of power or killed by the operating system": [
+    "未知的会话退出。例如由于断电或被操作系统终止"
+  ],
+  "A session without errors": [
+    "无错误的会话"
+  ],
+  "A session with errors": [
+    "有错误的会话"
+  ],
+  "Not handled by user code": [
+    "未被用户代码处理"
+  ],
+  "The application crashed with a hard crash (eg. segfault)": [
+    "应用程序发生严重崩溃（例如段错误）"
+  ],
+  "The application did not properly end the session, for example, due to force-quit": [
+    "应用程序未正确结束会话，例如由于强制退出"
+  ],
+  "The application exited normally and did not observe any errors": [
+    "应用程序正常退出且未发现任何错误"
+  ],
+  "The application exited normally but observed error events while running": [
+    "应用程序正常退出但在运行期间观察到错误事件"
+  ],
+  "The application crashed with a hard crash": [
+    "应用程序发生严重崩溃"
+  ],
+  "A request that resulted in an unhandled exception and hence a Server Error response": [
+    "导致未处理异常并因此产生服务器错误响应的请求"
+  ],
+  "An unhandled exception that resulted in the application crashing": [
+    "导致应用程序崩溃的未处理异常"
+  ],
+  "An error that resulted in the application crashing": [
+    "导致应用程序崩溃的错误"
+  ],
+  "Create an encrypted backup of your current self-hosted instance": [
+    "创建当前自托管实例的加密备份"
+  ],
+  "You’ll need to have the public key saved in the previous step accessible when you run the following command in your terminal. Make sure your current working directory is the root of your ": [
+    "在终端中运行以下命令时，需要能够访问上一步保存的公钥。确保你的当前工作目录是你的 根目录。"
+  ],
+  "install when you execute it.": [
+    "安装时执行。"
+  ],
+  "Understanding the command:": [
+    "理解命令："
+  ],
+  "The ": [""],
+  "environment variable maps the local directory where you saved your public key in the previous step to a ": [
+    "环境变量将你在上一步保存公钥的本地目录映射到一个 "
+  ],
+  "volume in your Docker container. ": [
+    "Docker 容器中的 卷。"
+  ],
+  "is a script included by default with your ": [
+    "脚本默认包含在你的 "
+  ],
+  "installation which contains a number of administrative tools. One of these is the": [
+    "安装中，其中包含许多管理工具。其中之一是 "
+  ],
+  "command for backing up all Sentry data. ": [
+    "命令，用于备份所有 Sentry 数据。"
+  ],
+  "encrypts the data using our public key, and ": [
+    "使用我们的公钥加密数据，并 "
+  ],
+  "is the name of the output tarball. This is what you'll upload in the next step.": [
+    "是输出 tarball 的名称。这就是你将在下一步上传的内容。"
+  ],
+  "Note: Depending on your system configuration, you may need to use ": [
+    "注意：根据你的系统配置，你可能需要使用 "
+  ],
+  "for this command.": [
+    "来执行此命令。"
+  ],
+  "Promo Code": [
+    "促销代码"
+  ],
+  "promocode": [
+    "促销码"
+  ],
+  "That promotional code has already been claimed, does not have enough remaining uses, is no longer valid, or never existed.": [
+    "该促销代码已被兑换、剩余使用次数不足、已失效或从未存在过。"
+  ],
+  "Basic information needed to get started": [
+    "开始所需的的基本信息"
+  ],
+  "In order to best facilitate the process some basic information will be required to ensure success with the relocation process of you self-hosted instance": [
+    "为了最好地促进该过程，将需要一些基本信息以确保你的自托管实例的迁移过程成功"
+  ],
+  "Organization slugs being relocated": [
+    "正在迁移的组织简短标识"
+  ],
+  "org-slugs": [
+    "组织简短标识"
+  ],
+  "Choose a datacenter location": [
+    "选择数据中心位置"
+  ],
+  "region": [
+    "地区"
+  ],
+  "This is an important decision and cannot be changed.": [
+    "这是一个重要的决定，无法更改。"
+  ],
+  "Choose where to store your organization's data. Please note, you won't be able to change locations once your relocation has been initiated. ": [
+    "选择存储组织数据的位置。请注意，一旦你的迁移开始，将无法更改位置。"
+  ],
+  "Your relocation is under way!": [
+    "你的迁移正在进行中！"
+  ],
+  "Save Sentry's public key to your machine": [
+    "将 Sentry 的公钥保存到你的计算机"
+  ],
+  "To do so, you'll need to save the following public key to a file accessible from wherever your self-hosted repository is currently installed. You'll need to have this public key file available for the next step.": [
+    "为此，你需要将以下公钥保存到一个文件中，该文件可以从你当前安装自托管仓库的位置访问。下一步将需要这个公钥文件。"
+  ],
+  "Failed to load information from server - check your connection?": [
+    "从服务器加载信息失败 - 检查你的连接？"
+  ],
+  "Encrypt backup": [
+    "加密备份"
+  ],
+  "Upload backup": [
+    "上传备份"
+  ],
+  "Your relocation is in progress": [
+    "你的迁移正在进行中"
+  ],
+  "Upload Tarball to begin the relocation process": [
+    "上传 tarball 以开始迁移过程"
+  ],
+  "Nearly done! Just upload your tarball here, and we'll send you an email when everything is ready to go!": [
+    "几乎完成！只需将你的 tarball 上传到这里，我们将在一切准备就绪时给你发送电子邮件！"
+  ],
+  "Remove file": [
+    "删除文件"
+  ],
+  "Start Relocation": [
+    "开始迁移"
+  ],
+  "dropzone": [
+    "放置区"
+  ],
+  "Drag and Drop file here or": [
+    "将文件拖放到这里或"
+  ],
+  "Choose file": [
+    "选择文件"
+  ],
+  "file-upload": [
+    "文件上传"
+  ],
+  "An error has occurred while trying to start relocation job. Please contact support for further assistance.": [
+    "在尝试启动迁移作业时发生了错误。请联系支持团队以获取进一步帮助。"
+  ],
+  "You already have an in-progress relocation job.": [
+    "你已经有一个正在进行中的迁移作业。"
+  ],
+  "We have reached the daily limit of relocations - please try again tomorrow, or contact support.": [
+    "我们已达到每天的迁移限制，请明天再试，或联系支持团队。"
+  ],
+  "Your relocation has started - we'll email you with updates as soon as we have 'em!": [
+    "你的迁移已开始，我们一旦有更新就会给你发送电子邮件！"
+  ],
+  "Top Selectors with Dead Clicks": [
+    "死点击最多的顶级选择器"
+  ],
+  "Top Selectors with Dead and Rage Clicks": [
+    "死点击和愤怒点击最多的顶级选择器"
+  ],
+  "See the top selectors your users have dead and rage clicked on.": [
+    "查看用户死点击和愤怒点击最多的选择器。"
+  ],
+  "Most Dead Clicks": [
+    "最多的死点击"
+  ],
+  "The top selectors your users have dead clicked on (i.e., a user click that does not result in any page activity after 7 seconds).": [
+    "用户死点击最多的选择器（即，用户点击后 7 秒内没有任何页面活动）。"
+  ],
+  "Suggested replays to watch": [
+    "建议观看的回放"
+  ],
+  "Most Rage Clicks": [
+    "最多的愤怒点击"
+  ],
+  "The top selectors your users have rage clicked on (i.e., 5 or more clicks on a dead element, which exhibits no page activity after 7 seconds).": [
+    "用户愤怒点击最多的选择器（即，对一个死元素进行 5 次或更多点击，且 7 秒内没有任何页面活动）。"
+  ],
+  "There were no [type] clicks within this timeframe. Expand your timeframe, or increase your replay sample rate to see more data.": [
+    "在此时间段内没有 [type] 点击。扩展你的时间范围，或增加回放采样率以查看更多数据。"
+  ],
+  "See all selectors": [
+    "查看所有选择器"
+  ],
+  "No replays found": [
+    "未找到回放"
+  ],
+  "No dead or rage clicks found": [
+    "未找到死点击或愤怒点击"
+  ],
+  "There were no dead or rage clicks within this timeframe. Expand your timeframe, or increase your replay sample rate to see more data.": [
+    "在此时间段内没有死点击或愤怒点击。扩展你的时间范围，或增加回放采样率以查看更多数据。"
+  ],
+  "Search for replays with clicks on the element": [
+    "搜索对元素的点击回放"
+  ],
+  "Impact Level": [
+    "影响级别"
+  ],
+  "Search Accessibility Issues": [
+    "搜索无障碍问题"
+  ],
+  "Element": [
+    "元素"
+  ],
+  "Results as of [lastRuntime]": [
+    "截至 [lastRuntime] 的结果"
+  ],
+  "See in replay": [
+    "在回放中查看"
+  ],
+  "Pause and run validation for [now]": [
+    "暂停并为 [now] 运行验证"
+  ],
+  "Run validation for [now]": [
+    "为 [now] 运行验证"
+  ],
+  "toggle section": [
+    "切换部分"
+  ],
+  "DOM Element": [
+    "DOM 元素"
+  ],
+  "Impact": [
+    "影响"
+  ],
+  "Missing details": [
+    "缺少详情"
+  ],
+  "No accessibility problems detected": [
+    "未检测到无障碍问题"
+  ],
+  "Search Breadcrumb Events": [
+    "搜索面包屑事件"
+  ],
+  "No breadcrumbs recorded": [
+    "未记录面包屑"
+  ],
+  "Log Level": [
+    "日志级别"
+  ],
+  "Search Console Logs": [
+    "搜索控制台日志"
+  ],
+  "No console logs recorded": [
+    "未记录控制台日志"
+  ],
+  "Search Errors": [
+    "搜索错误"
+  ],
+  "No errors! Go make some.": [
+    "没有错误！去制造一些吧。"
+  ],
+  "Data is still loading": [
+    "数据仍在加载中"
+  ],
+  "Console": [
+    "控制台"
+  ],
+  "What is accessibility?": [
+    "什么是无障碍？"
+  ],
+  "Accessibility": [
+    "无障碍"
+  ],
+  "Total DOM nodes": [
+    "DOM 节点总数"
+  ],
+  "DOM Nodes added": [
+    "添加的 DOM 节点"
+  ],
+  "DOM Nodes removed": [
+    "移除的 DOM 节点"
+  ],
+  "Hover player time": [
+    "悬停播放时间"
+  ],
+  "Current player time": [
+    "当前播放时间"
+  ],
+  "Date: %s": [
+    "日期：%s"
+  ],
+  "Time within replay: %s": [
+    "回放内的时间：%s"
+  ],
+  "No memory metrics found": [
+    "未找到内存指标"
+  ],
+  "Memory metrics are only captured within Chromium based browser sessions.": [
+    "内存指标仅在基于 Chromium 的浏览器会话中捕获。"
+  ],
+  "Heap Size": [
+    "堆大小"
+  ],
+  "DOM Nodes": [
+    "DOM 节点"
+  ],
+  "Used Heap Memory": [
+    "已用堆内存"
+  ],
+  "Truncated (~~) due to exceeding 150k characters": [
+    "因超过 150k 字符而截断（~~）"
+  ],
+  "Invalid JSON": [
+    "无效的 JSON"
+  ],
+  "It is possible the network transfer size is smaller due to compression.": [
+    "由于压缩，网络传输大小可能更小。"
+  ],
+  "Capture Request and Response Headers and Bodies": [
+    "捕获请求和响应的标头和正文"
+  ],
+  "Capture Request and Response Headers": [
+    "捕获请求和响应的标头"
+  ],
+  "Capture Request and Response Bodies": [
+    "捕获请求和响应的正文"
+  ],
+  "To protect user privacy, Session Replay defaults to not capturing the request or response headers. However, we provide the option to do so, if it’s critical to your debugging process. [link].": [
+    "为了保护用户隐私，会话回放默认不捕获请求或响应标头。但是，如果你的调试过程需要，我们提供了这样做的选项。[链接]。"
+  ],
+  "Add the following to your [field] list to start capturing data: [alert] ": [
+    "将以下内容添加到你的 [field] 列表中以开始捕获数据：[警告] "
+  ],
+  "Enable [field] to capture both Request and Response bodies.": [
+    "启用 [field] 以捕获请求和响应正文。"
+  ],
+  "Prerequisites": [
+    "先决条件"
+  ],
+  "Update your SDK version to >= [minVersion]": [
+    "将你的 SDK 版本更新到 >= [minVersion]"
+  ],
+  "Edit the Replay integration configuration to allow this URL.": [
+    "编辑回放集成配置以允许此 URL。"
+  ],
+  "That’s it!": [
+    "就这些！"
+  ],
+  "This feature is only compatible with [fetch] and [xhr] request types. [link].": [
+    "此功能仅与 [fetch] 和 [xhr] 请求类型兼容。[链接]。"
+  ],
+  "You can capture additional headers by adding them to the [requestConfig] and [responseConfig] lists in your SDK config.": [
+    "你可以在 SDK 配置的 [requestConfig] 和 [responseConfig] 列表中添加更多标头以捕获它们。"
+  ],
+  "The content-type of the request does not match the response.": [
+    "请求的内容类型与响应不匹配。"
+  ],
+  "Response Headers": [
+    "响应标头"
+  ],
+  "Headers not captured": [
+    "未捕获的标头"
+  ],
+  "Query String Parameters": [
+    "查询字符串参数"
+  ],
+  "Request Body": [
+    "请求正文"
+  ],
+  "Size:": [
+    "大小："
+  ],
+  "Request body not found.": [
+    "未找到请求正文。"
+  ],
+  "Response Body": [
+    "响应正文"
+  ],
+  "Response body not found.": [
+    "未找到响应正文。"
+  ],
+  "Request Body Size": [
+    "请求正文大小"
+  ],
+  "Response Body Size": [
+    "响应正文大小"
+  ],
+  "Missing request details": [
+    "缺少请求详情"
+  ],
+  "Request Headers": [
+    "请求标头"
+  ],
+  "No network requests recorded": [
+    "未记录网络请求"
+  ],
+  "Search Network Requests": [
+    "搜索网络请求"
+  ],
+  "If the status is [zero], the resource might be a cross-origin request.[linebreak][linebreak]Configure the server to respond with the CORS header [header] to see the actual response codes. [mozilla].": [
+    "如果状态是 [zero]，该资源可能是一个跨源请求。[换行][换行]配置服务器以使用 CORS 标头 [header] 响应，以查看实际的响应代码。[mozilla]。"
+  ],
+  "The number used for fetch/xhr is the response body size. It is possible the network transfer size is smaller due to compression.": [
+    "用于 fetch/xhr 的数字是响应正文大小。由于压缩，网络传输大小可能更小。"
+  ],
+  "Clear filters": [
+    "清除过滤器"
+  ],
+  "No tags for this replay were found.": [
+    "未找到此回放的标签。"
+  ],
+  "Performance Monitoring": [
+    "性能监控"
+  ],
+  "Requires performance monitoring.": [
+    "需要性能监控。"
+  ],
+  "Unable to retrieve traces": [
+    "无法检索追踪"
+  ],
+  "No traces found": [
+    "未找到追踪"
+  ],
+  "This replay has been deleted.": [
+    "此回放已被删除。"
+  ],
+  "The replay is still processing": [
+    "回放仍在处理中"
+  ],
+  "The replay has been deleted by a member in your organization": [
+    "回放已被组织中的成员删除"
+  ],
+  "There is an internal systems error": [
+    "存在内部系统错误"
+  ],
+  "There was an error while fetching this Replay": [
+    "获取此回放时出错"
+  ],
+  "This could be due to these reasons:": [
+    "这可能是由于以下原因："
+  ],
+  "A view of available video-like reproductions of user sessions so you can visualize repro steps to debug issues faster.": [
+    "提供用户会话的视频样回放视图，以便你可以直观地看到重现步骤，从而更快地调试问题。"
+  ],
+  "Hide Widgets": [
+    "隐藏小部件"
+  ],
+  "Show Widgets": [
+    "显示小部件"
+  ],
+  "Can I use Session Replay with my app?": [
+    "我可以在我的应用中使用会话回放吗？"
+  ],
+  "Session Replay supports all browser-based applications and certain native mobile platforms, such as Android, iOS, and React Native. Our mobile SDKs are currently in beta. Features are still in progress and may have some bugs. We recognize the irony.": [
+    "会话回放支持所有基于浏览器的应用程序和某些原生移动平台，如 Android、iOS 和 React Native。我们的移动 SDK 目前处于测试阶段。功能仍在开发中，可能有一些错误。我们意识到这种讽刺。"
+  ],
+  "For browser-based applications, this includes static websites, single-page applications, and also server-side rendered applications. The only prerequisite is that your application uses Sentry JavaScript SDK (version 7.2.0 or greater) either with NPM/Yarn or with our JS Loader script.": [
+    "对于基于浏览器的应用程序，这包括静态网站、单页应用程序以及服务器端渲染的应用程序。唯一的先决条件是你的应用程序使用了 Sentry JavaScript SDK（版本 7.2.0 或更高），可以通过 NPM/Yarn 或我们的 JS 加载器脚本使用。"
+  ],
+  "To learn more about which SDKs we support, please visit [link:our docs].": [
+    "要了解更多关于我们支持的 SDK，请访问 [链接：我们的文档]。"
+  ],
+  "What’s the performance overhead?": [
+    "性能开销是多少？"
+  ],
+  "Session Replay adds a small amount of performance overhead to your web or mobile application. For most applications, the performance overhead of our client SDK will be imperceptible to end-users. For example, the Sentry site has Replay enabled and we have not seen any significant slowdowns.": [
+    "会话回放会为你的 web 或移动应用增加少量性能开销。对于大多数应用，我们的客户端 SDK 的性能开销对于最终用户来说是难以察觉的。例如，Sentry 网站已启用回放，我们没有看到任何明显的 slowdowns。"
+  ],
+  "For web, the performance overhead generally scales linearly with the DOM complexity of your application. The more DOM state changes that occur in the application lifecycle, the more events that are captured, transmitted, etc.": [
+    "对于 web，性能开销通常与你的应用的 DOM 复杂性成线性增长。在应用生命周期中发生的 DOM 状态变化越多，捕获、传输等的事件就越多。"
+  ],
+  "With early customers of Mobile Replay, the overhead was not noticeable by end-users, but depending on your application complexity, you may discover the recording overhead may negatively impact your mobile application performance. If you do, please let us know on GitHub: [android:Android], [ios:iOS], and [rn:React Native].": [
+    "对于 Mobile Replay 的早期客户，开销对于最终用户来说并不明显，但根据你的应用复杂性，你可能会发现录制开销可能会对你的移动应用性能产生负面影响。如果你发现了，請在 GitHub 上告诉我们：[android:Android]、[ios:iOS] 和 [rn:React Native]。"
+  ],
+  "To learn more about how we’ve optimized our SDK, please visit [link:our docs].": [
+    "要了解更多关于我们如何优化 SDK，请访问 [链接：我们的文档]。"
+  ],
+  "How do you protect user data?": [
+    "你们如何保护用户数据？"
+  ],
+  "We offer a range of privacy controls to let developers ensure that no sensitive user information leaves the browser. By default, our privacy configuration is very aggressive and masks all text and images, but you can choose to just mask user input text, for example.": [
+    "我们提供了一系列隐私控制，让开发者确保没有敏感用户信息离开浏览器。默认情况下，我们的隐私配置非常严格，会掩盖所有文本和图像，但你可以选择只掩盖用户输入文本，例如。"
+  ],
+  "To learn more about how we protect user privacy, please visit [link:our docs].": [
+    "要了解更多关于我们如何保护用户隐私，请访问 [链接：我们的文档]。"
+  ],
+  "Select a supported project from the projects dropdown.": [
+    "从项目下拉列表中选择一个支持的项目。"
+  ],
+  "Set Up Replays": [
+    "设置回放"
+  ],
+  "Get to the root cause faster": [
+    "更快找到根本原因"
+  ],
+  "See a video-like reproduction of your user sessions so you can see what happened before, during, and after an error or latency issue occurred.": [
+    "查看用户会话的视频样回放，以便你可以看到错误或延迟问题发生之前、期间和之后发生了什么。"
+  ],
+  "FAQ": [
+    "常见问题"
+  ],
+  "See a [link:full list of FAQs].": [
+    "查看 [链接：常见问题完整列表]。"
+  ],
+  "Search for users, duration, clicked elements, count_errors, and more": [
+    "搜索用户、时长、点击元素、错误计数等"
+  ],
+  "Search by click selector. (Requires SDK version >= 7.44.0)": [
+    "按点击选择器搜索。（需要 SDK 版本 >= 7.44.0）"
+  ],
+  "Unindexed search field": [
+    "未索引的搜索字段"
+  ],
+  "Field [field] requires an [sdkPrompt]": [
+    "字段 [field] 需要 [sdkPrompt]"
+  ],
+  "SDK version >= 7.44.0": [
+    "SDK 版本 >= 7.44.0"
+  ],
+  "Activity represents how much user activity happened in a replay. It is determined by the number of errors encountered, duration, and UI events.": [
+    "活动表示回放中发生的用户活动量。它由遇到的错误数量、时长和 UI 事件决定。"
+  ],
+  "Dead clicks": [
+    "死点击"
+  ],
+  "A dead click is a user click that does not result in any page activity after 7 seconds. Requires SDK version >= [minSDK]. [link:Learn more.]": [
+    "死点击是指用户点击后 7 秒内没有任何页面活动。需要 SDK 版本 >= [minSDK]。[链接：了解更多。]"
+  ],
+  "Rage clicks": [
+    "愤怒点击"
+  ],
+  "A rage click is 5 or more clicks on a dead element, which exhibits no page activity after 7 seconds. Requires SDK version >= [minSDK]. [link:Learn more.]": [
+    "愤怒点击是指对一个死元素进行 5 次或更多点击，且 7 秒内没有任何页面活动。需要 SDK 版本 >= [minSDK]。[链接：了解更多。]"
+  ],
+  "Slowest Transaction": [
+    "最慢的事务"
+  ],
+  "Slowest single instance of this transaction captured by this session.": [
+    "此会话捕获的此事务的最慢单个实例。"
+  ],
+  "Sorry, the list of replays could not be loaded. This could be due to invalid search parameters or an internal systems error.": [
+    "抱歉，无法加载回放列表。这可能是由于无效的搜索参数或内部系统错误。"
+  ],
+  "[type] version: [version]": [
+    "[type] 版本：[version]"
+  ],
+  "Deleted Replay": [
+    "已删除的回放"
+  ],
+  "[type] name: [name]": [
+    "[type] 名称：[name]"
+  ],
+  "Selectors": [
+    "选择器"
+  ],
+  "If you're daring, you may want to try the following:": [
+    "如果你很大胆，你可以尝试以下内容："
+  ],
+  "We detected something AdBlock-like. Try disabling it, as it's known to cause issues.": [
+    "我们检测到类似 AdBlock 的东西。尝试禁用它，因为它已知会引起问题。"
+  ],
+  "Give it a few seconds and [link:reload the page].": [
+    "等几秒钟然后 [链接：重新加载页面]。"
+  ],
+  "If all else fails, [link:contact us] with more details.": [
+    "如果所有方法都失败，请 [链接：联系我们] 并提供详细信息。"
+  ],
+  "Oops! Something went wrong": [
+    "哎呀！出错了"
+  ],
+  "\n          It looks like you've hit an issue in our client application. Don't worry though!\n          We use Sentry to monitor Sentry and it's likely we're already looking into this!\n          ": [
+    "\n          看起来你在我们的客户端应用中遇到了问题。不过别担心！\n          我们使用 Sentry 监控 Sentry，很可能我们已经在调查这个问题了！\n          "
+  ],
+  "You do not have permission to install integrations in\n        [organization]. Ask an organization owner or manager to\n        visit this page to finish installing this integration.": [
+    "你没有权限在\n        [organization] 中安装集成。请让组织所有者或管理员\n        访问此页面以完成集成安装。"
+  ],
+  "Integration [sentryAppName] already installed for [organization]": [
+    "集成 [sentryAppName] 已为 [organization] 安装"
+  ],
+  "Integration [sentryAppName] is an unpublished integration for [otherOrg]. An unpublished integration can only be installed on the organization which created it.": [
+    "集成 [sentryAppName] 是为 [otherOrg] 创建的未发布集成。未发布的集成只能安装在创建它的组织上。"
+  ],
+  "You are installing [sentryAppName] for organization [organization]": [
+    "你正在为组织 [organization] 安装 [sentryAppName]"
+  ],
+  "Please pick a specific [organization:organization] to install [sentryAppName]": [
+    "请选择一个特定的 [organization:organization] 来安装 [sentryAppName]"
+  ],
+  "This will permanently remove all associated data for your user. Any specified organizations will also be deleted.": [
+    "这将永久删除你用户的所有相关数据。任何指定的组织也将被删除。"
+  ],
+  "Delete the following organizations": [
+    "删除以下组织"
+  ],
+  "ORGANIZATIONS WITH CHECKED BOXES WILL BE DELETED!": [
+    "选中复选框的组织将被删除！"
+  ],
+  "Ownership will remain with other organization owners if an organization is not deleted.": [
+    "如果组织未被删除，所有权将保留在其他组织所有者手中。"
+  ],
+  "Boxes which can't be unchecked mean that you are the only organization owner and the organization will be deleted.": [
+    "无法取消选中的复选框表示你是唯一的组织所有者，组织将被删除。"
+  ],
+  "User ID": [
+    "用户 ID"
+  ],
+  "Remove email": [
+    "移除电子邮件"
+  ],
+  "Application Identities": [
+    "应用程序身份"
+  ],
+  "There are no application identities associated with your Sentry account": [
+    "没有与你的 Sentry 账户关联的应用程序身份"
+  ],
+  "Organization Identities": [
+    "组织身份"
+  ],
+  "There are no organization identities associated with your Sentry account": [
+    "没有与你的 Sentry 账户关联的组织身份"
+  ],
+  "Legacy": [
+    "传统"
+  ],
+  "Disconnect Your [provider] Identity?": [
+    "断开你的 [provider] 身份？"
+  ],
+  "After disconnecting, you will need to use a password or another identity to sign in.": [
+    "断开连接后，你需要使用密码或其他身份登录。"
+  ],
+  "You need this identity to sign into your account. If you want to disconnect it, set a password first.": [
+    "你需要这个身份登录你的账户。如果你想断开它，请先设置密码。"
+  ],
+  "You need this identity to access your organization.": [
+    "你需要这个身份访问你的组织。"
+  ],
+  "Spend Notifications": [
+    "支出通知"
+  ],
+  "Control the notifications you receive for organization spend.": [
+    "控制你接收的组织支出通知。"
+  ],
+  "Device was renamed": [
+    "设备已重命名"
+  ],
+  "Error renaming the device": [
+    "重命名设备出错"
+  ],
+  "Authenticator": [
+    "认证器"
+  ],
+  "Verifying OTP...": [
+    "正在验证 OTP..."
+  ],
+  "Authentication Method Inactive": [
+    "身份验证方法已停用"
+  ],
+  "Authentication Method Active": [
+    "身份验证方法已启用"
+  ],
+  "Enrollment QR Code": [
+    "注册 QR 码"
+  ],
+  "Authenticator secret": [
+    "认证器密钥"
+  ],
+  "You have been invited to an organization that requires [link:two-factor authentication]. Setup two-factor authentication below to join your organization.": [
+    "你已被邀请到一个需要 [链接：双因素认证] 的组织。在下方设置双因素认证以加入你的组织。"
+  ],
+  "Rename Device": [
+    "重命名设备"
+  ],
+  "Are you sure you want to remove the U2F device \"%s\"?": [
+    "你确定要移除 U2F 设备 \"%s\" 吗？"
+  ],
+  "Two-factor authentication is required for organization(s): %s.": [
+    "组织（%s）需要双因素认证。"
+  ],
+  "There was a problem closing all sessions": [
+    "关闭所有会话时出现问题"
+  ],
+  "[email] on [date]": [
+    "[email] 在 [date]"
+  ],
+  "Not currently subscribed": [
+    "目前未订阅"
+  ],
+  "We’re applying GDPR consent and privacy policies to all Sentry\n              contacts, regardless of location. You’ll be able to manage your\n              subscriptions here and from an Unsubscribe link in the footer of\n              all marketing emails.": [
+    "我们正在将 GDPR 同意和隐私政策应用于所有 Sentry\n              联系人，无论其位置如何。你将能够在此处管理你的\n              订阅，也可以通过所有营销电子邮件底部的退订链接进行管理。"
+  ],
+  "Please contact [email:learn@sentry.io] with any questions or suggestions.": [
+    "请通过 [电子邮件：learn@sentry.io] 提出任何问题或建议。"
+  ],
+  "Sentry is committed to respecting your inbox. Our goal is to\n              provide useful content and resources that make fixing errors less\n              painful. Enjoyable even.": [
+    "Sentry 致力于尊重你的收件箱。我们的目标是提供有用的内容和资源，使修复错误变得不那么痛苦。甚至令人愉快。"
+  ],
+  "As part of our compliance with the EU’s General Data Protection\n              Regulation (GDPR), starting on 25 May 2018, we’ll only email you\n              according to the marketing categories to which you’ve explicitly\n              opted-in.": [
+    "作为我们遵守欧盟通用数据保护条例（GDPR）的一部分，从 2018 年 5 月 25 日开始，我们只会根据你明确选择加入的营销类别向你发送电子邮件。"
+  ],
+  "Subscriptions for %s": [
+    "%s 的订阅"
+  ],
+  "Your new Client Secret": [
+    "你的新客户端密钥"
+  ],
+  "This will be the only time your client secret is visible!": [
+    "这将是你唯一能看到你的客户端密钥的机会！"
+  ],
+  "new-client-secret": [
+    "新客户端密钥"
+  ],
+  "Error rotating secret": [
+    "轮换密钥出错"
+  ],
+  "hidden": [
+    "隐藏"
+  ],
+  "Are you sure you want to rotate the client secret? The current one will not be usable anymore, and this cannot be undone.": [
+    "你确定要轮换客户端密钥吗？当前密钥将不再可用，且此操作无法撤销。"
+  ],
+  "Create User Auth Token": [
+    "创建用户认证令牌"
+  ],
+  "Create New User Auth Token": [
+    "创建新的用户认证令牌"
+  ],
+  "A name to help you identify this token.": [
+    "一个帮助你识别此令牌的名称。"
+  ],
+  "User Auth Token Details": [
+    "用户认证令牌详情"
+  ],
+  "Failed to load user auth token.": [
+    "加载用户认证令牌失败。"
+  ],
+  "Updated user auth token.": [
+    "已更新用户认证令牌。"
+  ],
+  "Failed to update the user auth token.": [
+    "更新用户认证令牌失败。"
+  ],
+  "You can only view the token once after creation.": [
+    "你只能在创建后查看一次令牌。"
+  ],
+  "You cannot change the scopes of an existing token.": [
+    "你无法更改现有令牌的范围。"
+  ],
+  "Are you sure you want to revoke %s token? It will not be usable anymore, and this cannot be undone.": [
+    "你确定要撤销 %s 令牌吗？它将不再可用，且此操作无法撤销。"
+  ],
+  "Token preview": [
+    "令牌预览"
+  ],
+  "WARNING! This is permanent and cannot be undone, are you really sure you want to do this?": [
+    "警告！这是永久的且无法撤销，你真的确定要这样做吗？"
+  ],
+  "Change Sentry marketing subscriptions you are subscribed to (GDPR)": [
+    "更改你订阅的 Sentry 营销订阅（GDPR）"
+  ],
+  "Turning this off will irreversibly overwrite all of your fine-tuning settings to \"off\".": [
+    "关闭此选项将不可逆地将所有你的微调设置重写为“关闭”。"
+  ],
+  "Issue Alert Notifications": [
+    "问题警报通知"
+  ],
+  "Notifications from Alert Rules that your team has setup. You'll always receive notifications from Alerts configured to be sent directly to you.": [
+    "来自你的团队设置的警报规则的通知。你将始终收到来自配置为直接发送给你的警报的通知。"
+  ],
+  "Nudges": [
+    "提示"
+  ],
+  "Notifications that require review or approval.": [
+    "需要审核或批准的通知。"
+  ],
+  "Quota Notifications": [
+    "配额通知"
+  ],
+  "Control the notifications you receive for error, transaction, and attachment quota limits.": [
+    "控制你接收的错误、事务和附件配额限制通知。"
+  ],
+  "Spike Protection Notifications": [
+    "激增保护通知"
+  ],
+  "Notifications about spikes on projects that you have enabled spike protection for.": [
+    "关于你已启用激增保护的项目的激增通知。"
+  ],
+  "Broken Monitors": [
+    "故障监控"
+  ],
+  "Notifications for monitors that have been in a failing state for a prolonged period of time": [
+    "对于长时间处于故障状态的监控的通知"
+  ],
+  "Set Quota Limit": [
+    "设置配额限制"
+  ],
+  "Receive notifications when your organization exceeds the following limits.": [
+    "当你的组织超过以下限制时接收通知。"
+  ],
+  "100% and 80%": [
+    "100% 和 80%"
+  ],
+  "100%": [
+    "100%"
+  ],
+  "Issue Alerts": [
+    "问题警报"
+  ],
+  "Receive notifications about your error quotas. [learnMore:Learn more]": [
+    "接收关于你的错误配额的通知。[了解更多：了解更多]"
+  ],
+  "Receive notifications about your transaction quota. [learnMore:Learn more]": [
+    "接收关于你的事务配额的通知。[了解更多：了解更多]"
+  ],
+  "Receive notifications about your spans quotas. [learnMore:Learn more]": [
+    "接收关于你的跨度配额的通知。[了解更多：了解更多]"
+  ],
+  "Notifications sent from Alert rules that your team has set up.": [
+    "来自你的团队设置的警报规则的通知。"
+  ],
+  "Receive notifications about your replay quotas. [learnMore:Learn more]": [
+    "接收关于你的回放配额的通知。[了解更多：了解更多]"
+  ],
+  "Receive notifications about your attachment quota. [learnMore:Learn more]": [
+    "接收关于你的附件配额的通知。[了解更多：了解更多]"
+  ],
+  "Receive notifications about your cron monitor quotas. [learnMore:Learn more]": [
+    "接收关于你的 cron 监控配额的通知。[了解更多：了解更多]"
+  ],
+  "Spend Allocations": [
+    "支出分配"
+  ],
+  "Receive notifications about your spend allocations.": [
+    "接收关于你的支出分配的通知。"
+  ],
+  "Receive notifications when your spend crosses predefined or custom thresholds. [learnMore:Learn more]": [
+    "当你的支出超过预定义或自定义阈值时接收通知。[了解更多：了解更多]"
+  ],
+  "Issue Workflow": [
+    "问题工作流程"
+  ],
+  "Only Subscribed Issues": [
+    "仅已订阅的问题"
+  ],
+  "Changes in issue assignment, resolution status, and comments.": [
+    "问题分配、解决状态和评论的更改。"
+  ],
+  "Releases with My Commits": [
+    "包含我的提交的版本"
+  ],
+  "Release, environment, and commit overviews.": [
+    "版本、环境和提交概览。"
+  ],
+  "Delivery Method": [
+    "传递方式"
+  ],
+  "Where personal notifications will be sent.": [
+    "个人通知将发送到的位置。"
+  ],
+  "Quota": [
+    "配额"
+  ],
+  "Error, transaction, replay, attachment, and cron monitor quota limits.": [
+    "错误、事务、回放、附件和 cron 监控配额限制。"
+  ],
+  "A summary of the past week for an organization.": [
+    "组织的过去一周总结。"
+  ],
+  "Change the email address that receives notifications.": [
+    "更改接收通知的电子邮件地址。"
+  ],
+  "Spike Protection": [
+    "激增保护"
+  ],
+  "Notifications about spikes on a per project basis.": [
+    "按项目的通知激增。"
+  ],
+  "My Own Activity": [
+    "我自己的活动"
+  ],
+  "Notifications about your own actions on Sentry.": [
+    "关于你在 Sentry 上的个人操作的通知。"
+  ],
+  "Resolve and Auto-Assign": [
+    "解决并自动分配"
+  ],
+  "When you resolve an unassigned issue, we'll auto-assign it to you.": [
+    "当你解决一个未分配的问题时，我们将自动将其分配给你。"
+  ],
+  "Spend": [
+    "支出"
+  ],
+  "Notifications that help avoid surprise invoices.": [
+    "帮助避免意外发票的通知。"
+  ],
+  "Personal notifications sent by email or an integration.": [
+    "通过电子邮件或集成发送的个人通知。"
+  ],
+  "Value…": [
+    "值…"
+  ],
+  "Settings for Organizations": [
+    "组织设置"
+  ],
+  "Project…": [
+    "项目…"
+  ],
+  "Sentry Organization…": [
+    "Sentry 组织…"
+  ],
+  "Add override": [
+    "添加覆盖"
+  ],
+  "This is the default for all projects.": [
+    "这是所有项目的默认设置。"
+  ],
+  "This is the default for all organizations.": [
+    "这是所有组织的默认设置。"
+  ],
+  "Updated notification setting": [
+    "已更新通知设置"
+  ],
+  "Unable to update notification setting": [
+    "无法更新通知设置"
+  ],
+  "All Organizations": [
+    "所有组织"
+  ],
+  "Settings for Organization": [
+    "组织设置"
+  ],
+  "You've selected Slack as your delivery method, but do not have a linked account for the following organizations. You'll receive email notifications instead until you type \"/sentry link\" into your Slack workspace to link your account. If slash commands are not working, please re-install the Slack integration.": [
+    "你已选择 Slack 作为传递方式，但以下组织没有关联的账户。在你输入 \"/sentry link\" 到你的 Slack 工作区以关联你的账户之前，你将接收电子邮件通知。如果斜杠命令不起作用，请重新安装 Slack 集成。"
+  ],
+  "An unknown error occurred while deleting data scrubbing rule": [
+    "删除数据清理规则时发生未知错误"
+  ],
+  "Advanced Data Scrubbing": [
+    "高级数据清理"
+  ],
+  "The new rules will only apply to upcoming events. For more details, see [linkToDocs].": [
+    "新规则仅适用于即将发生的事件。更多详细信息，请参阅 [linkToDocs]。"
+  ],
+  "full documentation on data scrubbing": [
+    "数据清理的完整文档"
+  ],
+  "You have no data scrubbing rules": [
+    "你没有数据清理规则"
+  ],
+  "Successfully updated data scrubbing rule": [
+    "成功更新数据清理规则"
+  ],
+  "Unable to load data scrubbing rules": [
+    "无法加载数据清理规则"
+  ],
+  "Successfully added data scrubbing rule": [
+    "成功添加数据清理规则"
+  ],
+  "Successfully deleted data scrubbing rule": [
+    "成功删除数据清理规则"
+  ],
+  "Add an advanced data scrubbing rule": [
+    "添加一个高级数据清理规则"
+  ],
+  "Edit an advanced data scrubbing rule": [
+    "编辑一个高级数据清理规则"
+  ],
+  "Event ID (Optional)": [
+    "事件 ID（可选）"
+  ],
+  "Providing an event ID will automatically provide you a list of suggested sources": [
+    "提供事件 ID 将自动为你提供建议来源列表"
+  ],
+  "XXXXXXXXXXXXXX": [
+    "XXXXXXXXXXXXXX"
+  ],
+  "This event ID is invalid": [
+    "此事件 ID 无效"
+  ],
+  "An error occurred while fetching the suggestions based on this event ID": [
+    "根据此事件 ID 获取建议时发生错误"
+  ],
+  "The chosen event ID was not found in projects you have access to": [
+    "在你有权访问的项目中未找到所选的事件 ID"
+  ],
+  "Clear event ID": [
+    "清除事件 ID"
+  ],
+  "What to do": [
+    "做什么"
+  ],
+  "Select method": [
+    "选择方法"
+  ],
+  "Custom Placeholder (Optional)": [
+    "自定义占位符（可选）"
+  ],
+  "It will replace the default placeholder [Filtered]": [
+    "它将替换默认占位符 [已过滤]"
+  ],
+  "What to look for. Use an existing pattern or define your own using regular expressions.": [
+    "要寻找什么。使用现有模式或使用正则表达式定义你自己的模式。"
+  ]
+}

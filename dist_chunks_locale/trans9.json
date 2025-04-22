@@ -1,0 +1,670 @@
+{
+  "%s error issue": ["%s 错误问题"],
+  "%s error issues": ["%s 错误问题"],
+  "%s performance issue": ["%s 性能问题"],
+  "%s performance issues": ["%s 性能问题"],
+  "Start Timestamp": ["开始时间戳"],
+  "Total Duration": ["总持续时间"],
+  "Profiled Transaction": ["已分析事务"],
+  "Drawer left": ["左侧抽屉"],
+  "Drawer bottom": ["底侧抽屉"],
+  "Drawer right": ["右侧抽屉"],
+  "Minimize": ["最小化"],
+  "Trace View": ["跟踪视图"],
+  "Asset Summary": ["资源摘要"],
+  "Page Overview": ["页面概览"],
+  "Search in trace": ["在跟踪中搜索"],
+  "Trace Shortcuts": ["跟踪快捷键"],
+  "Navigate up or down": ["向上或向下导航"],
+  "Collapse or expand": ["折叠或展开"],
+  "Shift": ["Shift"],
+  "Jump to first/last element": ["跳转到第一个/最后一个元素"],
+  "Cmd / Ctrl + Scroll": ["Cmd / Ctrl + 滚动"],
+  "Zoom in/out at cursor": ["在光标处缩放"],
+  "Shift + Scroll": ["Shift + 滚动"],
+  "Scroll horizontally": ["水平滚动"],
+  "Double click": ["双击"],
+  "Zoom to fill": ["缩放以填满"],
+  "Shortcuts": ["快捷键"],
+  "Sentry cant fix this": ["Sentry 无法修复此问题"],
+  "You've exceeded your [billingInterval] [billingType]": ["您已超出 [billingInterval] [billingType]"],
+  "pay-as-you-go budget": ["按使用付费预算"],
+  "quota": ["配额"],
+  "Increase Budget": ["增加预算"],
+  "Increase Volumes": ["增加容量"],
+  "Spans are being dropped and monitoring is impacted. To start seeing traces with spans, increase your [billingType].": [
+    "跨度正在被丢弃，监控受到影响。要开始查看带有跨度的跟踪，请增加您的 [billingType]。"
+  ],
+  "budget": ["预算"],
+  "Some of the projects associated with this trace aren't set up for tracing so you're only getting a partial trace view. To learn how to enable tracing for all your projects, visit our [documentation].": [
+    "与此跟踪相关的某些项目未设置跟踪，因此您只能看到部分跟踪视图。要了解如何为所有项目启用跟踪，请访问我们的 [documentation]。"
+  ],
+  "documentation": ["文档"],
+  "Your setup is incomplete": ["您的设置不完整"],
+  "Want to know why this string of errors happened? Configure tracing for your SDKs to see correlated events across your services.": [
+    "想知道这一串错误发生的原因吗？配置 SDK 的跟踪以查看跨服务的相关事件。"
+  ],
+  "Start Checklist": ["开始检查列表"],
+  "A root transaction is missing. Transactions linked by a dashed line have been orphaned and cannot be directly linked to the root.": [
+    "缺少根事务。用虚线链接的事务已被孤立，无法直接链接到根。"
+  ],
+  "This trace has broken subtraces. Transactions linked by a dashed line have been orphaned and cannot be directly linked to the root.": [
+    "此跟踪有损坏的子跟踪。用虚线链接的事务已被孤立，无法直接链接到根。"
+  ],
+  "Multiple root transactions have been found with this trace ID.": ["与此跟踪 ID 找到了多个根事务。"],
+  "Start Setup": ["开始设置"],
+  "Pinpoint problems": ["精确定位问题"],
+  "Something seem slow? Track down transactions to connect the dots between 10-second page loads and poor-performing API calls or slow database queries.": [
+    "感觉有点慢吗？跟踪事务以连接 10 秒页面加载与性能不佳的 API 调用或慢数据库查询之间的点。"
+  ],
+  "View Sample Transaction": ["查看示例事务"],
+  "Take a Tour": ["参加导览"],
+  "Track Application Metrics": ["跟踪应用程序指标"],
+  "Monitor your slowest pageloads and APIs to see which users are having the worst time.": [
+    "监控最慢的页面加载和 API，以查看哪些用户遇到了最糟糕的体验。"
+  ],
+  "Correlate Errors and Traces": ["关联错误和跟踪"],
+  "See what errors occurred within a transaction and the impact of those errors.": [
+    "查看在事务中发生的错误及其影响。"
+  ],
+  "Watch and Alert": ["监控和警报"],
+  "Highlight mission-critical pages and APIs and set latency alerts to notify you before things go wrong.": [
+    "突出显示关键页面和 API，并设置延迟警报以便在出现问题前通知您。"
+  ],
+  "Trace Across Systems": ["跨系统跟踪"],
+  "Follow a trace from a user's session and drill down to identify any bottlenecks that occur.": [
+    "从用户会话跟踪并深入分析以识别任何发生的瓶颈。"
+  ],
+  "[transactionName] updated successfully": ["[transactionName] 更新成功"],
+  "Transactions are grouped together until we receive enough data to identify parameter patterns.": [
+    "在我们收到足够的数据以识别参数模式之前，事务将被分组在一起。"
+  ],
+  "Hang in there, as we build your trace view!": ["请耐心等待，我们正在构建您的跟踪视图！"],
+  "Trace view requires a date range selection.": ["跟踪视图需要选择日期范围。"],
+  "Search for events": ["搜索事件"],
+  "The number of transactions and issues there are in this trace.": ["此跟踪中的事务和问题数量。"],
+  "[transactions]  |  [errors]": ["[transactions]  |  [errors]"],
+  "%s Transaction": ["%s 事务"],
+  "%s Transactions": ["%s 事务"],
+  "Across %s project": ["跨 %s 项目"],
+  "Across %s projects": ["跨 %s 项目"],
+  "The time elapsed between the start and end of this trace.": ["此跟踪从开始到结束所经过的时间。"],
+  "Trace ID: %s": ["跟踪 ID: %s"],
+  "The good news is we know these errors are related to each other in the same trace. The bad news is that we can't tell you more than that due to limited sampling.": [
+    "好消息是，我们知道这些错误在同一个跟踪中是相关的。坏消息是，由于采样有限，我们无法告诉您更多。"
+  ],
+  "Connect the Dots": ["连接点"],
+  "If you haven't already, [tracingLink:set up tracing] to get a connected view of errors and transactions coming from interactions between all your software systems and services.": [
+    "如果您尚未这样做，请 [tracingLink:设置跟踪] 以获得来自所有软件系统和服务交互的错误和事务的连接视图。"
+  ],
+  "Limited to a view of [count] rows. To view the full list, go to [discover].": [
+    "限制为查看 [count] 行。要查看完整列表，请转到 [discover]。"
+  ],
+  "[loadMore:Show more] of this trace or go to the full list of events in [discover]": [
+    "[loadMore:显示更多] 此跟踪或转到 [discover] 中的完整事件列表"
+  ],
+  "Load more": ["加载更多"],
+  "The good news: we know all these errors are related. The bad news: we can't tell you more than that. If you haven't already, [tracingLink:configure tracing for your SDKs] to get a connected view of your software systems and services.": [
+    "好消息：我们知道所有这些错误都是相关的。坏消息：我们无法告诉您更多。如果您尚未这样做，请 [tracingLink:为您的 SDK 配置跟踪] 以获得您的软件系统和服务的连接视图。"
+  ],
+  "[numOfTransaction] hidden transaction": ["[numOfTransaction] 个隐藏事务"],
+  "[numOfTransaction] hidden transactions": ["[numOfTransaction] 个隐藏事务"],
+  "[numOfErrors] hidden error": ["[numOfErrors] 个隐藏错误"],
+  "[numOfErrors] hidden errors": ["[numOfErrors] 个隐藏错误"],
+  "This transaction is showing a direct child. Remove transaction to hide": [
+    "此事务显示直接子项。移除事务以隐藏"
+  ],
+  "This transaction has a direct child. Add transaction to view": ["此事务有直接子项。添加事务以查看"],
+  "The trace cannot be shown when all events are errors. An error occurred when attempting to fetch these error events: [error]": [
+    "当所有事件都是错误时，无法显示跟踪。在尝试获取这些错误事件时发生错误：[error]"
+  ],
+  "The trace cannot be shown when all events are errors.": ["当所有事件都是错误时，无法显示跟踪。"],
+  "The trace you are looking for was not found.": ["未找到您要查找的跟踪。"],
+  "Hide Breadcrumbs": ["隐藏面包屑"],
+  "Show Breadcrumbs": ["显示面包屑"],
+  "%s issue occurred in this transaction.": ["此事务中发生了 %s 问题。"],
+  "%s issues occurred in this transaction.": ["此事务中发生了 %s 问题。"],
+  "Go to originating URL": ["转到原始 URL"],
+  "Performance — Event Details": ["性能 — 事件详情"],
+  "The unique ID assigned to this %s.": ["分配给此 %s 的唯一 ID。"],
+  "Event Duration": ["事件持续时间"],
+  "The time elapsed between the start and end of this transaction.": ["此事务从开始到结束所经过的时间。"],
+  "The time at which this event was created.": ["此事件创建的时间。"],
+  "The status of this transaction indicating if it succeeded or otherwise.": [
+    "此事务的状态，指示其是否成功或其他情况。"
+  ],
+  "The browser used in this transaction.": ["在此事务中使用的浏览器。"],
+  "You are viewing a sample transaction. Configure performance to start viewing real transactions.": [
+    "您正在查看示例事务。配置性能以开始查看实际事务。"
+  ],
+  "Performance Details": ["性能详情"],
+  "Requires tracing.": ["需要跟踪。"],
+  "Missing Trace": ["缺少跟踪"],
+  "Trace Navigator": ["跟踪导航器"],
+  "An abbreviated version of the full trace. Related frontend and backend services can be added to provide further visibility.": [
+    "完整跟踪的简略版本。可以添加相关的前端和后端服务以提供更多可见性。"
+  ],
+  "View Full Trace: [id][events]": ["查看完整跟踪：[id][events]"],
+  " (%s event)": ["（%s 事件）"],
+  " (%s events)": ["（%s 事件）"],
+  "Aggregate Spans: %s": ["聚合跨度：%s"],
+  "Anomalies": ["异常"],
+  "Unable to get projects associated with transaction": ["无法获取与事务相关的项目"],
+  "Starred for Team": ["团队收藏"],
+  "Starred for Teams": ["团队收藏"],
+  "Star for Team": ["为团队收藏"],
+  "Confidence": ["置信度"],
+  "Time Interval": ["时间间隔"],
+  "Expected": ["预期"],
+  "Low Confidence": ["低置信度"],
+  "High Confidence": ["高置信度"],
+  "Anomaly": ["异常"],
+  "Represents transaction count across time, with added visualizations to highlight anomalies in your data.": [
+    "表示随时间变化的事务计数，并添加可视化以突出显示数据中的异常。"
+  ],
+  "Transaction Count": ["事务计数"],
+  "trace id": ["跟踪 ID"],
+  "%s duration": ["%s 持续时间"],
+  "Profiles require a transaction duration of at least 20ms": ["分析需要事务持续时间至少为 20 毫秒"],
+  "Showing [pageEventsCount] of [totalEventsCount] events": ["显示 [pageEventsCount] 个事件，共 [totalEventsCount] 个"],
+  "Sort By HTTP": ["按 HTTP 排序"],
+  "Sort By DB": ["按数据库排序"],
+  "Sort By Resource": ["按资源排序"],
+  "Sort By Browser": ["按浏览器排序"],
+  "p50": ["p50"],
+  "p75": ["p75"],
+  "p95": ["p95"],
+  "p99": ["p99"],
+  "p100": ["p100"],
+  "Duration Breakdown": ["持续时间分解"],
+  "Duration Percentiles": ["持续时间百分位数"],
+  "Span Operation Percentiles": ["跨度操作百分位数"],
+  "Span Operation Distribution": ["跨度操作分布"],
+  "Fastest Transactions": ["最快事务"],
+  "Slow Transactions (p95)": ["慢事务 (p95)"],
+  "Outlier Transactions (p100)": ["异常事务 (p100)"],
+  "Recent Transactions": ["最近事务"],
+  "Fastest %s Operations": ["最快 %s 操作"],
+  "Slow %s Operations (p95)": ["慢 %s 操作 (p95)"],
+  "Outlier %s Operations (p100)": ["异常 %s 操作 (p100)"],
+  "Based on your search criteria and sample rate, the events available may be limited.": [
+    "根据您的搜索标准和采样率，可用的事件可能有限。"
+  ],
+  "Span Operation Breakdown - [operationName]": ["跨度操作分解 - [operationName]"],
+  "Duration Breakdown reflects transaction durations by percentile over time.": [
+    "持续时间分解反映随时间变化的事务持续时间百分位数。"
+  ],
+  "Span Operation Percentiles - [operationName]": ["跨度操作百分位数 - [operationName]"],
+  "Compare the duration at each percentile. Compare with Latency Histogram to see transaction volume at duration intervals.": [
+    "比较每个百分位数的持续时间。与延迟直方图比较以查看持续时间间隔的事务量。"
+  ],
+  "Outliers": ["异常值"],
+  "Target zoom region too small": ["目标缩放区域太小"],
+  "Span Operation Distribution - [operationName]": ["跨度操作分布 - [operationName]"],
+  "Duration Distribution reflects the volume of transactions per median duration.": [
+    "持续时间分布反映每个中位持续时间的事务量。"
+  ],
+  "Auto (metrics)": ["自动（指标）"],
+  "Auto (transactions)": ["自动（事务）"],
+  "given timeframe": ["给定时间范围"],
+  "No new issues for this transaction for the [timePeriod].": ["此事务在 [timePeriod] 内没有新问题。"],
+  "Status Breakdown": ["状态分解"],
+  "No statuses found": ["未找到状态"],
+  "Suspect Spans": ["可疑跨度"],
+  "View All Spans": ["查看所有跨度"],
+  "%s faster": ["%s 更快"],
+  "+%s slower": ["+%s 更慢"],
+  "View All Tags": ["查看所有标签"],
+  "Smoothed": ["平滑"],
+  "Trends shows the smoothed value of an aggregate over time.": ["趋势显示随时间变化的聚合平滑值。"],
+  "Web Vitals with p75 better than the \"poor\" threshold, as defined by Google Web Vitals.": [
+    "Web Vitals 的 p75 优于 Google Web Vitals 定义的 \"差\" 阈值。"
+  ],
+  "Web Vitals Breakdown": ["Web Vitals 分解"],
+  "Web Vitals Breakdown reflects the 75th percentile of web vitals over time.": [
+    "Web Vitals 分解反映随时间变化的 Web Vitals 的第 75 百分位数。"
+  ],
+  "There was an error loading the flamegraph.": ["加载火焰图时出错。"],
+  "No profiling data found": ["未找到分析数据"],
+  "Flamegraph": ["火焰图"],
+  "Call Tree": ["调用树"],
+  "Newest Events": ["最新事件"],
+  "Oldest Events": ["最旧事件"],
+  "Slowest Events": ["最慢事件"],
+  "Fastest Events": ["最快事件"],
+  "Profile: %s": ["分析： %s"],
+  "Unable to load profiles": ["无法加载分析数据"],
+  "Error loading operations": ["加载操作时出错"],
+  "Self Time Breakdown": ["独占时间分解"],
+  "Self Time Distribution": ["独占时间分布"],
+  "Distribution buckets counts of the same self time duration for the selected span op and group.": [
+    "所选跨度操作和组中相同独占时间持续时间的分布桶计数。"
+  ],
+  "Self Time Breakdown reflects the span self time by percentile over time.": [
+    "独占时间分解反映随时间变化的跨度独占时间百分位数。"
+  ],
+  "Filter Transactions": ["筛选事务"],
+  "Self Time Percentiles": ["独占时间百分位数"],
+  "[times] times per event": ["每个事件 [times] 次"],
+  "[events] events": ["[events] 事件"],
+  "Cumulative Duration": ["累积持续时间"],
+  "[percentage] of the transaction ([duration])": ["事务的 [percentage]（[duration]）"],
+  "Transaction Throughput": ["事务吞吐量"],
+  "Span Throughput": ["跨度吞吐量"],
+  "[spanCount] spans": ["[spanCount] 个跨度"],
+  "Transaction duration unknown": ["事务持续时间未知"],
+  "Span Name": ["跨度名称"],
+  "Average Occurrences": ["平均发生次数"],
+  "P50 Self Time": ["P50 独占时间"],
+  "P95 Self Time": ["P95 独占时间"],
+  "P99 Self Time": ["P99 独占时间"],
+  "Average Count": ["平均计数"],
+  "p50 Self Time": ["p50 独占时间"],
+  "p75 Self Time": ["p75 独占时间"],
+  "p95 Self Time": ["p95 独占时间"],
+  "p99 Self Time": ["p99 独占时间"],
+  "LCP": ["LCP"],
+  "X-Axis": ["X 轴"],
+  "Suspect tags are tags that often correspond to slower transaction": ["可疑标签通常对应较慢的事务"],
+  "No tags detected.": ["未检测到标签。"],
+  "Other Tags": ["其他标签"],
+  "Other common tags for this transaction": ["此事务的其他常见标签"],
+  "Heat Map": ["热图"],
+  "This heatmap shows the frequency for each duration across the most common tag values": [
+    "此热图显示最常见标签值中每个持续时间的频率"
+  ],
+  "This determines which duration metric is used for the Response Time Threshold.": [
+    "这决定了用于响应时间阈值的持续时间指标。"
+  ],
+  "The satisfactory response time for the calculation method defined above. This is used to calculate Apdex and User Misery scores.": [
+    "上述定义的计算方法的满意响应时间。这用于计算 Apdex 和用户痛苦分数。"
+  ],
+  "The changes below will only be applied to [transaction]. To set it at a more global level, go to [projectSettings: Project Settings].": [
+    "以下更改仅应用于 [transaction]。要在更全局的级别设置，请转到 [projectSettings: 项目设置]。"
+  ],
+  "If this page is looking a little bare, keep in mind not all browsers support these vitals. [link]": [
+    "如果此页面看起来有点空，需注意并非所有浏览器都支持这些核心指标。[链接]"
+  ],
+  "Read more about browser support.": ["阅读更多关于浏览器支持的信息。"],
+  "Over this period, the %s for %s has %s %s from %s to %s": ["在此期间，%s 的 %s 从 %s 变为 %s，%s 了 %s"],
+  "decreased": ["减少"],
+  "increased": ["增加"],
+  "Show ≤ %s": ["显示 ≤ %s"],
+  "Show ≥ %s": ["显示 ≥ %s"],
+  "Hide from list": ["从列表中隐藏"],
+  "Most Improved Transactions": ["改进最多的事务"],
+  "Most Regressed Transactions": ["退步最多的事务"],
+  "Regression Metric": ["退步指标"],
+  "Improvement Metric": ["改进指标"],
+  "Ongoing Regression": ["持续退步"],
+  "Ongoing Improvement": ["持续改进"],
+  "Relevant Suspect Functions": ["相关可疑函数"],
+  "There was an issue finding suspect functions for this transaction": ["查找此事务的可疑函数时出现问题"],
+  "No results found for suspect functions": ["未找到可疑函数的结果"],
+  "[changeType] suspect function": ["[changeType] 可疑函数"],
+  "No sizable changes in suspect functions": ["可疑函数没有显著变化"],
+  "Removed": ["已移除"],
+  "Improved": ["已改进"],
+  "Relevant Suspect Spans": ["相关可疑跨度"],
+  "There was an issue finding suspect spans for this transaction": ["查找此事务的可疑跨度时出现问题"],
+  "No results found for suspect spans": ["未找到可疑跨度的结果"],
+  "[changeType] suspect span": ["[changeType] 可疑跨度"],
+  "No sizable changes in suspect spans": ["可疑跨度没有显著变化"],
+  "slower": ["更慢"],
+  "faster": ["更快"],
+  "Past Baseline": ["过去基线"],
+  "Present Baseline": ["当前基线"],
+  "Unparameterized Transactions": ["未参数化事务"],
+  "Performance - Unparameterized Transactions": ["性能 - 未参数化事务"],
+  "See transaction summary of the transaction %s": ["查看事务 %s 的摘要"],
+  "First Contentful Paint (FCP) measures the amount of time the first content takes to render in the viewport. Like FP, this could also show up in any form from the document object model (DOM), such as images, SVGs, or text blocks. At the moment, there is support for FCP in the following browsers:": [
+    "首次内容绘制 (FCP) 测量第一个内容在视口中渲染所需的时间。与 FP 一样，这也可以来自文档对象模型 (DOM) 的任何形式，如图像、SVG 或文本块。目前，FCP 在以下浏览器中受支持："
+  ],
+  "Cumulative Layout Shift (CLS) is the sum of individual layout shift scores for every unexpected element shift during the rendering process. Imagine navigating to an article and trying to click a link before the page finishes loading. Before your cursor even gets there, the link may have shifted down due to an image rendering. Rather than using duration for this Web Vital, the CLS score represents the degree of disruptive and visually unstable shifts. At the moment, there is support for CLS in the following browsers:": [
+    "累积布局偏移 (CLS) 是在渲染过程中每个意外元素偏移的个体布局偏移得分之和。想象一下，在页面加载完成之前导航到一篇文章并尝试点击链接。在您的光标到达之前，链接可能因为图像渲染而向下移动。对于这个网络核心指标，CLS 得分代表了破坏性和视觉不稳定偏移的程度。目前，CLS 在以下浏览器中受支持："
+  ],
+  "First Input Delay (FID) measures the response time when the user tries to interact with the viewport. Actions maybe include clicking a button, link or other custom Javascript controller. It is key in helping the user determine if a page is usable or not. At the moment, there is support for FID in the following browsers:": [
+    "首次输入延迟 (FID) 测量用户尝试与视口交互时的响应时间。动作可能包括点击按钮、链接或其他自定义 JavaScript 控件。它对于帮助用户确定页面是否可用至关重要。目前，FID 在以下浏览器中受支持："
+  ],
+  "Largest Contentful Paint (LCP) measures the render time for the largest content to appear in the viewport. This may be in any form from the document object model (DOM), such as images, SVGs, or text blocks. It’s the largest pixel area in the viewport, thus most visually defining. LCP helps developers understand how long it takes to see the main content on the page. At the moment, there is support for LCP in the following browsers:": [
+    "最大内容绘制 (LCP) 测量最大的内容在视口中出现的渲染时间。这可以来自文档对象模型 (DOM) 的任何形式，如图像、SVG 或文本块。它是视口中的最大像素区域，因此在视觉上最具定义性。LCP 帮助开发人员了解看到页面上的主要内容需要多长时间。目前，LCP 在以下浏览器中受支持："
+  ],
+  "Time to First Byte (TTFB) is a foundational metric for measuring connection setup time and web server responsiveness in both the lab and the field. It helps identify when a web server is too slow to respond to requests. In the case of navigation requests—that is, requests for an HTML document—it precedes every other meaningful loading performance metric. At the moment, there is support for TTFB in the following browsers:": [
+    "首次字节时间 (TTFB) 是测量连接建立时间和网络服务器响应性的基础指标，无论是在实验室环境中还是在实际使用中。它有助于识别网络服务器响应请求是否过慢。在导航请求的情况下（即，对 HTML 文档的请求），它先于所有其他有意义的加载性能指标。目前，TTFB 在以下浏览器中受支持："
+  ],
+  "CLS p75": ["CLS p75"],
+  "The durations shown should fall under the vital threshold.": ["显示的持续时间应低于核心阈值。"],
+  "(>[threshold][unit])": ["(> [threshold][unit])"],
+  "(<=[threshold][unit])": ["(<= [threshold][unit])"],
+  "Your role does not have the necessary permissions to access this\n             resource, please read more about [link:organizational roles]": [
+    "您的角色没有访问此资源所需的权限，请阅读更多关于 [link: 组织角色] 的信息"
+  ],
+  "Profiling collects detailed information in production about the functions executing in your application and how long they take to run, giving you code-level visibility into your hot paths.": [
+    "分析收集有关应用程序中执行的函数及其运行时间的详细信息，为您提供代码级别的热点路径可见性。"
+  ],
+  "Profiling — Flamechart": ["分析 — 火焰图"],
+  "Most Regressed Functions": ["退步最多的函数"],
+  "Functions by most regressed.": ["按退步最多的函数排序。"],
+  "Most Improved Functions": ["改进最多的函数"],
+  "Functions by most improved.": ["按改进最多的函数排序。"],
+  "Unknown trend type": ["未知趋势类型"],
+  "Appeared [count] times.": ["出现 [count] 次。"],
+  "No regressed functions detected": ["未检测到退步的函数"],
+  "No improved functions detected": ["未检测到改进的函数"],
+  "Slowest Functions (breakdown by AVG)": ["最慢函数（按平均值分解）"],
+  "Slowest Functions (breakdown by P50)": ["最慢函数（按 P50 分解）"],
+  "Slowest Functions (breakdown by P75)": ["最慢函数（按 P75 分解）"],
+  "Slowest Functions (breakdown by P95)": ["最慢函数（按 P95 分解）"],
+  "Slowest Functions (breakdown by P99)": ["最慢函数（按 P99 分解）"],
+  "Profiles by Count": ["按计数排序的分析数据"],
+  "Profiles Duration": ["分析持续时间"],
+  "Profiles by Percentiles": ["按百分位数排序的分析数据"],
+  "Durations": ["持续时间"],
+  "Slowest Transactions": ["最慢事务"],
+  "Slowest transactions that could use some optimization.": ["可能需要优化的最慢事务。"],
+  "Transactions may not be listed due to the filters above or a low number of profiles.": [
+    "由于上述筛选条件或分析数据数量少，可能不会列出事务。"
+  ],
+  "<unknown function>": ["<未知函数>"],
+  "<unknown package>": ["<未知包>"],
+  "View Function Metrics": ["查看函数指标"],
+  "No functions found": ["未找到函数"],
+  "Slowest functions": ["最慢函数"],
+  "p75()": ["p75()"],
+  "p95()": ["p95()"],
+  "p99()": ["p99()"],
+  "Sum()": ["Sum()"],
+  "Appeared [count] times for a total time spent of [totalSelfTime]": ["出现 [count] 次，总独占时间为 [totalSelfTime]"],
+  "Slowest functions by total self time spent.": ["按总独占时间排序的最慢函数。"],
+  "Expand or collapse the view": ["展开或折叠视图"],
+  "Error: Unable to load profiles": ["错误：无法加载分析数据"],
+  "Sampled Profiles": ["采样分析数据"],
+  "Profiling — Profile Summary": ["分析 — 分析摘要"],
+  "profiles": ["分析数据"],
+  "Failed to fetch regressed functions": ["获取退步函数失败"],
+  "time": ["时间"],
+  "times": ["次数"],
+  "Slowest Application Functions": ["最慢的应用程序函数"],
+  "Slowest System Functions": ["最慢的系统函数"],
+  "Failed to fetch slowest functions": ["获取最慢函数失败"],
+  "The fastest code is one that never runs.": ["最快的代码是永不运行的代码。"],
+  "App Version": ["应用版本"],
+  "Device Os Version": ["设备操作系统版本"],
+  "Number of Errors Chart": ["错误数量图表"],
+  "Daily Errors": ["每日错误"],
+  "Overall Bad Behaviour Threshold": ["整体不良行为阈值"],
+  "Get Tour": ["获取导览"],
+  "Release health is not available for errors only self-hosted.": ["仅自我托管的错误不可用发布健康。"],
+  "Release Health is not yet supported on this platform.": ["此平台尚不支持发布健康。"],
+  "Number of Sessions": ["会话数量"],
+  "Number of Transactions": ["事务数量"],
+  "ANR Rate": ["ANR 速率"],
+  "Foreground ANR Rate": ["前台 ANR 速率"],
+  "Total Errors": ["总错误数"],
+  "Total Transactions": ["总事务数"],
+  "This project could not be found.": ["找不到此项目。"],
+  "View All Issues": ["查看所有问题"],
+  "Project %s": ["项目 %s"],
+  "Search by release version, build, package, or stage": ["按版本、构建、包或阶段搜索"],
+  "Frequent Unhandled Issues": ["频繁未处理的问题"],
+  "No [issuesType] issues for the [timePeriod].": ["在 [timePeriod] 内没有 [issuesType] 问题。"],
+  "Issue type": ["问题类型"],
+  "Unable to load latest alerts": ["无法加载最新警报"],
+  "No alerts found": ["未找到警报"],
+  "Latest Alerts": ["最新警报"],
+  "Metric Alert History": ["指标警报历史"],
+  "No releases found": ["未找到版本"],
+  "Latest Releases": ["最新版本"],
+  "View Transactions": ["查看事务"],
+  "Most Improved/Regressed Transactions": ["改进/退步最多的事务"],
+  "Quick Links": ["快速链接"],
+  "View Issues": ["查看问题"],
+  " This shows how it has changed since the last period.": ["这显示了自上一周期以来的变化。"],
+  "The number of releases for this project and how it has changed since the last period.": [
+    "此项目的版本数量以及自上一周期以来的变化。"
+  ],
+  "The number of releases for this project.": ["此项目的版本数量。"],
+  "You do not have permission to do this": ["您没有权限执行此操作"],
+  "Assign Team": ["分配团队"],
+  "Show %s collapsed team": ["显示 %s 个折叠的团队"],
+  "Show %s collapsed teams": ["显示 %s 个折叠的团队"],
+  "Team Access": ["团队访问"],
+  "Could not find an issue for the provided event id": ["无法找到提供的事件 ID 对应的问题"],
+  "Could not load the requested event": ["无法加载请求的事件"],
+  "Not found": ["未找到"],
+  "View full documentation": ["查看完整文档"],
+  "Just want to poke around before getting too cozy with the SDK? [sample:View a sample event for this SDK] or [skip:finish setup later].": [
+    "只想在熟悉 SDK 之前随便看看吗？[sample: 查看此 SDK 的示例事件] 或 [skip: 稍后完成设置]。"
+  ],
+  "View a sample event": ["查看示例事件"],
+  "Finish setup later": ["稍后完成设置"],
+  "Created project [project]": ["已创建项目 [project]"],
+  "Created [project] under new team [team]": ["在新团队 [team] 下创建 [project]"],
+  "Failed to create project [project]": ["创建项目 [project] 失败"],
+  "Please select a platform in Step 1": ["请在步骤 1 中选择一个平台"],
+  "Please select a team": ["请选择一个团队"],
+  "Please fill out all the required fields": ["请填写所有必填字段"],
+  "Please provide a project name": ["请输入项目名称"],
+  "Please provide an alert threshold": ["请提供一个警报阈值"],
+  "Create a new project in 3 steps": ["分 3 步创建一个新项目"],
+  "Set up a separate project for each part of your application (for example, your API server and frontend client), to quickly pinpoint which part of your application errors are coming from. [link: Read the docs].": [
+    "为应用程序的每个部分（例如，您的 API 服务器和前端客户端）设置一个单独的项目，以便快速定位错误来源。[link: 阅读文档]。"
+  ],
+  "Choose your platform": ["选择您的平台"],
+  "occurrences of": ["... 的发生次数"],
+  "When there are more than": ["当超过"],
+  "a unique error in": ["... 中的一个唯一错误"],
+  "Alert me on high priority issues": ["在高优先级问题上提醒我"],
+  "Alert me on every new issue": ["在每个新问题上提醒我"],
+  "I'll create my own alerts later": ["我稍后会自己创建提醒"],
+  "Options for creating an alert": ["创建提醒的选项"],
+  "We cannot provide instructions for '%s' projects. However, please find below the DSN key for this project, which is required to instrument Sentry.": [
+    "我们无法提供 '%s' 项目的说明。但是，请参阅下面的 DSN 密钥，这是用于设置 Sentry 所必需的。"
+  ],
+  "dsn: %s": ["dsn: %s"],
+  "Since it can be a lot of work creating a Sentry SDK from scratch, we suggest you review the following SDKs which are applicable for a wide variety of applications:": [
+    "从头开始创建一个 Sentry SDK 可能会有很多工作，我们建议您查看以下适用于各种应用程序的 SDK："
+  ],
+  "Also there's a rich ecosystem of [link:community suported SDKs] (including NestJS, Nuxt2, Perl, CFML and Clojure).": [
+    "此外，还有丰富的 [link: 社区支持的 SDK]（包括 NestJS、Nuxt2、Perl、CFML 和 Clojure）。"
+  ],
+  "Your favorite language or framework still cannot be found? Then we encourage you to consider [link:writing your own SDK].": [
+    "仍然找不到您喜欢的语言或框架吗？那么我们鼓励您考虑 [link: 编写您自己的 SDK]。"
+  ],
+  "Your selected platform supports performance, but your organization does not have performance enabled.": [
+    "您选择的平台支持性能，但您的组织未启用性能。"
+  ],
+  "Take me to Issues": ["带我去问题"],
+  "Take me to Performance": ["带我去性能"],
+  "Take me to Session Replay": ["带我去会话回放"],
+  "Back to Platform Selection": ["返回平台选择"],
+  "Configure %(platform)s SDK": ["配置 %(platform)s SDK"],
+  "Add integration": ["添加集成"],
+  "Track Deploys": ["跟踪部署"],
+  "A high-level overview of errors, transactions, and deployments filtered by teams you're part of.": [
+    "一个高级概述，显示错误、事务和部署，这些信息已根据您所属的团队进行筛选。"
+  ],
+  "Search for projects by name": ["按名称搜索项目"],
+  "An error occurred while fetching your projects": ["获取您的项目时发生错误"],
+  "Errors: %s": ["错误： %s"],
+  "Transactions: %s": ["事务： %s"],
+  "Click here to learn more about performance monitoring": ["点击这里了解更多关于性能监控的信息"],
+  "Latest Deploys": ["最新部署"],
+  "The Sentry Workflow": ["Sentry 工作流程"],
+  "A visualization of your release adoption from the past 24 hours, providing a high-level view of the adoption stage, percentage of crash-free users and sessions, and more.": [
+    "过去 24 小时内版本采用情况的可视化，提供采用阶段、无崩溃用户和会话的百分比等高级视图。"
+  ],
+  "Commits - Release %s": ["提交 - 版本 %s"],
+  "There are no commits associated with this release in the %s repository.": [
+    "在 %s 仓库中与此版本关联的提交不存在。"
+  ],
+  "Files Changed - Release %s": ["文件更改 - 版本 %s"],
+  "%s file changed": ["%s 文件更改"],
+  "%s files changed": ["%s 文件更改"],
+  "There are no changed files associated with this release in the %s repository.": [
+    "在 %s 仓库中与此版本关联的更改文件不存在。"
+  ],
+  "There are no changed files associated with this release.": ["与此版本关联的更改文件不存在。"],
+  "An error occurred while trying to fetch the repositories of the release: %s": [
+    "尝试获取版本的仓库时发生错误： %s"
+  ],
+  "No commits associated with this release have been found.": ["未找到与此版本关联的提交。"],
+  "The repository you were looking for was not found.": ["找不到您要查找的仓库。"],
+  "Restore": ["恢复"],
+  "Restore Release [release]": ["恢复版本 [release]"],
+  "You are restoring this release for the following project:": ["您正在为以下项目恢复此版本："],
+  "By restoring this release, you are also restoring it for the following projects:": [
+    "通过恢复此版本，您也在为以下项目恢复它："
+  ],
+  "Archive Release [release]": ["存档版本 [release]"],
+  "You are archiving this release for the following project:": ["您正在为以下项目存档此版本："],
+  "By archiving this release, you are also archiving it for the following projects:": [
+    "通过存档此版本，您也在为以下项目存档它："
+  ],
+  "%s other project": ["%s 其他项目"],
+  "%s other projects": ["%s 其他项目"],
+  "Are you sure you want to do this?": ["您确定要这样做吗？"],
+  "Files Changed": ["文件更改"],
+  "Release Details": ["版本详情"],
+  "This release may not be in your selected project.": ["此版本可能不在您选择的项目中。"],
+  "This release could not be found.": ["找不到此版本。"],
+  "Only projects with this release are visible.": ["只有具有此版本的项目可见。"],
+  "Release %s": ["版本 %s"],
+  "failure_count()": ["failure_count()"],
+  "tpm()": ["tpm()"],
+  "p50()": ["p50()"],
+  "p75(lcp)": ["p75(lcp)"],
+  "Clamped Release Period": ["限制版本周期"],
+  "Entire Release Period": ["整个版本周期"],
+  "In this release": ["在此版本中"],
+  "Failing Transactions": ["失败的事务"],
+  "Frequent Transactions": ["频繁的事务"],
+  "Slow Transactions": ["慢事务"],
+  "Slow LCP": ["慢 LCP"],
+  "Trending Regressions": ["趋势退步"],
+  "Trending Improvements": ["趋势改进"],
+  "These releases have been archived.": ["这些版本已被存档。"],
+  "This release has been archived.": ["此版本已被存档。"],
+  "Restore this release": ["恢复此版本"],
+  "([count] handled [issues])": ["([count] 已处理 [issues])"],
+  "([count] unhandled [issues])": ["([count] 未处理 [issues])"],
+  "Hide %s Other": ["隐藏 %s 其他"],
+  "Hide %s Others": ["隐藏 %s 其他"],
+  "Show %s Other": ["显示 %s 其他"],
+  "Show %s Others": ["显示 %s 其他"],
+  "Toggle additional charts": ["切换其他图表"],
+  "Toggle chart group": ["切换图表组"],
+  "Chart Title": ["图表标题"],
+  "Chart Value": ["图表值"],
+  "No new issues in this release.": ["此版本中没有新问题。"],
+  "No new issues for the [timePeriod].": ["在 [timePeriod] 内没有新问题。"],
+  "No unhandled issues in this release.": ["此版本中没有未处理的问题。"],
+  "No unhandled issues for the [timePeriod].": ["在 [timePeriod] 内没有未处理的问题。"],
+  "No regressed issues in this release.": ["此版本中没有退步的问题。"],
+  "No regressed issues for the [timePeriod].": ["在 [timePeriod] 内没有退步的问题。"],
+  "No resolved issues in this release.": ["此版本中没有已解决的问题。"],
+  "No issues in this release": ["此版本中没有问题"],
+  "No issues for the [timePeriod].": ["在 [timePeriod] 内没有问题。"],
+  "Commit Author Breakdown": ["提交作者分解"],
+  "Show %s other author": ["显示 %s 其他作者"],
+  "Show %s other authors": ["显示 %s 其他作者"],
+  "%s commit": ["%s 提交"],
+  "%s commits": ["%s 提交"],
+  "Other Project for This Release": ["此版本的其他项目"],
+  "Other Projects for This Release": ["此版本的其他项目"],
+  "Show %s collapsed project": ["显示 %s 个折叠的项目"],
+  "Show %s collapsed projects": ["显示 %s 个折叠的项目"],
+  "Project Release Details": ["项目版本详情"],
+  "Semver": ["Semver"],
+  "artifact": ["构件"],
+  "artifacts": ["构件"],
+  "Adoption Stage": ["采用阶段"],
+  "See if a release has low adoption, been adopted by users, or replaced by another release. Select an environment above to view the stage this release is in.": [
+    "查看版本是否采用率低、已被用户采用或被其他版本取代。选择上面的环境以查看此版本所处的阶段。"
+  ],
+  "in [environment]": ["在 [environment] 中"],
+  "Sessions Adopted": ["已采用的会话"],
+  "Adoption compares the sessions of a release with the total sessions for this project.": [
+    "采用率将版本的会话与该项目的总会话进行比较。"
+  ],
+  "Users Adopted": ["已采用的用户"],
+  "Adoption compares the users of a release with the total users for this project.": [
+    "采用率将版本的用户与该项目的总用户进行比较。"
+  ],
+  "Date Deployed": ["部署日期"],
+  "Last Deploy": ["上次部署"],
+  "Release created": ["版本创建"],
+  "later": ["之后"],
+  "Total Crash Free Users": ["总无崩溃用户"],
+  "Healthy": ["健康"],
+  "Abnormal": ["异常"],
+  "Errored": ["出错"],
+  "Crashed Session Rate": ["崩溃会话率"],
+  "Crashed User Rate": ["崩溃用户率"],
+  "Session Count": ["会话数"],
+  "User Count": ["用户数"],
+  "Healthy Session Rate": ["健康会话率"],
+  "Abnormal Session Rate": ["异常会话率"],
+  "Errored Session Rate": ["出错会话率"],
+  "Healthy User Rate": ["健康用户率"],
+  "Abnormal User Rate": ["异常用户率"],
+  "Errored User Rate": ["出错用户率"],
+  "The number of sessions in a given period.": ["指定期间的会话数。"],
+  "The number of users in a given period.": ["指定期间的用户数。"],
+  "Release Created": ["版本创建"],
+  "Adopted": ["已采用"],
+  "Replaced": ["已替换"],
+  "time range": ["时间范围"],
+  "There are no releases that match": ["没有匹配的版本"],
+  "There are no releases with active user data (users in the last 24 hours).": [
+    "没有具有活跃用户数据的版本（过去 24 小时内的用户）。"
+  ],
+  "There are no releases with active session data (sessions in the last 24 hours).": [
+    "没有具有活跃会话数据的版本（过去 24 小时内的会话）。"
+  ],
+  "There are no releases with semantic versioning.": ["没有使用语义化版本的版本。"],
+  "There are no releases with data in the": ["没有在此处的版本"],
+  "There are no archived releases.": ["没有已存档的版本。"],
+  "To track user adoption, crash rates, session data and more, add Release Health to your current setup.": [
+    "要跟踪用户采用率、崩溃率、会话数据等，请将版本健康状况添加到您的当前设置中。"
+  ],
+  "Add Release Health": ["添加版本健康状况"],
+  "Changing this date range will recalculate the release metrics.": ["更改此日期范围将重新计算版本指标。"],
+  "Search by version, build, package, or stage": ["按版本、构建、包或阶段搜索"],
+  "Adoption": ["采用率"],
+  "Crash Free Rate": ["无崩溃率"],
+  "Show [numberOfHiddenItems] More": ["显示 [numberOfHiddenItems] 更多"],
+  "[number:1] hidden project": ["[number:1] 个隐藏项目"],
+  "[number] hidden projects": ["[number] 个隐藏项目"],
+  "and %s more": ["和 %s 更多"],
+  "by": ["由"],
+  "%s author": ["%s 作者"],
+  "%s authors": ["%s 作者"],
+  "Release Adoption": ["版本采用率"],
+  "%s Other": ["%s 其他"],
+  "%s Others": ["%s 其他"],
+  "Total [display]": ["总计 [display]"],
+  "Set up Releases": ["设置版本"],
+  "Find which release caused an issue, apply source maps, and get notified about your deploys.": [
+    "查找导致问题的版本，应用源映射，并获取有关您的部署的通知。"
+  ],
+  "Add the following commands to your CI config when you deploy your application.": [
+    "在部署应用程序时，将以下命令添加到您的 CI 配置中。"
+  ],
+  "Available Integrations": ["可用集成"],
+  "Select Internal Integration": ["选择内部集成"],
+  "You must be an organization owner, manager or admin to create an integration.": [
+    "您必须是组织的所有者、经理或管理员才能创建集成。"
+  ],
+  "Create New Integration": ["创建新集成"],
+  "Sentry suggests which commit caused an issue and who is likely responsible so you can triage.": [
+    "Sentry 建议哪个提交导致了问题以及可能的责任人，以便您进行分类处理。"
+  ],
+  "Get an overview of the commits in each release, and which issues were introduced or fixed.": [
+    "获取每个版本中提交的概览，以及引入或修复了哪些问题。"
+  ],
+  "Easily Resolve": ["轻松解决"],
+  "Automatically resolve issues by including the issue number in your commit message.": [
+    "通过在提交消息中包含问题编号自动解决问题。"
+  ]
+}

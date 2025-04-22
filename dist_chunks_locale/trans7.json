@@ -1,0 +1,672 @@
+{
+  "Total Cost": ["总成本"],
+  "View analytics and information about your AI pipelines": ["查看有关您的 AI 管道的分析和信息"],
+  "No screens found on recent releases. Please try a single iOS or Android project, a single environment or a smaller date range.": [
+    "在最近的版本中未找到屏幕。请尝试选择一个 iOS 或 Android 项目、一个环境或更小的日期范围。"
+  ],
+  "Top Screen Cold Start": ["屏幕冷启动次数最多的"],
+  "Top %s Screen Cold Starts": ["前 %s 屏幕冷启动次数"],
+  "Top Screen Warm Start": ["屏幕热启动次数最多的"],
+  "Top %s Screen Warm Starts": ["前 %s 屏幕热启动次数"],
+  "%s v. %s": ["%s 对比 %s"],
+  "Search for Screen": ["搜索屏幕"],
+  "Average Cold Start": ["平均冷启动时间"],
+  "Average Warm Start": ["平均热启动时间"],
+  "Cold Start Count": ["冷启动次数"],
+  "Warm Start Count": ["热启动次数"],
+  "Cold Start Device Distribution": ["冷启动设备分布"],
+  "Warm Start Device Distribution": ["热启动设备分布"],
+  "Event ID (%s)": ["事件 ID (%s)"],
+  "Sample Type Selection": ["样本类型选择"],
+  "By Spans": ["按跨度"],
+  "By Event": ["按事件"],
+  "Cold Start": ["冷启动"],
+  "Warm Start": ["热启动"],
+  "App Start": ["应用启动"],
+  "Screen": ["屏幕"],
+  "Avg Cold Start (%s)": ["平均冷启动时间 (%s)"],
+  "Avg Warm Start (%s)": ["平均热启动时间 (%s)"],
+  "Type Breakdown": ["类型分解"],
+  "Average Cold Start difference": ["平均冷启动时间差异"],
+  "Average Warm Start difference": ["平均热启动时间差异"],
+  "Avg Duration (%s)": ["平均持续时间 (%s)"],
+  "App Starts": ["应用启动次数"],
+  "Improve the latency associated with your application starting up. ": ["改善应用程序启动时的延迟。"],
+  "Count (%s)": ["计数 (%s)"],
+  "Screen Summary": ["屏幕摘要"],
+  "Device Class": ["设备类别"],
+  "Compared to Average": ["与平均值相比"],
+  "Invalid selection. Try a different release or date range.": ["选择无效。请尝试不同的版本或日期范围。"],
+  "TTID by Device Class": ["按设备类别划分的 TTID"],
+  "Average TTID": ["平均 TTID"],
+  "TTFD by Device Class": ["按设备类别划分的 TTFD"],
+  "Average TTFD": ["平均 TTFD"],
+  "TTID": ["首次显示时间"],
+  "TTFD": ["完全显示时间"],
+  "Filter platform": ["筛选平台"],
+  "%s by Top Screen": ["按顶级屏幕划分的 %s"],
+  "Search for Screens": ["搜索屏幕"],
+  "Total Count": ["总次数"],
+  "Affects": ["影响"],
+  "Affects TTID": ["影响 TTID"],
+  "This span always ends before TTID and TTFD and may affect initial and final display. [link: Learn more.]": [
+    "此跨度总是在 TTID 和 TTFD 之前结束，可能会影响初始和最终显示。[链接：了解更多。]"
+  ],
+  "TTID, TTFD": ["TTID, TTFD"],
+  "This span always ends before TTFD and may affect final display. [link: Learn more.]": [
+    "此跨度总是在 TTFD 之前结束，可能会影响最终显示。[链接：了解更多。]"
+  ],
+  "This span may not be contributing to TTID or TTFD. [link: Learn more.]": [
+    "此跨度可能不会对 TTID 或 TTFD 产生影响。[链接：了解更多。]"
+  ],
+  "This span always ends before TTID and may affect initial display. [link: Learn more.]": [
+    "此跨度总是在 TTID 之前结束，可能会影响初始显示。[链接：了解更多。]"
+  ],
+  "This span may not affect initial display. [link: Learn more.]": ["此跨度可能不会影响初始显示。[链接：了解更多。]"],
+  "Measuring TTFD requires manual instrumentation in your application. To learn how to collect TTFD, see the documentation [link].": [
+    "测量 TTFD 需要在您的应用程序中进行手动instrumentation。有关如何收集 TTFD 的信息，请参阅文档 [链接]。"
+  ],
+  "AVG TTID (%s)": ["平均 TTID (%s)"],
+  "AVG TTFD (%s)": ["平均 TTFD (%s)"],
+  "Average time to initial display of %s.": ["%s 的平均初始显示时间。"],
+  "Average time to full display of %s.": ["%s 的平均完全显示时间。"],
+  "The total count of screen loads.": ["屏幕加载的总次数。"],
+  "Slow Frame Rate": ["慢帧率"],
+  "Frozen Frame Rate": ["冻结帧率"],
+  "Frames Delay": ["帧延迟"],
+  "Screen Loads": ["屏幕加载次数"],
+  "Screen Load": ["屏幕加载"],
+  "View the most active screens in your mobile application and monitor your releases for TTID and TTFD regressions.": [
+    "查看移动应用中最活跃的屏幕，并监控版本的 TTID 和 TTFD 回归情况。"
+  ],
+  "Avg TTID (%s)": ["平均 TTID (%s)"],
+  "Avg TTFD (%s)": ["平均 TTFD (%s)"],
+  "Total Count (%s)": ["总次数 (%s)"],
+  "Improve your application's responsiveness.": ["提高应用的响应能力。"],
+  "insights-mobile-screens-module": ["移动屏幕洞察模块"],
+  "Screen Rendering": ["屏幕渲染"],
+  "Cold App Start": ["冷启动应用"],
+  "Average Cold App Start duration": ["平均冷启动应用持续时间"],
+  "Warm App Start": ["热启动应用"],
+  "Average Warm App Start duration": ["平均热启动应用持续时间"],
+  "Average number of slow frames": ["平均慢帧数"],
+  "Average number of frozen frames": ["平均冻结帧数"],
+  "Frame Delay": ["帧延迟"],
+  "Average frame delay": ["平均帧延迟"],
+  "Average time to intial display.": ["平均初始显示时间。"],
+  "Average time to full display.": ["平均完全显示时间。"],
+  "Top Screen Frames Delay": ["屏幕帧延迟最多的"],
+  "Top %s Screen Frames Delay": ["前 %s 屏幕帧延迟"],
+  "Top Screen Slow Frames": ["屏幕慢帧最多的"],
+  "Top %s Screen Slow Frames": ["前 %s 屏幕慢帧"],
+  "Top Screen Frozen Frames": ["屏幕冻结帧最多的"],
+  "Top %s Screen Frozen Frames": ["前 %s 屏幕冻结帧"],
+  "Slow (%s)": ["慢 (%s)"],
+  "Frozen (%s)": ["冻结 (%s)"],
+  "Delay (%s)": ["延迟 (%s)"],
+  "The number of slow frames divided by total frames (%s)": ["慢帧数占总帧数的比例 (%s)"],
+  "The number of frozen frames divided by total frames (%s)": ["冻结帧数占总帧数的比例 (%s)"],
+  "The average frame delay (%s)": ["平均帧延迟 (%s)"],
+  "Mobile UI": ["移动 UI"],
+  "Avg Latency": ["平均延迟"],
+  "Average Time in Queue": ["平均队列时间"],
+  "Average Processing Time": ["平均处理时间"],
+  "Published vs Processed": ["已发布与已处理"],
+  "Published": ["已发布"],
+  "Processed": ["已处理"],
+  "Producer": ["生产者"],
+  "Consumer": ["消费者"],
+  "Retries": ["重试次数"],
+  "Error Rate": ["错误率"],
+  "Avg Time In Queue": ["平均队列时间"],
+  "Avg Processing Time": ["平均处理时间"],
+  "Message ID": ["消息 ID"],
+  "Span Duration": ["跨度持续时间"],
+  "Message Size": ["消息大小"],
+  "Destination": ["目的地"],
+  "Avg Time in Queue": ["平均队列时间"],
+  "Queues": ["队列"],
+  "Destination Summary": ["目的地摘要"],
+  "Understand the health and performance impact that queues have on your application and diagnose errors tied to jobs.": [
+    "了解队列对应用程序的健康和性能影响，并诊断与作业相关的错误。"
+  ],
+  "Search for more destinations": ["搜索更多目的地"],
+  "Failed to retrieve GitHub installation details": ["获取 GitHub 安装详细信息失败"],
+  "Failed to retrieve organization or integration details": ["获取组织或集成详细信息失败"],
+  "You do not have permission to install integrations in\n                [organization]. Ask an organization owner or manager to\n                visit this page to finish installing this integration.": [
+    "您没有权限在 [organization] 中安装集成。请让组织的所有者或管理员访问此页面以完成集成安装。"
+  ],
+  "The following features will be available for [organization] when installed.": [
+    "安装后，以下功能将对 [organization] 可用。"
+  ],
+  "GitHub user [sender_login] has installed GitHub app to [account_type] [account_login]. Proceed if you want to attach this installation to your Sentry account.": [
+    "GitHub 用户 [sender_login] 已将 GitHub 应用安装到 [account_type] [account_login]。如果您希望将此安装附加到您的 Sentry 账户，请继续。"
+  ],
+  "Please pick a specific [organization:organization] to link with\n            your integration installation of [integation].": [
+    "请选择一个特定的 [organization:organization] 以链接到您的 [integation] 集成安装。"
+  ],
+  "Account ID required": ["需要账户 ID"],
+  "Invalid Account ID": ["账户 ID 无效"],
+  "Add Sentry's CloudFormation": ["添加 Sentry 的 CloudFormation"],
+  "Once you've created Sentry's CloudFormation stack (or if you already have one) press the button below to continue.": [
+    "一旦您创建了 Sentry 的 CloudFormation 堆栈（或者如果您已经有一个），请点击下面的按钮继续。"
+  ],
+  "I've created the stack": ["我已经创建了堆栈"],
+  "Add AWS Account Information": ["添加 AWS 账户信息"],
+  "AWS Account ID": ["AWS 账户 ID"],
+  "Your Account ID can be found on the right side of the header in AWS": [
+    "您的账户 ID 可以在 AWS 的页眉右侧找到"
+  ],
+  "AWS Region": ["AWS 区域"],
+  "Your current region can be found on the right side of the header in AWS": [
+    "您的当前区域可以在 AWS 的页眉右侧找到"
+  ],
+  "External ID Required": ["需要外部 ID"],
+  "External ID": ["外部 ID"],
+  "Do not edit unless you are copying from a previously created CloudFormation stack": [
+    "除非您是从以前创建的 CloudFormation 堆栈中复制，否则不要编辑"
+  ],
+  "successfully updated %s function": ["成功更新 %s 函数"],
+  "successfully updated %s functions": ["成功更新 %s 函数"],
+  "Failed to update %s function": ["更新 %s 函数失败"],
+  "Failed to update %s functions": ["更新 %s 函数失败"],
+  "See [link:Troubleshooting Docs]": ["请参阅 [链接：故障排除文档]"],
+  "Lambda Functions": ["Lambda 函数"],
+  "Disable All": ["全部禁用"],
+  "Enable All": ["全部启用"],
+  "Decide which functions you would like to enable for Sentry monitoring": ["决定您希望启用哪些函数进行 Sentry 监控"],
+  "We found %s function with a Node or Python runtime": ["我们找到了一个具有 Node 或 Python 运行时的函数"],
+  "We found %s functions with Node or Python runtimes": ["我们找到了具有 Node 或 Python 运行时的函数"],
+  "This might take a while…": ["这可能需要一段时间…"],
+  "This might take a sec…": ["这可能需要几秒钟…"],
+  "Adding Sentry to %s functions": ["将 Sentry 添加到 %s 函数"],
+  "Select a project for your AWS Lambdas": ["为您的 AWS Lambda 选择一个项目"],
+  "Currently only supports Node and Python Lambda functions": ["目前仅支持 Node 和 Python Lambda 函数"],
+  "Need Help?": ["需要帮助吗？"],
+  "Delete event…": ["删除事件…"],
+  "Discarding event…": ["丢弃事件…"],
+  "Discard and Delete": ["丢弃并删除"],
+  "More Actions": ["更多操作"],
+  "Mark reviewed": ["标记为已审查"],
+  "Issue has been reviewed": ["问题已被审查"],
+  "Reprocess events": ["重新处理事件"],
+  "Remove bookmark": ["移除书签"],
+  "Give feedback on new UI": ["对新 UI 提供反馈"],
+  "How can we make this new UI work for you?": ["我们如何使这个新 UI 更适合您？"],
+  "Switch to the old issue experience": ["切换到旧的问题体验"],
+  "Switch to the new issue experience": ["切换到新的问题体验"],
+  "Share a link with anyone outside your organization": ["与组织外的任何人分享链接"],
+  "Unshare": ["取消分享"],
+  "Generate new URL. Invalidates previous URL": ["生成新 URL。使之前的 URL 失效"],
+  "Generate new URL": ["生成新 URL"],
+  "Copy Link": ["复制链接"],
+  "Share Issue": ["分享问题"],
+  "Create a public link": ["创建公共链接"],
+  "title": ["标题"],
+  "trace": ["跟踪"],
+  "device": ["设备"],
+  "minidump": ["内存转储"],
+  "timestamp": ["时间戳"],
+  "total duration": ["总持续时间"],
+  "runtime": ["运行时"],
+  "url": ["网址"],
+  "browser": ["浏览器"],
+  "replay": ["重放"],
+  "profile": ["配置文件"],
+  "Occurred": ["发生时间"],
+  "Received": ["接收时间"],
+  "[author] [action] this issue until it happens [count] time(s) in [duration]": [
+    "[author] 将此问题 [action] 直到它在 [duration] 内发生 [count] 次"
+  ],
+  "[author] [action] this issue until it happens [count] time(s)": ["[author] 将此问题 [action] 直到它发生 [count] 次"],
+  "[author] [action] this issue until it affects [count] user(s) in [duration]": [
+    "[author] 将此问题 [action] 直到它在 [duration] 内影响 [count] 个用户"
+  ],
+  "[author] [action] this issue until it affects [count] user(s)": ["[author] 将此问题 [action] 直到它影响 [count] 个用户"],
+  "[author] [action] this issue until [date]": ["[author] 将此问题 [action] 直到 [date]"],
+  "[author] archived this issue until it escalates": ["[author] 将此问题存档直到它升级"],
+  "[author] marked this feedback as spam": ["[author] 将此反馈标记为垃圾信息"],
+  "[author] [action] this issue forever": ["[author] 将此问题 [action] 永久"],
+  "[author] flagged this issue as escalating because over [forecast] [event] happened in an hour": [
+    "[author] 将此问题标记为升级，因为在一小时内发生了超过 [forecast] 个 [event]"
+  ],
+  "[author] flagged this issue as escalating because [count] [event] happened in [duration]": [
+    "[author] 将此问题标记为升级，因为在 [duration] 内发生了 [count] 个 [event]"
+  ],
+  "[author] flagged this issue as escalating because [count] [event] happened": [
+    "[author] 将此问题标记为升级，因为发生了 [count] 个 [event]"
+  ],
+  "[author] flagged this issue as escalating because [count] [user] affected in [duration]": [
+    "[author] 将此问题标记为升级，因为在 [duration] 内影响了 [count] 个 [user]"
+  ],
+  "[author] flagged this issue as escalating because [count] [user] affected": [
+    "[author] 将此问题标记为升级，因为影响了 [count] 个 [user]"
+  ],
+  "[author] flagged this issue as escalating because [date] passed": ["[author] 将此问题标记为升级，因为 [date] 已过"],
+  "[author] flagged this issue as escalating": ["[author] 将此问题标记为升级"],
+  "[author] left a comment": ["[author] 留下了评论"],
+  "[author] marked this [issueType] as resolved via [integration]": ["[author] 通过 [integration] 将此 [issueType] 标记为已解决"],
+  "[author] marked this [issueType] as resolved": ["[author] 将此 [issueType] 标记为已解决"],
+  "[author] marked this issue as resolved due to inactivity": ["[author] 因不活跃将此问题标记为已解决"],
+  "[author] marked this issue as resolved in releases greater than [version] [semver]": [
+    "[author] 将此问题标记为在大于 [version] [semver] 的版本中已解决"
+  ],
+  "[author] marked this issue as resolved in [version] [semver]": ["[author] 将此问题标记为在 [version] [semver] 中已解决"],
+  "[author] marked this issue as resolved in the upcoming release": ["[author] 将此问题标记为在即将发布的版本中已解决"],
+  "[author] marked this issue as resolved in [version] [break]This commit was released in [release]": [
+    "[author] 将此问题标记为在 [version] 中已解决 [break] 此提交已在 [release] 中发布"
+  ],
+  "[author] marked this issue as resolved in [version] [break]This commit was released in [release] and [otherCount] others": [
+    "[author] 将此问题标记为在 [version] 中已解决 [break] 此提交已在 [release] 和其他 [otherCount] 个版本中发布"
+  ],
+  "[author] marked this issue as resolved in [commit]": ["[author] 将此问题标记为在 [commit] 中已解决"],
+  "[author] marked this issue as resolved in a commit": ["[author] 将此问题标记为在一次提交中已解决"],
+  "[author] has created a PR for this issue: [pullRequest]": ["[author] 已为此问题创建了一个 PR：[pullRequest]"],
+  "PR not available": ["PR 不可用"],
+  "[author] marked this [issueType] as unresolved via [integration]": ["[author] 通过 [integration] 将此 [issueType] 标记为未解决"],
+  "[author] marked this [issueType] as unresolved": ["[author] 将此 [issueType] 标记为未解决"],
+  "[author] made this issue public": ["[author] 将此问题设为公开"],
+  "[author] made this issue private": ["[author] 将此问题设为私有"],
+  "[regressionVersion] is greater than or equal to [resolvedVersion] compared via [comparison]": [
+    "[regressionVersion] 大于或等于 [resolvedVersion]（通过 [comparison] 比较）"
+  ],
+  "release date": ["发布日期"],
+  "[author] marked this issue as a regression in [version]": ["[author] 将此问题标记为在 [version] 中的回归"],
+  "[author] marked this issue as a regression": ["[author] 将此问题标记为回归"],
+  "[author] created an issue on [provider] titled [title]": ["[author] 在 [provider] 上创建了一个标题为 [title] 的问题"],
+  "%2$s migrated %1$s fingerprint to %3$s": ["%2$s 将 %1$s 指纹迁移到 %3$s"],
+  "%2$s migrated %1$s fingerprints to %3$s": ["%2$s 将 %1$s 指纹迁移到 %3$s"],
+  "%2$s migrated %1$s fingerprint from %3$s": ["%2$s 从 %3$s 迁移了 %1$s 指纹"],
+  "%2$s migrated %1$s fingerprints from %3$s": ["%2$s 从 %3$s 迁移了 %1$s 指纹"],
+  "[author] first saw this issue and marked it as [priority] priority": ["[author] 首次看到此问题并将其标记为 [priority] 优先级"],
+  "[author] first saw this issue": ["[author] 首次看到此问题"],
+  "[author] unassigned this [issueType]": ["[author] 取消了此 [issueType] 的指派"],
+  "%2$s merged %1$s issue into this issue": ["%2$s 将 %1$s 个问题合并到此问题中"],
+  "%2$s merged %1$s issues into this issue": ["%2$s 将 %1$s 个问题合并到此问题中"],
+  "[author] reprocessed the events in this issue. [new-events]": ["[author] 重新处理了此问题中的事件。 [new-events]"],
+  "[author] marked this issue as reviewed": ["[author] 将此问题标记为已审查"],
+  "[author] automatically marked this issue as ongoing after [afterDays] days": [
+    "[author] 在 [afterDays] 天后自动将此问题标记为进行中"
+  ],
+  "[author] automatically marked this issue as ongoing": ["[author] 自动将此问题标记为进行中"],
+  "themselves": ["他们自己"],
+  "[author] updated the priority value of this issue to be [priority] after it escalated": [
+    "[author] 在此问题升级后将其优先级更新为 [priority]"
+  ],
+  "[author] updated the priority value of this issue to be [priority] after it was marked as ongoing": [
+    "[author] 在此问题被标记为进行中后将其优先级更新为 [priority]"
+  ],
+  "[author] updated the priority value of this issue to be [priority]": ["[author] 将此问题的优先级更新为 [priority]"],
+  "[author] deleted an attachment": ["[author] 删除了一个附件"],
+  "an unknown user": ["一个未知用户"],
+  "Microsoft Teams": ["Microsoft Teams"],
+  "Codeowners Rule": ["代码所有者规则"],
+  "[author] [action] this [issueType] to [assignee]": ["[author] 将此 [issueType] [action] 给 [assignee]"],
+  "auto-assigned": ["自动指派"],
+  "assigned": ["已指派"],
+  "Assigned via %s": ["通过 %s 指派"],
+  "feedback": ["反馈"],
+  "issue": ["问题"],
+  "issues": ["问题"],
+  "archived": ["已存档"],
+  "[author] [action] this issue for [duration]": ["[author] 将此问题 [action] 为期 [duration]"],
+  "Error loading the specified project": ["加载指定项目时出错"],
+  "The project %s does not exist": ["项目 %s 不存在"],
+  "No crash reports found": ["未找到崩溃报告"],
+  "No attachments found": ["未找到附件"],
+  "Error loading attachments": ["加载附件时出错"],
+  "Error loading screenshots": ["加载截图时出错"],
+  "No screenshots found": ["未找到截图"],
+  "Algorithm": ["算法"],
+  "Screenshots": ["截图"],
+  "Event Attachments": ["事件附件"],
+  "Are you sure you wish to delete this image?": ["您确定要删除此图像吗？"],
+  "Minidump": ["内存转储"],
+  "Event with the most context": ["上下文最多的事件"],
+  "Last seen event in this issue": ["此问题中最后看到的事件"],
+  "First seen event in this issue": ["此问题中首次看到的事件"],
+  "Custom Selection": ["自定义选择"],
+  "Event URL copied to clipboard": ["事件 URL 已复制到剪贴板"],
+  "Event ID copied to clipboard": ["事件 ID 已复制到剪贴板"],
+  "Event Actions Menu": ["事件操作菜单"],
+  "Copy Event ID": ["复制事件 ID"],
+  "Copy Event Link": ["复制事件链接"],
+  "Copy link to this issue event": ["复制此问题事件的链接"],
+  "View JSON": ["查看 JSON"],
+  "Hide feedback on all issue details": ["在所有问题详情中隐藏反馈"],
+  "Unhide feedback on all issue details": ["在所有问题详情中显示反馈"],
+  "Largest Changes in Call Stack Frequency": ["调用堆栈频率的最大变化"],
+  "See which functions changed the most before and after the regression. The\n              frame with the largest increase in call stack population likely\n              contributed to the cause for the duration regression.": [
+    "查看回归前后哪些函数变化最大。调用堆栈人口增长最多的帧可能对持续时间回归的原因有所贡献。"
+  ],
+  "Latest event not available": ["最新事件不可用"],
+  "Unmerging events…": ["正在拆分事件…"],
+  "Fingerprints included in this issue [count]": ["此问题中包含的指纹 [count]"],
+  "This is an experimental feature. All changes may take up to 24 hours take effect.": [
+    "这是一个实验性功能。所有更改可能需要长达 24 小时才能生效。"
+  ],
+  "Unable to load merged events, please try again later": ["无法加载合并的事件，请稍后再试"],
+  "To check, the list must contain 2 or more items": ["要检查，列表必须包含 2 个或更多项目"],
+  "Show %s fingerprints": ["显示 %s 个指纹"],
+  "Collapse %s fingerprints": ["折叠 %s 个指纹"],
+  "To unmerge, the list must contain 2 or more items": ["要拆分，列表必须包含 2 个或更多项目"],
+  "To unmerge, 1 or more items must be selected": ["要拆分，必须选择 1 个或更多项目"],
+  "We are unable to unmerge all items at once": ["我们无法一次拆分所有项目"],
+  "Unmerge ([itemsSelectedQuantity])": ["拆分 ([itemsSelectedQuantity])"],
+  "To compare, exactly 2 items must be selected": ["要比较，必须选择正好 2 个项目"],
+  "Unable to update issue priority": ["无法更新问题优先级"],
+  "Issues in the same trace": ["同一跟踪中的问题"],
+  "These issues were all found within ": ["这些问题都在 "],
+  "this trace": ["此跟踪中"],
+  "Issues caused by the same root cause": ["由同一根本原因引起的问题"],
+  "Unable to load related issues, please try again later": ["无法加载相关问题，请稍后再试"],
+  "Up Next": ["接下来"],
+  "Play Now": ["立即播放"],
+  "There are %s for this issue across %s.": ["此问题在 %s 上有 %s。"],
+  "No replay data available.": ["没有回放数据可用。"],
+  "%s Individual": ["%s 个个人"],
+  "%s Individuals": ["%s 个个人"],
+  "%s Team": ["%s 个团队"],
+  "%s Teams": ["%s 个团队"],
+  "Participants": ["参与者"],
+  "People who have been assigned, resolved, unresolved, archived, bookmarked, subscribed, or added a comment": [
+    "被指派、解决、未解决、存档、加书签、订阅或添加评论的人"
+  ],
+  "participants": ["参与者"],
+  "Viewers": ["查看者"],
+  "Issues with a similar stack trace": ["具有类似堆栈跟踪的问题"],
+  "Unable to load similar issues, please try again later": ["无法加载类似的问题，请稍后再试"],
+  "There don't seem to be any similar issues.": ["似乎没有类似的问题。"],
+  "There don't seem to be any similar issues. This can occur when the issue has no stacktrace or in-app frames.": [
+    "似乎没有类似的问题。这可能发生在问题没有堆栈跟踪或应用内帧时。"
+  ],
+  "Diff": ["差异"],
+  "No issues with a similar stack trace have been found.": ["未找到具有类似堆栈跟踪的问题。"],
+  "Show %s issues below threshold": ["显示阈值以下的 %s 个问题"],
+  "Would Group": ["会分组"],
+  "Merging %s issues": ["正在合并 %s 个问题"],
+  "Merge %s": ["合并 %s"],
+  "Agree with the grouping of %s issues": ["同意将 %s 个问题分组"],
+  "Agree %s": ["同意 %s"],
+  "Disagree with the grouping of %s issues": ["不同意将 %s 个问题分组"],
+  "Disagree %s": ["不同意 %s"],
+  "There was an error loading issue tags.": ["加载问题标签时出错。"],
+  "There was an error loading tag details": ["加载标签详细信息时出错"],
+  "Search All Issues with Tag Value": ["搜索所有具有标签值的问题"],
+  "Sorry, the tags for this issue could not be found.": ["抱歉，无法找到此问题的标签。"],
+  "No tags were found for the currently selected environments": ["在当前选择的环境中未找到标签"],
+  "Failed to fetch total tag values": ["获取总标签值失败"],
+  "Sampled Events": ["采样事件"],
+  "Reprocessing…": ["正在重新处理…"],
+  "Once the events in this issue have been reprocessed, you’ll be able to make changes and view any new issues that may have been created.": [
+    "一旦此问题中的事件被重新处理，您将能够进行更改并查看可能创建的新问题。"
+  ],
+  "[remainingEventsToReprocess]/[totalEvents] [event] reprocessed": ["[remainingEventsToReprocess]/[totalEvents] [event] 重新处理"],
+  "event": ["事件"],
+  "Resources and Possible Solutions": ["资源和可能的解决方案"],
+  "You are viewing a sample error. Configure Sentry to start viewing real errors.": [
+    "您正在查看一个示例错误。配置 Sentry 以开始查看实际错误。"
+  ],
+  "Copied Issue URL to clipboard": ["已将问题 URL 复制到剪贴板"],
+  "Copied Markdown Issue Link to clipboard": ["已将 Markdown 问题链接复制到剪贴板"],
+  "Copy Issue URL": ["复制问题 URL"],
+  "Copy Markdown Link": ["复制 Markdown 链接"],
+  "Event actions": ["事件操作"],
+  "Sentry has detected configuration issues with this event. Click for more info.": [
+    "Sentry 检测到此事件的配置问题。点击以获取更多信息。"
+  ],
+  "Processing Error": ["处理错误"],
+  "Jump to:": ["跳转到："],
+  "Recommended Event": ["推荐事件"],
+  "Custom Event": ["自定义事件"],
+  "Event Filters": ["事件筛选器"],
+  "Event Tags": ["事件标签"],
+  "Search events...": ["搜索事件..."],
+  "One other issue appears in the same trace.": ["同一个跟踪中出现了另一个问题。"],
+  "Trace Connections": ["跟踪连接"],
+  "No Trace Available": ["无跟踪可用"],
+  "Traces help you understand if there are any issues with other services connected to this event": [
+    "跟踪帮助您了解与此事件相关的其他服务是否存在任何问题"
+  ],
+  "View Full Trace": ["查看完整跟踪"],
+  "This is a trace timeline showing all related events happening upstream and downstream of this event": [
+    "这是一个跟踪时间线，显示此事件上下游发生的所有相关事件"
+  ],
+  "You are here": ["您在这里"],
+  "Around the same time": ["大约在同一时间"],
+  "View %s more event": ["查看 %s 更多事件"],
+  "View %s more events": ["查看 %s 更多事件"],
+  "You're receiving workflow notifications because you are subscribed to this issue.": [
+    "您收到工作流通知是因为您订阅了此问题。"
+  ],
+  "You're receiving updates because you are subscribed to workflow notifications for this project.": [
+    "您收到更新是因为您订阅了此项目的工作流通知。"
+  ],
+  "You're receiving workflow notifications because you have commented on this issue.": [
+    "您收到工作流通知是因为您对此问题发表了评论。"
+  ],
+  "You're receiving workflow notifications because you were assigned to this issue.": [
+    "您收到工作流通知是因为您被指派处理此问题。"
+  ],
+  "You're receiving workflow notifications because you have bookmarked this issue.": [
+    "您收到工作流通知是因为您将此问题添加到了书签。"
+  ],
+  "You're receiving workflow notifications because you have changed the status of this issue.": [
+    "您收到工作流通知是因为您更改了此问题的状态。"
+  ],
+  "You're receiving workflow notifications because you have been mentioned in this issue.": [
+    "您收到工作流通知是因为您在此问题中被提及。"
+  ],
+  "You have disabled workflow notifications for this project.": ["您已为此项目禁用了工作流通知。"],
+  "Subscribe to workflow notifications for this issue": ["订阅此问题的工作流通知"],
+  "Mark Reviewed": ["标记为已审查"],
+  "More issue actions": ["更多问题操作"],
+  "Cannot merge issues from different projects": ["无法合并不同项目的问题"],
+  "Started": ["已开始"],
+  "Events Reprocessed": ["已重新处理的事件"],
+  "Progress": ["进度"],
+  "Deselect all": ["取消选择全部"],
+  "Select all": ["全选"],
+  "Unable to update issues": ["无法更新问题"],
+  "%s issue on this page selected.": ["此页面上选择了 %s 个问题。"],
+  "%s issues on this page selected.": ["此页面上选择了 %s 个问题。"],
+  "When issue was flagged for review.": ["问题被标记为需要审查的时间。"],
+  "First time the issue occurred.": ["问题首次发生的时间。"],
+  "Recent issues trending upward.": ["最近问题呈上升趋势。"],
+  "Number of events.": ["事件的数量。"],
+  "Number of users affected.": ["受影响的用户数量。"],
+  "Last time the issue occurred.": ["问题最后发生的时间。"],
+  "Bulk %s issues": ["批量 %s 问题"],
+  "%2$s %s selected issue": ["%2$s %s 已选择的问题"],
+  "%2$s %s selected issues": ["%2$s %s 已选择的问题"],
+  "Are you sure you want to %2$s this %s issue%3$s?": ["您确定要 %2$s 此 %s 问题%3$s 吗？"],
+  "Are you sure you want to %2$s these %s issues%3$s?": ["您确定要 %2$s 这些 %s 问题%3$s 吗？"],
+  "Deleting performance issues is not yet supported and will be skipped.": ["删除性能问题尚不支持，将跳过。"],
+  "Note that unmerging is currently an experimental feature.": ["请注意，拆分目前是一个实验性功能。"],
+  "Merging performance issues is not yet supported and will be skipped.": ["合并性能问题尚不支持，将跳过。"],
+  "Unsaved": ["未保存"],
+  "Detailed views of errors and performance problems in your application grouped by events with a similar set of characteristics.": [
+    "按具有相似特征的事件分组的应用程序中的错误和性能问题的详细视图。"
+  ],
+  "Rename": ["重命名"],
+  "Discard Changes": ["放弃更改"],
+  "Save View": ["保存视图"],
+  "Discard": ["放弃"],
+  "Pause real-time updates": ["暂停实时更新"],
+  "Enable real-time updates": ["启用实时更新"],
+  "Failed to delete saved search.": ["删除已保存的搜索失败。"],
+  "When you come back you’ll see this search by default.": ["当您回来时，默认会看到此搜索。"],
+  "Unable to set the default search.": ["无法设置默认搜索。"],
+  "You'll no longer see this search by default.": ["您将不再默认看到此搜索。"],
+  "Unable to remove the default search.": ["无法删除默认搜索。"],
+  "Failed to update views": ["更新视图失败"],
+  "We couldn't find any issues that matched your filters.": ["我们找不到与您的筛选条件匹配的问题。"],
+  "Get out there and write some broken code!": ["出去写些有问题的代码吧！"],
+  "Well, would you look at that.": ["好吧，看看这个。"],
+  "No more issues to review. Better get back out there and write some broken code.": [
+    "没有更多的问题需要审查。最好回去写些有问题的代码。"
+  ],
+  "No issues match your search": ["没有问题匹配您的搜索"],
+  "If this is unexpected, check out these tips:": ["如果这是意外，请查看以下提示："],
+  "Double check your project, environment, and date filters": ["再次检查您的项目、环境和日期筛选器"],
+  "Make sure your search has the right syntax. [link]": ["确保您的搜索具有正确的语法。[链接]"],
+  "Check your [filterSettings: inbound data filters] to make sure the events aren't being filtered out": [
+    "检查您的 [filterSettings: 入站数据筛选器] 以确保事件没有被筛选掉"
+  ],
+  "[start]-[end] of [total]": ["[start]-[end] of [total]"],
+  "Add saved search": ["添加已保存的搜索"],
+  "Collapse sidebar": ["折叠侧边栏"],
+  "You don't have any saved searches": ["您没有任何已保存的搜索"],
+  "Show %s more": ["显示 %s 更多"],
+  "Recommended Searches": ["推荐搜索"],
+  "Anyone in organization can see but not edit": ["组织中的任何人都可以查看但不能编辑"],
+  "Only you can see and edit": ["只有您可以查看和编辑"],
+  "You do not have permission to edit this search.": ["您没有权限编辑此搜索。"],
+  "You do not have permission to delete this search.": ["您没有权限删除此搜索。"],
+  "Are you sure you want to delete this saved search?": ["您确定要删除这个已保存的搜索吗？"],
+  "Saved search options": ["已保存的搜索选项"],
+  "Popular Filters": ["常用筛选器"],
+  "Issue Category": ["问题类别"],
+  "Error Level": ["错误级别"],
+  "Unhandled Events": ["未处理的事件"],
+  "Latest Release": ["最新版本"],
+  "Custom Tags": ["自定义标签"],
+  "Prioritized": ["已优先处理"],
+  "For Review": ["待审查"],
+  "Issues are marked for review if they are new or escalating, and have not been resolved or archived. Issues are automatically marked reviewed in 7 days.": [
+    "如果问题是新的或升级的，并且尚未解决或存档，则会被标记为待审查。问题会在 7 天后自动标记为已审查。"
+  ],
+  "Ignored issues don’t trigger alerts. When their ignore\n        conditions are met they become Unresolved and are flagged for review.": [
+    "被忽略的问题不会触发警报。当它们的忽略条件满足时，它们会变为未解决并被标记为待审查。"
+  ],
+  "Reprocessing": ["重新处理"],
+  "These [link:reprocessing issues] will take some time to complete.\n        Any new issues that are created during reprocessing will be flagged for review.": [
+    "这些 [link:重新处理的问题] 可能需要一些时间才能完成。\n        在重新处理期间创建的任何新问题都会被标记为待审查。"
+  ],
+  "My Default Search": ["我的默认搜索"],
+  "No context available": ["没有上下文可用"],
+  "Choose a metric to display data.": ["选择一个指标来显示数据。"],
+  "Nothing to show!": ["没有内容可显示！"],
+  "No code locations found for this metric.": ["为此指标未找到代码位置。"],
+  "Grouped series are not supported by alerts. This is a preview of the data the alert will use.": [
+    "警报不支持分组系列。这是警报将使用的数据的预览。"
+  ],
+  "Please select a project": ["请选择一个项目"],
+  "Paste dashboard JSON ": ["粘贴仪表盘 JSON"],
+  "Processed %s widgets from the dashboard": ["从仪表盘处理了 %s 个小部件"],
+  "Found %s widgets that can be imported": ["找到了 %s 个可以导入的小部件"],
+  "Please input valid dashboard JSON": ["请输入有效的仪表盘 JSON"],
+  "Import dashboard": ["导入仪表盘"],
+  "Custom metrics aren’t available for your [platform] project.": ["自定义指标在您的 [platform] 项目中不可用。"],
+  "Adding custom metrics to your [platform] project is simple. Make sure you've got these basics down.": [
+    "向您的 [platform] 项目添加自定义指标很简单。确保您掌握了这些基础知识。"
+  ],
+  "Getting Started with custom metrics": ["开始使用自定义指标"],
+  "Metrics help you track and visualize the data points you care about, making it easier to monitor your application health and identify issues.": [
+    "指标帮助您跟踪和可视化您关心的数据点，使监控应用程序健康状况和识别问题变得更加容易。"
+  ],
+  "Track your system's behaviour and profit from the same powerful features as you do with errors, like alerting and dashboards.": [
+    "跟踪您的系统行为，并从与处理错误相同的强大功能中受益，例如警报和仪表盘。"
+  ],
+  "Set Up": ["设置"],
+  "Track and solve what matters": ["跟踪和解决重要问题"],
+  "Query and plot metrics extracted from your span data to visualise trends and identify anomalies. To get started, you need to enable [link:tracing].": [
+    "查询并绘制从跨度数据中提取的指标，以可视化趋势并识别异常。要开始使用，您需要启用 [link:跟踪]。"
+  ],
+  "Set Up Tracing": ["设置跟踪"],
+  "Create custom metrics to track and visualize the data points you care about over time, like processing time, checkout conversion rate, or user signups. See correlated trace exemplars and metrics if used together with Performance Monitoring.": [
+    "创建自定义指标，以跟踪和可视化随时间变化的您关心的数据点，如处理时间、结账转化率或用户注册。如果与性能监控一起使用，可以查看相关的跟踪示例和指标。"
+  ],
+  "Set Up Custom Metric": ["设置自定义指标"],
+  "View Performance Metrics": ["查看性能指标"],
+  "There are upcoming changes to the Metrics API that may affect your usage. Read the [link:FAQs] for more details.": [
+    "指标 API 即将发生可能影响您使用的更改。请阅读 [link:常见问题] 以获取更多详细信息。"
+  ],
+  "We've released a new API to submit metrics. Metrics using with the old API will stop being ingested soon. Read the [link:FAQs] for more details.": [
+    "我们已发布一个新的指标提交 API。使用旧 API 的指标将很快停止被摄取。请阅读 [link:常见问题] 以获取更多详细信息。"
+  ],
+  "Add Custom Metrics": ["添加自定义指标"],
+  "Save as default": ["另存为默认"],
+  "Page actions": ["页面操作"],
+  "Metrics Settings": ["指标设置"],
+  "Select a metric to create an alert": ["选择一个指标来创建警报"],
+  "Custom measurements cannot be used to create alerts": ["自定义测量不能用于创建警报"],
+  "One chart per metric": ["每个指标一个图表"],
+  "No matching transaction found": ["未找到匹配的事务"],
+  "Open Transaction Summary": ["打开事务摘要"],
+  "Open Release Details": ["打开版本详情"],
+  "Intervals smaller than 1 hour are not available for set metrics.": ["对于设置的指标，小于 1 小时的间隔不可用。"],
+  "1 month": ["1 个月"],
+  "Overlay": ["覆盖层"],
+  "Choose a metric and an operation to display data.": ["选择一个指标和一个操作来显示数据。"],
+  "No results found for the given query": ["未找到给定查询的结果"],
+  "The queries in this chart generate a large number of result groups. Only the first [numOfGroups] groups are displayed.": [
+    "此图表中的查询生成大量结果组。仅显示前 [numOfGroups] 个组。"
+  ],
+  "Open in Traces": ["在跟踪中打开"],
+  "Back to Platforms": ["返回平台"],
+  "Get Started with %s": ["开始使用 %s"],
+  "Last Check-In": ["最后签到"],
+  "Next Check-In": ["下次签到"],
+  "Legend": ["图例"],
+  "Check-in missed after %s min": ["在 %s 分钟后错过签到"],
+  "Check-in missed after %s mins": ["在 %s 分钟后错过签到"],
+  "Check-in reported as failed": ["签到报告为失败"],
+  "Check-in timed out after %s min": ["在 %s 分钟后签到超时"],
+  "Check-in timed out after %s mins": ["在 %s 分钟后签到超时"],
+  "Cron Details": ["定期作业详情"],
+  "Monitor Slug": ["监控标识符"],
+  "Check-Ins": ["签到"],
+  "Invalid Schedule": ["无效的计划"],
+  "Attachment": ["附件"],
+  "Expected At": ["期望时间"],
+  "Recent Check-Ins": ["最近签到"],
+  "Check-in Status: [status]": ["签到状态：[status]"],
+  "(invalid schedule)": ["（无效的计划）"],
+  "Interval Schedule": ["间隔计划"],
+  "Every": ["每"],
+  "Choose Project": ["选择项目"],
+  "Existing monitors cannot be moved between projects": ["现有的监控不能在项目之间移动"],
+  "Assign Ownership": ["分配所有权"],
+  "SCHEDULE": ["计划"],
+  "Crontab Schedule": ["Crontab 计划"],
+  "Add a name and project": ["添加名称和项目"],
+  "The name will show up in notifications.": ["名称将显示在通知中。"],
+  "Slug": ["标识符"],
+  "The [strong:monitor-slug] is used to uniquely identify your monitor within your organization. Changing this slug will require updates to any instrumented check-in calls.": [
+    "这个 [strong:监控标识符] 用于在您的组织内唯一识别您的监控。更改此标识符将需要更新任何已 instrumented 的签到调用。"
+  ],
+  "monitor-slug": ["监控标识符"],
+  "Suggested Projects": ["建议的项目"],
+  "Other Projects": ["其他项目"],
+  "Set your schedule": ["设置您的计划"],
+  "You can use [link:the crontab syntax] or our interval schedule.": ["您可以使用 [link:Crontab 语法] 或我们的间隔计划。"],
+  "Any changes you make to the execution schedule will only be applied after the next expected check-in.": [
+    "您对执行计划所做的任何更改仅在下一次预期签到后应用。"
+  ],
+  "Interval Frequency": ["间隔频率"],
+  "Interval Type": ["间隔类型"],
+  "Set margins": ["设置容差"],
+  "Configure when we mark your monitor as failed or missed.": ["配置我们何时将您的监控标记为失败或错过。"],
+  "Number of minutes before a check-in is considered missed.": ["认为签到错过前的分钟数。"],
+  "Grace Period": ["宽限期"],
+  "Defaults to %s minute": ["默认为 %s 分钟"],
+  "Defaults to %s minutes": ["默认为 %s 分钟"],
+  "Number of a minutes before an in-progress check-in is marked timed out.": [
+    "进行中的签到被标记为超时前的分钟数。"
+  ],
+  "Max Runtime": ["最大运行时间"],
+  "Configure when an issue is created or resolved.": ["配置何时创建或解决一个问题。"],
+  "Create a new issue when this many consecutive missed or error check-ins are processed.": [
+    "当处理这么多连续错过或错误签到时创建新问题。"
+  ],
+  "Failure Tolerance": ["失败容忍"],
+  "Resolve the issue when this many consecutive healthy check-ins are processed.": [
+    "当处理这么多连续健康签到时解决此问题。"
+  ],
+  "Recovery Tolerance": ["恢复容忍"],
+  "Set Owner": ["设置所有者"],
+  "Choose a team or member as the monitor owner. Issues created will be automatically assigned to the owner.": [
+    "选择一个团队或成员作为监控的所有者。创建的问题将自动分配给所有者。"
+  ]
+}

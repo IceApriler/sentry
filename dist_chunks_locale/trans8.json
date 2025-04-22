@@ -1,0 +1,663 @@
+{
+  "Automatically assign issues to a team or user.": ["自动将问题分配给团队或用户。"],
+  "Configure who to notify upon issue creation and when.": ["配置在创建问题时通知的对象及时间。"],
+  "Customize this monitors notification configuration in Alerts": ["在警报中自定义此监控的通知配置"],
+  "Notify": ["通知"],
+  "Send notifications to a member or team.": ["向成员或团队发送通知。"],
+  "Only receive notifications from a specific environment.": ["仅从特定环境接收通知。"],
+  "Please select which teams or members to notify first.": ["请先选择要通知的团队或成员。"],
+  "Crontab": ["Crontab"],
+  "Cron Monitor Details": ["Cron 监控详情"],
+  "Are you sure you want to permanently delete this cron monitor?": ["您确定要永久删除这个 cron 监控吗？"],
+  "Unresolved Issues": ["未解决的问题"],
+  "No issues relating to this cron monitor have been found.": ["未找到与此 cron 监控相关的问题。"],
+  "Issue category": ["问题类别"],
+  "Platform Specfiic": ["特定平台"],
+  "No check-ins have been recorded for this time period.": ["在此时间段内没有记录任何签到。"],
+  "Successful": ["成功"],
+  "Missed": ["错过"],
+  "Instrument your monitor": ["设置监控"],
+  "Select an integration method for your new monitor. For in-depth instructions on integrating Crons, view [docsLink:our complete documentation].": [
+    "为您的新监控选择一种集成方法。有关集成 Cron 的详细说明，请查看 [docsLink:我们的完整文档]。"
+  ],
+  "Waiting For Check-In": ["等待签到"],
+  "This environment is likely broken due to being in an error state for multiple days.": [
+    "由于处于错误状态多日，此环境很可能已损坏。"
+  ],
+  "This environment is likely broken due to being in an error state for multiple days. It has been automatically muted.": [
+    "由于处于错误状态多日，此环境很可能已损坏。它已被自动静音。"
+  ],
+  "Monitor environment actions": ["监控环境操作"],
+  "Show [num] More": ["显示 [num] 更多"],
+  "View Environment": ["查看环境"],
+  "Unmute Environment": ["取消静音环境"],
+  "Mute Environment": ["静音环境"],
+  "Monitor is muted": ["监控已静音"],
+  "Delete Environment": ["删除环境"],
+  "Delete Environment?": ["删除环境？"],
+  "Are you sure you want to permanently delete the \"[envName]\" environment?": [
+    "您确定要永久删除名为 \"[envName]\" 的环境吗？"
+  ],
+  "Time Scale": ["时间尺度"],
+  "Week": ["周"],
+  "Month": ["月"],
+  "A → Z": ["A → Z"],
+  "Z → A": ["Z → A"],
+  "Failing First": ["先显示失败项"],
+  "Okay First": ["先显示正常项"],
+  "Active First": ["先显示活动项"],
+  "Muted First": ["先显示静音项"],
+  "Sort Cron Monitors": ["排序 Cron 监控"],
+  "Sort Options": ["排序选项"],
+  "Sort Order Options": ["排序顺序选项"],
+  "Filter owners": ["筛选所有者"],
+  "Filter Owners": ["筛选所有者"],
+  "Monitor Your Cron Jobs": ["监控您的定时作业"],
+  "We'll tell you if your recurring jobs are running on schedule, failing, or succeeding.": [
+    "我们会告知您定期作业是否按计划运行、失败或成功。"
+  ],
+  "Create %s Monitor": ["创建 %s 监控"],
+  "Check-in on [datetime]": ["在 [datetime] 签到"],
+  "check-in": ["签到"],
+  "Dismiss Errors": ["忽略错误"],
+  "Are you sure you want to dismiss this error?": ["您确定要忽略这个错误吗？"],
+  "Are you sure you want to dismiss these %s errors?": ["您确定要忽略这 %s 个错误吗？"],
+  "Project [projectId]": ["项目 [projectId]"],
+  "The environment of the second [checkinTooltip:check-in] does not match the original \"[env]\" environment. Ensure both check-ins have the same environment.": [
+    "第二个 [checkinTooltip:签到] 的环境与原始 \"[env]\" 环境不匹配。请确保两个签到具有相同的环境。"
+  ],
+  "A [checkinTooltip:check-in] update was sent to a check-in that has already succeeded or failed. Only in-progress check-ins can be updated.": [
+    "向已经成功或失败的签到发送了 [checkinTooltip:签到] 更新。只有进行中的签到可以更新。"
+  ],
+  "The [checkinTooltip:check-in] GUID provided matched to an existing check-in for a project that is different than the associated project DSN. Use the correct DSN to successfully update your check-in.": [
+    "提供的 [checkinTooltip:签到] GUID 与一个与关联项目 DSN 不同的项目的现有签到匹配。请使用正确的 DSN 成功更新您的签到。"
+  ],
+  "A [checkinTooltip:check-in] was sent with an invalid duration of \"[duration]\".": [
+    "发送了一个具有无效持续时间 \"[duration]\" 的 [checkinTooltip:签到]。"
+  ],
+  "A [checkinTooltip:check-in] was sent with an invalid GUID.": ["发送了一个具有无效 GUID 的 [checkinTooltip:签到]。"],
+  "A [checkinTooltip:check-in] was sent with an invalid payload. Learn more about the check-in payload in our [link:documentation]": [
+    "发送了一个具有无效负载的 [checkinTooltip:签到]。有关签到负载的详细信息，请参阅我们的 [link:文档]。"
+  ],
+  "A [checkinTooltip:check-in] was sent but was discarded because the monitor is disabled.": [
+    "发送了一个 [checkinTooltip:签到]，但由于监控已禁用而被丢弃。"
+  ],
+  "A [checkinTooltip:check-in] upsert was sent, but due to insufficient quota a new monitor could not be enabled. Increase your Crons on-demand budget in your [link: subscription settings], and then enable this monitor.": [
+    "发送了一个 [checkinTooltip:签到] upsert，但由于配额不足而无法启用新监控。请在您的 [link: 订阅设置] 中增加按需 Crons 预算，然后启用此监控。"
+  ],
+  "A monitor failed to upsert due to an invalid [checkinTooltip:check-in] payload provided. Learn more about the check-in payload in our [link:documentation].": [
+    "由于提供的 [checkinTooltip:签到] 负载无效，监控未能 upsert。有关签到负载的详细信息，请参阅我们的 [link: 文档]。"
+  ],
+  "A [checkinTooltip:check-in] was sent with an invalid environment due to: [reason].": [
+    "由于 [原因]，发送了一个具有无效环境的 [checkinTooltip:签到]。"
+  ],
+  "The maximum monitor limit for this project has been reached. Please reach out to our [link:sales team] to create additional monitors.": [
+    "此项目的最大监控限制已达到。请联系我们的 [link: 销售团队] 以创建更多的监控。"
+  ],
+  "A [checkinTooltip:check-in] was sent for a monitor that does not exist. If you meant to create a new monitor via upsert, please provide a valid monitor configuration in the check-in payload.": [
+    "为一个不存在的监控发送了一个 [checkinTooltip:签到]。如果您打算通过 upsert 创建一个新监控，请在签到负载中提供有效的监控配置。"
+  ],
+  "A [checkinTooltip:check-in] was sent but dropped due to the monitor being disabled. Please increase your on-demand budget if needed in your [link:subscription settings]. Then, enable this monitor to resume processing check-ins.": [
+    "发送了一个 [checkinTooltip:签到]，但由于监控已禁用而被丢弃。如果需要，请在您的 [link: 订阅设置] 中增加按需预算，然后启用此监控以恢复处理签到。"
+  ],
+  "A [checkinTooltip:check-in] was sent but dropped because the monitor has already reached the limit of allowed environments. Remove an existing environment to create new ones.": [
+    "发送了一个 [checkinTooltip:签到]，但由于监控已达到允许环境的限制而被丢弃。请删除一个现有环境以创建新的环境。"
+  ],
+  "A sent [checkinTooltip:check-in] was dropped due to being rate limited. Review our rate limits for more information.": [
+    "由于受到速率限制，发送的 [checkinTooltip:签到] 被丢弃。请查看我们的速率限制以获取更多信息。"
+  ],
+  "We have detected a problem with your organization and disabled check-in ingestion. Contact [link:support] for details.": [
+    "我们检测到您的组织存在问题并禁用了签到摄取。请联系 [link: 支持] 以获取详细信息。"
+  ],
+  "Unknown problem occurred while processing this [checkinTooltip:check-in]": [
+    "处理此 [checkinTooltip:签到] 时发生了未知问题。"
+  ],
+  "Environment mismatch": ["环境不匹配"],
+  "Check-in already completed": ["签到已完成"],
+  "DSN project mismatch": ["DSN 项目不匹配"],
+  "Invalid duration": ["无效的持续时间"],
+  "Invalid GUID": ["无效的 GUID"],
+  "Invalid check-in payload": ["无效的签到负载"],
+  "Monitor disabled": ["监控已禁用"],
+  "Insufficient quota to upsert": ["配额不足无法 upsert"],
+  "Invalid monitor payload": ["无效的监控负载"],
+  "Invalid environment": ["无效的环境"],
+  "Maximum monitor limit exceeded": ["超过最大监控限制"],
+  "Monitor not found": ["未找到监控"],
+  "Environment limit exceeded": ["超过环境限制"],
+  "Rate limited": ["受到速率限制"],
+  "Disabled check-in ingestion": ["禁用签到摄取"],
+  "Unknown processing error": ["未知处理错误"],
+  "To notify Sentry if your job execution fails": ["如果作业执行失败，通知 Sentry"],
+  "[installLink:Install and configure] the Sentry PHP SDK (min v3.16.0), then instrument your monitor:": [
+    "[installLink:安装和配置] Sentry PHP SDK（最低版本 3.16.0），然后设置您的监控："
+  ],
+  "[installLink:Install and configure] the Sentry PHP Laravel SDK (min v3.3.1), then add the [sentryMonitor:sentryMonitor()] call to your scheduled tasks defined in your [kernel:app/Console/Kernel.php] file:": [
+    "[installLink:安装和配置] Sentry PHP Laravel SDK（最低版本 3.3.1），然后在 [kernel:app/Console/Kernel.php] 文件中定义的计划任务中添加 [sentryMonitor:sentryMonitor()] 调用："
+  ],
+  "[installLink:Install and configure] the Sentry Node SDK (min v7.52), then instrument your monitor:": [
+    "[installLink:安装和配置] Sentry Node SDK（最低版本 7.52），然后设置您的监控："
+  ],
+  "[installLink:Install and configure] the Sentry Go SDK (min v0.23.0), then instrument your monitor:": [
+    "[installLink:安装和配置] Sentry Go SDK（最低版本 0.23.0），然后设置您的监控："
+  ],
+  "[installLink:Install and configure] the Sentry Java SDK (min v6.30.0), then instrument your monitor:": [
+    "[installLink:安装和配置] Sentry Java SDK（最低版本 6.30.0），然后设置您的监控："
+  ],
+  "[installLink:Install and configure] the Sentry Spring Boot SDK (min v6.30.0), then instrument your monitor:": [
+    "[installLink:安装和配置] Sentry Spring Boot SDK（最低版本 6.30.0），然后设置您的监控："
+  ],
+  "[installLink:Install and configure] the Sentry Java SDK (min v6.30.0), make sure `SentryJobListener` is [configureLink:configured], then instrument your monitor:": [
+    "[installLink:安装和配置] Sentry Java SDK（最低版本 6.30.0），确保 `SentryJobListener` 已 [configureLink:配置]，然后设置您的监控："
+  ],
+  "Use the [additionalDocs: Celery integration] to monitor your Celery periodic tasks. Initialize Sentry in the celeryd_init or beat_init signal.": [
+    "使用 [additionalDocs: Celery 集成] 监控您的 Celery 周期性任务。在 celeryd_init 或 beat_init 信号中初始化 Sentry。"
+  ],
+  "Make sure to set monitor_beat_tasks=True in CeleryIntegration:": ["确保在 CeleryIntegration 中设置 monitor_beat_tasks=True："],
+  "[installLink:Install and configure] the Sentry Python SDK (min v1.17.0), then instrument your monitor:": [
+    "[installLink:安装和配置] Sentry Python SDK（最低版本 1.17.0），然后设置您的监控："
+  ],
+  "You can use the [additionalDocs: PHP SDK] to create and update your Monitors programmatically with code rather than creating them manually.": [
+    "您可以使用 [additionalDocs: PHP SDK] 通过代码而不是手动创建来程序化地创建和更新您的监控。"
+  ],
+  "Use the [additionalDocs: Laravel SDK] to monitor your scheduled task.": ["使用 [additionalDocs: Laravel SDK] 监控您的计划任务。"],
+  "To set up, add the \"sentryMonitor()\" macro to your scheduled tasks defined in your \"app/Console/Kernel.php\" file:": [
+    "设置时，请将 \"sentryMonitor()\" 宏添加到 \"app/Console/Kernel.php\" 文件中定义的计划任务："
+  ],
+  "By default, the Laravel SDK will infer various parameters of your scheduled task. For greater control, we expose some optional parameters on the sentryMonitor() macro.": [
+    "默认情况下，Laravel SDK 将推断计划任务的各种参数。为了获得更大的控制，我们在 sentryMonitor() 宏中提供了一些可选参数。"
+  ],
+  "Use the [additionalDocs:Node SDK] to create and update your Monitors programmatically with code rather than creating them manually.": [
+    "使用 [additionalDocs: Node SDK] 通过代码而不是手动创建来程序化地创建和更新您的监控。"
+  ],
+  "You can use the [additionalDocs: Go SDK] to create and update your Monitors programmatically with code rather than creating them manually.": [
+    "您可以使用 [additionalDocs: Go SDK] 通过代码而不是手动创建来程序化地创建和更新您的监控。"
+  ],
+  "You can use the [additionalDocs: Java SDK] to create and update your Monitors programmatically with code rather than creating them manually.": [
+    "您可以使用 [additionalDocs: Java SDK] 通过代码而不是手动创建来程序化地创建和更新您的监控。"
+  ],
+  "You can use the [additionalDocs: Ruby SDK] to create and update your Monitors programmatically with code rather than creating them manually.": [
+    "您可以使用 [additionalDocs: Ruby SDK] 通过代码而不是手动创建来程序化地创建和更新您的监控。"
+  ],
+  "You can use the mixin module from the [additionalDocs: Ruby SDK] to automatically capture check-ins from your jobs rather than creating them manually.": [
+    "您可以使用 [additionalDocs: Ruby SDK] 中的 mixin 模块自动从作业中捕获签到，而不是手动创建。"
+  ],
+  "ActiveJob Example:": ["ActiveJob 示例："],
+  "Sidekiq Example:": ["Sidekiq 示例："],
+  "You must pass in the monitor config explicity for upserts or you must create a new monitor explicitly in the UI.": [
+    "对于 upserts，您必须显式传递监控配置，或者在 UI 中显式创建一个新监控。"
+  ],
+  "If you use gems such as [sidekiqCronLink:sidekiq-cron] or [sidekiqSchedulerLink:sidekiq-scheduler] to manage your scheduled jobs, Sentry can automatically monitor all of them for you without any additional configuration.": [
+    "如果您使用诸如 [sidekiqCronLink:sidekiq-cron] 或 [sidekiqSchedulerLink:sidekiq-scheduler] 之类的 gem 管理计划作业，Sentry 可以为您自动监控所有作业，无需额外配置。"
+  ],
+  "[installLink:Install and configure] the Sentry Ruby and Sidekiq SDKs (min v5.14.0) and turn on the relevant patches:": [
+    "[installLink:安装和配置] Sentry Ruby 和 Sidekiq SDK（最低版本 5.14.0），并启用相关补丁："
+  ],
+  "[installLink:Install and configure] the Sentry Ruby SDK (min v5.12.0), then instrument your monitor:": [
+    "[installLink:安装和配置] Sentry Ruby SDK（最低版本 5.12.0），然后设置您的监控："
+  ],
+  "[installLink:Install and configure] the Sentry Python SDK (min v1.17.0), then initialize Sentry either in [celerydInit:celeryd_init] or [beatInit:beat_init] signal:": [
+    "[installLink:安装和配置] Sentry Python SDK（最低版本 1.17.0），然后在 [celerydInit:celeryd_init] 或 [beatInit:beat_init] 信号中初始化 Sentry："
+  ],
+  "[installLink:Install and configure] the Sentry Ruby and Rails SDKs (min v5.12.0), then instrument your job with our mixin module:": [
+    "[installLink:安装和配置] Sentry Ruby 和 Rails SDK（最低版本 5.12.0），然后使用我们的 mixin 模块设置您的作业："
+  ],
+  "You can pass in optional attributes as follows:": ["您可以如下传递可选属性："],
+  "[installLink:Install and configure] the Sentry Ruby and Sidekiq SDKs (min v5.12.0), then instrument your job with our mixin module:": [
+    "[installLink:安装和配置] Sentry Ruby 和 Sidekiq SDK（最低版本 5.12.0），然后使用我们的 mixin 模块设置您的作业："
+  ],
+  "Link your Celery task to your Monitor:": ["将您的 Celery 任务链接到您的监控："],
+  "Make sure to [installLink:install the Sentry CLI] (min v2.16.1), then instrument your monitor:": [
+    "请确保 [installLink:安装 Sentry CLI]（最低版本 2.16.1），然后设置您的监控："
+  ],
+  "Enable this monitor": ["启用此监控"],
+  "Disable this monitor and discard incoming check-ins": ["禁用此监控并丢弃传入的签到"],
+  "Next %s": ["下一个 %s"],
+  "Previous %s": ["上一个 %s"],
+  "Sentry is currently experiencing an outage which may affect Check-In reliability.": [
+    "Sentry 正在经历一次故障，可能会影响签到的可靠性。"
+  ],
+  "Sentry experienced an outage which may have affected check-in's during this time.": [
+    "Sentry 经历了一次故障，可能会影响在此期间的签到。"
+  ],
+  "Add Monitor": ["添加监控"],
+  "This monitor is disabled and is not accepting check-ins.": ["此监控已禁用，不接受签到。"],
+  "Errors were encountered while ingesting check-ins for this monitor": ["在摄取此监控的签到时遇到了错误。"],
+  "The monitor you were looking for was not found.": ["未找到您要查找的监控。"],
+  "Edit Monitor": ["编辑监控"],
+  "Search by name or slug": ["按名称或标识符搜索"],
+  "Errors were encountered while ingesting check-ins for the selected projects": [
+    "在摄取所选项目的签到时遇到了错误。"
+  ],
+  "Scheduled monitors that check in on recurring jobs and tell you if they’re running on schedule, failing, or succeeding.": [
+    "定期检查重复作业的监控，并告知您它们是否按计划运行、失败或成功。"
+  ],
+  "Okay": ["正常"],
+  "In Progress": ["进行中"],
+  "Timed Out": ["已超时"],
+  "year": ["年"],
+  "years": ["年"],
+  "Unknown schedule": ["未知计划"],
+  "Every minute": ["每分钟"],
+  "Every %s minutes": ["每 %s 分钟"],
+  "Every hour": ["每小时"],
+  "Every %s hours": ["每 %s 小时"],
+  "Every day": ["每天"],
+  "Every %s days": ["每 %s 天"],
+  "Every week": ["每周"],
+  "Every %s weeks": ["每 %s 周"],
+  "Every month": ["每月"],
+  "Every %s months": ["每 %s 个月"],
+  "Every year": ["每年"],
+  "Every %s years": ["每 %s 年"],
+  "Pardon the interruption, we just need to get a quick answer from you.": ["抱歉打扰了，我们只需要您快速回答一个问题。"],
+  "Email Updates": ["邮件更新"],
+  "We'd love to keep you updated via email with product and feature\n               announcements, promotions, educational materials, and events. Our updates\n               focus on relevant information, and we'll never sell your data to third\n               parties. See our [link:Privacy Policy] for more details.\n               ": [
+    "我们希望通过电子邮件向您发送产品和功能公告、促销、教育资料和活动的更新。我们的更新专注于相关信息，我们绝不会将您的数据出售给第三方。请参阅我们的 [link: 隐私政策] 以获取更多详细信息。\n               "
+  ],
+  "Failed to load SDK configuration": ["加载 SDK 配置失败"],
+  "platform selected": ["已选择平台"],
+  "Loading SDK configuration…": ["正在加载 SDK 配置……"],
+  "Next Platform": ["下一个平台"],
+  "View Sample Error": ["查看示例错误"],
+  "Take me to my error": ["带我查看我的错误"],
+  "Skip Onboarding": ["跳过引导"],
+  "Error Received": ["已收到错误"],
+  "Waiting for error": ["等待错误"],
+  "You'll need to send your first error to continue": ["您需要发送第一个错误才能继续"],
+  "Waiting to receive first event to continue": ["等待接收第一个事件才能继续"],
+  "Learn more about CloudFormation": ["了解更多关于 CloudFormation 的信息"],
+  "Just press the [addInstallation] button below and complete the steps in the popup that opens.": [
+    "只需按下下面的 [addInstallation] 按钮并完成弹出窗口中的步骤。"
+  ],
+  "Add Installation": ["添加安装"],
+  "If you don’t want to add CloudFormation stack to your AWS environment, press the [manualSetup] button instead.": [
+    "如果您不想向 AWS 环境添加 CloudFormation 堆栈，请改按 [manualSetup] 按钮。"
+  ],
+  "The automated AWS Lambda setup will instrument your Lambda functions with Sentry error monitoring and allow you to use tracing without any code changes. We use CloudFormation Stack ([learnMore]) to create the Sentry role which gives us access to your AWS account.": [
+    "自动化的 AWS Lambda 设置将使用 Sentry 错误监控来设置您的 Lambda 函数，并允许您在不进行任何代码更改的情况下使用跟踪。我们使用 CloudFormation 堆栈 ([learnMore]) 来创建 Sentry 角色，从而获得对您的 AWS 账户的访问权限。"
+  ],
+  "Congrats, you just installed the %s integration! Now that it's installed, the next time you trigger an error it will go to your Sentry.": [
+    "恭喜，您刚刚安装了 %s 集成！现在安装完成后，下次触发错误时它将发送到您的 Sentry。"
+  ],
+  "This snippet includes an intentional error, so you can test that everything is working as soon as you set it up:": [
+    "此代码片段包含一个故意的错误，以便您在设置完成后可以测试一切是否正常工作："
+  ],
+  "Processing sample event...": ["正在处理示例事件……"],
+  "Failed to create a new sample event": ["创建新的示例事件失败"],
+  "Failed to load sample event": ["加载示例事件失败"],
+  "View Full Documentation": ["查看完整文档"],
+  "Failed to load the integration for the %s platform.": ["加载 %s 平台的集成失败。"],
+  "Automatically instrument %s": ["自动设置 %s"],
+  "Don't have have permissions to create a Cloudformation stack? [link:Invite your team instead].": [
+    "没有创建 Cloudformation 堆栈的权限？[link: 邀请您的团队成员代替]。"
+  ],
+  "Invite your team instead": ["邀请您的团队成员代替"],
+  "Hey, just a heads up - we haven't received any data for this SDK yet and by going back all changes will be discarded. Are you sure you want to head back?": [
+    "嘿，提醒一下——我们尚未收到此 SDK 的任何数据，如果返回，所有更改都将被丢弃。您确定要返回吗？"
+  ],
+  "Yes I'm sure": ["是的，我确定"],
+  "Select platform": ["选择平台"],
+  "Select the platform you want to monitor": ["选择您想要监控的平台"],
+  "Set up a separate project for each part of your application (for example, your API server and frontend client), to quickly pinpoint which part of your application errors are coming from.": [
+    "为应用程序的每个部分（例如，您的 API 服务器和前端客户端）设置一个单独的项目，以便快速定位错误来源。"
+  ],
+  "Configure %s SDK": ["配置 %s SDK"],
+  "Failed to update the project key with the selected products.": ["使用所选产品更新项目密钥失败。"],
+  "Failed to load Client Keys for the project.": ["加载项目的客户端密钥失败。"],
+  "Configuration (Optional)": ["配置（可选）"],
+  "Learn how to enable readable stack traces in your Sentry errors.": ["了解如何在 Sentry 错误中启用可读的堆栈跟踪。"],
+  "SDK Configuration": ["SDK 配置"],
+  "Learn how to configure your SDK using our Loader Script": ["了解如何使用我们的加载器脚本配置您的 SDK"],
+  "Unable to updated dynamic SDK loader configuration": ["无法更新动态 SDK 加载器配置"],
+  "Your code is probably broken. Maybe not. Find out for sure. Get started below.": [
+    "您的代码很可能有问题。也许没有。确定一下。开始操作如下。"
+  ],
+  "Select your languages or frameworks and install the SDKs to start tracking issues": [
+    "选择您的语言或框架并安装 SDK 以开始跟踪问题"
+  ],
+  "Set up my team": ["设置我的团队"],
+  "Invite [friends] coworkers. You shouldn’t have to fix what you didn’t break": [
+    "邀请 [friends] 同事。您不应该修复您没有破坏的东西"
+  ],
+  "friends": ["朋友"],
+  "Invite Team": ["邀请团队"],
+  "Gee, I've used Sentry before.": ["嗯，我以前用过 Sentry。"],
+  "Skip onboarding.": ["跳过引导。"],
+  "You do not have access to this organization.": ["您对此组织没有访问权限。"],
+  "Creating Organization…": ["正在创建组织……"],
+  "Unable to create organization.": ["无法创建组织。"],
+  "Data Storage Location": ["数据存储位置"],
+  "Choose where to store your organization's data. Please note, you won't be able to change locations once your organization has been created. [learnMore:Learn More]": [
+    "选择存储组织数据的位置。请注意，一旦组织创建完成，您将无法更改存储位置。[learnMore: 了解更多]"
+  ],
+  "[relocationLink:Relocating from self-hosted?]": ["[relocationLink: 从自托管迁移]?"],
+  "Your request to join has been sent.": ["您的加入请求已发送。"],
+  "You will receive an email when your request is approved.": ["您的请求获批时，您将收到电子邮件。"],
+  "Ask the admins if you can join the [orgId] organization.": ["询问管理员您是否可以加入 [orgId] 组织。"],
+  "There was an error loading your organization.": ["加载您的组织时出错。"],
+  "Organization Restored": ["组织已恢复"],
+  "The [name] organization is currently scheduled for deletion.": ["[name] 组织目前计划删除。"],
+  "Note: Restoration is available until deletion has started. Once it begins, there is no recovering the data that has been removed.": [
+    "注意：在删除开始之前可以恢复。一旦开始，已删除的数据将无法恢复。"
+  ],
+  "A view of the usage data that Sentry has received across your entire organization.": [
+    "查看 Sentry 在整个组织中接收到的使用数据。"
+  ],
+  "Health": ["健康状况"],
+  "Organization Usage Stats": ["组织使用统计"],
+  "A view of the usage data that Sentry has received across your entire organization. [link: Read the docs].": [
+    "查看 Sentry 在整个组织中接收到的使用数据。[link: 阅读文档]。"
+  ],
+  "Last 2 weeks": ["过去 2 周"],
+  "Last 4 weeks": ["过去 4 周"],
+  "Last 8 weeks": ["过去 8 周"],
+  "Last 12 weeks": ["过去 12 周"],
+  "Project Health": ["项目健康状况"],
+  "The percentage of healthy, errored, and abnormal sessions that didn’t cause a crash.": [
+    "未导致崩溃的健康、错误和异常会话的百分比。"
+  ],
+  "The number of unique users that experienced load times 4x the project’s configured threshold.": [
+    "经历了项目配置阈值 4 倍加载时间的独特用户数量。"
+  ],
+  "Metric Alerts Triggered": ["触发的指标警报"],
+  "Alerts triggered from the Alert Rules your team created.": ["由您的团队创建的警报规则触发的警报。"],
+  "The releases that were created in your team’s projects.": ["在您的团队项目中创建的版本。"],
+  "Number of Releases": ["版本数量"],
+  "Team Issues": ["团队问题"],
+  "All Unresolved Issues": ["所有未解决的问题"],
+  "This includes New and Returning issues in the last 7 days as well as those that haven’t been resolved or archived in the past.": [
+    "包括过去 7 天内的新问题和回归问题，以及过去未解决或未存档的问题。"
+  ],
+  "New and Returning Issues": ["新问题和回归问题"],
+  "The new, regressed, and escalating issues that were assigned to your team.": [
+    "分配给您的团队的新问题、回归问题和升级问题。"
+  ],
+  "Issues Triaged": ["已分类的问题"],
+  "How many new and returning issues were reviewed by your team each week. Reviewing an issue includes marking as reviewed, resolving, assigning to another team, or deleting.": [
+    "每周您的团队审查了多少新问题和回归问题。审查问题包括标记为已审查、解决、分配给其他团队或删除。"
+  ],
+  "Age of Unresolved Issues": ["未解决的问题年龄"],
+  "How long ago since unresolved issues were first created.": ["未解决的问题首次创建的时间。"],
+  "The mean time it took for issues to be resolved by your team.": ["您的团队解决问题的平均时间。"],
+  "Time to Resolution": ["解决时间"],
+  "No alerts triggered for team’s projects": ["团队项目未触发警报"],
+  "Last [period] Average": ["上一个 [周期] 平均值"],
+  "This Week": ["本周"],
+  "Difference": ["差异"],
+  "No unresolved issues for this team’s projects": ["此团队项目没有未解决的问题"],
+  "Oldest Issues": ["最老的问题"],
+  "Age": ["年龄"],
+  "6 months": ["6 个月"],
+  "1 year": ["1 年"],
+  "> 1 year": ["> 1 年"],
+  "total": ["总计"],
+  "change": ["变化"],
+  "better": ["更好"],
+  "worse": ["更差"],
+  "No key transactions starred by this team": ["此团队没有标记关键事务"],
+  "Key transaction": ["关键事务"],
+  "Last [period]": ["上一个 [周期]"],
+  "Last 7 Days": ["过去 7 天"],
+  "This Period": ["本周期"],
+  "No releases were setup for this team’s projects": ["此团队项目未设置版本"],
+  "Releases Per Project": ["每个项目的版本数"],
+  "No projects with release health enabled": ["没有启用版本健康的项目"],
+  "[period] Avg": ["[周期] 平均"],
+  "Current Usage Period": ["当前使用周期"],
+  "Cumulative": ["累积"],
+  "Periodic": ["定期"],
+  "Total [dataCategory]": ["总计 [数据类别]"],
+  "Accepted [dataCategory]": ["已接受的 [数据类别]"],
+  "Accepted [dataCategory] were successfully processed by Sentry": ["Sentry 成功处理了已接受的 [数据类别]"],
+  "Filtered [dataCategory]": ["已过滤的 [数据类别]"],
+  "Filtered [dataCategory] were blocked due to your [filterSettings: inbound data filter] rules": [
+    "由于您的 [filterSettings: 入站数据筛选器] 规则，已过滤的 [数据类别] 被阻止"
+  ],
+  "Rate Limited [dataCategory]": ["受速率限制的 [数据类别]"],
+  "Rate Limited [dataCategory] were discarded due to rate limits or quota": [
+    "由于速率限制或配额，受速率限制的 [数据类别] 被丢弃"
+  ],
+  "Invalid [dataCategory]": ["无效的 [数据类别]"],
+  "Invalid [dataCategory] were sent by the SDK and were discarded because the data did not meet the basic schema requirements": [
+    "SDK 发送了无效的 [数据类别]，由于数据不符合基本架构要求，因此被丢弃"
+  ],
+  "[start] — [end] ([timezone] UTC, [interval] interval)": ["[start] — [end] ([时区] UTC, [间隔] 间隔)"],
+  "Show client-discarded data:": ["显示客户端丢弃的数据："],
+  "in last min": ["最后一分钟内"],
+  "Invalid": ["无效"],
+  "Filter your projects": ["筛选您的项目"],
+  "You don't have access to any projects, or your organization has no projects.": [
+    "您没有任何项目的访问权限，或者您的组织没有项目。"
+  ],
+  "Learn more about [link:Project Access]": ["了解更多关于 [link: 项目访问] 的信息"],
+  "Go to project settings": ["转到项目设置"],
+  "Transaction Summary": ["事务摘要"],
+  "Span Summary": ["跨度摘要"],
+  "Vital Detail": ["重要细节"],
+  "LCP p75": ["LCP p75"],
+  "FCP p75": ["FCP p75"],
+  "LCP Distribution": ["LCP 分布"],
+  "FCP Distribution": ["FCP 分布"],
+  "Transactions Per Minute": ["每分钟事务数"],
+  "Duration p50": ["持续时间 p50"],
+  "Duration p75": ["持续时间 p75"],
+  "Duration p95": ["持续时间 p95"],
+  "Duration p99": ["持续时间 p99"],
+  "Cold Start Duration p50": ["冷启动持续时间 p50"],
+  "Cold Start Duration p75": ["冷启动持续时间 p75"],
+  "Cold Start Duration p95": ["冷启动持续时间 p95"],
+  "Cold Start Duration p99": ["冷启动持续时间 p99"],
+  "Cold Start Distribution": ["冷启动分布"],
+  "Warm Start Duration p50": ["热启动持续时间 p50"],
+  "Warm Start Duration p75": ["热启动持续时间 p75"],
+  "Warm Start Duration p95": ["热启动持续时间 p95"],
+  "Warm Start Duration p99": ["热启动持续时间 p99"],
+  "Warm Start Distribution": ["热启动分布"],
+  "TPM is the number of recorded transaction events per minute.": ["TPM 是每分钟记录的事务事件数量。"],
+  "Throughput is the number of recorded transaction events per minute.": ["吞吐量是每分钟记录的事务事件数量。"],
+  "Failure rate is the percentage of recorded transactions that had a known and unsuccessful status.": [
+    "失败率是记录的事务中具有已知且不成功状态的百分比。"
+  ],
+  "p50 indicates the duration that 50% of transactions are faster than.": ["p50 表示 50% 的事务所用时间比该值短。"],
+  "p75 indicates the duration that 75% of transactions are faster than.": ["p75 表示 75% 的事务所用时间比该值短。"],
+  "p95 indicates the duration that 95% of transactions are faster than.": ["p95 表示 95% 的事务所用时间比该值短。"],
+  "p99 indicates the duration that 99% of transactions are faster than.": ["p99 表示 99% 的事务所用时间比该值短。"],
+  "Largest contentful paint (LCP) is a web vital meant to represent user load times": [
+    "最大的内容绘制 (LCP) 是一个网络核心指标，用于表示用户的加载时间"
+  ],
+  "First contentful paint (FCP) is a web vital meant to represent user load times": [
+    "首次内容绘制 (FCP) 是一个网络核心指标，用于表示用户的加载时间"
+  ],
+  "First input delay (FID) is a web vital representing load for the first user interaction on a page.": [
+    "首次输入延迟 (FID) 是一个网络核心指标，表示页面上首次用户交互的加载情况。"
+  ],
+  "Cumulative layout shift (CLS) is a web vital measuring unexpected visual shifting a user experiences.": [
+    "累积布局偏移 (CLS) 是一个网络核心指标，用于测量用户经历的意外视觉偏移。"
+  ],
+  "The breakdown of transaction statuses. This may indicate what type of failure it is.": [
+    "事务状态的分解。这可能表明是什么类型的失败。"
+  ],
+  "Distribution buckets counts of transactions at specifics times for your current date range": [
+    "在当前日期范围内特定时间的事务分布桶计数"
+  ],
+  "User Misery is a score that represents the number of unique users who have experienced load times 4x the project's configured threshold. Adjust project threshold in project performance settings.": [
+    "用户痛苦是一个分数，表示经历了项目配置阈值 4 倍加载时间的独特用户数量。在项目性能设置中调整项目阈值。"
+  ],
+  "Apdex is the ratio of both satisfactory and tolerable response times to all response times. To adjust the tolerable threshold, go to project performance settings.": [
+    "Apdex 是满意和可接受响应时间与所有响应时间的比率。要调整可接受阈值，请转到项目性能设置。"
+  ],
+  "The count of the number of slow frames in the transaction.": ["事务中慢帧的数量。"],
+  "The count of the number of frozen frames in the transaction.": ["事务中冻结帧的数量。"],
+  "Transactions with the most associated errors.": ["关联错误最多的事务。"],
+  "The most instances of an issue for a related transaction.": ["相关事务中问题实例最多。"],
+  "Database spans on which the application spent most of its total time.": ["应用程序花费总时间最多的数据库跨度。"],
+  "Render blocking resources on which the application spent most of its total time.": [
+    "应用程序花费总时间最多的渲染阻塞资源。"
+  ],
+  "Outgoing HTTP domains on which the application spent most of its total time.": [
+    "应用程序花费总时间最多的出站 HTTP 域。"
+  ],
+  "Transactions with the highest cache miss rate.": ["缓存未命中率最高的事务。"],
+  "The transactions with the slowest spans of a certain type.": ["特定类型跨度最慢的事务。"],
+  "The percentage of the transaction duration in which the application is in a stalled state.": [
+    "事务持续时间中应用程序处于停滞状态的百分比。"
+  ],
+  "Vitals Performance Details": ["核心性能详情"],
+  "p50 Duration": ["p50 持续时间"],
+  "p95 Duration": ["p95 持续时间"],
+  "p99 Duration": ["p99 持续时间"],
+  "Your main view for transaction data with graphs that visualize transactions or trends, as well as a table where you can drill down on individual transactions.": [
+    "您的主要事务数据视图，包含可视化事务或趋势的图表，以及一个可以深入查看单个事务的表格。"
+  ],
+  "View Trends": ["查看趋势"],
+  "You have some unparameterized transactions which are incompatible with dynamic sampling. You can either [setNames] or [discover]": [
+    "您有一些未参数化的事务，与动态采样不兼容。您可以 [setNames] 或 [discover]"
+  ],
+  "set names manually": ["手动设置名称"],
+  "A few projects are incompatible with dynamic sampling. To enable this feature [updateSDK].": [
+    "一些项目与动态采样不兼容。要启用此功能 [updateSDK]。"
+  ],
+  "A few projects are incompatible with dynamic sampling. You can either [updateSDK] or [onlyViewCompatible]": [
+    "一些项目与动态采样不兼容。您可以 [updateSDK] 或 [onlyViewCompatible]"
+  ],
+  "only view compatible projects.": ["仅查看兼容的项目。"],
+  "Your project has an outdated SDK which is incompatible with dynamic sampling. To enable this feature [updateSDK].": [
+    "您的项目使用的是过时的 SDK，与动态采样不兼容。要启用此功能 [updateSDK]。"
+  ],
+  "open them in Discover.": ["在 Discover 中打开它们。"],
+  "You have some unparameterized transactions which are incompatible with dynamic sampling. You can [discover]": [
+    "您有一些未参数化的事务，与动态采样不兼容。您可以 [discover]"
+  ],
+  "Duration (p75)": ["持续时间 (p75)"],
+  "Slow Frames (p75)": ["慢帧 (p75)"],
+  "Frozen Frames (p75)": ["冻结帧 (p75)"],
+  "Cold Start (p75)": ["冷启动 (p75)"],
+  "Warm Start (p75)": ["热启动 (p75)"],
+  "Stall Percentage (p75)": ["停滞百分比 (p75)"],
+  "Frontend": ["前端"],
+  "Backend": ["后端"],
+  "No vitals found": ["未找到核心指标"],
+  "The p75 for all transactions is ": ["所有事务的 p75 是 "],
+  "Transactions may be missing due to the filters above, a low sampling rate, or an error with instrumentation. Please see the [link] for more information.": [
+    "由于上述筛选条件、采样率低或 instrumentation 错误，可能会遗漏事务。请参阅 [link] 以获取更多信息。"
+  ],
+  "Cache module documentation": ["缓存模块文档"],
+  "No transactions with [spanCategory] spans found. You may need to add integrations to your [link] to capture these spans.": [
+    "未找到具有 [spanCategory] 跨度的事务。您可能需要向 [link] 添加集成以捕获这些跨度。"
+  ],
+  "Database": ["数据库"],
+  "performance monitoring setup": ["性能监控设置"],
+  "Exclude this transaction from the search filter.": ["将此事务排除在搜索筛选器之外。"],
+  "Transactions may not be listed due to the filters above or a low sampling rate": [
+    "由于上述筛选条件或采样率低，可能不会列出事务"
+  ],
+  "Domains may be missing due to the filters above, a low sampling rate, or an error with instrumentation. Please see the [link] for more information.": [
+    "由于上述筛选条件、采样率低或 instrumentation 错误，可能会遗漏域。请参阅 [link] 以获取更多信息。"
+  ],
+  "Requests module documentation": ["请求模块文档"],
+  "FID Distribution": ["FID 分布"],
+  "Worst LCP Web Vitals": ["最差的 LCP 网络核心指标"],
+  "Worst FCP Web Vitals": ["最差的 FCP 网络核心指标"],
+  "Worst FID Web Vitals": ["最差的 FID 网络核心指标"],
+  "Worst CLS Web Vitals": ["最差的 CLS 网络核心指标"],
+  "p75 Duration": ["p75 持续时间"],
+  "p75 LCP": ["p75 LCP"],
+  "Cold Startup Time": ["冷启动时间"],
+  "Warm Startup Time": ["热启动时间"],
+  "Most Related Errors": ["相关错误最多"],
+  "Most Related Issues": ["相关问题最多"],
+  "Most Time-Consuming": ["最耗时"],
+  "Top queries by total duration": ["总持续时间最长的查询"],
+  "Render blocking for pages": ["页面渲染阻塞"],
+  "Highest Cache Miss Rates": ["缓存未命中率最高"],
+  "Suggested Transactions": ["建议的事务"],
+  "Most Time-Consuming Domains": ["最耗时的域"],
+  "Top outgoing HTTP request domains by time spent": ["按耗时排序的出站 HTTP 请求域"],
+  "Best Page Opportunities": ["最佳页面优化机会"],
+  "Pages to improve your performance score": ["提高性能得分的页面"],
+  "The overall performance score across selected frontend projects only": ["选定的前端项目的整体性能得分"],
+  "Slow HTTP Ops": ["慢 HTTP 操作"],
+  "Slow Browser Ops": ["慢浏览器操作"],
+  "Slow Resource Ops": ["慢资源操作"],
+  "Slow DB Ops": ["慢数据库操作"],
+  "Time to Initial Display": ["初始显示时间"],
+  "Time to Full Display": ["完全显示时间"],
+  "Most Slow Frames": ["慢帧最多"],
+  "Most Frozen Frames": ["冻结帧最多"],
+  "Most Improved (P95)": ["改进最多（P95）"],
+  "This compares the baseline (%s) of the past with the present.": ["将过去的基线（%s）与现在进行比较。"],
+  "Most Regressed (P95)": ["回归最多（P95）"],
+  "Most Changed (P95)": ["变化最大（P95）"],
+  "Span Operations Breakdown": ["跨度操作分解"],
+  "Average TTIDs": ["平均 TTID"],
+  "Top screens by count": ["按计数排序的顶级屏幕"],
+  "Top screens by start count": ["按启动计数排序的顶级屏幕"],
+  "In the last %s ": ["在最近的 %s 内"],
+  "In the last period": ["在最近的周期内"],
+  "[count] errors": ["[count] 个错误"],
+  "Found in the following transactions": ["在以下事务中发现"],
+  "Compared to last %s ": ["与上一个 %s 相比"],
+  "Compared to the last period": ["与上一个周期相比"],
+  "P75 in Top Transactions": ["顶级事务中的 P75"],
+  "Trending Transactions": ["趋势事务"],
+  "Trace": ["跟踪"],
+  "Vitals": ["核心指标"],
+  "Assembling the trace": ["正在组装跟踪"],
+  "Ughhhhh, we failed to load your trace...": ["呃，我们未能加载您的跟踪……"],
+  "Seeing this often? Send us ": ["经常看到这个吗？给我们发送"],
+  "This trace does not contain any data?!": ["此跟踪不包含任何数据？！"],
+  "Empty": ["空"],
+  "[type] did not report any span data": ["[类型] 没有报告任何跨度数据"],
+  "Parent Transaction": ["父事务"],
+  "Go to Issue": ["转到问题"],
+  "No stack trace has been reported with this error": ["此错误未报告堆栈跟踪"],
+  "[count]+  issues, [link]": ["[count]+ 个问题，[链接]"],
+  "Performance issue": ["性能问题"],
+  "Performance Issues": ["性能问题"],
+  "[errors] [errorsText] and [performance_issues] [performanceIssuesText]": [
+    "[errors] [errorsText] 和 [performance_issues] [performanceIssuesText]"
+  ],
+  "performance issue": ["性能问题"],
+  "performance issues": ["性能问题"],
+  "Failed to fetch issue": ["获取问题失败"],
+  "Previous Span": ["上一个跨度"],
+  "Next Span": ["下一个跨度"],
+  "Missing Instrumentation": ["缺少 Instrumentation"],
+  "Data quality": ["数据质量"],
+  "The cause of missing data could be misconfiguration or lack of instrumentation. Send us [feedback] if you are having trouble figuring this out.": [
+    "数据缺失的原因可能是配置错误或缺少 instrumentation。如果您在解决此问题时遇到困难，请给我们发送 [feedback]。"
+  ],
+  "Grouping Logic": ["分组逻辑"],
+  "Chain of immediate and only children spans with the same operation as their parent.": [
+    "与父级具有相同操作的直接且唯一的子跨度链。"
+  ],
+  "Group Count": ["分组计数"],
+  "Grouping Key": ["分组键"],
+  "Span Operation": ["跨度操作"],
+  "Autogroup": ["自动分组"],
+  "5 or more sibling spans with the same operation and description.": ["具有相同操作和描述的 5 个或更多兄弟跨度。"],
+  "Span operation: [operation] and description: [description]": ["跨度操作：[operation] 和描述：[description]"],
+  "Applicable to the children of this event only": ["仅适用于此事件的子项"],
+  "Http": ["HTTP"],
+  "Extract as metric": ["提取为指标"],
+  "Timing-Allow-Origin": ["Timing-Allow-Origin"],
+  " The following sizes were not collected for security reasons. Check if the host serves the appropriate [link] header. You may have to enable this collection manually.": [
+    "由于安全原因，未收集以下大小。请检查主机是否提供了适当的 [link] 标头。您可能需要手动启用此收集。"
+  ],
+  "equal to the avg of [formattedBaseDuration]": ["等于 [formattedBaseDuration] 的平均值"],
+  "[deltaPct] faster than the avg of [formattedBaseDuration]": ["比 [formattedBaseDuration] 的平均值快 [deltaPct]"],
+  "[deltaPct] slower than the avg of [formattedBaseDuration]": ["比 [formattedBaseDuration] 的平均值慢 [deltaPct]"],
+  "Show in View": ["在视图中显示"],
+  "Continuous Profile": ["连续配置文件"],
+  "Show in view": ["在视图中显示"],
+  "Trace Data": ["跟踪数据"],
+  "Failed to fetch transaction details": ["获取事务详情失败"],
+  "The trail of events that happened prior to an event. [link:Learn more]": ["事件发生前的事件轨迹。[link: 了解更多]"],
+  "Cache Metrics": ["缓存指标"],
+  "View transaction summary": ["查看事务摘要"],
+  "Ops Breakdown": ["操作分解"],
+  "Measurements": ["测量"],
+  "Command": ["命令"],
+  "cURL": ["cURL"]
+}

@@ -1,0 +1,1164 @@
+{
+  "Recommended": ["推荐"],
+  "Latest": ["最新"],
+  "This password is too long. It must contain no more than %(max_length)d character.": [
+    "此密码过长，最多只能包含 %(max_length)d 个字符。"
+  ],
+  "Your password must contain no more than %(max_length)d character.": [
+    "您的密码最多只能包含 %(max_length)d 个字符。"
+  ],
+  "Your session has expired.": ["您的会话已过期。"],
+  "Static": ["静态"],
+  "Percent": ["百分比"],
+  "Dynamic": ["动态"],
+  "Low": ["低"],
+  "Medium": ["中"],
+  "High": ["高"],
+  "Auto": ["自动"],
+  "Hourly": ["每小时"],
+  "Daily": ["每日"],
+  "Weekly": ["每周"],
+  "Hourly & Daily": ["每小时和每日"],
+  "Hourly & Weekly": ["每小时和每周"],
+  "Hourly, Daily, & Weekly": ["每小时、每日和每周"],
+  "Daily & Weekly": ["每日和每周"],
+  "We could not verify the authenticity of the installation request. We recommend restarting the installation process.": [
+    "我们无法验证安装请求的真实性，建议您重新启动安装过程。"
+  ],
+  "The base URL for your GitLab instance, including the host and protocol. Do not include the group path.<br>If using gitlab.com, enter https://gitlab.com/": [
+    "您的 GitLab 实例的基本 URL，包括主机和协议，请勿包含组路径。如果使用的是 gitlab.com，请输入 https://gitlab.com/。"
+  ],
+  "This can be found in the URL of your group's GitLab page.<br>For example, if your group URL is https://gitlab.com/my-group/my-subgroup, enter `my-group/my-subgroup`.<br>If you are trying to integrate an entire self-managed GitLab instance, leave this empty. Doing so will also allow you to select projects in all group and user namespaces (such as users' personal repositories and forks).": [
+    "这可以在您的组的 GitLab 页面的 URL 中找到。例如，如果您的组 URL 是 https://gitlab.com/my-group/my-subgroup，请输入 `my-group/my-subgroup`。如果您尝试集成一个完整的自管理 GitLab 实例，请留空。这样做还将允许您选择所有组和用户命名空间中的项目（例如用户的个人仓库和分支）。"
+  ],
+  "Include projects in subgroups of the GitLab group.<br>Not applicable when integrating an entire GitLab instance. All groups are included for instance-level integrations.": [
+    "包含 GitLab 组的子组中的项目。在集成整个 GitLab 实例时不适用。在实例级集成中，所有组都将被包含。"
+  ],
+  "Select what action to take on Sentry Issue when Jira ticket is marked Done.": [
+    "选择在 Jira 工单被标记为已完成时对 Sentry 问题执行的操作。"
+  ],
+  "components, security, customfield_10006": ["组件、安全性、自定义字段_10006"],
+  "Comma-separated Jira field IDs that you want to hide.": ["您想要隐藏的以逗号分隔的 Jira 字段 ID。"],
+  "Jira Server integration is a required field.": ["Jira Server 集成是一个必填字段。"],
+  "Sync Sentry Status to Jira Server": ["将 Sentry 状态同步到 Jira Server"],
+  "When a Sentry issue changes status, change the status of the linked ticket in Jira Server.": [
+    "当 Sentry 问题的状态发生更改时，更改 Jira Server 中关联工单的状态。"
+  ],
+  "Add Jira Server Project": ["添加 Jira Server 项目"],
+  "Could not find Jira Server project": ["找不到 Jira Server 项目"],
+  "Jira Server Project": ["Jira Server 项目"],
+  "Sync Sentry Assignment to Jira Server": ["将 Sentry 分配同步到 Jira Server"],
+  "When an issue is assigned in Sentry, assign its linked Jira Server ticket to the same user.": [
+    "当在 Sentry 中分配问题时，将关联的 Jira Server 工单分配给同一个用户。"
+  ],
+  "Sync Sentry Comments to Jira Server": ["将 Sentry 评论同步到 Jira Server"],
+  "Post comments from Sentry issues to linked Jira Server tickets": ["将 Sentry 问题中的评论发布到关联的 Jira Server 工单中。"],
+  "Sync Jira Server Status to Sentry": ["将 Jira Server 状态同步到 Sentry"],
+  "When a Jira Server ticket is marked done, resolve its linked issue in Sentry. When a Jira Server ticket is removed from being done, unresolve its linked Sentry issue.": [
+    "当 Jira Server 工单被标记为已完成时，在 Sentry 中解决其关联的问题。当 Jira Server 工单不再处于已完成状态时，取消解决其关联的 Sentry 问题。"
+  ],
+  "Sync Jira Server Assignment to Sentry": ["将 Jira Server 分配同步到 Sentry"],
+  "When a ticket is assigned in Jira Server, assign its linked Sentry issue to the same user.": [
+    "当在 Jira Server 中分配工单时，将关联的 Sentry 问题分配给同一个用户。"
+  ],
+  "{metric_and_agg_text} {higher_or_lower} in the last {format_duration_idiomatic(time_window)} ": [
+    ""
+  ],
+  "{metric_and_agg_text} in the last {format_duration_idiomatic(time_window)}": [
+    ""
+  ],
+  "The Opsgenie integration does not exist.": ["Opsgenie 集成不存在。"],
+  "The team \"%(team)s\" does not belong to the %(account)s Opsgenie account.": [
+    "团队 \"%(team)s\" 不属于 %(account)s Opsgenie 账户。"
+  ],
+  "The provided API key is invalid. Please make sure that the Opsgenie API                   key is an integration key of type \"Sentry\" that has configuration access.": [
+    "提供的 API 密钥无效。请确保 Opsgenie API 密钥是具有配置访问权限的 \"Sentry\" 类型集成密钥。"
+  ],
+  "Base URL": ["基础 URL"],
+  "Account Name": ["账户名称"],
+  "Example: 'acme' for https://acme.app.opsgenie.com/": [
+    "示例：对于 https://acme.app.opsgenie.com/，输入 'acme'"
+  ],
+  "Optionally, add your first integration key for sending alerts. You can rename this key later.": [
+    "可选地，添加您的第一个用于发送警报的集成密钥。您可以稍后重命名此密钥。"
+  ],
+  "This integration has already been installed on another Sentry organization which resides in a different region. Installation could not be completed.": [
+    "此集成已在另一个位于不同区域的 Sentry 组织上安装。无法完成安装。"
+  ],
+  "Slack: {message}": ["Slack: {message}"],
+  "Yesterday": ["昨天"],
+  "disabled:not-applicable": ["禁用:不适用"],
+  "disabled:pre-rollout": ["禁用:预发布"],
+  "disabled:manual": ["禁用:手动"],
+  "disabled:spec-limit": ["禁用:规格限制"],
+  "disabled:high-cardinality": ["禁用:高基数"],
+  "enabled:enrolled": ["已启用:已注册"],
+  "enabled:creation": ["已启用:创建"],
+  "enabled:manual": ["已启用:手动"],
+  "Until escalating": ["直到升级"],
+  "Ongoing": ["进行中"],
+  "Escalating": ["正在升级"],
+  "Until condition met": ["直到条件满足"],
+  "Only for me": ["仅限我"],
+  "My Pinned Search": ["我的固定搜索"],
+  "missed": ["错过"],
+  "timeout": ["超时"],
+  "An error check-in was detected": ["检测到错误签入"],
+  "A missed check-in was detected": ["检测到错过签入"],
+  "A timeout check-in was detected": ["检测到超时签入"],
+  "and": ["和"],
+  "%(problem_checkins)s check-ins detected": ["检测到 %(problem_checkins)s 次签入问题"],
+  "Starting Span": ["开始跨度"],
+  "Parallelizable Spans": ["可并行跨度"],
+  "Enter a valid slug consisting of lowercase letters, numbers, underscores or hyphens. It cannot be entirely numeric.": [
+    "请输入由小写字母、数字、下划线或连字符组成的有效slug。它不能完全为数字。"
+  ],
+  "Enter a valid slug consisting of letters, numbers, or hyphens. It cannot be entirely numeric or start/end with a hyphen.": [
+    "请输入由字母、数字或连字符组成的有效slug。它不能完全为数字或以连字符开头/结尾。"
+  ],
+  "Ensure the URL does not contain an extra \t&quot;/&quot; anywhere (eg: https://foo//saml -> https://foo/saml).": [
+    "确保 URL 中任何地方都不存在多余的 \t&quot;/&quot;（例如：https://foo//saml -> https://foo/saml）。"
+  ],
+  "Claim Account": ["声明账户"],
+  "You have been invited to join the following migrated Sentry organizations as": [
+    "您已被邀请以以下身份加入以下迁移的 Sentry 组织："
+  ],
+  "We were unable to locate this account.": ["我们无法找到此账户。"],
+  "This link has expired. Request a new claim account email to set your account\n\t  password and claim your account.": [
+    "此链接已过期。请求发送新的声明账户邮件以设置您的账户密码并声明您的账户。"
+  ],
+  "Resend Email": ["重新发送邮件"],
+  "We have sent an email to the address registered with this account containing further instructions to set your password and claim this account.": [
+    "我们已向此账户注册的地址发送了一封邮件，其中包含进一步的说明，以设置您的密码并声明此账户。"
+  ],
+  "\n            Need help with your account?  Click <a class=\"help-center-link\" href=\"https://sentry.zendesk.com/hc/en-us\">here</a> to check out our help center.\n          ": [
+    "\n            需要账户帮助？点击 <a class=\"help-center-link\" href=\"https://sentry.zendesk.com/hc/en-us\">这里</a> 查看我们的帮助中心。\n          "
+  ],
+  "Transaction Name": ["事务名称"],
+  "Parent Span": ["父跨度"],
+  "Slow Resource Span": ["慢资源跨度"],
+  "Preceding Span": ["前置跨度"],
+  " Repeating Spans (%(num_repeating_spans)s) ": ["重复跨度 (%(num_repeating_spans)s)"],
+  "Parameters": ["参数"],
+  "FCP Delay": ["FCP 延迟"],
+  "Duration Impact": ["持续时间影响"],
+  "\n        You must complete the <a href=\"https://docs.sentry.io/product/integrations/source-code-mgmt/bitbucket/#bitbucket-server\">required steps</a>\n\n        in Bitbucket Server before attempting to connect with Sentry.\n        ": [
+    "\n        在尝试与 Sentry 连接之前，您必须在 Bitbucket Server 中完成 <a href=\"https://docs.sentry.io/product/integrations/source-code-mgmt/bitbucket/#bitbucket-server\">所需步骤</a>。\n        "
+  ],
+  "Discord Expired Link": ["Discord 链接已过期"],
+  "Your link is expired. Please try using the link command in Discord again.": [
+    "您的链接已过期。请尝试再次在 Discord 中使用链接命令。"
+  ],
+  "Discord Linked": ["Discord 已链接"],
+  "Your Discord account has been associated with your Sentry account. You may now take Sentry actions through Discord.": [
+    "您的 Discord 账户已与您的 Sentry 账户关联。现在您可以通过 Discord 执行 Sentry 操作。"
+  ],
+  "Discord Unlinked": ["Discord 已解除关联"],
+  "Your Discord account has been unlinked from your Sentry account.": [
+    "您的 Discord 账户已从您的 Sentry 账户中解除关联。"
+  ],
+  "In the sidebar, select 'Applications'.<br /> Or go to the <code>/-/profile/applications</code> path in your GitLab instance.": [
+    "在侧边栏中，选择“应用程序”。<br /> 或者在您的 GitLab 实例中转到 <code>/-/profile/applications</code> 路径。"
+  ],
+  "Ensure 'Confidential' is checked.": ["确保已勾选“机密”。"],
+  "Last 24 hours:": ["过去 24 小时："],
+  "Last 14 days:": ["过去 14 天："],
+  "\n        You must complete the <a href=\"https://docs.sentry.io/product/integrations/issue-tracking/jira/#jira-server\">required steps</a>\n\n        in Jira Server before attempting to connect with Sentry.\n        ": [
+    "\n        在尝试与 Sentry 连接之前，您必须在 Jira Server 中完成 <a href=\"https://docs.sentry.io/product/integrations/issue-tracking/jira/#jira-server\">所需步骤</a>。\n        "
+  ],
+  "Opsgenie Setup": ["Opsgenie 配置"],
+  "Connect Sentry with Opsgenie": ["将 Sentry 与 Opsgenie 连接"],
+  "Your link is expired. Please try re-linking your identity again by interacting with a Sentry notification in Slack.": [
+    "您的链接已过期。请尝试通过在 Slack 中与 Sentry 通知交互来重新链接您的身份。"
+  ],
+  "\n                So what does this mean for you and the future of your channels? Not much.\n                You'll just need to add the Sentry bot to each channel after you authorize the new Slack app.\n                Otherwise, you might miss out on some important error alerts.\n                ": [
+    "\n                这对您和您频道的未来意味着什么？不多。\n                您只需要在授权新的 Slack 应用后将 Sentry 机器人添加到每个频道。否则，您可能会错过一些重要的错误警报。\n                "
+  ],
+  "\n                No need to waste time committing these to memory. After you authenticate the app,\n                we'll give you one last nudge via your private channels.\n                ": [
+    "\n                不需要浪费时间将这些记在脑海里。在您验证应用后，我们会通过您的私人频道给您最后的提醒。\n                "
+  ],
+  "\n            Click <strong>Upgrade</strong> to start the authentication flow for the new Slack app.\n            ": [
+    "\n            点击 <strong>升级</strong> 以开始新的 Slack 应用的认证流程。\n            "
+  ],
+  "\n        Want to know more about the move? We wrote you some <a href=\"https://docs.sentry.io/product/integrations/slack/#upgrading-slack\">docs</a>.\n        ": [
+    "\n        想了解更多关于迁移的信息？我们为您编写了一些 <a href=\"https://docs.sentry.io/product/integrations/slack/#upgrading-slack\">文档</a>。\n        "
+  ],
+  "\n        If you <strong>do</strong> have private channels being used in your alert rules, bear with us. You've got an extra step to go.\n        ": [
+    "\n        如果您确实<strong>有</strong>在警报规则中使用私人频道，请耐心等待。您还有一个额外的步骤需要完成。\n        "
+  ],
+  "\n        How do you know which channels are used in alert rules? We'll tell you. Our next step audits your configuration to identify\n        which channels need some post-authentication love. Bear in mind that if you've got a lot of Slack channels with alert rules,\n        this might take a hot minute.\n        ": [
+    "\n        您如何知道哪些频道在警报规则中使用？我们会告诉您。我们的下一步将审核您的配置，以识别哪些频道需要一些认证后的关注。请注意，如果您有很多设置了警报规则的 Slack 频道，这可能需要一些时间。\n        "
+  ],
+  "\n                    Your Slack workspace, <strong>%(workspace)s</strong>, is installed on additional organizations:\n                ": [
+    "\n                    您的 Slack 工作区 <strong>%(workspace)s</strong> 已安装在其他组织中：\n                "
+  ],
+  "unclaimed": ["未认领"],
+  "avatar url": ["头像 URL"],
+  "Serverless": ["无服务器"],
+  "Temporary": ["临时"],
+  "I agree to the <a href={settings.TERMS_URL}>Terms of Service</a> and <a href={settings.PRIVACY_URL}>Privacy Policy</a>": [
+    "我同意<a href={settings.TERMS_URL}>服务条款</a>和<a href={settings.PRIVACY_URL}>隐私政策</a>"
+  ],
+  "An account is already registered with that username.": ["该用户名已注册账户。"],
+  "You must agree to the Terms of Service and Privacy Policy before proceeding.": [
+    "在继续之前，您必须同意服务条款和隐私政策。"
+  ],
+  "The SAML certificate for your Identity Provider": ["您的身份提供者的 SAML 证书"],
+  "An error occurred while deleting the attachment": ["删除附件时发生错误"],
+  "Changed [fieldName]": ["已更改 [fieldName]"],
+  "Unable to restore [fieldName]": ["无法恢复 [fieldName]"],
+  "Restored [fieldName]": ["已恢复 [fieldName]"],
+  "You've hit an issue, fortunately we use Sentry to monitor Sentry. So it's likely we're already looking into this!": [
+    "您遇到了问题，幸运的是我们使用 Sentry 监控 Sentry。所以我们很可能已经在调查这个问题了！"
+  ],
+  "Unable to load organization members": ["无法加载组织成员"],
+  "You do not have permission to dismiss these processing errors": ["您没有权限忽略这些处理错误"],
+  "Unable to dismiss the processing errors": ["无法忽略处理错误"],
+  "Unable to remove monitor.": ["无法移除监控。"],
+  "Deleting Environment...": ["正在删除环境..."],
+  "Unable to remove environment from monitor.": ["无法从监控中删除环境。"],
+  "Unable to update monitor.": ["无法更新监控。"],
+  "Unable to mute environment.": ["无法静音环境。"],
+  "Unable to unmute environment.": ["无法取消静音环境。"],
+  "Deleting Monitor...": ["正在删除监控..."],
+  "Unable to apply the changes to all monitors": ["无法将更改应用到所有监控"],
+  "Unable to install %s": ["无法安装 %s"],
+  "%s successfully uninstalled.": ["%s 已成功卸载。"],
+  "Unable to load tags": ["无法加载标签"],
+  "Enable this feature on your sentry installation by adding the\n              following configuration into your [configFile:sentry.conf.py].\n              See [configLink:the configuration documentation] for more\n              details.": [
+    "通过将以下配置添加到您的 [configFile:sentry.conf.py] 来在您的 Sentry 安装上启用此功能。\n              有关详细信息，请参阅 [configLink:配置文档]。"
+  ],
+  "Unarchive": ["取消存档"],
+  "We’ll nag you with a notification if the issue gets worse. All archived issues can be found in the Archived tab. [docs:Read the docs]": [
+    "如果问题变得更严重，我们会用通知提醒您。所有已存档的问题都可以在已存档标签中找到。[docs:阅读文档]"
+  ],
+  "Archive options": ["存档选项"],
+  "When events exceed their weekly forecast": ["当事件超出其每周预测时"],
+  "Ignore options": ["忽略选项"],
+  "The upcoming release": ["即将发布的版本"],
+  "The next release that is not yet released": ["尚未发布的下一个版本"],
+  "The next release after the current one": ["当前版本之后的下一个版本"],
+  "non-semver": ["非 semver"],
+  "semver": ["semver"],
+  "Another existing release…": ["另一个已存在的版本..."],
+  "A commit…": ["一次提交..."],
+  "We'll nag you with a notification if another event is seen.": ["如果看到另一个事件，我们会用通知提醒您。"],
+  "Resolving is better with Releases": ["使用版本解决更好"],
+  "Set up Releases so Sentry can bother you when this problem comes back in a future release.": [
+    "设置版本，以便当这个问题在未来的版本中再次出现时，Sentry 可以提醒您。"
+  ],
+  "Set up Releases Now": ["立即设置版本"],
+  "Comment Actions": ["评论操作"],
+  "Close Alert": ["关闭警报"],
+  "Mute for me": ["为我静音"],
+  "Mute for everyone": ["为所有人静音"],
+  "Unmute": ["取消静音"],
+  "Mute alert options": ["静音警报选项"],
+  "Alert muted": ["警报已静音"],
+  "You do not have permission to mute this alert": ["您没有权限静音此警报"],
+  "This alert has already been muted": ["此警报已被静音"],
+  "Unable to mute this alert": ["无法静音此警报"],
+  "Alert unmuted": ["警报已取消静音"],
+  "You do not have permission to unmute this alert": ["您没有权限取消静音此警报"],
+  "Unable to unmute this alert": ["无法取消静音此警报"],
+  "%s isn't available for %s.": ["%s 不适用于 %s。"],
+  "%s isn't available for the selected projects.": ["%s 不适用于所选项目。"],
+  "This issue has been archived. It'll return to your inbox if it escalates. To learn more, %s": [
+    "此问题已被存档。如果问题升级，它将返回到您的收件箱。要了解更多信息，%s"
+  ],
+  "read the docs": ["阅读文档"],
+  "This issue has been archived until %s.": ["此问题已被存档，直到 %s。"],
+  "This issue has been archived until it occurs %s time(s) in %s.": ["此问题已被存档，直到它在 %s 中发生 %s 次。"],
+  "This issue has been archived until it occurs %s more time(s).": ["此问题已被存档，直到它再发生 %s 次。"],
+  "This issue has been archived until it affects %s user(s) in %s.": ["此问题已被存档，直到它影响 %s 中的 %s 个用户。"],
+  "This issue has been archived until it affects %s more user(s).": ["此问题已被存档，直到它再影响 %s 个用户。"],
+  "This issue has been archived forever.": ["此问题已被永久存档。"],
+  "Matching Codeowners Rule": ["匹配的 Codeowners 规则"],
+  "Assigned to ": ["分配给 "],
+  " + %s other": [" + %s 其他"],
+  "Suspect Commit": ["可疑提交"],
+  "Ownership Rule": ["所有权规则"],
+  "Codeowners": ["代码所有者"],
+  "Metrics Selector": ["指标选择器"],
+  "Your metrics are available here.": ["您的指标在这里。"],
+  "Aggregate Metrics": ["聚合指标"],
+  "See different facets of your metric through aggregations.": ["通过聚合查看指标的不同方面。"],
+  "Segment your data by the tags you’ve attached.": ["通过您附加的标签对数据进行分段。"],
+  "Filtering": ["过滤"],
+  "Filter your data by the tags you’ve attached.": ["通过您附加的标签过滤数据。"],
+  "Grouping & Filtering": ["分组和过滤"],
+  "Segment or filter your data by the tags you’ve attached.": ["通过您附加的标签对数据进行分段或过滤。"],
+  "Multiple Metrics": ["多个指标"],
+  "Plot a second metric to see correlations.": ["绘制第二个指标以查看相关性。"],
+  "Visualization": ["可视化"],
+  "View plotted metrics, dots on the chart represent associated sample spans.": [
+    "查看绘制的指标，图表中的点表示相关的示例跨度。"
+  ],
+  "Span Samples": ["跨度示例"],
+  "See sample spans summarized in a table format. [openInTraces]": ["以表格格式查看总结的示例跨度。[openInTraces]"],
+  "To filter by tags found only on spans, click \"Open in Traces\".": ["要仅按跨度上的标签过滤，请点击“在追踪中打开”。"],
+  "How bad is it?": ["有多糟糕？"],
+  "Here's a list of what's broken and slow. Sentry automatically groups similar events together into an issue.": [
+    "这是一个列表，显示了哪些地方出了问题以及哪些地方缓慢。Sentry 会自动将类似的事件分组为一个问题。"
+  ],
+  "Keep a pulse on crash rates, throughput, and latency issues across projects.": [
+    "关注跨项目的崩溃率、吞吐量和延迟问题。"
+  ],
+  "You have Issues and that's fine.\n              Understand impact at a glance by viewing total issue frequency and affected users.": [
+    "您有问题，这很正常。\n              通过查看问题的总频率和受影响的用户，快速了解影响。"
+  ],
+  "Sentry automatically groups similar events together into an issue. Similarity is\n            determined by stack trace and other factors. Click on an issue to learn more.": [
+    "Sentry 会自动将类似的事件分组为一个问题。相似性由堆栈跟踪和其他因素确定。点击一个问题以了解更多。"
+  ],
+  "Metadata and metrics": ["元数据和指标"],
+  "See tags like specific users affected by the event, device, OS, and browser type.\n            On the right side of the page you can view the number of affected users and exception frequency overtime.": [
+    "查看事件影响的特定用户、设备、操作系统和浏览器类型的标签。\n            在页面的右侧，您可以查看受影响用户的数量以及随时间的异常频率。"
+  ],
+  "Find your broken code": ["找到您的有问题代码"],
+  "View the stack trace to see the exact sequence of function calls leading to the error in question.": [
+    "查看堆栈跟踪以查看导致问题错误的确切函数调用顺序。"
+  ],
+  "Retrace your steps": ["回溯您的步骤"],
+  "Sentry automatically captures breadcrumbs for events so you can see the sequence of events leading up to the error.": [
+    "Sentry 会自动为事件捕获面包屑，以便您可以查看导致错误的事件序列。"
+  ],
+  "Find problematic releases": ["查找有问题的版本"],
+  "Compare releases": ["比较版本"],
+  "Click here and select the \"react-native\" project to see how the release is trending compared to previous releases.": [
+    "点击这里并选择\"react-native\"项目，以查看该版本与之前版本相比的趋势。"
+  ],
+  "Release-specfic trends": ["版本特定趋势"],
+  "Select the latest release to review new and regressed issues, and business critical metrics like crash rate, and user adoption.": [
+    "选择最新版本以查看新问题和回归问题，以及崩溃率和用户采用率等关键业务指标。"
+  ],
+  "New and regressed issues": ["新问题和回归问题"],
+  "See which release introduced the issue and which release it last appeared in.": [
+    "查看哪个版本引入了问题以及它最后一次出现在哪个版本中。"
+  ],
+  "Along with reviewing how your release is trending over time compared to previous releases, you can view new and regressed issues here.": [
+    "除了查看您的版本与之前版本相比随时间的趋势外，您还可以在这里查看新问题和回归问题。"
+  ],
+  "See slow transactions": ["查看慢事务"],
+  "Trace slow-loading pages back to their API calls, as well as, related errors and users impacted across projects. Select a transaction to see more details.": [
+    "追踪加载缓慢的页面到其 API 调用，以及跨项目的相关错误和受影响的用户。选择一个事务以查看更多详细信息。"
+  ],
+  "Identify the root cause": ["确定根本原因"],
+  "Dive into the details behind a slow transaction. See User Misery, Apdex, and more metrics, along with related events and suspect spans.": [
+    "深入探究慢事务背后的详细信息。查看用户痛苦度、Apdex 和更多指标，以及相关事件和可疑跨度。"
+  ],
+  "Breakdown event spans": ["分解事件跨度"],
+  "Not your typical stack trace": ["非典型的堆栈跟踪"],
+  "Select an Event ID from a list of slow transactions to uncover slow spans.": ["从慢事务列表中选择一个事件 ID 以发现慢跨度。"],
+  "See slow fast": ["查看慢快"],
+  "Expand the spans to see span details from start date, end date to the operation. Below you can view breadcrumbs for a play-by-play of what your users\n            did before encountering the performance issue.": [
+    "展开跨度以查看从开始日期、结束日期到操作的跨度详细信息。在下面，您可以查看面包屑，了解用户在遇到性能问题之前的操作。"
+  ],
+  "Sentry can show your source code in the stack trace.\n              See the exact sequence of function calls leading to the error in question.": [
+    "Sentry 可以在堆栈跟踪中显示您的源代码。\n              查看导致问题错误的确切函数调用顺序。"
+  ],
+  "Pinpoint hotspots": ["定位热点"],
+  "Tags are key/value string pairs that are automatically indexed and searchable in Sentry.": [
+    "标签是在 Sentry 中自动索引和可搜索的键/值字符串对。"
+  ],
+  "Not sure how you got here? Sentry automatically captures breadcrumbs for\n              events your user and app took that led to the error.": [
+    "不确定您是如何到达这里的？Sentry 会自动捕获导致错误的用户和应用事件的面包屑。"
+  ],
+  "Automatically assign issues to the person who introduced the commit,\n              notify them over notification tools like Slack,\n              and triage through issue management tools like Jira. ": [
+    "自动将问题分配给引入提交的人，\n              通过 Slack 等通知工具通知他们，\n              并通过 Jira 等问题管理工具进行分类。"
+  ],
+  "Sentry automatically groups similar events together into an issue. Similarity is\n            determined by stack trace and other factors. [link:Learn more].": [
+    "Sentry 会自动将类似的事件分组为一个问题。相似性由堆栈跟踪和其他因素确定。[link:了解更多]。"
+  ],
+  "You can quickly see errors and transactions in a trace alongside the project, transaction duration and any errors or performance issues related to the transaction.": [
+    "您可以快速在追踪中查看错误和事务，以及项目、事务持续时间和与事务相关的任何错误或性能问题。"
+  ],
+  "Event Details": ["事件详细信息"],
+  "Click on any transaction or error row to see more details.": ["点击任何事务或错误行以查看更多详细信息。"],
+  "People who have viewed this": ["查看过此内容的人员"],
+  "Critical": ["关键"],
+  "Ready": ["就绪"],
+  "Monitoring": ["监控中"],
+  "This feature is experimental! Try it out and let us know what you think. No promises!": [
+    "此功能是实验性的！试试看并告诉我们您的想法。不保证哦！"
+  ],
+  "This feature is for internal use only": ["此功能仅限内部使用"],
+  "experimental": ["实验性"],
+  "internal": ["内部"],
+  "How can we make priority better for you?": ["我们如何能让优先级对您更有用？"],
+  "Give Feedback": ["提供反馈"],
+  "Time to prioritize!": ["是时候进行优先级排序了！"],
+  "Use priority to make your issue stream more actionable. Sentry will automatically assign a priority score to new issues and filter low priority issues from the default view.": [
+    "使用优先级使您的问题流更易于操作。Sentry 将自动为新问题分配优先级分数，并从默认视图中过滤低优先级问题。"
+  ],
+  "Set Priority": ["设置优先级"],
+  "Modify issue priority": ["修改问题优先级"],
+  "Last edited by [name]": ["最后由 [name] 编辑"],
+  "Med": ["中"],
+  "Scroll left": ["向左滚动"],
+  "Scroll right": ["向右滚动"],
+  "Matching Events": ["匹配的事件"],
+  "Provide a time interval": ["提供时间间隔"],
+  "Second": ["秒"],
+  "%s seconds": ["%s 秒"],
+  "Minute": ["分钟"],
+  "%s minutes": ["%s 分钟"],
+  "Hour": ["小时"],
+  "%s hours": ["%s 小时"],
+  "Day": ["天"],
+  "%s days": ["%s 天"],
+  "Error fetching estimated data": ["获取估算数据时出错"],
+  "Unable to copy": ["无法复制"],
+  "Copied": ["已复制"],
+  "Copy": ["复制"],
+  "Show [count] [buttonTitle]": ["显示 [count] [buttonTitle]"],
+  "Show %s hidden item": ["显示 %s 隐藏项"],
+  "[author] committed [commitLink] • [date]": ["[author] 提交了 [commitLink] • [date]"],
+  "You": ["您"],
+  "View Pull Request": ["查看拉取请求"],
+  "(not a member)": ["（非成员）"],
+  "[author] [unknownLabel] committed [commitLink] [date]": ["[author] [unknownLabel] 提交了 [commitLink] [date]"],
+  "[author] committed [commitLink] [date]": ["[author] 提交了 [commitLink] [date]"],
+  "First deployed in release [release]": ["首次在版本 [release] 中部署"],
+  "No options found": ["未找到选项"],
+  "Use search to find more options…": ["使用搜索查找更多选项…"],
+  "Character": ["字符"],
+  "Unselect All": ["取消选择所有"],
+  "Unselect All in ": ["取消选择所有在 "],
+  "Select All in ": ["全选在 "],
+  "e.g. d86b832": ["例如 d86b832"],
+  "(semver)": ["（semver）"],
+  "(non-semver)": ["（非 semver）"],
+  "You committed": ["您提交了"],
+  "We tried our hardest, but we couldn't export your data. Give it another go.": [
+    "我们尽力了，但我们无法导出您的数据。再试一次吧。"
+  ],
+  "You can get on with your life. We'll email you when your data's ready.": [
+    "您可以继续您的生活。数据准备好后我们会通过电子邮件通知您。"
+  ],
+  "Put your data to work. Start your export and we'll email you when it's finished.": [
+    "利用您的数据。开始导出后，完成后我们会通过电子邮件通知您。"
+  ],
+  "Start Free Trial": ["开始免费试用"],
+  "(You)": ["（您）"],
+  "Everyone Else": ["其他人"],
+  "View commit [commitLink] by [author]": ["查看 [author] 的提交 [commitLink]"],
+  "View Sampled Events": ["查看采样事件"],
+  "Add View": ["添加视图"],
+  "Successfully created investigation rule": ["成功创建调查规则"],
+  "You have reached the maximum number of concurrent investigation rules allowed": [
+    "您已达到允许的最大并发调查规则数"
+  ],
+  "Unable to create investigation rule": ["无法创建调查规则"],
+  "Unable to fetch investigation rule": ["无法获取调查规则"],
+  "Collecting samples since [interval]  ago.": ["自 [interval] 前开始收集样本。"],
+  "A user has temporarily adjusted retention priorities, increasing the odds of getting events matching your search query. [link:Learn more.]": [
+    "用户临时调整了保留优先级，增加了获取匹配您搜索查询事件的可能性。[link:了解更多。]"
+  ],
+  "If you filter by [code:event.type:transaction] we can adjust your retention priorities, increasing the odds of getting matching events. [link:Learn more.]": [
+    "如果您按 [code:event.type:transaction] 过滤，我们可以调整您的保留优先级，增加获取匹配事件的可能性。[link:了解更多。]"
+  ],
+  "We can find more events that match your search query by adjusting your retention priorities for an hour, increasing the odds of getting matching events. [link:Learn more.]": [
+    "我们可以通过调整您的保留优先级一小时来找到更多匹配您搜索查询的事件，增加获取匹配事件的可能性。[link:了解更多。]"
+  ],
+  "Get Samples": ["获取样本"],
+  "If you entered the address manually, double check the path. Did you\n           forget a trailing slash?": [
+    "如果您是手动输入地址，请仔细检查路径。您是否\n           忘记了尾随斜杠？"
+  ],
+  "If you followed a link here, try hitting back and reloading the\n           page. It's possible the resource was moved out from under you.": [
+    "如果您是通过链接到达这里的，请尝试后退并重新加载\n           页面。资源可能已被移动。"
+  ],
+  "AI Solutions": ["AI 解决方案"],
+  "This is an OpenAI generated solution that suggests a fix for this issue. Be aware that this may not be accurate. [learnMore:Learn more]": [
+    "这是一个由 OpenAI 生成的解决方案，建议修复此问题。请注意，这可能不准确。[learnMore:了解更多]"
+  ],
+  "You might get lucky, but again, maybe not…": ["您可能会走运，但同样，也可能不会…"],
+  "View Suggestion": ["查看建议"],
+  "PII Certification Required": ["需要 PII 认证"],
+  "Before using this feature, please confirm that there is no personally identifiable information in this event.": [
+    "在使用此功能之前，请确认此事件中不包含任何个人身份识别信息。"
+  ],
+  "Certify No PII": ["认证无 PII"],
+  "AI Solution": ["AI 解决方案"],
+  "Hide Suggestion": ["隐藏建议"],
+  "Was this helpful?": ["这有帮助吗？"],
+  "Nope": ["没帮助"],
+  "Kinda": ["有点帮助"],
+  "Yes, Surprisingly…": ["是的，出乎意料…"],
+  "OpenAI Subprocessor Acknowledgment": ["OpenAI 子处理器确认"],
+  "In order to use this feature, your organization needs to accept the OpenAI Subprocessor Acknowledgment.": [
+    "为了使用此功能，您的组织需要接受 OpenAI 子处理器确认。"
+  ],
+  "Accept in Settings": ["在设置中接受"],
+  "We need your consent": ["我们需要您的同意"],
+  "By using this feature, you agree that OpenAI is a subprocessor and may process the data that you’ve chosen to submit. Sentry makes no guarantees as to the accuracy of the feature’s AI-generated recommendations.": [
+    "使用此功能即表示您同意 OpenAI 是一个子处理器，可能会处理您选择提交的数据。Sentry 对该功能的 AI 生成建议的准确性不做任何保证。"
+  ],
+  "Superusers can't consent to policies": ["超级用户不能同意策略"],
+  "Heating up them GPUs": ["加热 GPU"],
+  "Engineering a prompt": ["设计提示"],
+  "Demonstrating value": ["展示价值"],
+  "Moving the needle": ["推动进展"],
+  "Preventing prompt injection attacks": ["防止提示注入攻击"],
+  "Remove traces of depression from answers": ["从答案中去除抑郁痕迹"],
+  "Reticulating splines or whatever": ["无论什么，都在进行样条曲线的重新计算"],
+  "Loading marketing material": ["加载营销材料"],
+  "Wiping node_modules": ["清除 node_modules"],
+  "Installing dependencies": ["安装依赖"],
+  "Searching StackOverflow": ["搜索 StackOverflow"],
+  "Googling for solutions": ["谷歌搜索解决方案"],
+  "Running spell checker": ["运行拼写检查器"],
+  "Searching for the perfect emoji": ["搜索完美的表情符号"],
+  "Adding trace amounts of human touch": ["添加微量的人性化处理"],
+  "Don't be like Sydney, don't be like Sydney": ["不要像悉尼一样，不要像悉尼一样"],
+  "Initiating quantum leap": ["启动量子飞跃"],
+  "Charging flux capacitors": ["充电通量电容器"],
+  "Summoning a demon": ["召唤恶魔"],
+  "Failed to load attachment.": ["加载附件失败。"],
+  "Failed to download attachment.": ["下载附件失败。"],
+  "Get root causes": ["获取根本原因"],
+  "Provide context first": ["先提供上下文"],
+  "Try Autofix": ["尝试自动修复"],
+  "This feature is experimental. Try it out and let us know your feedback at [email:autofix@sentry.io].": [
+    "此功能是实验性的。试用后请将您的反馈发送到 [email:autofix@sentry.io]。"
+  ],
+  "Sit back and let Autofix find potential root causes and fixes": ["坐下来让自动修复查找潜在的根本原因和修复方法"],
+  "By clicking the button above, you confirm that there is no PII in this event.": [
+    "点击上面的按钮，即表示您确认此事件中不含 PII。"
+  ],
+  "How can we make Autofix better for you?": ["我们如何能让自动修复对您更有用？"],
+  "Autofix": ["自动修复"],
+  "Enable write access to create pull requests": ["启用写权限以创建拉取请求"],
+  "Create a Pull Request": ["创建拉取请求"],
+  "Something went wrong": ["出错了"],
+  "Something went wrong.": ["出错了。"],
+  "Could not find a fix.": ["找不到修复方法。"],
+  "Failed to create a pull request": ["创建拉取请求失败"],
+  "Toggle file diff": ["切换文件差异"],
+  "Something went wrong when responding to autofix.": ["响应自动修复时出错了。"],
+  "Doesn't look right? Tell Autofix what needs to be changed": ["看起来不对？告诉自动修复需要更改什么"],
+  "Rename the function foo_bar to fooBar": ["将函数 foo_bar 重命名为 fooBar"],
+  "Provide context": ["提供上下文"],
+  "Provide context to Autofix": ["向自动修复提供上下文"],
+  "This error seems to be caused by ... go look at path/file to make sure it does …": [
+    "此错误似乎是由...引起的，去看看 path/file 确保它在做……"
+  ],
+  "Let's go!": ["开始吧！"],
+  "Something went wrong when selecting the root cause.": ["选择根本原因时出错了。"],
+  "Open this file in GitHub": ["在 GitHub 中打开此文件"],
+  "GitHub": ["GitHub"],
+  "Find a Fix": ["查找修复方法"],
+  "Select root cause": ["选择根本原因"],
+  "Selected Cause: %s": ["已选择原因：%s"],
+  "Provide your own": ["自行提供"],
+  "Provide your own root cause": ["自行提供根本原因"],
+  "Custom Response Provided": ["已提供自定义响应"],
+  "Selected root cause not found.": ["未找到所选根本原因。"],
+  "Show unselected causes": ["显示未选原因"],
+  "Cause: %s": ["原因：%s"],
+  "Fix This Instead": ["改修这个"],
+  "Sentry has identified %s potential root cause. You may select the presented root cause or provide your own.": [
+    "Sentry 已识别 %s 个潜在根本原因。您可以选择显示的根本原因或自行提供。"
+  ],
+  "Sentry has identified %s potential root causes. You may select one of the presented root causes or provide your own.": [
+    "Sentry 已识别 %s 个潜在根本原因。您可以选择其中一个显示的根本原因或自行提供。"
+  ],
+  "Autofix was not able to find a root cause. Maybe try again?": ["自动修复无法找到根本原因。也许可以再试一次？"],
+  "Relevant Code #%s: %s": ["相关代码 #%s：%s"],
+  "The [link:Sentry Autofix GitHub App] has been installed on all required repositories:": [
+    "[link:Sentry 自动修复 GitHub 应用] 已安装在所有必需的仓库中："
+  ],
+  "Let's Go!": ["开始吧！"],
+  "Install and grant write access to the [link:Sentry Autofix Github App] for the following repositories:": [
+    "为以下仓库安装并授予 [link:Sentry 自动修复 Github 应用] 写权限："
+  ],
+  "Without this, Autofix can still provide root analysis and suggested code changes.": [
+    "没有此权限，自动修复仍然可以提供根本原因分析和建议的代码更改。"
+  ],
+  "Skip & Enable Autofix": ["跳过并启用自动修复"],
+  "Install and grant write access to the [link:Sentry Autofix Github App] for the relevant repositories.": [
+    "为相关仓库安装并授予 [link:Sentry 自动修复 Github 应用] 写权限。"
+  ],
+  "Install the GitHub Integration": ["安装 GitHub 集成"],
+  "Allow Autofix to Make Pull Requests": ["允许自动修复创建拉取请求"],
+  "Failed to fetch Autofix setup progress.": ["获取自动修复设置进度失败。"],
+  "Configure Autofix": ["配置自动修复"],
+  "The GitHub integration is already installed, [link: view in settings].": [
+    "GitHub 集成已安装，[link: 在设置中查看]。"
+  ],
+  "The GitHub integration has been installed but is not active. Navigate to the [integration settings page] and enable it to continue.": [
+    "GitHub 集成已安装但未激活。请前往 [集成设置页面] 并启用它以继续。"
+  ],
+  "Once enabled, come back to this page. For more information related to installing the GitHub integration, read the [link:documentation].": [
+    "启用后，请返回此页面。有关安装 GitHub 集成的更多信息，请阅读 [link:文档]。"
+  ],
+  "You have an active GitHub installation, but no code mappings for this project. Add code mappings by visiting the [link:integration settings page] and editing your configuration.": [
+    "您有一个活跃的 GitHub 安装，但此项目没有代码映射。请访问 [link:集成设置页面] 并编辑您的配置以添加代码映射。"
+  ],
+  "Once added, come back to this page. For more information related to installing the GitHub integration, read the [link:documentation].": [
+    "添加后，请返回此页面。有关安装 GitHub 集成的更多信息，请阅读 [link:文档]。"
+  ],
+  "Install the GitHub integration by navigating to the [link:integration settings page] and clicking the \"Install\" button. Follow the steps provided.": [
+    "通过导航到 [link:集成设置页面] 并点击“安装”按钮来安装 GitHub 集成。按照提供的步骤操作。"
+  ],
+  "Once installed, come back to this page. For more information related to installing the GitHub integration, read the [link:documentation].": [
+    "安装后，请返回此页面。有关安装 GitHub 集成的更多信息，请阅读 [link:文档]。"
+  ],
+  "You've successfully configured write access!": ["您已成功配置写权限！"],
+  "Let's go": ["开始吧"],
+  "In order to create pull requests, install and grant write access to the [link:Sentry Autofix Github App] for the following repositories:": [
+    "为了创建拉取请求，请为以下仓库安装并授予 [link:Sentry 自动修复 Github 应用] 写权限："
+  ],
+  "In order to create pull requests, install and grant write access to the [link:Sentry Autofix Github App] for the relevant repositories.": [
+    "为了创建拉取请求，请为相关仓库安装并授予 [link:Sentry 自动修复 Github 应用] 写权限。"
+  ],
+  "Install the Autofix GitHub App": ["安装自动修复 GitHub 应用"],
+  "Toggle details": ["切换详细信息"],
+  "Toggle step details": ["切换步骤详细信息"],
+  "View All Breadcrumbs": ["查看所有面包屑"],
+  "View All": ["查看全部"],
+  "How can we make breadcrumbs more useful to you?": ["我们如何能让面包屑对您更有用？"],
+  "Open Breadcrumb Search": ["打开面包屑搜索"],
+  "Open Search": ["打开搜索"],
+  "Change Time Format for Breadcrumbs": ["更改面包屑的时间格式"],
+  "Use [format] Timestamps": ["使用 [format] 时间戳"],
+  "There was an error loading the event breadcrumbs": ["加载事件面包屑时出错"],
+  "Filter All Breadcrumbs": ["过滤所有面包屑"],
+  "Sort All Breadcrumbs": ["排序所有面包屑"],
+  "Change Time Format for All Breadcrumbs": ["更改所有面包屑的时间格式"],
+  "No breadcrumbs found.": ["未找到面包屑。"],
+  "Clear Filters?": ["清除过滤器？"],
+  "Search All Breadcrumbs": ["搜索所有面包屑"],
+  "This event": ["此事件"],
+  "UI Click": ["UI 点击"],
+  "UI Input": ["UI 输入"],
+  "HTTP Request": ["HTTP 请求"],
+  "Network": ["网络"],
+  "In Foreground": ["在前台"],
+  "Contexts": ["上下文"],
+  "The structured context items attached to this event. [link:Learn more]": [
+    "附加到此事件的结构化上下文项。[link:了解更多]"
+  ],
+  "There was a problem loading event context.": ["加载事件上下文时出现问题。"],
+  "Vendor Name": ["供应商名称"],
+  "Allocated Bytes": ["已分配字节"],
+  "Fragmented Bytes": ["碎片化字节"],
+  "Heap Size Bytes": ["堆大小字节"],
+  "High Memory Load Threshold Bytes": ["高内存负载阈值字节"],
+  "Total Available Memory Bytes": ["总可用内存字节"],
+  "Memory Load Bytes": ["内存负载字节"],
+  "Total Committed Bytes": ["总已提交字节"],
+  "Promoted Bytes": ["提升字节"],
+  "Pinned Objects Count": ["固定对象计数"],
+  "Pause Time Percentage": ["暂停时间百分比"],
+  "Finalization Pending Count": ["待终结计数"],
+  "Compacted": ["已压缩"],
+  "Concurrent": ["并发"],
+  "Pause Durations": ["暂停时长"],
+  "Profile ID": ["配置文件 ID"],
+  "Replay ID": ["重放 ID"],
+  "Available Completion Port Threads": ["可用完成端口线程"],
+  "Available Worker Threads": ["可用工作线程"],
+  "Max Completion Port Threads": ["最大完成端口线程"],
+  "Max Worker Threads": ["最大工作线程"],
+  "Min Completion Port Threads": ["最小完成端口线程"],
+  "Min Worker Threads": ["最小工作线程"],
+  "Copy Texture Support": ["复制纹理支持"],
+  "Editor Version": ["编辑器版本"],
+  "Install Mode": ["安装模式"],
+  "Rendering Threading Mode": ["渲染线程模式"],
+  "Target Frame Rate": ["目标帧率"],
+  "Profile": ["配置文件"],
+  "Response": ["响应"],
+  "Feedback": ["反馈"],
+  "Memory Info": ["内存信息"],
+  "Thread Pool Info": ["线程池信息"],
+  "Laravel Context": ["Laravel 上下文"],
+  "Arch: ": ["架构： "],
+  "Model: ": ["型号： "],
+  "Vendor: ": ["供应商： "],
+  "Version: ": ["版本： "],
+  "Kernel: ": ["内核： "],
+  "ID: ": ["ID： "],
+  "Username: ": ["用户名： "],
+  "Build": ["构建"],
+  "Level: [level]": ["级别：[level]"],
+  "An error occurred while fetching attachments": ["获取附件时发生错误"],
+  "Show events with this value": ["显示具有此值的事件"],
+  "Hide events with this value": ["隐藏具有此值的事件"],
+  "Show events with values greater than": ["显示值大于的事件"],
+  "Show events with values less than": ["显示值小于的事件"],
+  "Widget actions": ["小部件操作"],
+  "Custom Performance Metrics": ["自定义性能指标"],
+  "Hydration Error Diff": ["水合错误差异"],
+  "Open Diff Viewer": ["打开差异查看器"],
+  "No error message": ["无错误消息"],
+  "Event Processing Errors": ["事件处理错误"],
+  "The replay for this event has been deleted.": ["此事件的重放已被删除。"],
+  "See All Replays": ["查看所有重放"],
+  "There are %s for this issue.": ["此问题有 %s 个。"],
+  "%s replay": ["%s 重放"],
+  "%s replays": ["%s 个重放"],
+  "Session Replay": ["会话重放"],
+  "Set up your [platform] app with Session Replay": ["使用会话重放设置您的 [platform] 应用"],
+  "Watch the errors and latency issues your users face": ["查看用户遇到的错误和延迟问题"],
+  "Set Up Now": ["立即设置"],
+  "Previous Clip": ["上一个片段"],
+  "Next Clip": ["下一个片段"],
+  "See Full Replay": ["查看完整重放"],
+  "Open Replay": ["打开重放"],
+  "(unnamed span)": ["（未命名跨度）"],
+  "Potential Causes": ["潜在原因"],
+  "Duration or Throughput": ["持续时间或吞吐量"],
+  "Duration (P95)": ["持续时间（P95）"],
+  "Average Duration": ["平均持续时间"],
+  "Most Affected": ["受影响最大的"],
+  "Unable to find a sample event": ["无法找到示例事件"],
+  "Full Event Details": ["完整事件详细信息"],
+  "Previous Event": ["上一个事件"],
+  "Next Event": ["下一个事件"],
+  "To better understand what happened before and after this regression, compare a baseline event with a regressed event. Look for any significant shape changes, operation percentage changes, and tag differences.": [
+    "为了更好地理解此回归之前和之后发生的情况，请将基线事件与回归事件进行比较。查找任何显著的形状变化、操作百分比变化和标签差异。"
+  ],
+  "Compare Events": ["比较事件"],
+  "Baseline Event ID": ["基线事件 ID"],
+  "Regressed Event ID": ["回归事件 ID"],
+  "Failed to load flamegraph for before and after regression time range.": ["加载回归时间范围前后的火焰图失败。"],
+  "Failed to load flamegraph for before regression time range.": ["加载回归前时间范围的火焰图失败。"],
+  "Failed to load flamegraph for after regression time range.": ["加载回归后时间范围的火焰图失败。"],
+  "Slower functions": ["较慢的函数"],
+  "after regression": ["回归后"],
+  "Faster functions": ["较快的函数"],
+  "New functions": ["新函数"],
+  "Removed functions": ["已移除的函数"],
+  "Previous Transaction": ["上一个事务"],
+  "Next Transaction": ["下一个事务"],
+  "samples": ["样本"],
+  "Flamegraph is showing how stack frequency will change.": ["火焰图显示了堆栈频率将如何变化。"],
+  "Flamegraph is showing how stack frequency has changed.": ["火焰图显示了堆栈频率的变化。"],
+  "Example Profiles Before": ["之前的示例配置文件"],
+  "Example Profiles After": ["之后的示例配置文件"],
+  "The profile duration": ["配置文件持续时间"],
+  "Endpoint Name": ["端点名称"],
+  "Change in Duration": ["持续时间的变化"],
+  "Approx. Start Time": ["大约开始时间"],
+  "Function Name": ["函数名称"],
+  "Package Name": ["软件包名称"],
+  "%s to %s (%s%s)": ["%s 到 %s (%s%s)"],
+  "Baseline": ["基线"],
+  "Change in Throughput": ["吞吐量变化"],
+  "Up %s from %s": ["比 %s 上升 %s"],
+  "Down %s from %s": ["比 %s 下降 %s"],
+  "Unchanged from": ["与...相比不变"],
+  "Debug better with custom tags": ["使用自定义标签更好地调试"],
+  "Include relevant metadata for debugging on events you send to Sentry": ["在发送到 Sentry 的事件中包含相关元数据以进行调试"],
+  "There was a problem loading event tags.": ["加载事件标签时出现问题。"],
+  "Tag Actions Menu": ["标签操作菜单"],
+  "View other events with this tag value": ["查看具有此标签值的其他事件"],
+  "View issues with this tag value": ["查看具有此标签值的问题"],
+  "Copy tag value to clipboard": ["将标签值复制到剪贴板"],
+  "Add to event highlights": ["添加到事件亮点"],
+  "View this release": ["查看此版本"],
+  "View this transaction": ["查看此事务"],
+  "View this replay": ["查看此重放"],
+  "Visit this external link": ["访问此外部链接"],
+  "Previous Screenshot": ["上一个截图"],
+  "[currentScreenshot] of [totalScreenshots]": ["[currentScreenshot] of [totalScreenshots]"],
+  "Next Screenshot": ["下一个截图"],
+  "More screenshot actions": ["更多截图操作"],
+  "Delete this image?": ["删除此图像？"],
+  "This image was captured around the time that the event occurred. Are you sure you want to delete this image?": [
+    "此图像是在事件发生时捕获的。您确定要删除此图像吗？"
+  ],
+  "[currentScreenshotIndex] of [totalScreenshotCount]": ["[currentScreenshotIndex] of [totalScreenshotCount]"],
+  "This image was captured around the time that the event occurred.": ["此图像是在事件发生时捕获的。"],
+  "Filter tags": ["过滤标签"],
+  "The searchable tags associated with this event. [link:Learn more]": [
+    "与此事件相关的可搜索标签。[link:了解更多]"
+  ],
+  "View Hierarchy": ["查看层次结构"],
+  "show [numberOfFrames] similar": ["显示 [numberOfFrames] 个类似的"],
+  "collapse [numberOfFrames] similar": ["折叠 [numberOfFrames] 个类似的"],
+  "Failed to load config options": ["加载配置选项失败"],
+  "Uses the evidence from performance issue detection to generate a fingerprint.": [
+    "使用性能问题检测的证据生成指纹。"
+  ],
+  "Filter by contribution": ["按贡献过滤"],
+  "Overrides the default grouping by a Sentry defined fingerprinting rule": ["通过 Sentry 定义的指纹规则覆盖默认分组"],
+  "Failed to fetch grouping info.": ["获取分组信息失败"],
+  "Too eager grouping": ["过于急切的分组"],
+  "Too specific grouping": ["过于具体的分组"],
+  "Other grouping issue": ["其他分组问题"],
+  "performance problem": ["性能问题"],
+  "Grouped by:": ["按...分组："],
+  "Already highlighted": ["已高亮显示"],
+  "Search Tags": ["搜索标签"],
+  "No matching event tags found.": ["未找到匹配的事件标签。"],
+  "Context": ["上下文"],
+  "Search Context": ["搜索上下文"],
+  "No matching event context found.": ["未找到匹配的事件上下文。"],
+  "Edit Event Highlights": ["编辑事件亮点"],
+  "Changes are applied to all issues for this project": ["更改将应用于此项目的全部问题"],
+  "Use Defaults": ["使用默认值"],
+  "Apply to Project": ["应用于项目"],
+  "Promote tags or context keys to highlights for quicker debugging!": ["将标签或上下文键提升为亮点，以便更快地调试！"],
+  "There's nothing here...": ["这里什么都没有..."],
+  "Add Highlights": ["添加亮点"],
+  "Promoted tags and context items saved for this project. [link:Learn more]": [
+    "已为此项目保存提升的标签和上下文项。[link:了解更多]"
+  ],
+  "Highlights": ["亮点"],
+  "Event Highlights": ["事件亮点"],
+  "How can we make tags, context or highlights more useful to you?": ["我们如何能让标签、上下文或亮点对您更有用？"],
+  "There was an error loading event highlights": ["加载事件亮点时出错"],
+  "Only Project Admins can edit highlights.": ["只有项目管理员可以编辑亮点。"],
+  "Setup Highlights to promote your event data to the top of the issue page for quicker debugging.": [
+    "设置亮点，将您的事件数据提升到问题页面的顶部，以便更快地调试。"
+  ],
+  "environment, release, my-tag": ["环境，版本，my-tag"],
+  "Highlighted Tags": ["高亮标签"],
+  "Separate tag keys with a newline.": ["用换行分隔标签键。"],
+  "{\"browser\": [\"name\"], \"my-ctx\": [\"my-key\"]}": ["{\"browser\": [\"name\"], \"my-ctx\": [\"my-key\"]}"],
+  "Highlighted Context": ["高亮上下文"],
+  "Enter a valid JSON entry for mapping [Structured Context] types, to their keys. E.g. [example]": [
+    "输入一个有效的 JSON 条目，用于将 [结构化上下文] 类型映射到其键。例如 [示例]"
+  ],
+  "The main thread is blocked/waiting, trying to acquire lock [address] ([obj]) [heldByThread]": [
+    "主线程被阻塞/等待，尝试获取锁 [地址] ([对象]) [由线程持有]"
+  ],
+  "File I/O operations, such as reading from or writing to files on disk, can be time-consuming, especially if the file size is large or the storage medium is slow. Move File I/O off the main thread to avoid this ANR.": [
+    "文件 I/O 操作（如从磁盘读取或写入文件）可能会很耗时，特别是如果文件大小很大或存储介质较慢。将文件 I/O 操作移出主线程以避免此 ANR。"
+  ],
+  "Database operations, such as querying, inserting, updating, or deleting data, can involve disk I/O, processing, and potentially long-running operations. Move database operations off the main thread to avoid this ANR.": [
+    "数据库操作（如查询、插入、更新或删除数据）可能涉及磁盘 I/O、处理以及可能的长时间运行操作。将数据库操作移出主线程以避免此 ANR。"
+  ],
+  "If you have a particularly large or complex SharedPreferences file or if you're performing multiple simultaneous commits in quick succession, this can lead to ANR. Switch to SharedPreferences.apply or move commit to a background thread to avoid this ANR.": [
+    "如果您有一个特别大或复杂的 SharedPreferences 文件，或者您正在进行多个连续的快速提交，这可能导致 ANR。切换到 SharedPreferences.apply 或将提交移至后台线程以避免此 ANR。"
+  ],
+  "SharedPreferences.apply will save data on background thread only if it happens before the activity/service finishes. Switch to SharedPreferences.commit and move commit to a background thread.": [
+    "SharedPreferences.apply 仅在活动/服务完成之前在后台线程上保存数据。切换到 SharedPreferences.commit 并将提交移至后台线程。"
+  ],
+  "The app is initializing too many things on the main thread during app launch. To avoid this ANR, optimize cold/warm app starts by offloading operations off the main thread and [link:lazily initializing] components.": [
+    "应用程序在启动时在主线程上初始化了太多内容。为了避免此 ANR，请通过将操作移出主线程并 [link:惰性初始化] 组件来优化冷/热启动。"
+  ],
+  "If the AssetManager operation involves reading or loading a large asset file on the main thread, this can lead to ANR. Move loading heavy assets off the main thread to avoid this ANR.": [
+    "如果 AssetManager 操作涉及在主线程上读取或加载大型资产文件，这可能导致 ANR。将加载重型资产的操作移出主线程以避免此 ANR。"
+  ],
+  "If you're reading a particularly large raw file (example, a video file) on the main thread, this can lead to ANR. Look for heavy resources in the '/res' or '/res/raw; folders to avoid this ANR.": [
+    "如果您在主线程上读取特别大的原始文件（例如视频文件），这可能导致 ANR。查找 '/res' 或 '/res/raw;' 文件夹中的重型资源以避免此 ANR。"
+  ],
+  "The app is potentially inflating a heavy, deeply-nested layout. [link:Optimize view hierarchy], use view stubs, use include/merge tags for reusing inflated views to avoid this ANR.": [
+    "应用程序可能正在膨胀一个沉重的、深层嵌套的布局。[link:优化视图层次结构]，使用视图存根，使用 include/merge 标签重用已膨胀的视图以避免此 ANR。"
+  ],
+  "Cannot fetch resource due to restricted IP address": ["由于 IP 地址受限，无法获取资源"],
+  "Cannot fetch resource due to security violation": ["由于安全违规，无法获取资源"],
+  "Invalid timestamp (in future)": ["无效的时间戳（在未来）"],
+  "Clock drift detected in SDK": ["SDK 中检测到时钟漂移"],
+  "Invalid timestamp (too old)": ["无效的时间戳（太旧）"],
+  "Discarded value due to exceeding maximum length": ["由于超出最大长度而丢弃值"],
+  "Discarded invalid value": ["丢弃无效值"],
+  "Environment cannot contain \"/\" or newlines": ["环境不能包含 \"\\/\" 或换行符"],
+  "Discarded unknown attribute": ["丢弃未知属性"],
+  "Sentry has identified the following problems for you to fix": ["Sentry 已识别以下需要您修复的问题"],
+  "Sentry has identified the following problems for you to monitor": ["Sentry 已识别以下需要您监控的问题"],
+  "A proguard mapping file does not contain line info": ["Proguard 映射文件不包含行信息"],
+  "A proguard mapping file was missing": ["缺少 Proguard 映射文件"],
+  "An optional debug information file was missing": ["缺少可选的调试信息文件"],
+  "A required debug information file was missing": ["缺少必需的调试信息文件"],
+  "The debug information file used was broken": ["使用的调试信息文件已损坏"],
+  "Missing Sources Context": ["缺少源代码上下文"],
+  "Unable to fetch HTTP resource": ["无法获取 HTTP 资源"],
+  "Connect with Git Providers": ["连接到 Git 提供商"],
+  "Install Git providers (GitHub, GitLab…) to enable features like code mapping and stack trace linking.": [
+    "安装 Git 提供商（GitHub、GitLab…）以启用代码映射和堆栈跟踪链接等功能。"
+  ],
+  "Show %s related exceptions": ["显示 %s 个相关异常"],
+  "Hide %s related exceptions": ["隐藏 %s 个相关异常"],
+  "Event Created": ["事件已创建"],
+  "View in Monitor Details": ["在监控详情中查看"],
+  "Check-ins": ["签入"],
+  "A timeline of check-ins that happened before and after this event": ["此事件前后发生的签入时间线"],
+  "The <code>connect-src</code> directive defines valid sources for fetch,\n  <code>XMLHttpRequest</code>, <code>WebSocket</code>, and\n  <code>EventSource</code> connections.": [
+    "<code>connect-src</code> 指令定义了 fetch、\n  <code>XMLHttpRequest</code>、<code>WebSocket</code> 和\n  <code>EventSource</code> 连接的有效来源。"
+  ],
+  "The <code>font-src</code> directive specifies valid sources for fonts\n  loaded using <code>@font-face</code>.": [
+    "<code>font-src</code> 指令指定使用 <code>@font-face</code> 加载的字体的有效来源。"
+  ],
+  "The <code>form-action</code> directive specifies valid endpoints for\n  <code>&lt;form&gt;</code> submissions.": [
+    "<code>form-action</code> 指令指定 <code>&lt;form&gt;</code> 提交的有效端点。"
+  ],
+  "The <code>frame-ancestors</code> directive specifies valid parents that\n  may embed a page using the <code>&lt;frame&gt;</code> and\n  <code>&lt;iframe&gt;</code> elements.": [
+    "<code>frame-ancestors</code> 指令指定可以使用 <code>&lt;frame&gt;</code> 和\n  <code>&lt;iframe&gt;</code> 元素嵌入页面的有效父元素。"
+  ],
+  "The <code>img-src</code> directive specifies valid sources of images and\n  favicons.": [
+    "<code>img-src</code> 指令指定图像和网站图标的有效来源。"
+  ],
+  "The <code>prefetch-src</code> directive restricts the URLs\n      from which resources may be prefetched or prerendered.": [
+    "<code>prefetch-src</code> 指令限制可以预取或预渲染资源的 URL。"
+  ],
+  "The <code>manifest-src</code> directive specifies which manifest can be\n  applied to the resource.": [
+    "<code>manifest-src</code> 指令指定可以应用于资源的清单。"
+  ],
+  "The <code>media-src</code> directive specifies valid sources for loading\n  media using the <code>&lt;audio&gt;</code> and <code>&lt;video&gt;</code>\n  elements.": [
+    "<code>media-src</code> 指令指定使用 <code>&lt;audio&gt;</code> 和 <code>&lt;video&gt;</code>\n  元素加载媒体的有效来源。"
+  ],
+  "The <code>object-src</code> directive specifies valid sources for the\n  <code>&lt;object&gt;</code>, <code>&lt;embed&gt;</code>, and\n  <code>&lt;applet&gt;</code> elements.": [
+    "<code>object-src</code> 指令指定 <code>&lt;object&gt;</code>、<code>&lt;embed&gt;</code> 和\n  <code>&lt;applet&gt;</code> 元素的有效来源。"
+  ],
+  "The <code>base-uri</code> directive defines the URIs that a user agent\n  may use as the document base URL. If this value is absent, then any URI\n  is allowed. If this directive is absent, the user agent will use the\n  value in the <code>&lt;base&gt;</code> element.": [
+    "<code>base-uri</code> 指令定义了用户代理可以使用的文档基础 URL 的 URI。如果此值不存在，则允许任何 URI。如果此指令不存在，用户代理将使用 <code>&lt;base&gt;</code> 元素中的值。"
+  ],
+  "The <code>plugin-types</code> directive specifies the valid plugins that\n  the user agent may invoke.": [
+    "<code>plugin-types</code> 指令指定用户代理可以调用的有效插件。"
+  ],
+  "The <code>referrer</code> directive specifies information in the\n  <code>Referer</code> header for links away from a page.": [
+    "<code>referrer</code> 指令指定离开页面的链接的 <code>Referer</code> 标头中的信息。"
+  ],
+  "The <code>script-src</code> directive specifies valid sources\n  for JavaScript. When either the <code>script-src</code> or the\n  <code>default-src</code> directive is included, inline script and\n  <code>eval()</code> are disabled unless you specify 'unsafe-inline'\n  and 'unsafe-eval', respectively.": [
+    "<code>script-src</code> 指令指定 JavaScript 的有效来源。当包含 <code>script-src</code> 或 <code>default-src</code> 指令时，内联脚本和 <code>eval()</code> 将被禁用，除非您分别指定 'unsafe-inline' 和 'unsafe-eval'。"
+  ],
+  "The <code>script-src-elem</code> directive applies to all script requests\n      and element contents. It does not apply to scripts defined in attributes.": [
+    "<code>script-src-elem</code> 指令适用于所有脚本请求和元素内容。它不适用于在属性中定义的脚本。"
+  ],
+  "The <code>script-src-attr</code> directive applies to event handlers and, if present,\n      it will override the <code>script-src</code> directive for relevant checks.": [
+    "<code>script-src-attr</code> 指令适用于事件处理程序，并且如果存在，它将为相关检查覆盖 <code>script-src</code> 指令。"
+  ],
+  "The <code>style-src</code> directive specifies valid sources for\n  stylesheets. This includes both externally-loaded stylesheets and inline\n  use of the <code>&lt;style&gt;</code> element and HTML style attributes.\n  Stylesheets from sources that aren't included in the source list are not\n  requested or loaded. When either the <code>style-src</code> or the\n  <code>default-src</code> directive is included, inline use of the\n  <code>&lt;style&gt;</code> element and HTML style attributes are disabled\n  unless you specify 'unsafe-inline'.": [
+    "<code>style-src</code> 指令指定样式表的有效来源。这包括外部加载的样式表以及内联使用的 <code>&lt;style&gt;</code> 元素和 HTML 样式属性。\n  未包含在来源列表中的样式表不会被请求或加载。当包含 <code>style-src</code> 或 <code>default-src</code> 指令时，内联使用的 <code>&lt;style&gt;</code> 元素和 HTML 样式属性将被禁用，除非您指定 'unsafe-inline'。"
+  ],
+  "The <code>style-src-elem</code> directive applies to all styles except\n      those defined in inline attributes.": [
+    "<code>style-src-elem</code> 指令适用于所有样式，除了在内联属性中定义的样式。"
+  ],
+  "The <code>style-src-attr</code> directive applies to inline style attributes and, if present,\n      it will override the <code>style-src</code> directive for relevant checks.": [
+    "<code>style-src-attr</code> 指令适用于内联样式属性，并且如果存在，它将为相关检查覆盖 <code>style-src</code> 指令。"
+  ],
+  "The <code>frame-src</code> directive specifies valid sources for nested\n  browsing contexts loading using elements such as\n  <code>&lt;frame&gt;</code> and <code>&lt;iframe&gt;</code>.": [
+    "<code>frame-src</code> 指令指定使用类似于 <code>&lt;frame&gt;</code> 和 <code>&lt;iframe&gt;</code> 的元素加载的嵌套浏览上下文的有效来源。"
+  ],
+  "The <code>worker-src</code> directive specifies valid sources for\n  <code>Worker<code>, <code>SharedWorker</code>, or\n  <code>ServiceWorker</code> scripts.": [
+    "<code>worker-src</code> 指令指定 <code>Worker<code>、<code>SharedWorker</code> 或\n  <code>ServiceWorker</code> 脚本的有效来源。"
+  ],
+  "The <code>child-src</code> directive defines the valid sources for\n  web workers and nested browsing contexts loaded using elements such as\n  <code>&lt;frame&gt;</code> and <code>&lt;iframe&gt;</code>.": [
+    "<code>child-src</code> 指令定义了使用类似于 <code>&lt;frame&gt;</code> 和 <code>&lt;iframe&gt;</code> 的元素加载的 Web 工作者和嵌套浏览上下文的有效来源。"
+  ],
+  "A list of dynamic libraries or shared objects loaded into process memory at the time of the crash. Images contribute application code that is referenced in stack traces.": [
+    "崩溃时加载到进程内存中的一组动态库或共享对象。图像贡献了堆栈跟踪中引用的应用程序代码。"
+  ],
+  "Uncovered": ["未覆盖"],
+  "Covered": ["已覆盖"],
+  "Partially Covered": ["部分覆盖"],
+  "Show %s more frame": ["显示 %s 个更多帧"],
+  "Show %s more frames": ["显示 %s 个更多帧"],
+  "Hide %s more frame": ["隐藏 %s 个更多帧"],
+  "Hide %s more frames": ["隐藏 %s 个更多帧"],
+  "Suspect Frame": ["可疑帧"],
+  "Click to learn how to show the original source code for this stack frame.": [
+    "点击以了解如何显示此堆栈帧的原始源代码。"
+  ],
+  "Unminify Code": ["取消最小化代码"],
+  "In App": ["在应用内"],
+  "Registers": ["寄存器"],
+  "Toggle register value format": ["切换寄存器值格式"],
+  "Frame repeated %s time": ["帧重复 %s 次"],
+  "Open this line in GitHub": ["在 GitHub 中打开此行"],
+  "Open this line in %s": ["在 %s 中打开此行"],
+  "Set up Code Mapping": ["设置代码映射"],
+  "Code Coverage not found": ["未找到代码覆盖"],
+  "Open in Codecov": ["在 Codecov 中打开"],
+  "Unable to save configuration": ["无法保存配置"],
+  "We don’t have access to that [provider] repo. To fix this, [link:add your repo.]": [
+    "我们无法访问该 [provider] 仓库。要修复此问题，[link:添加您的仓库。]"
+  ],
+  "URL is required.": ["URL 是必需的。"],
+  "We can’t find the file path for [filename] in your [provider] repo. Add the correct link below to enable git blame and suspect commits for this project.": [
+    "我们在您的 [provider] 仓库中找不到 [filename] 的文件路径。请在下方添加正确的链接以启用 git blame 和此项目的可疑提交。"
+  ],
+  "Go to [link]": ["转到 [link]"],
+  "Go to your source code provider": ["转到您的源代码提供者"],
+  "Find the correct repo and path for the file": ["找到文件的正确仓库和路径"],
+  "Select from one of these suggestions or paste your URL below": ["从这些建议中选择一个，或在下方粘贴您的 URL"],
+  "Copy the URL and paste it below": ["复制 URL 并在下方粘贴"],
+  "Repository URL": ["仓库 URL"],
+  "source code": ["源代码"],
+  "Occurred in non-app": ["发生在非应用中"],
+  "View in LLM Monitoring": ["在 LLM 监控中查看"],
+  "LLM monitoring": ["LLM 监控"],
+  "Charts showing how many tokens are being used": ["显示使用了多少个令牌的图表"],
+  "This frame has missing debug files and could not be symbolicated": ["此帧缺少调试文件，无法进行符号化"],
+  "This frame has an unknown problem and could not be symbolicated": ["此帧存在未知问题，无法进行符号化"],
+  "Go to images loaded": ["转到已加载的图像"],
+  "This frame is repeated in every event of this issue": ["此帧在此问题的每个事件中都会重复"],
+  "Suspect Root Cause identifies common patterns that may be contributing to this ANR": [
+    "可疑根本原因识别可能促成此 ANR 的常见模式"
+  ],
+  "Suspect Root Cause identifies potential Performance Issues that may be contributing to this ANR.": [
+    "可疑根本原因识别可能促成此 ANR 的潜在性能问题。"
+  ],
+  "Suspect Root Cause": ["可疑根本原因"],
+  "Span Evidence": ["跨度证据"],
+  "Span Evidence identifies the root cause of this issue, found in other similar events within the same issue.": [
+    "跨度证据识别此问题的根本原因，在同一问题中的其他类似事件中找到。"
+  ],
+  "Threshold Settings": ["阈值设置"],
+  "Repeating Spans (%s)": ["重复跨度 (%s)"],
+  "Slow DB Query": ["慢数据库查询"],
+  "Asset Size": ["资产大小"],
+  "Offending Span": ["违规跨度"],
+  "View Full Event": ["查看完整事件"],
+  "(no value)": ["（无值）"],
+  "There was %s GraphQL error raised during this request.": ["在此请求期间引发了 %s 个 GraphQL 错误。"],
+  "There were %s errors raised during this request.": ["在此请求期间引发了 %s 个错误。"],
+  "%s Active Filter": ["%s 活动过滤器"],
+  "Make Your Stack Traces Readable": ["使您的堆栈跟踪可读"],
+  "It looks like the original source code for this stack frame couldn't be determined when this error was captured. To get the original code for this stack frame, Sentry needs source maps to be configured.": [
+    "看起来在捕获此错误时无法确定此堆栈帧的原始源代码。要获取此堆栈帧的原始代码，Sentry 需要配置源映射。"
+  ],
+  "The easiest way to get started with source maps is by running the Sentry Source Map Wizard in the terminal inside your project:": [
+    "开始使用源映射的最简单方法是在项目内的终端中运行 Sentry 源映射向导："
+  ],
+  "There are multiple ways to configure source maps. The checklists below will help you set them up correctly. Choose one of the following processes:": [
+    "配置源映射有多种方法。下面的清单将帮助您正确设置它们。选择以下其中一个过程："
+  ],
+  "Debug IDs": ["调试 ID"],
+  "(recommended)": ["（推荐）"],
+  "Hosting Publicly": ["公开托管"],
+  "[link:Debug IDs] are a way of matching your source files to source maps. Follow all of the steps below to get a readable stack trace:": [
+    "[link:调试 ID] 是一种将您的源文件与源映射匹配的方法。按照以下所有步骤操作以获取可读的堆栈跟踪："
+  ],
+  "You can match your stack trace to your source code based on [link:Releases] and artifact names. Follow all of the steps below to get a readable stack trace:": [
+    "您可以基于 [link:版本] 和构件名称将堆栈跟踪与源代码匹配。按照以下所有步骤操作以获取可读的堆栈跟踪："
+  ],
+  "Sentry will fetch your source files and source maps if you [link:host them publicly].": [
+    "如果您 [link:公开托管它们]，Sentry 将获取您的源文件和源映射。"
+  ],
+  "The source map could not be found at its defined location.": ["源映射在其定义的位置无法找到。"],
+  "This was helpful": ["这有帮助"],
+  "This was not helpful": ["这没有帮助"],
+  "Was this helpful? Give us feedback!": ["这有帮助吗？给我们反馈！"],
+  "JavaScript source fetching is disabled in your project settings.": ["您的项目设置中禁用了 JavaScript 源获取。"],
+  "Installed SDK supports Debug IDs": ["已安装的 SDK 支持调试 ID"],
+  "Installed SDK does not support Debug IDs": ["已安装的 SDK 不支持调试 ID"],
+  "Installed SDK potentially doesn't support Debug IDs": ["已安装的 SDK 可能不支持调试 ID"],
+  "Outdated SDK": ["已过时的 SDK"],
+  "You are using version [currentVersion] of the Sentry SDK which does not support debug IDs.": [
+    "您正在使用的 Sentry SDK 版本 [currentVersion] 不支持调试 ID。"
+  ],
+  "You are using an outdated version of the Sentry SDK which does not support debug IDs.": [
+    "您正在使用的 Sentry SDK 版本已过时，不支持调试 ID。"
+  ],
+  "You should upgrade to version [targetVersion] or higher.": ["您应该升级到版本 [targetVersion] 或更高版本。"],
+  "You should upgrade to the latest version.": ["您应该升级到最新版本。"],
+  "If upgrading the SDK is not an option for you, you can use the [link:Release] process instead.": [
+    "如果升级 SDK 对您来说不是一个选项，您可以改用 [link:版本] 过程。"
+  ],
+  "Invalid Host": ["无效的主机"],
+  "SDK Doesn't Support Debug IDs": ["SDK 不支持调试 ID"],
+  "The SDK you are using does not support debug IDs yet. We recommend using the [link:Release] process instead.": [
+    "您正在使用的 SDK 尚不支持调试 ID。我们建议改用 [link:版本] 过程。"
+  ],
+  "The source map location was not in the list of allowed domains in your project settings, or the URL was malformed.": [
+    "源映射位置不在您的项目设置中允许的域列表中，或者 URL 格式不正确。"
+  ],
+  "Unofficial SDK": ["非官方 SDK"],
+  "You are using an unofficial Sentry SDK. Please check whether this SDK already supports Debug IDs. It's possible that this SDK supports debug IDs but you may be better off using the [link:Release Name] method of uploading source maps.": [
+    "您正在使用非官方的 Sentry SDK。请检查此 SDK 是否已经支持调试 ID。可能此 SDK 支持调试 ID，但您可能更适合使用 [link:版本名称] 方法上传源映射。"
+  ],
+  "If this SDK depends on an official Sentry SDK, the earliest version that supports Debug IDs is version 7.56.0": [
+    "如果此 SDK 依赖于官方 Sentry SDK，则支持调试 ID 的最早版本是 7.56.0 版本"
+  ],
+  "Stack frame has Debug IDs": ["堆栈帧有调试 ID"],
+  "Stack frame doesn't have Debug IDs": ["堆栈帧没有调试 ID"],
+  "Source Is Missing Injection": ["源缺少注入"],
+  "The event already has debug IDs for some stack frames but not for this one. Please configure the tool you are using to upload source maps to inject debug IDs into [bold:all] of your build artifacts.": [
+    "事件已经为某些堆栈帧提供了调试 ID，但此堆栈帧没有。请配置您用于上传源映射的工具，将调试 ID 注入到 [bold:所有] 构建构件中。"
+  ],
+  "Permission to access the source map was denied by the server hosting the source map. This means that the server hosting the source map returned a 401 Unauthorized or a 403 Forbidden response code.": [
+    "源映射服务器拒绝访问源映射的权限。这意味着托管源映射的服务器返回了 401 未授权或 403 禁止访问的响应代码。"
+  ],
+  "It seems you already uploaded artifacts with Debug IDs, however, this event doesn't contain any Debug IDs yet. Generally this means that you didn't deploy the same files you injected the Debug IDs into. For Sentry to be able to show your original source code, it is required that you deploy the exact same files that you uploaded to Sentry.": [
+    "似乎您已经上传了带有调试 ID 的构件，但此事件尚未包含任何调试 ID。通常这意味着您部署的文件与注入调试 ID 的文件不同。为了让 Sentry 能够显示您的原始源代码，您需要部署与上传到 Sentry 的完全相同的文件。"
+  ],
+  "If you are using a [bundlerPluginRepoLink:Sentry Plugin for your Bundler], the plugin needs to be active when building your production app. You cannot do two separate builds, for example, one for uploading to Sentry with the plugin being active and one for deploying without the plugin. The plugin needs to be active for every build.": [
+    "如果您正在使用 [bundlerPluginRepoLink:Sentry Bundler 插件]，则在构建生产应用时需要激活该插件。例如，您不能进行两次单独的构建，一次用于上传到 Sentry（插件激活）和一次用于部署（插件未激活）。每次构建都需要激活插件。"
+  ],
+  "If you are utilizing [sentryCliLink:Sentry CLI], ensure that you deploy the exact files that the [injectCommand] command has modified!": [
+    "如果您正在使用 [sentryCliLink:Sentry CLI]，请确保您部署的文件正是 [injectCommand] 命令修改过的！"
+  ],
+  "Read the [link:Sentry Source Maps Documentation] to learn how to inject Debug IDs into your build artifacts and how to upload them to Sentry.": [
+    "阅读 [link:Sentry 源映射文档] 以了解如何将调试 ID 注入到您的构建构件中以及如何将它们上传到 Sentry。"
+  ],
+  "Timeout": ["超时"],
+  "No Debug ID Tooling Used": ["未使用调试 ID 工具"],
+  "This event doesn't contain any Debug IDs. Read the [link:Sentry Source Maps Documentation] to learn how to inject Debug IDs into your build artifacts and how to upload them to Sentry.": [
+    "此事件不包含任何调试 ID。阅读 [link:Sentry 源映射文档] 以了解如何将调试 ID 注入到您的构建构件中以及如何将它们上传到 Sentry。"
+  ],
+  "The request to download the source map timed out.": ["下载源映射的请求超时。"],
+  "Source file with a matching Debug ID was uploaded": ["已上传具有匹配调试 ID 的源文件"],
+  "Missing source file with a matching Debug ID": ["缺少具有匹配调试 ID 的源文件"],
+  "No Source File With Matching Debug ID": ["没有与调试 ID 匹配的源文件"],
+  "You already uploaded artifacts with Debug IDs but none of the uploaded source files had a Debug ID matching this stack frame's Debug ID: [debugId]": [
+    "您已经上传了带有调试 ID 的构件，但上传的源文件中没有任何一个的调试 ID 与该堆栈帧的调试 ID 匹配：[debugId]"
+  ],
+  "Make sure to inject Debug IDs into all of your source files and to upload all of them to Sentry.": ["确保将调试 ID 注入到您的所有源文件中，并将它们全部上传到 Sentry。"],
+  "Download Error": ["下载错误"],
+  "No Artifacts With Debug IDs Uploaded": ["未上传带有调试 ID 的构件"],
+  "You didn't upload any artifacts with debug IDs yet. Read the [link:Sentry Source Maps Documentation] to learn how to inject Debug IDs into your build artifacts and how to upload them to Sentry.": [
+    "您尚未上传任何带有调试 ID 的构件。阅读 [link:Sentry 源映射文档] 以了解如何将调试 ID 注入到您的构建构件中以及如何将它们上传到 Sentry。"
+  ],
+  "There was an error while downloading the source map.": ["下载源映射时出错。"],
+  "Uploaded source map with a matching Debug ID": ["已上传具有匹配调试 ID 的源映射"],
+  "Missing source map with a matching Debug ID": ["缺少具有匹配调试 ID 的源映射"],
+  "No Source Map With Matching Debug ID": ["没有与调试 ID 匹配的源映射"],
+  "You already uploaded artifacts with Debug IDs but none of the uploaded source maps had a Debug ID matching this stack frame's Debug ID: [debugId]": [
+    "您已经上传了带有调试 ID 的构件，但上传的源映射中没有任何一个的调试 ID 与该堆栈帧的调试 ID 匹配：[debugId]"
+  ],
+  "No Artifacts Uploaded": ["未上传构件"],
+  "Fetching the source map failed for an unknown reason.": ["获取源映射因未知原因失败。"],
+  "Event has release value": ["事件具有版本值"],
+  "Event doesn't have a release value": ["事件没有版本值"],
+  "No Release Value": ["无版本值"],
+  "The captured event does not have a [release] value. Configure a [release] value in the SDK:": [
+    "捕获的事件没有 [release] 值。在 SDK 中配置 [release] 值："
+  ],
+  "Alternatively, you can configure one of our build tools to automatically inject a release value into your code: [link:Sentry Bundler Support]": [
+    "或者，您可以配置我们的其中一个构建工具以自动将版本值注入您的代码：[link:Sentry Bundler 支持]"
+  ],
+  "Release has uploaded artifacts": ["版本已上传构件"],
+  "Release doesn't have uploaded artifacts": ["版本未上传构件"],
+  "No Uploaded Artifacts": ["无上传的构件"],
+  "The release this event belongs to doesn't have any uploaded artifacts. Upload your build artifacts to Sentry using the release:": [
+    "此事件所属的版本没有任何上传的构件。使用版本将您的构建构件上传到 Sentry："
+  ],
+  "The source file could not be found at its defined location.": ["源文件在其定义的位置无法找到。"],
+  "Read the [link:Sentry Source Maps Documentation] to learn how to to upload your build artifacts to Sentry.": [
+    "阅读 [link:Sentry 源映射文档] 以了解如何将您的构建构件上传到 Sentry。"
+  ],
+  "Stack frame path matches a source file artifact name": ["堆栈帧路径与源文件构件名称匹配"],
+  "Stack frame path doesn't match a source file artifact name": ["堆栈帧路径与源文件构件名称不匹配"],
+  "Dist Value Not Matching": ["dist 值不匹配"],
+  "You uploaded a source file artifact with the right name, however the dist value on this event does not match the dist value on the artifact.": [
+    "您上传了一个名称正确的源文件构件，但此事件的 dist 值与构件的 dist 值不匹配。"
+  ],
+  "Upload your build artifacts to Sentry using the dist [dist] or adjust the dist value in your SDK options.": [
+    "使用 dist [dist] 将您的构建构件上传到 Sentry，或在您的 SDK 选项中调整 dist 值。"
+  ],
+  "Upload your build artifacts to Sentry using a matching [dist] value or adjust the [dist] value in your SDK options.": [
+    "使用匹配的 [dist] 值将您的构建构件上传到 Sentry，或在您的 SDK 选项中调整 [dist] 值。"
+  ],
+  "Stack Frame Without Path": ["无路径的堆栈帧"],
+  "This stack frame doesn't have a path. Check your SDK configuration to send a stack frame path!": [
+    "此堆栈帧没有路径。检查您的 SDK 配置以发送堆栈帧路径！"
+  ],
+  "Stack Frame Not Matching Artifact Name": ["堆栈帧与构件名称不匹配"],
+  "The path for this stack frame is [stackFramePath] and the release value for this event is [release].": [
+    "此堆栈帧的路径是 [stackFramePath]，此事件的版本值是 [release]。"
+  ],
+  "Sentry was not able to find a file in the release's artifacts that matches one of the following paths:": [
+    "Sentry 无法在版本的构件中找到与以下路径之一匹配的文件："
+  ],
+  "This event has a dist value [dist]. Please check that you uploaded your artifacts with dist [dist].": [
+    "此事件具有 dist 值 [dist]。请检查您是否上传了带有 dist [dist] 的构件。"
+  ],
+  "This event doesn't have a dist value. Please check that you uploaded your artifacts without dist value.": [
+    "此事件没有 dist 值。请检查您是否上传了没有 dist 值的构件。"
+  ]
+}
