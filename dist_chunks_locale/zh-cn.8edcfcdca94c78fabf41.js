@@ -15202,6 +15202,9 @@
           lang: 'zh_CN',
         },
       };
+      var custom = {
+        'All Unresolved': ['所有未解决'],
+      };
       e.exports = Object.assign(
         orgin,
         translatedOnly,
@@ -15217,7 +15220,8 @@
         trans9,
         trans10,
         trans11,
-        trans12
+        trans12,
+        custom
       );
     },
   },
